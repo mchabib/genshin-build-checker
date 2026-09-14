@@ -1,0 +1,42 @@
+{
+  "id": 12425,
+  "name": "Tidal Shadow",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "White Cruising Wave",
+  "effectTemplate": "After the wielder is healed, ATK will be increased by <color=#99FFFFFF>{0}</color> for 8s. This can be triggered even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "After the wielder is healed, ATK will be increased by 24% for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "After the wielder is healed, ATK will be increased by 30% for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "After the wielder is healed, ATK will be increased by 36% for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "After the wielder is healed, ATK will be increased by 42% for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "After the wielder is healed, ATK will be increased by 48% for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

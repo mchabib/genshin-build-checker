@@ -1,0 +1,42 @@
+{
+  "id": 15430,
+  "name": "Flower-Wreathed Feathers",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Inflorescence Unattainable",
+  "effectTemplate": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by <color=#99FFFFFF>{0}</color> every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+  "refinements": {
+    "r1": {
+      "description": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by 6% every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+      "values": [
+        "6%"
+      ]
+    },
+    "r2": {
+      "description": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by 7.5% every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+      "values": [
+        "7.5%"
+      ]
+    },
+    "r3": {
+      "description": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by 9% every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+      "values": [
+        "9%"
+      ]
+    },
+    "r4": {
+      "description": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by 10.5% every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+      "values": [
+        "10.5%"
+      ]
+    },
+    "r5": {
+      "description": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by 12% every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode.",
+      "values": [
+        "12%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": 13201,
+  "name": "Iron Point",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 2,
+  "baseAtkLv1": 32.93,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

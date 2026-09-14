@@ -1,0 +1,42 @@
+{
+  "id": 14302,
+  "name": "Thrilling Tales of Dragon Slayers",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Heritage",
+  "effectTemplate": "When switching characters, the new character taking the field has their ATK increased by <color=#99FFFFFF>{0}</color> for 10s. This effect can only occur once every 20s.",
+  "refinements": {
+    "r1": {
+      "description": "When switching characters, the new character taking the field has their ATK increased by 24% for 10s. This effect can only occur once every 20s.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "When switching characters, the new character taking the field has their ATK increased by 30% for 10s. This effect can only occur once every 20s.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "When switching characters, the new character taking the field has their ATK increased by 36% for 10s. This effect can only occur once every 20s.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "When switching characters, the new character taking the field has their ATK increased by 42% for 10s. This effect can only occur once every 20s.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "When switching characters, the new character taking the field has their ATK increased by 48% for 10s. This effect can only occur once every 20s.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

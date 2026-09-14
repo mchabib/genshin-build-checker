@@ -1,0 +1,427 @@
+{
+  "key": "Wanderer",
+  "nameEn": "Wanderer",
+  "gdbName": "Wanderer",
+  "element": "Anemo",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "3.3",
+  "talents": {
+    "normal": {
+      "name": "Yuuban Meigen",
+      "description": "Normal Attack\nPerforms up to 3 attacks using wind blades, dealing Anemo DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina, gathers a build up of high wind pressure, and deals AoE Anemo DMG after a short casting time.\n\nPlunging Attack\nCalling upon the power of Anemo, the Wanderer plunges towards the ground from mid-air, damaging all opponents in his path. Deals AoE Anemo DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+          "Charged Attack DMG|{param5:F1P}",
+          "Charged Attack Stamina Cost|{param6:F1}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.68714,
+            0.74307,
+            0.799,
+            0.8789,
+            0.93483,
+            0.99875,
+            1.08664,
+            1.17453,
+            1.26242,
+            1.3583,
+            1.45418,
+            1.55006,
+            1.64594,
+            1.74182,
+            1.8377
+          ],
+          "param2": [
+            0.65016,
+            0.70308,
+            0.756,
+            0.8316,
+            0.88452,
+            0.945,
+            1.02816,
+            1.11132,
+            1.19448,
+            1.2852,
+            1.37592,
+            1.46664,
+            1.55736,
+            1.64808,
+            1.7388
+          ],
+          "param3": [
+            0.47644,
+            0.51522,
+            0.554,
+            0.6094,
+            0.64818,
+            0.6925,
+            0.75344,
+            0.81438,
+            0.87532,
+            0.9418,
+            1.00828,
+            1.07476,
+            1.14124,
+            1.20772,
+            1.2742
+          ],
+          "param4": [
+            0.47644,
+            0.51522,
+            0.554,
+            0.6094,
+            0.64818,
+            0.6925,
+            0.75344,
+            0.81438,
+            0.87532,
+            0.9418,
+            1.00828,
+            1.07476,
+            1.14124,
+            1.20772,
+            1.2742
+          ],
+          "param5": [
+            1.3208,
+            1.41986,
+            1.51892,
+            1.651,
+            1.75006,
+            1.84912,
+            1.9812,
+            2.11328,
+            2.24536,
+            2.37744,
+            2.50952,
+            2.6416,
+            2.8067,
+            2.9718,
+            3.1369
+          ],
+          "param6": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Hanega: Song of the Wind",
+      "description": "Concentrates the power of the winds to break free from the shackles of the earth, dealing AoE Anemo DMG before leaping into the air and entering the Windfavored state.\n\nWindfavored\nThe Wanderer cannot perform Plunging Attacks in this state. When he uses Normal and Charged Attacks, they will be converted into Kuugo: Fushoudan and Kuugo: Toufukai respectively; the DMG they deal and their AoE will be increased, and their DMG will be considered Normal and Charged Attack DMG respectively. Kuugo: Toufukai will not consume Stamina.\nThe Wanderer will hover persistently during this time. While this state is active, the Wanderer's movements gain the following properties:\n·Persistently consumes Kuugoryoku Points to maintain this hovering state.\n·When sprinting, additional Kuugoryoku Points will be consumed for the Wanderer to accelerate mid-air. Holding sprint will cause persistent Kuugoryoku Point consumption to maintain speed. This effect will replace his default sprint.\n·Jumping expends extra Kuugoryoku Points to increase hovering height. Holding jump will cause persistent Kuugoryoku Point consumption to keep increasing hovering height.\n\nRunning out of Kuugoryoku Points will end the Windfavored state.\nA second cast during the duration of Windfavored will also end it.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Kuugo: Fushoudan DMG|{param2:F1P} Normal Attack DMG",
+          "Kuugo: Toufukai DMG|{param3:F1P} Charged Attack DMG",
+          "Initial Kuugoryoku Points|{param4:I}",
+          "CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.952,
+            1.0234,
+            1.0948,
+            1.19,
+            1.2614,
+            1.3328,
+            1.428,
+            1.5232,
+            1.6184,
+            1.7136,
+            1.8088,
+            1.904,
+            2.023,
+            2.142,
+            2.261
+          ],
+          "param2": [
+            1.329825,
+            1.349575,
+            1.369325,
+            1.395,
+            1.41475,
+            1.4345,
+            1.460175,
+            1.48585,
+            1.511525,
+            1.5372,
+            1.562875,
+            1.58855,
+            1.614225,
+            1.6399,
+            1.665575
+          ],
+          "param3": [
+            1.26386,
+            1.27966,
+            1.29546,
+            1.316,
+            1.3318,
+            1.3476,
+            1.36814,
+            1.38868,
+            1.40922,
+            1.42976,
+            1.4503,
+            1.47084,
+            1.49138,
+            1.51192,
+            1.53246
+          ],
+          "param4": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "param5": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "param7": [
+            0.329825,
+            0.349575,
+            0.369325,
+            0.395,
+            0.41475,
+            0.4345,
+            0.460175,
+            0.48585,
+            0.511525,
+            0.5372,
+            0.562875,
+            0.58855,
+            0.614225,
+            0.6399,
+            0.665575
+          ],
+          "param8": [
+            0.26386,
+            0.27966,
+            0.29546,
+            0.316,
+            0.3318,
+            0.3476,
+            0.36814,
+            0.38868,
+            0.40922,
+            0.42976,
+            0.4503,
+            0.47084,
+            0.49138,
+            0.51192,
+            0.53246
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Kyougen: Five Ceremonial Plays",
+      "description": "Compresses the atmosphere into a singular vacuum that grinds all troubles away, dealing multiple instances of AoE Anemo DMG.\nIf the character is in the Windfavored state due to the skill \"Hanega: Song of the Wind,\" Windfavored state will end after casting.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}×5",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.472,
+            1.5824,
+            1.6928,
+            1.84,
+            1.9504,
+            2.0608,
+            2.208,
+            2.3552,
+            2.5024,
+            2.6496,
+            2.7968,
+            2.944,
+            3.128,
+            3.312,
+            3.496
+          ],
+          "param2": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param3": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Jade-Claimed Flower",
+      "description": "If Hanega: Song of the Wind comes into contact with Hydro/Pyro/Cryo/Electro when it is unleashed, this instance of the Windfavored state will obtain buffs according to the contacted element(s):\n·Hydro: Kuugoryoku Point cap increases by 20.\n·Pyro: ATK increases by 30%.\n·Cryo: CRIT Rate increases by 20%.\n·Electro: When Normal and Charged Attacks hit an opponent, 0.8 Energy will be restored. Energy can be restored this way once every 0.2s.\n\nYou can have up to 2 different kinds of these buffs simultaneously."
+    },
+    {
+      "slot": "a4",
+      "name": "Gales of Reverie",
+      "description": "When the Wanderer hits opponents with Kuugo: Fushoudan or Kuugo: Toufukai in his Windfavored state, he has a 16% chance to obtain the Descent effect: The next time the Wanderer accelerates in mid-air while in this instance of the Windfavored state, this effect will be removed, this acceleration instance will not consume any Kuugoryoku Points, and he will fire off 4 wind arrows that deal 35% of his ATK as Anemo DMG each.\nFor each Kuugo: Fushoudan and Kuugo: Toufukai that does not produce this effect, the next attack of those types will have a 12% increased chance of producing it. The calculation of the effect production is done once every 0.1s."
+    },
+    {
+      "slot": "util",
+      "name": "Strum the Swirling Winds",
+      "description": "Mora expended when ascending Bows and Catalysts is decreased by 50%."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Shoban: Ostentatious Plumage",
+      "description": "When in the Windfavored state, the Attack SPD of the Wanderer's Kuugo: Fushoudan and Kuugo: Toufukai is increased by 10%.\nAdditionally, the wind arrows fired by the Ascension Talent \"Gales of Reverie\" will deal an additional 25% of his ATK as DMG. You must first unlock the Ascension Talent \"Gales of Reverie.\""
+    },
+    {
+      "n": 2,
+      "name": "Niban: Isle Amidst White Waves",
+      "description": "When in the Windfavored state, Kyougen: Five Ceremonial Plays will see its DMG increased by 4% per point of difference between the max amount of Kuugoryoku Points contrasted with Kuugoryoku's present capacity when using this skill.\nThrough this method, you can increase Kyougen: Five Ceremonial Plays's DMG by a maximum of 200%."
+    },
+    {
+      "n": 3,
+      "name": "Sanban: Moonflower Kusemai",
+      "description": "Increases the Level of Kyougen: Five Ceremonial Plays by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Yonban: Set Adrift into Spring",
+      "description": "When casting Hanega: Song of the Wind, should the Ascension Talent \"Jade-Claimed Flower\" be triggered, the character will gain buffs in correspondence to the contacted Elemental Type(s), and also obtain a random untriggered buff. A maximum of 3 such corresponding elemental buffs can exist simultaneously.\nYou must first unlock the Ascension Talent \"Jade-Claimed Flower.\""
+    },
+    {
+      "n": 5,
+      "name": "Matsuban: Ancient Illuminator From Abroad",
+      "description": "Increases the Level of Hanega: Song of the Wind by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Shugen: The Curtains' Melancholic Sway",
+      "description": "When the Wanderer actively hits an opponent with Kuugo: Fushoudan while in the Windfavored state, the following effects will occur:\n·Deals an additional instance of Kuugo: Fushoudan at the position hit, dealing 40% of the attack's original DMG. This DMG will be considered Normal Attack DMG.\n·When the Wanderer falls below 40 Kuugoryoku Points, restores 4 Points to him. Kuugoryoku Points can be restored in this manner once every 0.2s. This restoration can occur up to 5 times within one Windfavored duration."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": 13515,
+  "name": "Fractured Halo",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Purifying Crown",
+  "effectTemplate": "After an Elemental Skill or Elemental Burst is used, ATK is increased by <color=#99FFFFFF>{0}</color> for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal <color=#99FFFFFF>{1}</color> more Lunar-Charged DMG.",
+  "refinements": {
+    "r1": {
+      "description": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 24% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 40% more Lunar-Charged DMG.",
+      "values": [
+        "24%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 30% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 50% more Lunar-Charged DMG.",
+      "values": [
+        "30%",
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 36% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 60% more Lunar-Charged DMG.",
+      "values": [
+        "36%",
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 42% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 70% more Lunar-Charged DMG.",
+      "values": [
+        "42%",
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 48% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 80% more Lunar-Charged DMG.",
+      "values": [
+        "48%",
+        "80%"
+      ]
+    }
+  }
+}

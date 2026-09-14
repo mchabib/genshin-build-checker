@@ -1,0 +1,42 @@
+{
+  "id": 15426,
+  "name": "Cloudforged",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Crag-Chiseled Forge",
+  "effectTemplate": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by <color=#99FFFFFF>{0}</color> for 18s. Max 2 stacks.",
+  "refinements": {
+    "r1": {
+      "description": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by 40 for 18s. Max 2 stacks.",
+      "values": [
+        "40"
+      ]
+    },
+    "r2": {
+      "description": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by 50 for 18s. Max 2 stacks.",
+      "values": [
+        "50"
+      ]
+    },
+    "r3": {
+      "description": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by 60 for 18s. Max 2 stacks.",
+      "values": [
+        "60"
+      ]
+    },
+    "r4": {
+      "description": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by 70 for 18s. Max 2 stacks.",
+      "values": [
+        "70"
+      ]
+    },
+    "r5": {
+      "description": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by 80 for 18s. Max 2 stacks.",
+      "values": [
+        "80"
+      ]
+    }
+  }
+}

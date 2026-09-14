@@ -1,0 +1,465 @@
+{
+  "key": "YumemizukiMizuki",
+  "nameEn": "Yumemizuki Mizuki",
+  "gdbName": "Yumemizuki Mizuki",
+  "element": "Anemo",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "5.4",
+  "talents": {
+    "normal": {
+      "name": "Pure Heart, Pure Dreams",
+      "description": "Normal Attack\nPerforms up to 3 attacks, dealing Anemo DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina and deals AoE Anemo DMG after a short casting time.\n\nPlunging Attack\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:F1P}",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:P}/{param8:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.522768,
+            0.561976,
+            0.601183,
+            0.65346,
+            0.692668,
+            0.731875,
+            0.784152,
+            0.836429,
+            0.888706,
+            0.940982,
+            0.993259,
+            1.045536,
+            1.110882,
+            1.176228,
+            1.241574
+          ],
+          "param2": [
+            0.469144,
+            0.50433,
+            0.539516,
+            0.58643,
+            0.621616,
+            0.656802,
+            0.703716,
+            0.75063,
+            0.797545,
+            0.844459,
+            0.891374,
+            0.938288,
+            0.996931,
+            1.055574,
+            1.114217
+          ],
+          "param3": [
+            0.713688,
+            0.767215,
+            0.820741,
+            0.89211,
+            0.945637,
+            0.999163,
+            1.070532,
+            1.141901,
+            1.21327,
+            1.284638,
+            1.356007,
+            1.427376,
+            1.516587,
+            1.605798,
+            1.695009
+          ],
+          "param4": [
+            1.3,
+            1.3975,
+            1.495,
+            1.625,
+            1.7225,
+            1.82,
+            1.95,
+            2.08,
+            2.21,
+            2.34,
+            2.47,
+            2.6,
+            2.7625,
+            2.925,
+            3.0875
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param7": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param8": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Aisa Utamakura Pilgrimage",
+      "description": "Weaves memories of lovely dreams, entering a Dreamdrifter state where Yumemizuki Mizuki floats above the ground, and dealing 1 instance of AoE Anemo DMG to nearby opponents.\n\nDreamdrifter\n·While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing AoE Anemo DMG to nearby opponents at regular intervals.\n·During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of Yumemi Style Special Snacks from the Elemental Burst Anraku Secret Spring Therapy will be increased.\n·Increases the Swirl DMG and Stellar Swirl reaction DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery.\n·Dreamdrifter will end when Mizuki leaves the field or uses her Elemental Skill again.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param4:F1P}",
+          "Continuous Attack DMG|{param1:F1P}",
+          "Dreamdrifter Duration|{param5:F1}s",
+          "Elemental Mastery-Based Swirl DMG Increase|{param2:F2P} per 100 Points",
+          "Elemental Mastery-Based Stellar Swirl DMG Increase|{param6:F2P} per 100 Points",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.44912,
+            0.482804,
+            0.516488,
+            0.5614,
+            0.595084,
+            0.628768,
+            0.67368,
+            0.718592,
+            0.763504,
+            0.808416,
+            0.853328,
+            0.89824,
+            0.95438,
+            1.01052,
+            1.06666
+          ],
+          "param2": [
+            0.18,
+            0.21,
+            0.24,
+            0.27,
+            0.3,
+            0.33,
+            0.36,
+            0.39,
+            0.42,
+            0.45,
+            0.48,
+            0.51,
+            0.54,
+            0.57,
+            0.6
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param4": [
+            0.57744,
+            0.620748,
+            0.664056,
+            0.7218,
+            0.765108,
+            0.808416,
+            0.86616,
+            0.923904,
+            0.981648,
+            1.039392,
+            1.097136,
+            1.15488,
+            1.22706,
+            1.29924,
+            1.37142
+          ],
+          "param5": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "param6": [
+            0.018,
+            0.021,
+            0.024,
+            0.027,
+            0.03,
+            0.033,
+            0.036,
+            0.039,
+            0.042,
+            0.045,
+            0.048,
+            0.051,
+            0.054,
+            0.057,
+            0.06
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Anraku Secret Spring Therapy",
+      "description": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing AoE Anemo DMG and summoning a Mini Baku.\n\nMini Baku:\nFollows the current active character. At regular intervals, the Mini Baku will create 1 Yumemi Style Special Snack nearby. After one of your own party members picks up a Special Snack, if their HP is higher than 70%, the Snack will explode and unleash a Munen Shockwave, dealing 1 instance of AoE Anemo DMG to nearby opponents. Otherwise, it will heal the character who picked it up based on Yumemizuki Mizuki's Elemental Mastery. When Yumemizuki Mizuki triggers healing by picking up a Yumemi Style Special Snack, the amount of healing is increased by 100%. If a Snack is not picked up after a period of time, it will explode and release a Munen Shockwave, dealing 1 instance of AoE Anemo DMG to surrounding opponents.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Munen Shockwave DMG|{param2:F1P}",
+          "Snack Pick-Up HP Regeneration|{param3:F1P} Elemental Mastery+{param7:I}",
+          "Duration|{param6:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.9408,
+            1.01136,
+            1.08192,
+            1.176,
+            1.24656,
+            1.31712,
+            1.4112,
+            1.50528,
+            1.59936,
+            1.69344,
+            1.78752,
+            1.8816,
+            1.9992,
+            2.1168,
+            2.2344
+          ],
+          "param2": [
+            0.7056,
+            0.75852,
+            0.81144,
+            0.882,
+            0.93492,
+            0.98784,
+            1.0584,
+            1.12896,
+            1.19952,
+            1.27008,
+            1.34064,
+            1.4112,
+            1.4994,
+            1.5876,
+            1.6758
+          ],
+          "param3": [
+            1.3056,
+            1.40352,
+            1.50144,
+            1.632,
+            1.72992,
+            1.82784,
+            1.9584,
+            2.08896,
+            2.21952,
+            2.35008,
+            2.48064,
+            2.6112,
+            2.7744,
+            2.9376,
+            3.1008
+          ],
+          "param4": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param5": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "param6": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param7": [
+            314.57,
+            346.03137,
+            380.11453,
+            416.81946,
+            456.14618,
+            498.09467,
+            542.6649,
+            589.857,
+            639.67084,
+            692.10645,
+            747.1639,
+            804.843,
+            865.144,
+            928.0668,
+            993.61127
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Bright Moon's Restless Voice",
+      "description": "When Yumemizuki Mizuki triggers a Swirl or Stellar Swirl reaction while in her Dreamdrifter state, Dreamdrifter's duration increases by 2.5s. This effect can trigger once every 0.3s for a maximum of 2 times per Dreamdrifter state."
+    },
+    {
+      "slot": "a4",
+      "name": "Thoughts by Day Bring Dreams by Night",
+      "description": "While Yumemizuki Mizuki is in the Dreamdrifter state, when other nearby party members hit opponents with Pyro, Hydro, Cryo, or Electro attacks, her Elemental Mastery will increase by 100 for 4s."
+    },
+    {
+      "slot": "util",
+      "name": "All Ailments Banished",
+      "description": "When Yumemizuki Mizuki is in the party, party members have a chance to recover 30% additional HP when using healing foods that do not have reviving properties. The trigger chance for this effect increases with the corresponding character's Friendship Level. (This effect will always trigger if the Traveler is the character consuming healing food.)"
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "In Mist-Like Waters",
+      "description": "When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent has a Swirl or Stellar Swirl reaction triggered against them by Anemo DMG while the aforementioned effect is active, the effect will be canceled, and this Swirl or Stellar Swirl instance deals DMG against this opponent increased by 1,100% and 550% of Mizuki's Elemental Mastery, respectively."
+    },
+    {
+      "n": 2,
+      "name": "Your Echo I Meet in Dreams",
+      "description": "When Yumemizuki Mizuki enters the Dreamdrifter state, every Elemental Mastery point she has will increase all nearby party members' Pyro, Hydro, Cryo, and Electro DMG Bonuses by 0.04% until the Dreamdrifter state ends."
+    },
+    {
+      "n": 3,
+      "name": "Till Dawn's Moon Ends Night",
+      "description": "Increases the Level of Aisa Utamakura Pilgrimage by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Buds Warm Lucid Springs",
+      "description": "Picking up a Yumemi Style Special Snack from the Elemental Burst Anraku Secret Spring Therapy will both deal DMG and heal, and will restore 5 Energy to Yumemizuki Mizuki. Energy can be restored this way 4 times per Anraku Secret Spring Therapy duration."
+    },
+    {
+      "n": 5,
+      "name": "As Setting Moon Brings Year's End",
+      "description": "Increases the Level of Anraku Secret Spring Therapy by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "The Heart Lingers Long",
+      "description": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl reaction DMG dealt by nearby party members can score CRIT Hits, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%. Any Stellar Swirl reaction DMG dealt by these characters will also have its CRIT Rate and CRIT DMG increased by 10% and 20%, respectively."
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+[
+  {
+    "id": "bennett_q",
+    "fromCharacter": "Bennett",
+    "description": "Bennett Q: flat ATK = ratio (lv10 100.8%, +20% kalau C1) × base ATK Bennett. Cuma saat berdiri di lingkaran.",
+    "mod": {
+      "source": "Bennett Q",
+      "scope": "all",
+      "atkFlat": "= round((tm('Bennett')?.baseAtk ?? 756) * ((tp('Bennett','burst','param4') ?? 1.008) + ((tm('Bennett')?.con ?? 1) >= 1 ? 0.2 : 0)))",
+      "note": "= 'base ATK Bennett ' + (tm('Bennett')?.baseAtk ?? '756 (asumsi)')"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "kazuha_a4",
+    "fromCharacter": "KaedeharaKazuha",
+    "description": "Kazuha A4: +0.04% DMG bonus elemen yang di-swirl per EM Kazuha (EM 900 → 36%) selama 8s.",
+    "onlyElements": [
+      "pyro",
+      "hydro",
+      "electro",
+      "cryo",
+      "dendro"
+    ],
+    "mod": {
+      "source": "Kazuha A4",
+      "scope": "all",
+      "elementalDmgBonus": {
+        "$self": "= round((tm('KaedeharaKazuha')?.em ?? 900) * 0.04 * 10) / 10"
+      },
+      "note": "= 'EM Kazuha ' + (tm('KaedeharaKazuha')?.em ?? '900 (asumsi)')"
+    },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "vv_4pc",
+    "assumeWith": [
+      "KaedeharaKazuha",
+      "Sucrose",
+      "Venti",
+      "Lynette",
+      "Sayu",
+      "Jean",
+      "ShikanoinHeizou",
+      "ShikanoinHeizou",
+      "Xianyun"
+    ],
+    "description": "Viridescent Venerer 4pc (anemo support): RES elemen yang di-swirl −40% selama 10s.",
+    "onlyElements": [
+      "pyro",
+      "hydro",
+      "electro",
+      "cryo",
+      "dendro"
+    ],
+    "mod": {
+      "source": "VV 4pc",
+      "scope": "all",
+      "resShred": {
+        "$self": 40
+      }
+    }
+  },
+  {
+    "id": "zhongli_shield",
+    "fromCharacter": "Zhongli",
+    "description": "Zhongli Jade Shield: semua RES musuh −20% (elemen + physical).",
+    "mod": {
+      "source": "Zhongli shield",
+      "scope": "all",
+      "resShred": {
+        "pyro": 20,
+        "hydro": 20,
+        "electro": 20,
+        "cryo": 20,
+        "dendro": 20,
+        "anemo": 20,
+        "geo": 20,
+        "physical": 20
+      }
+    },
+    "duration": 20,
+    "cooldown": 12,
+    "requiresAction": "skill"
+  },
+  {
+    "id": "furina_q",
+    "fromCharacter": "Furina",
+    "description": "Furina Q: DMG bonus sampai +75% (lv10, 300 Fanfare). Offline diasumsikan rata-rata 80% dari max.",
+    "mod": {
+      "source": "Furina Q",
+      "scope": "all",
+      "dmgBonus": "= round(min((tp('Furina','burst','param5') ?? 0.0025) * 300 * 100, 100))",
+      "uptime": 0.8,
+      "note": "300 Fanfare, rata-rata 80%"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "yelan_a4",
+    "fromCharacter": "Yelan",
+    "description": "Yelan A4: DMG bonus +1% naik 3.5%/s sampai +50% selama Q (rata-rata ≈25%).",
+    "mod": {
+      "source": "Yelan A4",
+      "scope": "all",
+      "dmgBonus": 25,
+      "note": "rata-rata selama 15s"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "xingqiu_c2",
+    "fromCharacter": "Xingqiu",
+    "requireCon": 2,
+    "description": "Xingqiu C2: Hydro RES −15% selama 4s tiap Rain Sword kena.",
+    "mod": {
+      "source": "Xingqiu C2",
+      "scope": "all",
+      "resShred": {
+        "hydro": 15
+      }
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "nahida_a1",
+    "fromCharacter": "Nahida",
+    "description": "Nahida A1 (Shrine of Maya): EM karakter on-field +25% dari EM tertinggi di tim, max +250.",
+    "mod": {
+      "source": "Nahida A1",
+      "scope": "all",
+      "em": "= min(250, round((tm('Nahida')?.em ?? 900) * 0.25))"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "shenhe_e",
+    "fromCharacter": "Shenhe",
+    "onlyElements": [
+      "cryo"
+    ],
+    "description": "Shenhe Icy Quill: flat Cryo DMG = 45.7% ATK Shenhe (lv10, press) per hit — cuma hit Cryo.",
+    "mod": {
+      "source": "Shenhe E",
+      "scope": "all",
+      "flatDmg": "= round(((tm('Shenhe')?.baseAtk ?? 900) * 1.6) * (tp('Shenhe','skill','param1') ?? 0.457))",
+      "note": "asumsi ATK Shenhe ≈ 1.6× base"
+    },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "noblesse_4pc",
+    "assumeWith": [
+      "Bennett",
+      "Xiangling",
+      "Rosaria",
+      "Diona",
+      "Layla",
+      "Charlotte"
+    ],
+    "description": "Noblesse Oblige 4pc (dari support): ATK +20% selama 12s setelah Q.",
+    "mod": {
+      "source": "Noblesse 4pc",
+      "scope": "all",
+      "atkPct": 20
+    }
+  },
+  {
+    "id": "tenacity_4pc",
+    "assumeWith": [
+      "Zhongli",
+      "Thoma",
+      "Baizhu"
+    ],
+    "description": "Tenacity of the Millelith 4pc (dari support): ATK +20% selama E kena musuh.",
+    "mod": {
+      "source": "Tenacity 4pc",
+      "scope": "all",
+      "atkPct": 20
+    }
+  },
+  {
+    "id": "sucrose_a4",
+    "fromCharacter": "Sucrose",
+    "description": "Sucrose A4: EM tim +20% dari EM Sucrose. A1: +50 EM buat elemen yang di-swirl.",
+    "mod": {
+      "source": "Sucrose A1+A4",
+      "scope": "all",
+      "em": "= round((tm('Sucrose')?.em ?? 900) * 0.2) + 50"
+    },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "deepwood_4pc",
+    "assumeWith": [
+      "Nahida",
+      "Yaoyao",
+      "Baizhu",
+      "Collei",
+      "Kirara"
+    ],
+    "onlyElements": [
+      "dendro"
+    ],
+    "description": "Deepwood Memories 4pc: Dendro RES −30% setelah E/Q kena.",
+    "mod": {
+      "source": "Deepwood 4pc",
+      "scope": "all",
+      "resShred": {
+        "dendro": 30
+      }
+    }
+  },
+  {
+    "id": "mona_q",
+    "fromCharacter": "Mona",
+    "description": "Mona Omen (Q lv10): DMG +60% selama 4-5s.",
+    "mod": {
+      "source": "Mona Q",
+      "scope": "all",
+      "dmgBonus": 60,
+      "uptime": 0.5,
+      "note": "Omen cuma ~5s dari rotasi"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "xilonen_e",
+    "fromCharacter": "Xilonen",
+    "description": "Xilonen Source Sample: RES Geo + elemen tim −~33% (lv10) selama 15s.",
+    "mod": {
+      "source": "Xilonen E",
+      "scope": "all",
+      "resShred": {
+        "pyro": 33,
+        "hydro": 33,
+        "electro": 33,
+        "cryo": 33,
+        "dendro": 33,
+        "anemo": 33,
+        "geo": 33
+      }
+    },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "faruzan_q",
+    "fromCharacter": "Faruzan",
+    "onlyElements": [
+      "anemo"
+    ],
+    "description": "Faruzan Q (lv10): Anemo RES −30% + Anemo DMG bonus +32.4%; C6 tambah CRIT DMG Anemo +40%.",
+    "mod": {
+      "source": "= 'Faruzan Q' + ((tm('Faruzan')?.con ?? 0) >= 6 ? ' C6' : '')",
+      "scope": "all",
+      "elementalDmgBonus": {
+        "anemo": "= round((tp('Faruzan','burst','param2') ?? 0.324) * 1000) / 10"
+      },
+      "resShred": {
+        "anemo": "= round((tp('Faruzan','burst','param4') ?? 0.3) * 100)"
+      },
+      "critDmg": "= (tm('Faruzan')?.con ?? 0) >= 6 ? 40 : 0"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "xianyun_a4",
+    "fromCharacter": "Xianyun",
+    "description": "Xianyun A4 (Q aktif): Plunge flat DMG = 200% ATK Xianyun (max 9000) — hanya plunge.",
+    "mod": {
+      "source": "Xianyun A4",
+      "scope": "plunge",
+      "flatDmg": "= min(9000, round(((tm('Xianyun')?.baseAtk ?? 900) * 2) * 2))",
+      "note": "asumsi ATK Xianyun ≈ 2× base"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "yunjin_q",
+    "fromCharacter": "YunJin",
+    "description": "Yun Jin Q (lv10): NA flat DMG +57.9% DEF Yun Jin. Asumsi DEF 2000.",
+    "mod": {
+      "source": "Yun Jin Q",
+      "scope": "na",
+      "flatDmg": "= round(2000 * (tp('YunJin','burst','param2') ?? 0.579))",
+      "note": "asumsi DEF Yun Jin 2000"
+    },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "chongyun_a4",
+    "fromCharacter": "Chongyun",
+    "onlyElements": [
+      "cryo"
+    ],
+    "description": "Chongyun A4: Cryo RES −10% selama 8s.",
+    "mod": {
+      "source": "Chongyun A4",
+      "scope": "all",
+      "resShred": {
+        "cryo": 10
+      }
+    },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "hotf_4pc",
+    "description": "Heart of the Furnace 4pc di TEAMMATE: Stellar Glimmer DMG semua anggota tim +50% (nggak stack dengan pemakai lain). Pakai --catalog hotf_4pc kalau ada teammate yang pakai.",
+    "mod": {
+      "source": "HotF 4pc (teammate)",
+      "scope": "all",
+      "stellarBonus": 50
+    }
+  },
+  {
+    "id": "ineffa_lunar_base",
+    "fromCharacter": "Ineffa",
+    "description": "Ineffa Moonsign Benediction: Electro-Charged → Lunar-Charged; Base DMG Lunar-Charged +0.7% per 100 ATK Ineffa (max 14%). Kehadiran entry ini = Lunar-Charged aktif di tim.",
+    "mod": { "source": "Ineffa Moonsign (Lunar base)", "scope": "all", "lunarBaseBonus": "= min(14, round((tm('Ineffa')?.atk ?? 2000) / 100 * 0.7 * 10) / 10)" }
+  },
+  {
+    "id": "columbina_lunar_base",
+    "fromCharacter": "Columbina",
+    "description": "Columbina Moonsign Benediction: EC/Bloom/Hydro-Crystallize → Lunar; Base DMG reaksi Lunar +0.2% per 1000 Max HP (max 7%).",
+    "mod": { "source": "Columbina Moonsign (Lunar base)", "scope": "all", "lunarBaseBonus": "= min(7, round((tm('Columbina')?.hp ?? 35000) / 1000 * 0.2 * 10) / 10)" }
+  },
+  {
+    "id": "columbina_q_lunar",
+    "fromCharacter": "Columbina",
+    "description": "Columbina Q (Lunar Domain, 20s): Lunar Reaction DMG Bonus +param2 (lv10 = 40%).",
+    "mod": { "source": "Columbina Q Lunar Domain", "scope": "all", "lunarBonus": "= round(pct(tp('Columbina','burst','param2') ?? 0.4) * 10) / 10" },
+    "duration": 20,
+    "requiresAction": "burst"
+  },
+  {
+    "id": "moonsign_team_bonus",
+    "mode": "assume",
+    "assumeWith": ["Ineffa", "Columbina", "Flins", "Lauma", "Nefer", "Zibai", "Linnea"],
+    "description": "Moonsign Ascendant Gleam (≥2 karakter Moonsign): anggota non-Moonsign kasih Lunar Reaction DMG Bonus ke party saat E/Q (Hydro 0.6%/1000 HP, Pyro/Electro/Cryo 0.9%/100 ATK, dst), total max 36%. Asumsi mentok 36% kalau ≥2 non-Moonsign berstat tinggi.",
+    "mod": { "source": "Moonsign team bonus (Ascendant)", "scope": "all", "lunarBonus": "= (['Ineffa','Columbina','Flins','Lauma','Nefer','Zibai','Linnea'].filter(k => team.keys.includes(k) || char.key === k).length >= 2) ? 36 : 0", "note": "butuh Ascendant Gleam (2 Moonsign); Furina ~40k HP ≈ 24% + Yelan ≈ 18% → cap 36%" }
+  },
+  {
+    "id": "ineffa_c1",
+    "fromCharacter": "Ineffa",
+    "requireCon": 1,
+    "description": "Ineffa C1: saat shield E aktif, party +2.5% Lunar-Charged DMG per 100 ATK Ineffa (max 50%) 20s.",
+    "mod": { "source": "Ineffa C1", "scope": "all", "lunarBonus": "= min(50, round((tm('Ineffa')?.atk ?? 2000) / 100 * 2.5 * 10) / 10)" },
+    "duration": 20,
+    "requiresAction": "skill"
+  },
+  {
+    "id": "ineffa_a4_em",
+    "fromCharacter": "Ineffa",
+    "description": "Ineffa A4: saat Q, Ineffa & on-fielder EM +6% ATK Ineffa selama 20s.",
+    "mod": { "source": "Ineffa A4 EM", "scope": "all", "em": "= round((tm('Ineffa')?.atk ?? 2000) * 0.06)" },
+    "duration": 20,
+    "requiresAction": "burst"
+  },
+  {
+    "id": "qiqi_stellar_50",
+    "fromCharacter": "Qiqi",
+    "mode": "manual",
+    "description": "Qiqi Witch's Revelation (Seven Sacred Treasures), Radiance: Stellar-Conduct: selama Herald of Frost (E) ada, party +50% Superconduct & Stellar-Conduct DMG. Sumber: guide KQM Qiqi. MANUAL: kalibrasi in-game 2026-09-11 (tim Yae C1/Odette/Sandrone/Qiqi C6, Qiqi cuma E) nunjukin cuma SATU +50% yang aktif (Yae C1) — Qiqi off-field kemungkinan nggak masuk Radiance. Paksa lewat --catalog qiqi_stellar_50 kalau terbukti.",
+    "mod": { "source": "Qiqi Herald of Frost (Stellar +50%)", "scope": "all", "stellarBonus": 50, "reactionBonus": { "superconduct": 50 } },
+    "duration": 15,
+    "requiresAction": "skill"
+  },
+  {
+    "id": "qiqi_c6_glimpse",
+    "fromCharacter": "Qiqi",
+    "requireCon": 6,
+    "mode": "manual",
+    "description": "Qiqi C6 (Witch's Revelation): setelah Q, 4 stack Glimpse of Mystery (12s); tiap on-fielder (bukan Qiqi) ngasih Stellar-Conduct DMG, 1 stack dipakai → hit itu +600% ATK Qiqi. Cuma 4 hit per Q → nggak dimodelkan sebagai modifier umum; hitung manual: 4 × 6 × ATK Qiqi ditambah ke total (mode manual).",
+    "mod": { "source": "Qiqi C6 Glimpse of Mystery", "scope": "all", "hitLabelMatch": "Stellar", "flatDmg": "= 6 * ((tm('Qiqi') ? tm('Qiqi').baseAtk : 700) * 2)", "note": "PERKIRAAN: ATK Qiqi ≈ 2× base; cuma 4 hit per Q — kalau diaktifkan ke semua hit, overestimate" },
+    "requiresAction": "burst"
+  },
+  {
+    "id": "yae_c1",
+    "fromCharacter": "YaeMiko",
+    "requireCon": 1,
+    "description": "Yae C1 (6.7): setelah Yae memicu Superconduct/Stellar-Conduct atau ngasih Stellar-Conduct DMG, party +50% Electro DMG & +50% Stellar-Conduct DMG 10s (refresh terus → uptime penuh).",
+    "mod": { "source": "Yae C1", "scope": "all", "elementalDmgBonus": { "electro": 50 }, "stellarBonus": 50, "note": "10s, di-refresh tiap pemicu → uptime penuh (KQM)" },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "yae_c2_em",
+    "fromCharacter": "YaeMiko",
+    "requireCon": 2,
+    "description": "Yae C2 (6.7): on-fielder +EM setara level Sesshou Sakura (lv4 = +200) selama turret ada.",
+    "mod": { "source": "Yae C2 EM", "scope": "all", "em": 200 },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "yae_c4",
+    "fromCharacter": "YaeMiko",
+    "requireCon": 4,
+    "description": "Yae C4: Sesshou Sakura kena → party +20% Electro DMG 5s.",
+    "mod": { "source": "Yae C4", "scope": "all", "elementalDmgBonus": { "electro": 20 } },
+    "requiresAction": "skill"
+  },
+  {
+    "id": "polestar_field",
+    "assumeWith": ["Sandrone", "Odette"],
+    "description": "Polestar Field (dari reaksi Stellar-Conduct, 7s, siklus 4s): tim dapat Cryo & Electro DMG +20–40% (tergantung hit terekam) dan Physical RES musuh −40%. Asumsi 8 hit → +30%. Sesuai KQM, DMG% ini NGGAK kena hit Stellar (gap beam Sandrone 73k ternyata Yae C1 +50% Stellar). Kalau karakternya sendiri Sandrone/Odette tanpa yang lain di tim, lihat entry <key>_polestar_field di modulnya.",
+    "mod": {
+      "source": "Polestar Field",
+      "scope": "all",
+      "elementalDmgBonus": { "cryo": 30, "electro": 30 },
+      "resShred": { "physical": 40 },
+      "uptime": 0.9,
+      "note": "+30% (≈8 hit terekam), uptime 0.9 selama Stellar-Conduct terus dipicu"
+    }
+  },
+  {
+    "id": "sandrone_stellar_base",
+    "fromCharacter": "Sandrone",
+    "description": "Sandrone (passive Stellar Jubilee): Base DMG reaksi Stellar tim +0.7% per 100 ATK Sandrone, max 14%.",
+    "mod": { "source": "Sandrone Stellar base DMG", "scope": "all", "stellarBonus": 14, "note": "asumsi ATK Sandrone ≥ 2000 → max 14%" }
+  },
+  {
+    "id": "odette_stellar_base",
+    "fromCharacter": "Odette",
+    "description": "Odette (passive Stellar Jubilee): Base DMG reaksi Stellar tim +0.7% per 100 ATK Odette, max 14%.",
+    "mod": { "source": "Odette Stellar base DMG", "scope": "all", "stellarBonus": 14, "note": "asumsi ATK Odette ≥ 2000 → max 14%" }
+  },
+  {
+    "id": "cryo_resonance",
+    "resonance": "cryo",
+    "description": "Cryo Resonance (2 Cryo di tim): CRIT Rate +15% vs musuh Cryo-affected/Frozen.",
+    "mod": {
+      "source": "Cryo Resonance",
+      "scope": "all",
+      "critRate": 15
+    }
+  },
+  {
+    "id": "pyro_resonance",
+    "resonance": "pyro",
+    "description": "Pyro Resonance (2 Pyro): ATK +25%.",
+    "mod": {
+      "source": "Pyro Resonance",
+      "scope": "all",
+      "atkPct": 25
+    }
+  },
+  {
+    "id": "hydro_resonance",
+    "resonance": "hydro",
+    "description": "Hydro Resonance (2 Hydro): Max HP +25%.",
+    "mod": {
+      "source": "Hydro Resonance",
+      "scope": "all",
+      "hpPct": 25
+    }
+  },
+  {
+    "id": "geo_resonance",
+    "resonance": "geo",
+    "description": "Geo Resonance (2 Geo, ada shield): DMG +15%, RES Geo −20%.",
+    "mod": {
+      "source": "Geo Resonance",
+      "scope": "all",
+      "dmgBonus": 15,
+      "resShred": {
+        "geo": 20
+      }
+    }
+  },
+  {
+    "id": "dendro_resonance",
+    "resonance": "dendro",
+    "description": "Dendro Resonance (2 Dendro): EM +50 (+30/+20 setelah reaksi, max +100).",
+    "mod": {
+      "source": "Dendro Resonance",
+      "scope": "all",
+      "em": 100,
+      "note": "asumsi semua trigger aktif"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "key": "Furina",
+  "role": "subdps",
+  "self": [
+    {
+      "id": "furina_a4",
+      "mode": "always",
+      "description": "Furina A4: Salon Members DMG +0.7% per 1000 HP (max +28%).",
+      "mod": { "source": "Furina A4", "scope": "skill", "dmgBonus": "= min(28, round(char.final.hp / 1000 * 0.7 * 10) / 10)" }
+    },
+    {
+      "id": "furina_salon_hp",
+      "mode": "assume",
+      "description": "Salon Members: DMG ×1.4 kalau ≥ 1 teammate HP > 50% (max 4 karakter → ×1.4 sudah 1 karakter? tidak: +10% per karakter HP>50%, max +40%).",
+      "mod": { "source": "Salon Members (4 char HP>50%)", "scope": "skill", "talentMultBonus": 40 }
+    }
+  ],
+  "reactions": { "with": { "pyro": { "skill": "vaporize" } } },
+  "actions": { "E": { "skill1": 1, "skill2": 5, "skill3": 12, "skill4": 4, "react:lunarCharged": 12 }, "Q": { "burst1": 1, "react:lunarCharged": 1 } },
+  "_actions_comment": "Salon 20s in-game (Furina solo E, 2026-09-12: 264.813, Crabaletta crit 29.942 = program): Usher ≈5, Chevalmarin ≈12, Crabaletta ≈4. react:lunarCharged = proc Lunar-Charged yang dipicu aplikasi Hydro salon — in-game 12/20s di tim Ineffa/Columbina; cuma kehitung kalau Lunar aktif.",
+  "rotations": [
+    { "label": "Q + E salon ≈ 20s", "counts": { "burst1": 1, "skill1": 1, "skill2": 5, "skill3": 12, "skill4": 4 }, "duration": 20, "note": "Usher ≈5, Chevalmarin ≈12, Crabaletta ≈4 per 20s (diverifikasi in-game)" }
+  ]
+}

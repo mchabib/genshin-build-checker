@@ -1,0 +1,42 @@
+{
+  "id": 12305,
+  "name": "Debate Club",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Blunt Conclusion",
+  "effectTemplate": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to <color=#99FFFFFF>{0}</color> of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+  "refinements": {
+    "r1": {
+      "description": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 60% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+      "values": [
+        "60%"
+      ]
+    },
+    "r2": {
+      "description": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 75% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+      "values": [
+        "75%"
+      ]
+    },
+    "r3": {
+      "description": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 90% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+      "values": [
+        "90%"
+      ]
+    },
+    "r4": {
+      "description": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 105% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+      "values": [
+        "105%"
+      ]
+    },
+    "r5": {
+      "description": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 120% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+      "values": [
+        "120%"
+      ]
+    }
+  }
+}

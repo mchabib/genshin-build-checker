@@ -1,0 +1,115 @@
+{
+  "slug": "barbara",
+  "kqmName": "Barbara",
+  "canonName": "Barbara",
+  "sourceUrl": "https://keqingmains.com/q/barbara-quickguide/",
+  "guideUpdated": "2026-02-13T10:09:25+00:00",
+  "scrapedAt": "2026-09-09T17:14:31.494Z",
+  "raw": {
+    "overview": "Pure Healer\n Barbara’s primary role in teams is to only provide sustained healing as well as a large burst of it in emergencies. This playstyle is generally easier to gear compared to her DPS counterpart.\n DPS\n A niche and complex playstyle that builds on Barbara’s fast animation cancels while aiming to maximize her field time. Makes use of the Vaporize reaction or 4 Ocean-Hued Clam (4OHC) passive.\n In both playstyles Barbara can act as a Hydro applicator for the team.",
+    "talents": "Barbara can be leveled to Lvl.90 to maximize her HP and healing. \n Pure Healer and 4OHC (Electro-Charged): Skill = Burst \n Vaporize: Normal Attack > Skill > Burst\n Leveling Barbara’s Normal Attacks is not recommended unless she is played as a DPS.\n Talents \n Normal Attack\n Elemental Skill\n Elemental Burst\n Ascension 1 Passive\n Ascension 4 Passive\n Normal Attack\n Normal Attack | Whisper of Water \n Talent Description\n Normal Attack\nPerforms up to 4 water splash attacks that deal Hydro DMG . \n Charged Attack\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time. \n Plunging Attack \n Gathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground. \n Barbara’s Normal Attacks can be neglected except for when she is being played as a DPS. Can be a source for additional Hydro application.\n Elemental Skill\n Elemental Skill | Let the Show Begin ♪ \n Talent Description\n Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them. \n Melody Loop \n On hit, Barbara’s Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara’s Max HP. \n- On hit, Barbara’s Charged Attack generates 4 times the amount of healing. \n- Periodically regenerates your own active character’s HP. \n- Applies the Wet status to the character and to opponents who come in contact with them. \n Barbara’s Elemental Skill heals the on-field character when she is off-field in intervals of 5s or with every Normal Attack and Charged Attack when she is on-field. \n Barbara’s Elemental Skill has two instances of damage, once at 0.5s and another at 1s.\n Barbara’s Elemental Skill does not generate particles and has a very short range of Hydro application, requiring players to “hug” the enemy. Hydro is also applied to the on-field character periodically, making them vulnerable to Freeze.\n Elemental Burst\n Elemental Burst | Shining Miracle ♪ \n Talent Description\n Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara’s Max HP. \n Barbara’s Elemental Burst provides a large burst of healing that can prove incredibly clutch, especially at higher difficulty instances such as the Spiral Abyss.\n Ascension 1 Passive\n Ascension 1 Passive | Glorious Season \n Talent Description\n The Stamina Consumption of characters within Let the Show Begin♪‘s Melody Loop is reduced by 12%. \n Complements Barbara’s Elemental Skill which utilizes Charged Attacks for more potent healing. Its usefulness heavily depends on the Main DPS of the team.\n Ascension 4 Passive\n Ascension 4 Passive | Encore \n Talent Description\n When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin♪ is extended by 1s.\nThe maximum extension is 5s. \n This is utilized to its full potential with an on-field Barbara. Every Normal or Charged Attack done during this extension will contribute to more heals. Funneling particles to Barbara through successive Elemental Skills or through the passive of Favonius Weapons can trigger her A4 much more reliably.",
+    "constellations": "Constellation 1\n Constellation 2\n Constellation 3\n Constellation 4\n Constellation 5\n Constellation 6\n Constellation 1\n Constellation 1 | Gleeful Songs \n Constellation Description\n Barbara regenerates 1 Energy every 10s. \n An unimpressive Constellation. Only provides minute help to Barbara’s Energy requirements.\n Constellation 2\n Constellation 2 | Vitality Burst \n Constellation Description\n Decreases the CD of Let the Show Begin♪ by 15%.\nDuring the ability’s duration, your active character gains a 15% Hydro DMG Bonus. \n Allows Barbara to be more versatile and consistent. She is now able to heal teammates more often with a shortened CD, as well as buff the team’s Hydro DPS.\n Constellation 3\n Constellation 3 | Star of Tomorrow \n Constellation Description\n Increases the Level of Shining Miracle♪ by 3.\nMaximum upgrade level is 15. \n Levels to increase Barbara's healing.\n Constellation 4\n Constellation 4 | Attentiveness Be My Power \n Constellation Description\n Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her.\nA maximum of 5 energy can be regenerated in this manner with any one Charged Attack. \n Provides some help to her Energy requirements if players use her Charged Attacks for amplified healing.\n Constellation 5\n Constellation 5 | The Purest Companionship \n Constellation Description\n Increases the Level of Let the Show Begin♪ by 3.\nMaximum upgrade level is 15. \n Levels to increase Barbara's healing.\n Constellation 6\n Constellation 6 | Dedicating Everything to You \n Constellation Description\n When Barbara is in the party but not on the field, and one of your own party members falls: \n- Automatically revives the fallen character. \n- Fully restores the revived character’s HP to 100% . \n This effect can only occur once every 15 mins. \n A Constellation that can prove to be very clutch in higher difficulty instances such as the Abyss. Barbara’s revival skill can only be triggered once every 15 minutes and can contribute to the 4 OHC healing cap.",
+    "erRequirements": "~100% Barbara’s Burst should only be used as a last resort and is not to be expected in every rotation.",
+    "artifactStats": "Vaporize \n Sands \n Goblet \n Circlet \n EM/ATK% Hydro DMG Bonus% CRIT \n Substats: CRIT > EM > ATK% > HP% > Flat ATK > Flat HP\n Pure Healer/4OHC (Electro-Charged) \n Sands \n Goblet \n Circlet \n HP% HP% Healing Bonus% \n Substats: HP% > Flat HP\n EM is a niche option that is viable when Barbara is paired with Xiangling to trigger Vaporize or when she is acting as a Hydro applicator in teams centered around Dendro reactions. ER is not recommended as Barbara should not be looking to Burst every rotation. HP/HP/HP and ATK/Hydro/CRIT can be weaker variants for Pure Healer or 4OHC.",
+    "artifactSets": "Pure Healer \n4pc Maiden Beloved (4MB) BiS for healing. Does not benefit from overhealing nor does any content have the need for overhealing.\nPlayers should not intentionally farm for this set and should only use it when players obtain the artifacts while farming for Viridescent Venerer (VV) artifacts. \n4pc Ocean-Hued Clam (4OHC) Though pure healer Barbara is unable to cap out on 4OHC, it is still the better set to farm as it contributes to team damage while giving comfortable healing.\nIn contrast, Hyperbloom teams in particular would have much worse uptime on the 4pc passive. \n2pc combination of Maiden Beloved / Ocean-Hued Clam / Tenacity of the Millelith (2MB/2OHC/2ToM) 2OHC and 2 MB are more sought after than 2ToM as the artifact set bonus is Healing Bonus.\nPick the second set based on whichever has the best substats. \n All the aforementioned sets can be used when Barbara is the Hydro applicator in teams centered around Dendro reactions. Barbara can run EM/EM/EM in these teams.\n DPS \n4pc Ocean-Hued Clam (4OHC) Used in Electro-Charged teams with Barbara as a driver. \n4pc Wanderer’s Troupe (4WT) Vaporize Barbara’s BiS. Provides EM and heavily buffs her main source of damage. \n2pc Heart of Depth + 2pc ATK% Vaporize set. Pick between 2SR and 2Glad depending on substat quality.",
+    "weapons": "Pure Healer \nEverlasting Moonglow Pure stat stick with an unusable passive. \nPrototype Amber F2P weapon that mirrors the Everlasting Moonglow. It performs slightly worse but has a usable passive that scales well with refinements. \nThrilling Tales of Dragon Slayers Team buffing weapon. BiS for team damage. \n 4OHC (Electro-Charged) \nEverlasting Moonglow BiS option for personal damage. Barbara can utilize its passive here. \nPrototype Amber F2P weapon that mirrors the Everlasting Moonglow. It performs slightly worse but has a usable passive that scales well with refinements. \nThrilling Tales of Dragon Slayers Lower personal damage that is compensated by the team buff. \nHakushin Ring Generally unable to let Barbara cap out on 4OHC but it does provide buffs to the team’s Electro DPS. \n Vaporize \nSkyward Atlas BiS for personal damage. Very strong stat stick. \nLost Prayer to the Sacred Winds CRIT Rate stat stick. Can outperform Skyward Atlas after having Barbara on-field for an extended period of time. \nA Thousand Floating Dreams Strong option when paired with Xiangling. Excellent team buffing option with no heavy compromise to personal damage. \nMemory of Dust ATK% stat stick. Strong option when Barbara is shielded. \nThe Widsith CRIT DMG stat stick. Barbara is one of the few Catalyst characters who can benefit from all 3 of The Widsith’s passives. \nWandering Evenstar Mirrors A Thousand Floating Dreams and is only slightly worse. \nMappa Mare BiS F2P option. Vaporize Barbara can have a relatively high uptime on the passive. \nDodoco Tales F2P option where Barbara can fully utilize its passive. Players should opt to use this instead of Mappa Mare if they do not already have it crafted.",
+    "newContent": "Nahida (Character) Nahida’s Dendro application can have synergy with Barbara as a driver, bringing buffs and opening doors to more team building options. See the Teams section for more information. \nA Thousand Floating Dreams (Weapon) Nahida’s signature weapon. Viable but weaker option compared to other 5* Catalysts for Vaporize Barbara.",
+    "combos": "N# = Corresponding number of consecutive Normal Attacks\nCA = Charged Attack\nE = Elemental Skill\nQ = Elemental Burst\n Vaporize\n E + CA Spam Default Combo. Players should stop after the 3rd or 4th CA to ensure that Barbara has sufficient Stamina to dodge. \n E N2CJ Secondary Combo. Used after the Default Combo to help Barbara regenerate Stamina while ensuring decent performance. \n E N4J Stamina Regeneration Combo. Used only when Barbara has completely run out of Stamina. \n 4OHC (Electro-Charged)\n E + N3C Low Investment Combo. Can struggle to maximize the healing cap on 4 OHC. \n E + N2C Default Combo. Most Stamina efficient Combo with reasonable ease of maximizing the healing cap on 4 OHC. \n E + N1C High Investment Combo. Generally not recommended as Barbara will run out of Stamina very quickly but this can be used in conjunction with N2C to cap out on 4 OHC much faster. \n Barbara can provide off-field healing through her Elemental Skill; attacking with Barbara is not necessary if played as a pure healer.",
+    "playstyles": "Teambuilding \n- Barbara functions well as a driver in Electro-Charged teams. The 4OHC variant is the one with strongest personal damage and should be run with at least 1 Electro and 1 Cryo unit. \n- Vaporize Barbara should be run with at least 2 units capable of applying Pyro. \n- Pure healer Barbara is a fluid flex that is slotted rather than built around. \n Electro-Charged Superconduct \n Used by 4OHC Barbara. Makes use of Electro-Charged and Superconduct, which buffs 4OHC damage which is Physical by nature.\n Vaporize \n Using two Pyro characters ensures that there is sufficient Pyro aura for Barbara to trigger Vaporize. An Anemo character that continuously swirls Pyro can be an alternative as well.\n Burgeon \n Barbara acts as a pure healer here to offset some Burgeon self damage. Another Hydro character must be used to prevent the Burning reaction from triggering as Barbara’s Hydro application is not strong enough.\n Nilou Bloom \n Barbara is the healer here. Players can opt to play Barbara off-field but that may lead to insufficient healing.\n Hyperbloom \n Barbara is the healer and Hydro applicator here. Generally not recommended as there are much better Hydro applicators and Shinobu, a reliable Hyperbloom trigger, already provides heals for the team.\n Notable Teammates \n Character Description \n Beidou , Fischl , Kuki Shinobu , Raiden Shogun , Lisa , Yae Miko Provide off-field Electro damage and Electro particles. Gives team diversity through the Hyperbloom reaction as well.\nShinobu and Raiden are the most reliable Hyperbloom triggers. \n Rosaria , Kaeya Provide off-field Cryo damage as well as Superconduct in order to buff Physical damage. \n Bennett , Kujou Sara Provide potent buffs to the team.\nKujou Sara’s buffs are more Electro-centric whereas Bennett’s buffs are more generalist. \n Xiangling , Diluc Off-field Pyro applicators. Boasts high Burst damage as well.\nXiangling is a much better applicator overall. \n Thoma , Zhongli Strong shields for better survivability. \nZhongli combines offensive and defensive support via a strong shield, a universal 20% RES shred and ToM buffs.\nThoma can act as a source of Pyro that comes with a strong shield. Gives team diversity through the Burgeon reaction as well. \n Kazuha , Sucrose , Jean , Venti Provide 40% Elemental RES Shred via VV and an assortment of other buffs/grouping. \n Yelan , Nilou , Xingqiu Provide off-field Hydro application.\nNilou is highly recommended for players looking to build teams around Bloom. \n DMC , Collei , Nahida Provide off-field Dendro application.\nNahida performs the best when paired with another Dendro character due to how her skill works. \nOn-field Nahida can have somewhat inconsistent Bloom ownership. \n Example Teams \n This is not a comprehensive list of teams, and the inclusion of a certain team or lack thereof does not necessarily indicate the power level of the team in question. This list is not ranked.\n Vaporize\n Barbara — Bennett — Jean — Kazuha \n Vaporize\n Barbara — Bennett — Xiangling — Zhongli \n Electro-Charged Superconduct\n Barbara — Beidou — Fischl — Rosaria \n Burgeon\n Barbara — Xingqiu — Thoma — Dendro Traveler \n Nilou Bloom\n Barbara — Xingqiu — Nilou — Nahida",
+    "teambuilding": "- Barbara functions well as a driver in Electro-Charged teams. The 4OHC variant is the one with strongest personal damage and should be run with at least 1 Electro and 1 Cryo unit. \n- Vaporize Barbara should be run with at least 2 units capable of applying Pyro. \n- Pure healer Barbara is a fluid flex that is slotted rather than built around.",
+    "electroChargedSuperconduct": "Used by 4OHC Barbara. Makes use of Electro-Charged and Superconduct, which buffs 4OHC damage which is Physical by nature.",
+    "vaporize": "Using two Pyro characters ensures that there is sufficient Pyro aura for Barbara to trigger Vaporize. An Anemo character that continuously swirls Pyro can be an alternative as well.",
+    "burgeon": "Barbara acts as a pure healer here to offset some Burgeon self damage. Another Hydro character must be used to prevent the Burning reaction from triggering as Barbara’s Hydro application is not strong enough.",
+    "nilouBloom": "Barbara is the healer here. Players can opt to play Barbara off-field but that may lead to insufficient healing.",
+    "hyperbloom": "Barbara is the healer and Hydro applicator here. Generally not recommended as there are much better Hydro applicators and Shinobu, a reliable Hyperbloom trigger, already provides heals for the team.\n Notable Teammates \n Character Description \n Beidou , Fischl , Kuki Shinobu , Raiden Shogun , Lisa , Yae Miko Provide off-field Electro damage and Electro particles. Gives team diversity through the Hyperbloom reaction as well.\nShinobu and Raiden are the most reliable Hyperbloom triggers. \n Rosaria , Kaeya Provide off-field Cryo damage as well as Superconduct in order to buff Physical damage. \n Bennett , Kujou Sara Provide potent buffs to the team.\nKujou Sara’s buffs are more Electro-centric whereas Bennett’s buffs are more generalist. \n Xiangling , Diluc Off-field Pyro applicators. Boasts high Burst damage as well.\nXiangling is a much better applicator overall. \n Thoma , Zhongli Strong shields for better survivability. \nZhongli combines offensive and defensive support via a strong shield, a universal 20% RES shred and ToM buffs.\nThoma can act as a source of Pyro that comes with a strong shield. Gives team diversity through the Burgeon reaction as well. \n Kazuha , Sucrose , Jean , Venti Provide 40% Elemental RES Shred via VV and an assortment of other buffs/grouping. \n Yelan , Nilou , Xingqiu Provide off-field Hydro application.\nNilou is highly recommended for players looking to build teams around Bloom. \n DMC , Collei , Nahida Provide off-field Dendro application.\nNahida performs the best when paired with another Dendro character due to how her skill works. \nOn-field Nahida can have somewhat inconsistent Bloom ownership. \n Example Teams \n This is not a comprehensive list of teams, and the inclusion of a certain team or lack thereof does not necessarily indicate the power level of the team in question. This list is not ranked.\n Vaporize\n Barbara — Bennett — Jean — Kazuha \n Vaporize\n Barbara — Bennett — Xiangling — Zhongli \n Electro-Charged Superconduct\n Barbara — Beidou — Fischl — Rosaria \n Burgeon\n Barbara — Xingqiu — Thoma — Dendro Traveler \n Nilou Bloom\n Barbara — Xingqiu — Nilou — Nahida"
+  },
+  "parsed": {
+    "erRequirements": [
+      {
+        "label": "~100%",
+        "min": 100,
+        "max": 100
+      }
+    ],
+    "builds": [
+      {
+        "name": null,
+        "sands": [
+          "EM",
+          "ATK%"
+        ],
+        "goblet": [
+          "Elemental DMG"
+        ],
+        "circlet": [
+          "CRIT"
+        ],
+        "substatPriority": [
+          "CRIT",
+          "EM",
+          "ATK%",
+          "HP%",
+          "Flat ATK",
+          "Flat HP"
+        ]
+      },
+      {
+        "name": null,
+        "sands": [
+          "HP%"
+        ],
+        "goblet": [
+          "HP%"
+        ],
+        "circlet": [
+          "Healing Bonus"
+        ],
+        "substatPriority": [
+          "HP%",
+          "Flat HP"
+        ]
+      }
+    ],
+    "sets": [
+      {
+        "pieces": 4,
+        "name": "Maiden Beloved",
+        "note": "BiS for healing. Does not benefit from overhealing nor does any content have the need for overhealing. Players should not intentionally farm for this set and should only use it when players obtain the artifacts while farming for Viridescent Venerer (VV) artifacts."
+      },
+      {
+        "pieces": 4,
+        "name": "Ocean-Hued Clam",
+        "note": "Though pure healer Barbara is unable to cap out on 4OHC, it is still the better set to farm as it contributes to team damage while giving comfortable healing. In contrast, Hyperbloom teams in particular would have much worse uptime on the 4pc passive."
+      },
+      {
+        "pieces": 2,
+        "name": "combination of Maiden Beloved",
+        "note": "2OHC and 2 MB are more sought after than 2ToM as the artifact set bonus is Healing Bonus. Pick the second set based on whichever has the best substats."
+      },
+      {
+        "pieces": 2,
+        "name": "OHC",
+        "note": "2OHC and 2 MB are more sought after than 2ToM as the artifact set bonus is Healing Bonus. Pick the second set based on whichever has the best substats."
+      },
+      {
+        "pieces": 2,
+        "name": "ToM)",
+        "note": "2OHC and 2 MB are more sought after than 2ToM as the artifact set bonus is Healing Bonus. Pick the second set based on whichever has the best substats."
+      }
+    ],
+    "weaponsRanked": [
+      "Everlasting Moonglow",
+      "Prototype Amber",
+      "Thrilling Tales of Dragon Slayers"
+    ],
+    "constellations": {
+      "1": "Gleeful Songs Barbara regenerates 1 Energy every 10s. An unimpressive Constellation. Only provides minute help to Barbara’s Energy requirements. Constellation 2",
+      "2": "Vitality Burst Decreases the CD of Let the Show Begin♪ by 15%. During the ability’s duration, your active character gains a 15% Hydro DMG Bonus. Allows Barbara to be more versatile and consistent. She is now able to heal teammates more often with a shortened CD, as well as buff the team’s Hydro DPS. Constellation 3",
+      "3": "Star of Tomorrow Increases the Level of Shining Miracle♪ by 3. Maximum upgrade level is 15. Levels to increase Barbara's healing. Constellation 4",
+      "4": "Attentiveness Be My Power Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her. A maximum of 5 energy can be regenerated in this manner with any one Charged Attack. Provides some help to her Energy requirements if players use her Charged Attacks for amplified healing. Constellation 5",
+      "5": "The Purest Companionship Increases the Level of Let the Show Begin♪ by 3. Maximum upgrade level is 15. Levels to increase Barbara's healing. Constellation 6",
+      "6": "Dedicating Everything to You When Barbara is in the party but not on the field, and one of your own party members falls: - Automatically revives the fallen character. - Fully restores the revived character’s HP to 100% . This effect can only occur once every 15 mins. A Constellation that can prove to be very clutch in higher difficulty instances such as the Abyss. Barbara’s revival skill can only be triggered once every 15 minutes and can contribute to the 4 OHC healing cap."
+    },
+    "talentPriority": "Pure Healer and 4OHC (Electro-Charged): Skill = Burst"
+  }
+}

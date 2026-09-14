@@ -1,0 +1,411 @@
+{
+  "key": "Fischl",
+  "nameEn": "Fischl",
+  "gdbName": "Fischl",
+  "element": "Electro",
+  "weaponType": "WEAPON_BOW",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Bolts of Downfall",
+      "description": "Normal Attack\nPerforms up to 5 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense Electro DMG.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "5-Hit DMG|{param5:F1P}",
+          "Aimed Shot|{param6:F1P}",
+          "Fully-Charged Aimed Shot|{param7:P}",
+          "Plunge DMG|{param8:F1P}",
+          "Low/High Plunge DMG|{param9:P}/{param10:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.44118,
+            0.47709,
+            0.513,
+            0.5643,
+            0.60021,
+            0.64125,
+            0.69768,
+            0.75411,
+            0.81054,
+            0.8721,
+            0.93366,
+            0.99522,
+            1.05678,
+            1.11834,
+            1.1799
+          ],
+          "param2": [
+            0.46784,
+            0.50592,
+            0.544,
+            0.5984,
+            0.63648,
+            0.68,
+            0.73984,
+            0.79968,
+            0.85952,
+            0.9248,
+            0.99008,
+            1.05536,
+            1.12064,
+            1.18592,
+            1.2512
+          ],
+          "param3": [
+            0.58136,
+            0.62868,
+            0.676,
+            0.7436,
+            0.79092,
+            0.845,
+            0.91936,
+            0.99372,
+            1.06808,
+            1.1492,
+            1.23032,
+            1.31144,
+            1.39256,
+            1.47368,
+            1.5548
+          ],
+          "param4": [
+            0.57706,
+            0.62403,
+            0.671,
+            0.7381,
+            0.78507,
+            0.83875,
+            0.91256,
+            0.98637,
+            1.06018,
+            1.1407,
+            1.22122,
+            1.30174,
+            1.38226,
+            1.46278,
+            1.5433
+          ],
+          "param5": [
+            0.72068,
+            0.77934,
+            0.838,
+            0.9218,
+            0.98046,
+            1.0475,
+            1.13968,
+            1.23186,
+            1.32404,
+            1.4246,
+            1.52516,
+            1.62572,
+            1.72628,
+            1.82684,
+            1.9274
+          ],
+          "param6": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param7": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param8": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param9": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param10": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Nightrider",
+      "description": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE.\nFor the ability's duration, Oz will continuously attack nearby opponents with Freikugel.\n\nHold to adjust the location Oz will be summoned to.\nPress again any time during the ability's duration to once again summon him to Fischl's side.",
+      "attributes": {
+        "labels": [
+          "Oz's ATK DMG|{param1:F1P}",
+          "Summoning DMG|{param2:P}",
+          "Oz's Duration|{param4:F1}s",
+          "CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.888,
+            0.9546,
+            1.0212,
+            1.11,
+            1.1766,
+            1.2432,
+            1.332,
+            1.4208,
+            1.5096,
+            1.5984,
+            1.6872,
+            1.776,
+            1.887,
+            1.998,
+            2.109
+          ],
+          "param2": [
+            1.1544,
+            1.24098,
+            1.32756,
+            1.443,
+            1.52958,
+            1.61616,
+            1.7316,
+            1.84704,
+            1.96248,
+            2.07792,
+            2.19336,
+            2.3088,
+            2.4531,
+            2.5974,
+            2.7417
+          ],
+          "param4": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param5": [
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "param6": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Midnight Phantasmagoria",
+      "description": "Summons Oz to spread his twin wings of twilight and defend Fischl.\nHas the following properties during the ability's duration:\n·Fischl takes on Oz's form, greatly increasing her Movement Speed.\n·Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once.\n·Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence.",
+      "attributes": {
+        "labels": [
+          "Falling Thunder DMG|{param1:P}",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "parameters": {
+          "param1": [
+            2.08,
+            2.236,
+            2.392,
+            2.6,
+            2.756,
+            2.912,
+            3.12,
+            3.328,
+            3.536,
+            3.744,
+            3.952,
+            4.16,
+            4.42,
+            4.68,
+            4.94
+          ],
+          "param5": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param6": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Stellar Predator",
+      "description": "When Fischl hits Oz with a fully-charged Aimed Shot, Oz brings down Thundering Retribution, dealing AoE Electro DMG equal to 152.7% of the arrow's DMG."
+    },
+    {
+      "slot": "a4",
+      "name": "Undone Be Thy Sinful Hex",
+      "description": "If your current active character triggers an Electro-related Elemental Reaction when Oz is on the field, the opponent shall be stricken with Thundering Retribution that deals Electro DMG equal to 80% of Fischl's ATK."
+    },
+    {
+      "slot": "util",
+      "name": "Mein Hausgarten",
+      "description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Gaze of the Deep",
+      "description": "Even when Oz is not present in combat, he can still watch over Fischl through his raven eyes. When Fischl performs a Normal Attack against an opponent, Oz fires a coordinated attack, dealing DMG equal to 22% of Fischl's ATK."
+    },
+    {
+      "n": 2,
+      "name": "Devourer of All Sins",
+      "description": "When Nightrider is used, it deals an additional 200% ATK as DMG, and its AoE is increased by 50%."
+    },
+    {
+      "n": 3,
+      "name": "Wings of Nightmare",
+      "description": "Increases the Level of Nightrider by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Her Pilgrimage of Bleak",
+      "description": "When Midnight Phantasmagoria is used, it deals 222% of ATK as Electro DMG to surrounding opponents.\nWhen the skill duration ends, Fischl regenerates 20% of her HP."
+    },
+    {
+      "n": 5,
+      "name": "Against the Fleeing Light",
+      "description": "Increases the Level of Midnight Phantasmagoria by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Evernight Raven",
+      "description": "Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs coordinated attacks with your active character when present, dealing 30% of Fischl's ATK as Electro DMG."
+    }
+  ]
+}

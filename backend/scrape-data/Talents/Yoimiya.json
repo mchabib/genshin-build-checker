@@ -1,0 +1,464 @@
+{
+  "key": "Yoimiya",
+  "nameEn": "Yoimiya",
+  "gdbName": "Yoimiya",
+  "element": "Pyro",
+  "weaponType": "WEAPON_BOW",
+  "version": "2.0",
+  "talents": {
+    "normal": {
+      "name": "Firework Flare-Up",
+      "description": "Normal Attack\nPerforms up to 5 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, flames will accumulate on the arrowhead before being fired off as an attack. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off a flaming arrow that deals Pyro DMG.\n·Charge Level 2: Generates a maximum of 3 Kindling Arrows based on time spent charging, releasing them as part of this Aimed Shot. Kindling Arrows will home in on nearby opponents, dealing Pyro DMG on hit.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}×2",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}×2",
+          "5-Hit DMG|{param5:F1P}",
+          "Aimed Shot|{param6:F1P}",
+          "Fully-Charged Aimed Shot|{param7:P}",
+          "Kindling Arrow DMG|{param8:P}",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:P}/{param11:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.3564,
+            0.3807,
+            0.405,
+            0.4374,
+            0.4617,
+            0.49005,
+            0.5265,
+            0.56295,
+            0.5994,
+            0.63585,
+            0.6723,
+            0.70875,
+            0.7452,
+            0.78165,
+            0.8181
+          ],
+          "param2": [
+            0.68376,
+            0.73038,
+            0.777,
+            0.83916,
+            0.88578,
+            0.94017,
+            1.0101,
+            1.08003,
+            1.14996,
+            1.21989,
+            1.28982,
+            1.35975,
+            1.42968,
+            1.49961,
+            1.56954
+          ],
+          "param3": [
+            0.888888,
+            0.949494,
+            1.0101,
+            1.090908,
+            1.151514,
+            1.222221,
+            1.31313,
+            1.404039,
+            1.494948,
+            1.585857,
+            1.676766,
+            1.767675,
+            1.858584,
+            1.949493,
+            2.040402
+          ],
+          "param4": [
+            0.4642,
+            0.49585,
+            0.5275,
+            0.5697,
+            0.60135,
+            0.638275,
+            0.68575,
+            0.733225,
+            0.7807,
+            0.828175,
+            0.87565,
+            0.923125,
+            0.9706,
+            1.018075,
+            1.06555
+          ],
+          "param5": [
+            1.05864,
+            1.13082,
+            1.203,
+            1.29924,
+            1.37142,
+            1.45563,
+            1.5639,
+            1.67217,
+            1.78044,
+            1.88871,
+            1.99698,
+            2.10525,
+            2.21352,
+            2.32179,
+            2.43006
+          ],
+          "param6": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param7": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param8": [
+            0.164,
+            0.1763,
+            0.1886,
+            0.205,
+            0.2173,
+            0.2296,
+            0.246,
+            0.2624,
+            0.2788,
+            0.2952,
+            0.3116,
+            0.328,
+            0.3485,
+            0.369,
+            0.3895
+          ],
+          "param9": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param10": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param11": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Niwabi Fire-Dance",
+      "description": "Yoimiya waves a sparkler and causes a ring of saltpeter to surround her.\n\nNiwabi Enshou\nDuring this time, arrows fired by Yoimiya's Normal Attack will be Blazing Arrows, and their DMG will be increased and converted to Pyro DMG. During this time, Normal Attack: Firework Flare-Up will not generate Kindling Arrows at Charge Level 2.\n\nThis effect will deactivate when Yoimiya leaves the field.",
+      "attributes": {
+        "labels": [
+          "Blazing Arrow DMG|{param4:F1P} Normal Attack DMG",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.37909,
+            0.40179,
+            0.42449,
+            0.454,
+            0.4767,
+            0.4994,
+            0.52891,
+            0.55842,
+            0.58793,
+            0.61744,
+            0.64695,
+            0.67646,
+            0.70597,
+            0.73548,
+            0.76499
+          ],
+          "param2": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param3": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param4": [
+            1.37909,
+            1.40179,
+            1.42449,
+            1.454,
+            1.4767,
+            1.4994,
+            1.52891,
+            1.55842,
+            1.58793,
+            1.61744,
+            1.64695,
+            1.67646,
+            1.70597,
+            1.73548,
+            1.76499
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Ryuukin Saxifrage",
+      "description": "Yoimiya leaps into the air along with her original creation, the \"Ryuukin Saxifrage,\" and fires forth blazing rockets bursting with surprises that deal AoE Pyro DMG and mark one of the hit opponents with Aurous Blaze.\n\nAurous Blaze\nAll Normal/Charged/Plunging Attacks, Elemental Skills, and Elemental Bursts by any party member other than Yoimiya that hit an opponent marked by Aurous Blaze will trigger an explosion, dealing AoE Pyro DMG.\nWhen an opponent affected by Aurous Blaze is defeated before its duration expires, the effect will pass on to another nearby opponent, who will inherit the remaining duration.\n\nOne Aurous Blaze explosion can be triggered every 2s. When Yoimiya is down, Aurous Blaze effects created through her skills will be deactivated.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:P}",
+          "Aurous Blaze Explosion DMG|{param2:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.272,
+            1.3674,
+            1.4628,
+            1.59,
+            1.6854,
+            1.7808,
+            1.908,
+            2.0352,
+            2.1624,
+            2.2896,
+            2.4168,
+            2.544,
+            2.703,
+            2.862,
+            3.021
+          ],
+          "param2": [
+            1.22,
+            1.3115,
+            1.403,
+            1.525,
+            1.6165,
+            1.708,
+            1.83,
+            1.952,
+            2.074,
+            2.196,
+            2.318,
+            2.44,
+            2.5925,
+            2.745,
+            2.8975
+          ],
+          "param3": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "param4": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param5": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param6": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Tricks of the Trouble-Maker",
+      "description": "During Niwabi Fire-Dance, shots from Yoimiya's Normal Attack will increase her Pyro DMG Bonus by 2% on hit. This effect lasts for 3s and can have a maximum of 10 stacks."
+    },
+    {
+      "slot": "a4",
+      "name": "Summer Night's Dawn",
+      "description": "Using Ryuukin Saxifrage causes nearby party members (not including Yoimiya) to gain a 10% ATK increase for 15s. Additionally, a further ATK Bonus will be added on based on the number of Ascension Talent \"Tricks of the Trouble-Maker\" stacks Yoimiya possesses when using Ryuukin Saxifrage. Each stack increases this ATK Bonus by 1%."
+    },
+    {
+      "slot": "util",
+      "name": "Blazing Match",
+      "description": "When Yoimiya crafts Decoration, Ornament, and Landscape-type Furnishings, she has a 100% chance to refund a portion of the materials used."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Agate Ryuukin",
+      "description": "The Aurous Blaze created by Ryuukin Saxifrage lasts for an extra 4s.\nAdditionally, when an opponent affected by Aurous Blaze is defeated within its duration, Yoimiya's ATK is increased by 20% for 20s."
+    },
+    {
+      "n": 2,
+      "name": "A Procession of Bonfires",
+      "description": "When Yoimiya's Pyro DMG scores a CRIT Hit, Yoimiya will gain a 25% Pyro DMG Bonus for 6s.\nThis effect can be triggered even when Yoimiya is not the active character."
+    },
+    {
+      "n": 3,
+      "name": "Trickster's Flare",
+      "description": "Increases the Level of Niwabi Fire-Dance by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Pyrotechnic Professional",
+      "description": "When Yoimiya's own Aurous Blaze triggers an explosion, Niwabi Fire-Dance's CD is decreased by 1.2s."
+    },
+    {
+      "n": 5,
+      "name": "A Summer Festival's Eve",
+      "description": "Increases the Level of Ryuukin Saxifrage by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Naganohara Meteor Swarm",
+      "description": "During Niwabi Fire-Dance, Yoimiya's Normal Attacks have a 50% chance of firing an extra Blazing Arrow that deals 60% of its original DMG. This DMG is considered Normal Attack DMG."
+    }
+  ]
+}

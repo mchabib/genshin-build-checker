@@ -1,0 +1,42 @@
+{
+  "key": "Ineffa",
+  "role": "subdps",
+  "_comment": "Lunar-Charged enabler (Moonsign). Birgitta: Discharge tiap 2s selama 20s (172.8% ATK lv10) + A1 hit 65% ATK Lunar-Charged tiap Discharge kalau ada thundercloud (hit skill3 dari talentOverrides). Reaksi Lunar-Charged tick ~2s dihitung level tim (rotation) atau react:lunarCharged di preset.",
+  "self": [
+    {
+      "id": "ineffa_lunar_base_self",
+      "mode": "always",
+      "description": "Ineffa Moonsign Benediction (ke diri sendiri): Base DMG Lunar-Charged +0.7% per 100 ATK (max 14%).",
+      "mod": { "source": "Ineffa Moonsign (Lunar base)", "scope": "all", "lunarBaseBonus": "= min(14, round(char.final.atk / 100 * 0.7 * 10) / 10)" }
+    },
+    {
+      "id": "ineffa_c1_self",
+      "mode": "always",
+      "requireCon": 1,
+      "description": "Ineffa C1 (ke diri sendiri): Lunar-Charged DMG +2.5% per 100 ATK (max 50%) selama shield 20s.",
+      "mod": { "source": "Ineffa C1", "scope": "all", "lunarBonus": "= min(50, round(char.final.atk / 100 * 2.5 * 10) / 10)" }
+    },
+    {
+      "id": "ineffa_a4_em_self",
+      "mode": "manual",
+      "description": "Ineffa A4 (butuh Q): EM +6% ATK selama 20s.",
+      "mod": { "source": "Ineffa A4 EM", "scope": "all", "em": "= round(char.final.atk * 0.06)" }
+    }
+  ],
+  "reactions": { "with": { "hydro": {} } },
+  "actions": {
+    "E": { "skill1": 1, "skill2": 10, "skill3": 10, "react:lunarCharged": 10 },
+    "Q": { "burst1": 1, "skill2": 10, "skill3": 10, "react:lunarCharged": 10 }
+  },
+  "_actions_comment": "react:lunarCharged = proc reaksi yang DIPICU Birgitta (tiap Discharge nge-apply Electro ke aura Hydro) — in-game 10/20s. Dikreditkan ke Ineffa seperti DPS meter.",
+  "durations": { "E": 1.0, "Q": 1.5 },
+  "rotations": [
+    {
+      "label": "E (Birgitta 20s) + Lunar-Charged tick",
+      "counts": { "skill1": 1, "skill2": 10, "skill3": 10, "react:lunarCharged": 10 },
+      "duration": 20,
+      "note": "Birgitta 10 Discharge/20s + 10 hit A1 Lunar; reaksi Lunar-Charged 10 tick (2s) — di rotasi tim tick dihitung dari durasi tim, bukan preset ini."
+    }
+  ],
+  "teams": [["Columbina", "Furina", "Yelan"], ["Furina", "Yelan", "Zhongli"]]
+}

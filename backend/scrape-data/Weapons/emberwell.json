@@ -1,0 +1,47 @@
+{
+  "id": 11436,
+  "name": "Emberwell",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Starfire Upon the Snowplains",
+  "effectTemplate": "Triggering an Elemental Reaction increases the equipping character's ATK by <color=#99FFFFFF>{0}</color> for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by <color=#99FFFFFF>{1}</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "Triggering an Elemental Reaction increases the equipping character's ATK by 16% for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by 16% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+      "values": [
+        "16%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Triggering an Elemental Reaction increases the equipping character's ATK by 20% for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by 20% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+      "values": [
+        "20%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Triggering an Elemental Reaction increases the equipping character's ATK by 24% for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by 24% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+      "values": [
+        "24%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Triggering an Elemental Reaction increases the equipping character's ATK by 28% for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by 28% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+      "values": [
+        "28%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Triggering an Elemental Reaction increases the equipping character's ATK by 32% for 12s. Triggering a Stellar Glimmer reaction increases their Stellar Glimmer reaction DMG dealt by 32% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+      "values": [
+        "32%",
+        "32%"
+      ]
+    }
+  }
+}

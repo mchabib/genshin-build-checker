@@ -1,0 +1,42 @@
+{
+  "id": 14432,
+  "name": "Etherlight Spindlelute",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Last Singer",
+  "effectTemplate": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by 100.",
+      "values": [
+        "100"
+      ]
+    },
+    "r2": {
+      "description": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by 125.",
+      "values": [
+        "125"
+      ]
+    },
+    "r3": {
+      "description": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by 150.",
+      "values": [
+        "150"
+      ]
+    },
+    "r4": {
+      "description": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by 175.",
+      "values": [
+        "175"
+      ]
+    },
+    "r5": {
+      "description": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by 200.",
+      "values": [
+        "200"
+      ]
+    }
+  }
+}

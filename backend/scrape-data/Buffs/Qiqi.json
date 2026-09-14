@@ -1,0 +1,14 @@
+{
+  "key": "Qiqi",
+  "role": "healer",
+  "self": [],
+  "reactions": { "with": { "electro": {}, "pyro": { "skill": "melt", "burst": "melt" } } },
+  "actions": {
+    "E": { "skill1": 1, "skill2": 3, "skill3": 5 },
+    "Q": { "burst1": 1, "burst2": 1 }
+  },
+  "rotations": [
+    { "label": "E + Q (healer, damage sampingan)", "counts": { "skill1": 1, "skill2": 3, "skill3": 5, "burst1": 1, "burst2": 1 }, "duration": 20, "note": "≈20s (Q CD 20s); Herald of Frost ≈3 hit + 5 coordinated; burst2 = Stellar-Conduct DMG (butuh Electro)" }
+  ],
+  "teams": [["Sandrone", "YaeMiko", "Odette"]]
+}

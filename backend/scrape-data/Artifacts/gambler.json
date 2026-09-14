@@ -1,0 +1,10 @@
+{
+  "id": 10008,
+  "name": "Gambler",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "Increases Elemental Skill DMG by 20%.",
+  "fourPc": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s."
+}

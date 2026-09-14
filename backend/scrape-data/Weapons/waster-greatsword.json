@@ -1,0 +1,11 @@
+{
+  "id": 12101,
+  "name": "Waster Greatsword",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 1,
+  "baseAtkLv1": 23.245,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

@@ -1,0 +1,42 @@
+{
+  "id": 11303,
+  "name": "Traveler's Handy Sword",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 3,
+  "baseAtkLv1": 39.8751,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "Journey",
+  "effectTemplate": "Each Elemental Orb or Particle collected restores <color=#99FFFFFF>{0}</color> HP.",
+  "refinements": {
+    "r1": {
+      "description": "Each Elemental Orb or Particle collected restores 1% HP.",
+      "values": [
+        "1%"
+      ]
+    },
+    "r2": {
+      "description": "Each Elemental Orb or Particle collected restores 1.25% HP.",
+      "values": [
+        "1.25%"
+      ]
+    },
+    "r3": {
+      "description": "Each Elemental Orb or Particle collected restores 1.5% HP.",
+      "values": [
+        "1.5%"
+      ]
+    },
+    "r4": {
+      "description": "Each Elemental Orb or Particle collected restores 1.75% HP.",
+      "values": [
+        "1.75%"
+      ]
+    },
+    "r5": {
+      "description": "Each Elemental Orb or Particle collected restores 2% HP.",
+      "values": [
+        "2%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": 10004,
+  "name": "Tiny Miracle",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "All Elemental RES increased by 20%.",
+  "fourPc": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s."
+}

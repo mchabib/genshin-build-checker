@@ -1,0 +1,17 @@
+{
+  "key": "Xiao",
+  "role": "dps",
+  "self": [
+    {
+      "id": "xiao_q",
+      "mode": "always",
+      "description": "Xiao Q: NA/CA/Plunge DMG +95.2% (lv10) selama Bane of All Evil; A1 +5%/s sampai +25%.",
+      "mod": { "source": "Xiao Q + A1", "scope": ["na", "ca", "plunge"], "dmgBonus": "= round(pct(p('burst','param1')) * 10) / 10 + 25" }
+    }
+  ],
+  "durations": { "hP": 1.25, "lP": 1.1, "JP": 1.25 },
+  "rotations": [
+    { "label": "Plunge spam 12 hP + 2 lP + 2E", "counts": { "plunge_high": 12, "plunge_low": 2, "skill1": 2 }, "duration": 18, "note": "≈18s (Q 15s + CD 18s); KQM combo JP" }
+  ],
+  "teams": [["Faruzan", "Xianyun", "Furina"], ["Faruzan", "Zhongli", "Bennett"]]
+}

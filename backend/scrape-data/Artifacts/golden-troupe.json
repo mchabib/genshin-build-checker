@@ -1,0 +1,10 @@
+{
+  "id": 15032,
+  "name": "Golden Troupe",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Increases Elemental Skill DMG by 20%.",
+  "fourPc": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
+}

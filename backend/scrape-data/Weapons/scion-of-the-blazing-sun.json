@@ -1,0 +1,47 @@
+{
+  "id": 15424,
+  "name": "Scion of the Blazing Sun",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "The Way of Sunfire",
+  "effectTemplate": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing <color=#99FFFFFF>{0}</color> ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take <color=#99FFFFFF>{1}</color> more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+  "refinements": {
+    "r1": {
+      "description": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 60% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 28% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+      "values": [
+        "60%",
+        "28%"
+      ]
+    },
+    "r2": {
+      "description": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 75% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 35% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+      "values": [
+        "75%",
+        "35%"
+      ]
+    },
+    "r3": {
+      "description": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 90% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 42% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+      "values": [
+        "90%",
+        "42%"
+      ]
+    },
+    "r4": {
+      "description": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 105% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 49% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+      "values": [
+        "105%",
+        "49%"
+      ]
+    },
+    "r5": {
+      "description": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 120% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 56% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+      "values": [
+        "120%",
+        "56%"
+      ]
+    }
+  }
+}

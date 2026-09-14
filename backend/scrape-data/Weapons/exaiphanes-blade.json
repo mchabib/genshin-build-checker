@@ -1,0 +1,49 @@
+{
+  "id": 11521,
+  "name": "Exaiphanes Blade",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Traveler's Path",
+  "effectTemplate": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>{0}</color> for 8s, and regenerate <color=#99FFFFFF>{1}</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "When the Traveler equips this, their ATK will increase by 16% for 8s after they hit an opponent. At the same time, they will also regenerate 3 Elemental Energy. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "16%",
+        "8",
+        "3",
+        "5"
+      ]
+    },
+    "r2": {
+      "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 20% for 8s, and regenerate 3 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "20%",
+        "3"
+      ]
+    },
+    "r3": {
+      "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 24% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "24%",
+        "5"
+      ]
+    },
+    "r4": {
+      "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 32% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "32%",
+        "5"
+      ]
+    },
+    "r5": {
+      "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 40% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "40%",
+        "5"
+      ]
+    }
+  }
+}

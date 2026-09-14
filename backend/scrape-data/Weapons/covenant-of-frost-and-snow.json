@@ -1,0 +1,42 @@
+{
+  "id": 15436,
+  "name": "Covenant of Frost and Snow",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "The Law's Equilibrium",
+  "effectTemplate": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 120.",
+      "values": [
+        "120"
+      ]
+    },
+    "r2": {
+      "description": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 150.",
+      "values": [
+        "150"
+      ]
+    },
+    "r3": {
+      "description": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 180.",
+      "values": [
+        "180"
+      ]
+    },
+    "r4": {
+      "description": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 210.",
+      "values": [
+        "210"
+      ]
+    },
+    "r5": {
+      "description": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 240.",
+      "values": [
+        "240"
+      ]
+    }
+  }
+}

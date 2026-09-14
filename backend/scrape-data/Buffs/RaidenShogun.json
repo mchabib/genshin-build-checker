@@ -1,0 +1,46 @@
+{
+  "key": "RaidenShogun",
+  "role": "dps",
+  "self": [
+    {
+      "id": "raiden_e",
+      "mode": "always",
+      "description": "Raiden E (Eye of Stormy Judgment): Burst DMG +0.3% per energy cost Q (Q Raiden 90 → +27%).",
+      "mod": { "source": "Raiden E", "scope": "burst", "dmgBonus": "= round(pct(p('skill','param4')) * 90 * 10) / 10" }
+    },
+    {
+      "id": "raiden_resolve",
+      "mode": "assume",
+      "description": "Raiden Q Resolve 60 stack: initial slash +7%×60 = +420 poin multiplier.",
+      "mod": { "source": "Raiden Resolve (60 stack)", "scope": "burst", "hitIds": ["burst1"], "talentMultAdd": "= round(pct(p('burst','param2')) * 60 * 10) / 10" }
+    },
+    {
+      "id": "raiden_resolve_na",
+      "mode": "assume",
+      "description": "(pasangan) NA/CA/plunge dalam Musou Isshin +1.31%×60 stack.",
+      "mod": { "source": "Raiden Resolve NA (60 stack)", "scope": "burst", "hitIds": ["burst2", "burst3", "burst4", "burst5", "burst6", "burst7", "burst8", "burst_plunge_low", "burst_plunge_high"], "talentMultAdd": "= round(pct(p('burst','param3')) * 60 * 10) / 10" }
+    },
+    {
+      "id": "raiden_c2",
+      "mode": "always",
+      "requireCon": 2,
+      "description": "Raiden C2: Musou Isshin (Q) mengabaikan 60% DEF musuh.",
+      "mod": { "source": "Raiden C2", "scope": "burst", "defIgnore": 60 }
+    }
+  ],
+  "reactions": { "with": { "hydro": { "burst": "electroCharged" }, "dendro": { "burst": "aggravate", "skill": "aggravate" } } },
+  "actions": {
+    "E": { "skill1": 1, "skill2": 20 },
+    "Q": { "burst1": 1 },
+    "N4": { "burst2": 1, "burst3": 1, "burst4": 1, "burst5": 1 },
+    "N5": { "burst2": 1, "burst3": 1, "burst4": 1, "burst5": 1, "burst6": 1 },
+    "N3": { "burst2": 1, "burst3": 1, "burst4": 1 },
+    "N2": { "burst2": 1, "burst3": 1 },
+    "N1": { "burst2": 1 },
+    "C": { "burst7": 1 }
+  },
+  "rotations": [
+    { "label": "E + Q (initial + 3N5 + 2 CA) + 20 coordinated", "counts": { "skill1": 1, "skill2": 20, "burst1": 1, "burst2": 3, "burst3": 3, "burst4": 3, "burst5": 2, "burst6": 2, "burst7": 1 }, "duration": 20, "note": "≈20s (Q CD 18s); Musou Isshin 7s ≈ 3 string; E tick tiap 0.9s ≈ 20/rotasi" }
+  ],
+  "teams": [["Bennett", "Xiangling", "Xingqiu"], ["Bennett", "KujouSara", "KaedeharaKazuha"]]
+}

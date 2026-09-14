@@ -1,0 +1,10 @@
+{
+  "id": 15020,
+  "name": "Emblem of Severed Fate",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Energy Recharge +20%",
+  "fourPc": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way."
+}

@@ -1,0 +1,47 @@
+{
+  "id": 12414,
+  "name": "Katsuragikiri Nagamasa",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Samurai Conduct",
+  "effectTemplate": "Increases Elemental Skill DMG by <color=#99FFFFFF>{0}</color>. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates <color=#99FFFFFF>{1}</color> Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Skill DMG by 6%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 3 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+      "values": [
+        "6%",
+        "3"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Skill DMG by 7.5%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 3.5 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+      "values": [
+        "7.5%",
+        "3.5"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Skill DMG by 9%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 4 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+      "values": [
+        "9%",
+        "4"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Skill DMG by 10.5%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 4.5 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+      "values": [
+        "10.5%",
+        "4.5"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Skill DMG by 12%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 5 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+      "values": [
+        "12%",
+        "5"
+      ]
+    }
+  }
+}

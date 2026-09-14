@@ -1,0 +1,410 @@
+{
+  "key": "Sethos",
+  "nameEn": "Sethos",
+  "gdbName": "Sethos",
+  "element": "Electro",
+  "weaponType": "WEAPON_BOW",
+  "version": "4.7",
+  "talents": {
+    "normal": {
+      "name": "Royal Reed Archery",
+      "description": "Normal Attack\nPerforms up to 3 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, the power of Electro will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off an arrow carrying the power of lightning that deals Electro DMG.\n·Charge Level 2: Fires off a Shadowpiercing Shot which can pierce enemies, dealing Electro DMG to enemies along its path. After the Shadowpiercing Shot is fully charged, Sethos cannot move around.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}+{param3:F1P}",
+          "3-Hit DMG|{param4:F1P}",
+          "Aimed Shot|{param5:F1P}",
+          "Aimed Shot Charge Level 1|{param6:F1P}",
+          "Shadowpiercing Shot DMG|{param7:F1P} ATK+{param8:F1P} Elemental Mastery",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:F1P}/{param11:F1P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.526139,
+            0.568965,
+            0.61179,
+            0.672969,
+            0.715794,
+            0.764737,
+            0.832034,
+            0.899331,
+            0.966628,
+            1.040043,
+            1.113458,
+            1.186873,
+            1.260287,
+            1.333702,
+            1.407117
+          ],
+          "param2": [
+            0.237962,
+            0.257331,
+            0.2767,
+            0.30437,
+            0.323739,
+            0.345875,
+            0.376312,
+            0.406749,
+            0.437186,
+            0.47039,
+            0.503594,
+            0.536798,
+            0.570002,
+            0.603206,
+            0.63641
+          ],
+          "param3": [
+            0.266084,
+            0.287742,
+            0.3094,
+            0.34034,
+            0.361998,
+            0.38675,
+            0.420784,
+            0.454818,
+            0.488852,
+            0.52598,
+            0.563108,
+            0.600236,
+            0.637364,
+            0.674492,
+            0.71162
+          ],
+          "param4": [
+            0.739867,
+            0.800088,
+            0.86031,
+            0.946341,
+            1.006563,
+            1.075387,
+            1.170022,
+            1.264656,
+            1.35929,
+            1.462527,
+            1.565764,
+            1.669001,
+            1.772239,
+            1.875476,
+            1.978713
+          ],
+          "param5": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param6": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param7": [
+            1.4,
+            1.505,
+            1.61,
+            1.75,
+            1.855,
+            1.96,
+            2.1,
+            2.24,
+            2.38,
+            2.52,
+            2.66,
+            2.8,
+            2.975,
+            3.15,
+            3.325
+          ],
+          "param8": [
+            1.3456,
+            1.44652,
+            1.54744,
+            1.682,
+            1.78292,
+            1.88384,
+            2.0184,
+            2.15296,
+            2.28752,
+            2.42208,
+            2.55664,
+            2.6912,
+            2.8594,
+            3.0276,
+            3.1958
+          ],
+          "param9": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param10": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param11": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Ancient Rite: The Thundering Sands",
+      "description": "Gathers the might of thunder, dealing AoE Electro DMG and quickly retreating. If this attack triggers Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Energy Regeneration|{param2:I}",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.156,
+            1.2427,
+            1.3294,
+            1.445,
+            1.5317,
+            1.6184,
+            1.734,
+            1.8496,
+            1.9652,
+            2.0808,
+            2.1964,
+            2.312,
+            2.4565,
+            2.601,
+            2.7455
+          ],
+          "param2": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param3": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Secret Rite: Twilight Shadowpiercer",
+      "description": "Perform a secret rite, entering the \"Twilight Meditation\" state, during which Sethos's Normal Attacks will be converted into enemy-piercing Dusk Bolts: Deal Electro DMG to opponents in its path, with DMG increased based on Sethos's Elemental Mastery.\nSethos cannot perform Aimed Shots while in this state.\nDMG dealt by Dusk Bolts is considered Charged Attack DMG.\nThis effect will be canceled when Sethos leaves the field.",
+      "attributes": {
+        "labels": [
+          "Dusk Bolt DMG Increase|{param1:F1P} Elemental Mastery",
+          "Twilight Meditation Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.9616,
+            2.10872,
+            2.25584,
+            2.452,
+            2.59912,
+            2.74624,
+            2.9424,
+            3.13856,
+            3.33472,
+            3.53088,
+            3.72704,
+            3.9232,
+            4.1684,
+            4.4136,
+            4.6588
+          ],
+          "param2": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param4": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Black Kite's Enigma",
+      "description": "When Aiming, the charging time is decreased by 0.285s based on each point of Sethos's current Elemental Energy. Charging time can be reduced to a minimum of 0.3s through this method and a maximum of 20 Energy can be tallied. If a Shadowpiercing Shot is fired, consume the tallied amount of Elemental Energy; if it is a Charge Level 1 shot, then consume 50% of the tallied amount of Elemental Energy."
+    },
+    {
+      "slot": "a4",
+      "name": "The Sand King's Boon",
+      "description": "Sethos gains the \"Scorching Sandshade\" effect, increasing the DMG dealt by Shadowpiercing Shots by 700% of Sethos's Elemental Mastery.\nThe Scorching Sandshade effect will be canceled when any of the following conditions are met:\n· 5s after a Shadowpiercing Shot first hits an opponent.\n· After 4 Shadowpiercing Shots strike opponents.\n\nWhen a Shadowpiercing Shot affected by Scorching Sandshade first hits an opponent, Sethos will regain Scorching Sandshade after 15s."
+    },
+    {
+      "slot": "util",
+      "name": "Thoth's Revelation",
+      "description": "Displays the location of nearby resources unique to Sumeru on the mini-map."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Sealed Shrine's Spiritsong",
+      "description": "The CRIT Rate of Shadowpiercing Shot is increased by 15%."
+    },
+    {
+      "n": 2,
+      "name": "Papyrus Scripture of Silent Secrets",
+      "description": "When any of the following conditions are met, Sethos gains a 15% Electro DMG Bonus for 10s that may stack twice, with each stack duration counted independently:\n· Consuming Elemental Energy through Aimed Shots. You must first unlock the Ascension Talent \"Black Kite's Enigma\" to trigger this condition.\n· Regaining Elemental Energy by triggering Elemental Reactions using Ancient Rite: The Thundering Sands.\n· Using Secret Rite: Twilight Shadowpiercer."
+    },
+    {
+      "n": 3,
+      "name": "Ode to the Moonrise Sage",
+      "description": "Increases the Level of Normal Attack: Royal Reed Archery by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Beneficent Plumage",
+      "description": "When a Shadowpiercing Shot or Dusk Bolt strikes 2 or more opponents, all nearby party members gain 80 Elemental Mastery for 10s."
+    },
+    {
+      "n": 5,
+      "name": "Record of the Desolate God's Burning Sands",
+      "description": "Increases the Level of Secret Rite: Twilight Shadowpiercer by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Pylon of the Sojourning Sun Temple",
+      "description": "After Shadowpiercing Shot strikes an opponent, the Elemental Energy consumed by the Ascension Talent \"Black Kite's Enigma\" will be returned. This effect can be triggered up to once every 15s. You must first unlock the Ascension Talent \"Black Kite's Enigma.\""
+    }
+  ]
+}

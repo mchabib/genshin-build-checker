@@ -1,0 +1,10 @@
+{
+  "id": 15035,
+  "name": "Fragment of Harmonic Whimsy",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks."
+}

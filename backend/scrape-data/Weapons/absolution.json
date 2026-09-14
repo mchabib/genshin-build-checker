@@ -1,0 +1,47 @@
+{
+  "id": 11515,
+  "name": "Absolution",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Deathly Pact",
+  "effectTemplate": "CRIT DMG increased by <color=#99FFFFFF>{0}</color>. Increasing the value of a Bond of Life increases the DMG the equipping character deals by <color=#99FFFFFF>{1}</color> for 6s. Max 3 stacks.",
+  "refinements": {
+    "r1": {
+      "description": "CRIT DMG increased by 20%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 16% for 6s. Max 3 stacks.",
+      "values": [
+        "20%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "CRIT DMG increased by 25%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 20% for 6s. Max 3 stacks.",
+      "values": [
+        "25%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "CRIT DMG increased by 30%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 24% for 6s. Max 3 stacks.",
+      "values": [
+        "30%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "CRIT DMG increased by 35%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 28% for 6s. Max 3 stacks.",
+      "values": [
+        "35%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "CRIT DMG increased by 40%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 32% for 6s. Max 3 stacks.",
+      "values": [
+        "40%",
+        "32%"
+      ]
+    }
+  }
+}

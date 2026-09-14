@@ -1,0 +1,57 @@
+{
+  "id": 14522,
+  "name": "Nocturne's Curtain Call",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Ballad of the Crossroads",
+  "effectTemplate": "Max HP increases by <color=#99FFFFFF>{0}</color>. When triggering Lunar reactions or inflicting Lunar Reaction DMG, the equipping character will recover <color=#99FFFFFF>{1}</color> Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional <color=#99FFFFFF>{2}</color>, CRIT DMG from Lunar Reaction DMG increases by <color=#99FFFFFF>{3}</color>. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "Max HP increases by 10%. When triggering Lunar reactions or inflicting Lunar Reaction DMG on opponents, the equipping character will recover 14 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 14%, CRIT DMG from Lunar Reaction DMG increases by 60%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+      "values": [
+        "10%",
+        "14",
+        "14%",
+        "60%"
+      ]
+    },
+    "r2": {
+      "description": "Max HP increases by 12%. When triggering Lunar reactions or inflicting Lunar Reaction DMG, the equipping character will recover 15 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 16%, CRIT DMG from Lunar Reaction DMG increases by 80%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+      "values": [
+        "12%",
+        "15",
+        "16%",
+        "80%"
+      ]
+    },
+    "r3": {
+      "description": "Max HP increases by 14%. When triggering Lunar reactions or inflicting Lunar Reaction DMG, the equipping character will recover 16 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 18%, CRIT DMG from Lunar Reaction DMG increases by 100%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+      "values": [
+        "14%",
+        "16",
+        "18%",
+        "100%"
+      ]
+    },
+    "r4": {
+      "description": "Max HP increases by 16%. When triggering Lunar reactions or inflicting Lunar Reaction DMG, the equipping character will recover 17 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 20%, CRIT DMG from Lunar Reaction DMG increases by 120%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+      "values": [
+        "16%",
+        "17",
+        "20%",
+        "120%"
+      ]
+    },
+    "r5": {
+      "description": "Max HP increases by 18%. When triggering Lunar reactions or inflicting Lunar Reaction DMG, the equipping character will recover 18 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 22%, CRIT DMG from Lunar Reaction DMG increases by 140%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+      "values": [
+        "18%",
+        "18",
+        "22%",
+        "140%"
+      ]
+    }
+  }
+}

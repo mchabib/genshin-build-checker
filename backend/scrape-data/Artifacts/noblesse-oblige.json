@@ -1,0 +1,10 @@
+{
+  "id": 15007,
+  "name": "Noblesse Oblige",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Elemental Burst DMG +20%",
+  "fourPc": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack."
+}

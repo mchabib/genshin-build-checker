@@ -1,0 +1,10 @@
+{
+  "id": 15031,
+  "name": "Marechaussee Hunter",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Normal and Charged Attack DMG +15%",
+  "fourPc": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks."
+}

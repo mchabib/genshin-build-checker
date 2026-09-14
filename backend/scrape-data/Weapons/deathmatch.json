@@ -1,0 +1,52 @@
+{
+  "id": 13405,
+  "name": "Deathmatch",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Gladiator",
+  "effectTemplate": "If there are at least 2 opponents nearby, ATK is increased by <color=#99FFFFFF>{0}</color> and DEF is increased by <color=#99FFFFFF>{1}</color>. If there are fewer than 2 opponents nearby, ATK is increased by <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "If there are at least 2 opponents nearby, ATK is increased by 16% and DEF is increased by 16%. If there are fewer than 2 opponents nearby, ATK is increased by 24%.",
+      "values": [
+        "16%",
+        "16%",
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "If there are at least 2 opponents nearby, ATK is increased by 20% and DEF is increased by 20%. If there are fewer than 2 opponents nearby, ATK is increased by 30%.",
+      "values": [
+        "20%",
+        "20%",
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "If there are at least 2 opponents nearby, ATK is increased by 24% and DEF is increased by 24%. If there are fewer than 2 opponents nearby, ATK is increased by 36%.",
+      "values": [
+        "24%",
+        "24%",
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "If there are at least 2 opponents nearby, ATK is increased by 28% and DEF is increased by 28%. If there are fewer than 2 opponents nearby, ATK is increased by 42%.",
+      "values": [
+        "28%",
+        "28%",
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "If there are at least 2 opponents nearby, ATK is increased by 32% and DEF is increased by 32%. If there are fewer than 2 opponents nearby, ATK is increased by 48%.",
+      "values": [
+        "32%",
+        "32%",
+        "48%"
+      ]
+    }
+  }
+}

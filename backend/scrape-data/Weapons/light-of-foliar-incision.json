@@ -1,0 +1,47 @@
+{
+  "id": 11512,
+  "name": "Light of Foliar Incision",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Whitemoon Bristle",
+  "effectTemplate": "CRIT Rate is increased by <color=#99FFFFFF>{0}</color>. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by <color=#99FFFFFF>{1}</color> of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+  "refinements": {
+    "r1": {
+      "description": "CRIT Rate is increased by 4%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 120% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+      "values": [
+        "4%",
+        "120%"
+      ]
+    },
+    "r2": {
+      "description": "CRIT Rate is increased by 5%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 150% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+      "values": [
+        "5%",
+        "150%"
+      ]
+    },
+    "r3": {
+      "description": "CRIT Rate is increased by 6%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 180% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+      "values": [
+        "6%",
+        "180%"
+      ]
+    },
+    "r4": {
+      "description": "CRIT Rate is increased by 7%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 210% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+      "values": [
+        "7%",
+        "210%"
+      ]
+    },
+    "r5": {
+      "description": "CRIT Rate is increased by 8%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 240% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
+      "values": [
+        "8%",
+        "240%"
+      ]
+    }
+  }
+}

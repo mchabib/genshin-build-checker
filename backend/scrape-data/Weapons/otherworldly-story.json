@@ -1,0 +1,42 @@
+{
+  "id": 14303,
+  "name": "Otherworldly Story",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Energy Shower",
+  "effectTemplate": "Each Elemental Orb or Particle collected restores <color=#99FFFFFF>{0}</color> HP.",
+  "refinements": {
+    "r1": {
+      "description": "Picking up an Elemental Energy Orb/Particle recovers 1% HP.",
+      "values": [
+        "1%"
+      ]
+    },
+    "r2": {
+      "description": "Each Elemental Orb or Particle collected restores 1.25% HP.",
+      "values": [
+        "1.25%"
+      ]
+    },
+    "r3": {
+      "description": "Each Elemental Orb or Particle collected restores 1.5% HP.",
+      "values": [
+        "1.5%"
+      ]
+    },
+    "r4": {
+      "description": "Each Elemental Orb or Particle collected restores 1.75% HP.",
+      "values": [
+        "1.75%"
+      ]
+    },
+    "r5": {
+      "description": "Each Elemental Orb or Particle collected restores 2% HP.",
+      "values": [
+        "2%"
+      ]
+    }
+  }
+}

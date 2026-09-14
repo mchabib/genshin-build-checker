@@ -1,0 +1,62 @@
+{
+  "id": 14520,
+  "name": "Nightweaver's Looking Glass",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Millennial Hymn",
+  "effectTemplate": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by <color=#99FFFFFF>{0}</color> for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by <color=#99FFFFFF>{1}</color> for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by <color=#99FFFFFF>{2}</color>, their Hyperbloom and Burgeon DMG is increased by <color=#99FFFFFF>{3}</color>, and their Lunar-Bloom DMG is increased by <color=#99FFFFFF>{4}</color>. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 60 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 60 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 120%, their Hyperbloom and Burgeon DMG is increased by 80%, and their Lunar-Bloom DMG is increased by 40%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+      "values": [
+        "60",
+        "60",
+        "120%",
+        "80%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 75 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 75 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 150%, their Hyperbloom and Burgeon DMG is increased by 100%, and their Lunar-Bloom DMG is increased by 50%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+      "values": [
+        "75",
+        "75",
+        "150%",
+        "100%",
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 90 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 90 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 180%, their Hyperbloom and Burgeon DMG is increased by 120%, and their Lunar-Bloom DMG is increased by 60%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+      "values": [
+        "90",
+        "90",
+        "180%",
+        "120%",
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 105 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 105 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 210%, their Hyperbloom and Burgeon DMG is increased by 140%, and their Lunar-Bloom DMG is increased by 70%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+      "values": [
+        "105",
+        "105",
+        "210%",
+        "140%",
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 120 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 120 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 240%, their Hyperbloom and Burgeon DMG is increased by 160%, and their Lunar-Bloom DMG is increased by 80%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+      "values": [
+        "120",
+        "120",
+        "240%",
+        "160%",
+        "80%"
+      ]
+    }
+  }
+}

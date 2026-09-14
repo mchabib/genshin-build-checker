@@ -1,0 +1,42 @@
+{
+  "id": 15434,
+  "name": "Rainbow Serpent's Rain Bow",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Astral Whispers Beyond the Sacred Throne",
+  "effectTemplate": "ATK is increased by <color=#99FFFFFF>{0}</color> for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "ATK is increased by 28% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r2": {
+      "description": "ATK is increased by 35% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+      "values": [
+        "35%"
+      ]
+    },
+    "r3": {
+      "description": "ATK is increased by 42% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r4": {
+      "description": "ATK is increased by 49% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+      "values": [
+        "49%"
+      ]
+    },
+    "r5": {
+      "description": "ATK is increased by 56% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+      "values": [
+        "56%"
+      ]
+    }
+  }
+}

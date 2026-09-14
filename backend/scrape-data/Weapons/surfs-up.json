@@ -1,0 +1,47 @@
+{
+  "id": 14516,
+  "name": "Surf's Up",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Aqua Remembrance",
+  "effectTemplate": "Max HP increased by <color=#99FFFFFF>{0}</color>. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by <color=#99FFFFFF>{1}</color>. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+  "refinements": {
+    "r1": {
+      "description": "Max HP increased by 20%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 12%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+      "values": [
+        "20%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Max HP increased by 25%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 15%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+      "values": [
+        "25%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Max HP increased by 30%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 18%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+      "values": [
+        "30%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Max HP increased by 35%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 21%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+      "values": [
+        "35%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Max HP increased by 40%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 24%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+      "values": [
+        "40%",
+        "24%"
+      ]
+    }
+  }
+}

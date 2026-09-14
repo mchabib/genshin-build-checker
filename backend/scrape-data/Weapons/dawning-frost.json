@@ -1,0 +1,47 @@
+{
+  "id": 14434,
+  "name": "Dawning Frost",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Nocturnal Dreams",
+  "effectTemplate": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by <color=#99FFFFFF>{0}</color>. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by 72. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by 48.",
+      "values": [
+        "72",
+        "48"
+      ]
+    },
+    "r2": {
+      "description": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by 90. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by 60.",
+      "values": [
+        "90",
+        "60"
+      ]
+    },
+    "r3": {
+      "description": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by 108. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by 72.",
+      "values": [
+        "108",
+        "72"
+      ]
+    },
+    "r4": {
+      "description": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by 126. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by 84.",
+      "values": [
+        "126",
+        "84"
+      ]
+    },
+    "r5": {
+      "description": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by 144. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by 96.",
+      "values": [
+        "144",
+        "96"
+      ]
+    }
+  }
+}

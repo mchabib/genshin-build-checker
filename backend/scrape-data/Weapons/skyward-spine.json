@@ -1,0 +1,57 @@
+{
+  "id": 13502,
+  "name": "Skyward Spine",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Black Wing",
+  "effectTemplate": "Increases CRIT Rate by <color=#99FFFFFF>{0}</color> and increases Normal ATK SPD by <color=#99FFFFFF>{1}</color>. Additionally, Normal and Charged Attacks hits on opponents have a <color=#99FFFFFF>{2}</color> chance to trigger a vacuum blade that deals <color=#99FFFFFF>{3}</color> of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases CRIT Rate by 8% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on opponents have a 50% chance to trigger a vacuum blade that deals 40% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+      "values": [
+        "8%",
+        "12%",
+        "50%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Increases CRIT Rate by 10% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on opponents have a 50% chance to trigger a vacuum blade that deals 55% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+      "values": [
+        "10%",
+        "12%",
+        "50%",
+        "55%"
+      ]
+    },
+    "r3": {
+      "description": "Increases CRIT Rate by 12% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on opponents have a 50% chance to trigger a vacuum blade that deals 70% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+      "values": [
+        "12%",
+        "12%",
+        "50%",
+        "70%"
+      ]
+    },
+    "r4": {
+      "description": "Increases CRIT Rate by 14% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on opponents have a 50% chance to trigger a vacuum blade that deals 85% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+      "values": [
+        "14%",
+        "12%",
+        "50%",
+        "85%"
+      ]
+    },
+    "r5": {
+      "description": "Increases CRIT Rate by 16% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on opponents have a 50% chance to trigger a vacuum blade that deals 100% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s.",
+      "values": [
+        "16%",
+        "12%",
+        "50%",
+        "100%"
+      ]
+    }
+  }
+}

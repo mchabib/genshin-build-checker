@@ -1,0 +1,47 @@
+{
+  "id": 15409,
+  "name": "The Viridescent Hunt",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Verdant Wind",
+  "effectTemplate": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing <color=#99FFFFFF>{0}</color> of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every <color=#99FFFFFF>{1}</color>s.",
+  "refinements": {
+    "r1": {
+      "description": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing 40% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every 14s.",
+      "values": [
+        "40%",
+        "14"
+      ]
+    },
+    "r2": {
+      "description": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing 50% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every 13s.",
+      "values": [
+        "50%",
+        "13"
+      ]
+    },
+    "r3": {
+      "description": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing 60% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every 12s.",
+      "values": [
+        "60%",
+        "12"
+      ]
+    },
+    "r4": {
+      "description": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing 70% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every 11s.",
+      "values": [
+        "70%",
+        "11"
+      ]
+    },
+    "r5": {
+      "description": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing 80% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every 10s.",
+      "values": [
+        "80%",
+        "10"
+      ]
+    }
+  }
+}

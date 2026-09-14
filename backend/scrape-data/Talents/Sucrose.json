@@ -1,0 +1,376 @@
+{
+  "key": "Sucrose",
+  "nameEn": "Sucrose",
+  "gdbName": "Sucrose",
+  "element": "Anemo",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Wind Spirit Creation",
+      "description": "Normal Attack\nPerforms up to 4 attacks using Wind Spirits, dealing Anemo DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina and deals AoE Anemo DMG after a short casting time.\n\nPlunging Attack\nCalling upon the power of her Wind Spirits, Sucrose plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "Charged Attack DMG|{param5:P}",
+          "Charged Attack Stamina Cost|{param6:F1}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.33464,
+            0.359738,
+            0.384836,
+            0.4183,
+            0.443398,
+            0.468496,
+            0.50196,
+            0.535424,
+            0.568888,
+            0.602352,
+            0.635816,
+            0.66928,
+            0.71111,
+            0.75294,
+            0.79477
+          ],
+          "param2": [
+            0.30616,
+            0.329122,
+            0.352084,
+            0.3827,
+            0.405662,
+            0.428624,
+            0.45924,
+            0.489856,
+            0.520472,
+            0.551088,
+            0.581704,
+            0.61232,
+            0.65059,
+            0.68886,
+            0.72713
+          ],
+          "param3": [
+            0.38448,
+            0.413316,
+            0.442152,
+            0.4806,
+            0.509436,
+            0.538272,
+            0.57672,
+            0.615168,
+            0.653616,
+            0.692064,
+            0.730512,
+            0.76896,
+            0.81702,
+            0.86508,
+            0.91314
+          ],
+          "param4": [
+            0.479176,
+            0.515114,
+            0.551052,
+            0.59897,
+            0.634908,
+            0.670846,
+            0.718764,
+            0.766682,
+            0.814599,
+            0.862517,
+            0.910434,
+            0.958352,
+            1.018249,
+            1.078146,
+            1.138043
+          ],
+          "param5": [
+            1.2016,
+            1.29172,
+            1.38184,
+            1.502,
+            1.59212,
+            1.68224,
+            1.8024,
+            1.92256,
+            2.04272,
+            2.16288,
+            2.28304,
+            2.4032,
+            2.5534,
+            2.7036,
+            2.8538
+          ],
+          "param6": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Astable Anemohypostasis Creation - 6308",
+      "description": "Creates a small Wind Spirit that pulls opponents and objects towards its location, launches opponents within its AoE, and deals Anemo DMG.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:P}",
+          "CD|{param2:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            2.112,
+            2.2704,
+            2.4288,
+            2.64,
+            2.7984,
+            2.9568,
+            3.168,
+            3.3792,
+            3.5904,
+            3.8016,
+            4.0128,
+            4.224,
+            4.488,
+            4.752,
+            5.016
+          ],
+          "param2": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Forbidden Creation - Isomer 75 / Type II",
+      "description": "Sucrose hurls an unstable concoction that creates a Large Wind Spirit.\nWhile it persists, the Large Wind Spirit will continuously pull in surrounding opponents and objects, launch nearby opponents, and deal Anemo DMG.\n\nElemental Absorption\nIf the Wind Spirit comes into contact with Hydro/Pyro/Cryo/Electro energy, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.",
+      "attributes": {
+        "labels": [
+          "DoT|{param1:P}",
+          "Additional Elemental DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.48,
+            1.591,
+            1.702,
+            1.85,
+            1.961,
+            2.072,
+            2.22,
+            2.368,
+            2.516,
+            2.664,
+            2.812,
+            2.96,
+            3.145,
+            3.33,
+            3.515
+          ],
+          "param2": [
+            0.44,
+            0.473,
+            0.506,
+            0.55,
+            0.583,
+            0.616,
+            0.66,
+            0.704,
+            0.748,
+            0.792,
+            0.836,
+            0.88,
+            0.935,
+            0.99,
+            1.045
+          ],
+          "param3": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "param4": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param5": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Catalyst Conversion",
+      "description": "When Sucrose triggers a Swirl or Stellar Swirl reaction, all characters in the party with the matching element (excluding Sucrose) have their Elemental Mastery increased by 50 for 8s."
+    },
+    {
+      "slot": "a4",
+      "name": "Mollis Favonius",
+      "description": "When Astable Anemohypostasis Creation - 6308 or Forbidden Creation - Isomer 75 / Type II hits an opponent, increases all party members' (excluding Sucrose) Elemental Mastery by an amount equal to 20% of Sucrose's Elemental Mastery for 8s."
+    },
+    {
+      "slot": "util",
+      "name": "Astable Invention",
+      "description": "When Sucrose crafts Character and Weapon Enhancement Materials, she has a 10% chance to obtain double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Clustered Vacuum Field",
+      "description": "Astable Anemohypostasis Creation - 6308 gains 1 additional charge."
+    },
+    {
+      "n": 2,
+      "name": "Beth: Unbound Form",
+      "description": "The duration of Forbidden Creation - Isomer 75 / Type II is increased by 2s."
+    },
+    {
+      "n": 3,
+      "name": "Flawless Alchemistress",
+      "description": "Increases the Level of Astable Anemohypostasis Creation - 6308 by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Alchemania",
+      "description": "Sucrose will reduce the CD of Astable Anemohypostasis Creation - 6308 by 1-7s for every 7 Normal or Charged Attack hits she scores against opponents.\nOne hit may be counted every 0.1s."
+    },
+    {
+      "n": 5,
+      "name": "Caution: Standard Flask",
+      "description": "Increases the Level of Forbidden Creation - Isomer 75 / Type II by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Chaotic Entropy",
+      "description": "If Forbidden Creation - Isomer 75 / Type II triggers an Elemental Absorption, all party members gain a 20% Elemental DMG Bonus for the corresponding absorbed element during its duration."
+    }
+  ]
+}

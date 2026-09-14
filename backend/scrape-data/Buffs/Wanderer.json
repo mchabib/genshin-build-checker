@@ -1,0 +1,36 @@
+{
+  "key": "Wanderer",
+  "role": "dps",
+  "self": [
+    {
+      "id": "wanderer_windfavored",
+      "mode": "always",
+      "description": "Wanderer Windfavored: NA ×1.537 (lv10 E).",
+      "mod": { "source": "Wanderer E (Windfavored) NA", "scope": "na", "talentMultBonus": "= round((pct(p('skill','param2')) - 100) * 10) / 10" }
+    },
+    {
+      "id": "wanderer_windfavored_ca",
+      "mode": "always",
+      "description": "Wanderer Windfavored: CA ×1.43 (lv10 E).",
+      "mod": { "source": "Wanderer E (Windfavored) CA", "scope": "ca", "talentMultBonus": "= round((pct(p('skill','param3')) - 100) * 10) / 10" }
+    },
+    {
+      "id": "wanderer_a1_pyro",
+      "mode": "assume",
+      "description": "Wanderer A1 (Jade-Claimed Flower): ada Pyro di tim → ATK +30% saat Windfavored.",
+      "requireTeamElement": "pyro",
+      "mod": { "source": "Wanderer A1 (Pyro)", "scope": "all", "atkPct": 30 }
+    },
+    {
+      "id": "wanderer_a1_cryo",
+      "mode": "assume",
+      "description": "Wanderer A1: ada Cryo di tim → CRIT Rate +20%.",
+      "requireTeamElement": "cryo",
+      "mod": { "source": "Wanderer A1 (Cryo)", "scope": "all", "critRate": 20 }
+    }
+  ],
+  "rotations": [
+    { "label": "Windfavored", "kqm": "E 4[N3] Q", "note": "notasi KQM; Windfavored ≈ 4 string NA" }
+  ],
+  "teams": [["Faruzan", "Bennett", "Zhongli"], ["Faruzan", "Furina", "Xianyun"]]
+}

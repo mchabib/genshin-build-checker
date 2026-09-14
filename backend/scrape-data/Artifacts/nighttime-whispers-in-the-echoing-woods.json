@@ -1,0 +1,10 @@
+{
+  "id": 15034,
+  "name": "Nighttime Whispers in the Echoing Woods",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. When under a shield granted by the Crystallize reaction, or when Moondrifts formed by Lunar-Crystallize reactions are nearby, the above effect is increased by 150%. When these conditions are no longer met, this additional increase disappears after 1s."
+}

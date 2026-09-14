@@ -1,0 +1,57 @@
+{
+  "id": 14512,
+  "name": "Tulaytullah's Remembrance",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Bygone Azure Teardrop",
+  "effectTemplate": "Normal Attack SPD is increased by <color=#99FFFFFF>{0}</color>. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by <color=#99FFFFFF>{1}</color> every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by <color=#99FFFFFF>{2}</color>. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is <color=#99FFFFFF>{3}</color>. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+  "refinements": {
+    "r1": {
+      "description": "Normal Attack SPD is increased by 10%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 4.8% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 9.6%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 48%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+      "values": [
+        "10%",
+        "4.8%",
+        "9.6%",
+        "48%"
+      ]
+    },
+    "r2": {
+      "description": "Normal Attack SPD is increased by 12.5%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 6% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 12%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 60%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+      "values": [
+        "12.5%",
+        "6%",
+        "12%",
+        "60%"
+      ]
+    },
+    "r3": {
+      "description": "Normal Attack SPD is increased by 15%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 7.2% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 14.4%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 72%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+      "values": [
+        "15%",
+        "7.2%",
+        "14.4%",
+        "72%"
+      ]
+    },
+    "r4": {
+      "description": "Normal Attack SPD is increased by 17.5%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 8.4% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 16.8%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 84%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+      "values": [
+        "17.5%",
+        "8.4%",
+        "16.8%",
+        "84%"
+      ]
+    },
+    "r5": {
+      "description": "Normal Attack SPD is increased by 20%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 9.6% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 19.2%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 96%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
+      "values": [
+        "20%",
+        "9.6%",
+        "19.2%",
+        "96%"
+      ]
+    }
+  }
+}

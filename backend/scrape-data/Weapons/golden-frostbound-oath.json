@@ -1,0 +1,62 @@
+{
+  "id": 15516,
+  "name": "Golden Frostbound Oath",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Dawn's Salutation Returned",
+  "effectTemplate": "Increase DEF by <color=#99FFFFFF>{0}</color>. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by <color=#99FFFFFF>{1}</color>, Lunar-Crystallize Reaction DMG increases by <color=#99FFFFFF>{2}</color>. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by <color=#99FFFFFF>{3}</color> and Lunar-Crystallize Reaction DMG increases by <color=#99FFFFFF>{4}</color>. This effect can be triggered even when the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "Increase DEF by 16%. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by 40%, Lunar-Crystallize Reaction DMG increases by 40%. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by 20% and Lunar-Crystallize Reaction DMG increases by 20%. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "16%",
+        "40%",
+        "40%",
+        "20%",
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Increase DEF by 20%. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by 50%, Lunar-Crystallize Reaction DMG increases by 50%. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by 25% and Lunar-Crystallize Reaction DMG increases by 25%. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "20%",
+        "50%",
+        "50%",
+        "25%",
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "Increase DEF by 24%. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by 60%, Lunar-Crystallize Reaction DMG increases by 60%. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by 30% and Lunar-Crystallize Reaction DMG increases by 30%. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "24%",
+        "60%",
+        "60%",
+        "30%",
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "Increase DEF by 28%. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by 70%, Lunar-Crystallize Reaction DMG increases by 70%. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by 35% and Lunar-Crystallize Reaction DMG increases by 35%. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "28%",
+        "70%",
+        "70%",
+        "35%",
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "Increase DEF by 32%. When the equipping character's Elemental Skill or Lunar-Crystallize attacks hit opponents, gain the Frost Fae's Favor effect for 6s: Geo DMG inflicted by the equipping character increases by 80%, Lunar-Crystallize Reaction DMG increases by 80%. While this effect is active, if there are Moondrifts near the equipping character, all other nearby party members will gain the Frost Fae's Mischief effect: Geo DMG dealt increases by 40% and Lunar-Crystallize Reaction DMG increases by 40%. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "32%",
+        "80%",
+        "80%",
+        "40%",
+        "40%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": 10013,
+  "name": "Traveling Doctor",
+  "rarity": [
+    1,
+    2,
+    3
+  ],
+  "twoPc": "Increases incoming healing by 20%.",
+  "fourPc": "Using Elemental Burst restores 20% HP."
+}

@@ -1,0 +1,10 @@
+{
+  "id": 15046,
+  "name": "Disenchantment in Deep Shadow",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
+}

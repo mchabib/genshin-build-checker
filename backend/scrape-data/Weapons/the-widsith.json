@@ -1,0 +1,52 @@
+{
+  "id": 14402,
+  "name": "The Widsith",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Debut",
+  "effectTemplate": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by <color=#99FFFFFF>{0}</color>. Aria: Increases all Elemental DMG by <color=#99FFFFFF>{1}</color>. Interlude: Elemental Mastery is increased by <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 60%. Aria: Increases all Elemental DMG by 48%. Interlude: Elemental Mastery is increased by 240.",
+      "values": [
+        "60%",
+        "48%",
+        "240"
+      ]
+    },
+    "r2": {
+      "description": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 75%. Aria: Increases all Elemental DMG by 60%. Interlude: Elemental Mastery is increased by 300.",
+      "values": [
+        "75%",
+        "60%",
+        "300"
+      ]
+    },
+    "r3": {
+      "description": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 90%. Aria: Increases all Elemental DMG by 72%. Interlude: Elemental Mastery is increased by 360.",
+      "values": [
+        "90%",
+        "72%",
+        "360"
+      ]
+    },
+    "r4": {
+      "description": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 105%. Aria: Increases all Elemental DMG by 84%. Interlude: Elemental Mastery is increased by 420.",
+      "values": [
+        "105%",
+        "84%",
+        "420"
+      ]
+    },
+    "r5": {
+      "description": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 120%. Aria: Increases all Elemental DMG by 96%. Interlude: Elemental Mastery is increased by 480.",
+      "values": [
+        "120%",
+        "96%",
+        "480"
+      ]
+    }
+  }
+}

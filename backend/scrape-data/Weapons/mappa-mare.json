@@ -1,0 +1,42 @@
+{
+  "id": 14407,
+  "name": "Mappa Mare",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Infusion Scroll",
+  "effectTemplate": "Triggering an Elemental reaction grants a <color=#99FFFFFF>{0}</color> Elemental DMG Bonus for 10s. Max 2 stacks.",
+  "refinements": {
+    "r1": {
+      "description": "Triggering an Elemental reaction grants a 8% Elemental DMG Bonus for 10s. Max 2 stacks.",
+      "values": [
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "Triggering an Elemental reaction grants a 10% Elemental DMG Bonus for 10s. Max 2 stacks.",
+      "values": [
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "Triggering an Elemental reaction grants a 12% Elemental DMG Bonus for 10s. Max 2 stacks.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "Triggering an Elemental reaction grants a 14% Elemental DMG Bonus for 10s. Max 2 stacks.",
+      "values": [
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "Triggering an Elemental reaction grants a 16% Elemental DMG Bonus for 10s. Max 2 stacks.",
+      "values": [
+        "16%"
+      ]
+    }
+  }
+}

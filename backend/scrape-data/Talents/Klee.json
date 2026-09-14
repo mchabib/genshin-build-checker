@@ -1,0 +1,427 @@
+{
+  "key": "Klee",
+  "nameEn": "Klee",
+  "gdbName": "Klee",
+  "element": "Pyro",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Kaboom!",
+      "description": "Normal Attack\nThrows things that go boom when they hit things! Performs up to 3 explosive attacks, dealing AoE Pyro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina and deals AoE Pyro DMG to opponents after a short casting time.\n\nPlunging Attack\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Pyro DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:P}",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:P}/{param8:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.7216,
+            0.77572,
+            0.82984,
+            0.902,
+            0.95612,
+            1.01024,
+            1.0824,
+            1.15456,
+            1.22672,
+            1.29888,
+            1.373926,
+            1.472064,
+            1.570202,
+            1.668339,
+            1.766477
+          ],
+          "param2": [
+            0.624,
+            0.6708,
+            0.7176,
+            0.78,
+            0.8268,
+            0.8736,
+            0.936,
+            0.9984,
+            1.0608,
+            1.1232,
+            1.188096,
+            1.27296,
+            1.357824,
+            1.442688,
+            1.527552
+          ],
+          "param3": [
+            0.8992,
+            0.96664,
+            1.03408,
+            1.124,
+            1.19144,
+            1.25888,
+            1.3488,
+            1.43872,
+            1.52864,
+            1.61856,
+            1.712077,
+            1.834368,
+            1.956659,
+            2.07895,
+            2.201242
+          ],
+          "param4": [
+            1.5736,
+            1.69162,
+            1.80964,
+            1.967,
+            2.08502,
+            2.20304,
+            2.3604,
+            2.51776,
+            2.67512,
+            2.83248,
+            2.996134,
+            3.210144,
+            3.424154,
+            3.638163,
+            3.852173
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param7": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param8": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Jumpy Dumpty",
+      "description": "Jumpy Dumpty is tons of boom-bang-fun! \nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing AoE Pyro DMG with every bounce.\n\nOn the third bounce, the bomb splits into many mines.\nThe mines will explode upon contact with opponents, or after a short period of time, dealing AoE Pyro DMG.\n\nStarts with 2 charges.",
+      "attributes": {
+        "labels": [
+          "Jumpy Dumpty DMG|{param1:F1P}",
+          "Mine DMG|{param4:F1P}",
+          "Mine Duration|{param5:F1}s",
+          "CD|{param6:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.952,
+            1.0234,
+            1.0948,
+            1.19,
+            1.2614,
+            1.3328,
+            1.428,
+            1.5232,
+            1.6184,
+            1.7136,
+            1.8088,
+            1.904,
+            2.023,
+            2.142,
+            2.261
+          ],
+          "param2": [
+            0.952,
+            1.0234,
+            1.0948,
+            1.19,
+            1.2614,
+            1.3328,
+            1.428,
+            1.5232,
+            1.6184,
+            1.7136,
+            1.8088,
+            1.904,
+            2.023,
+            2.142,
+            2.261
+          ],
+          "param3": [
+            0.952,
+            1.0234,
+            1.0948,
+            1.19,
+            1.2614,
+            1.3328,
+            1.428,
+            1.5232,
+            1.6184,
+            1.7136,
+            1.8088,
+            1.904,
+            2.023,
+            2.142,
+            2.261
+          ],
+          "param4": [
+            0.328,
+            0.3526,
+            0.3772,
+            0.41,
+            0.4346,
+            0.4592,
+            0.492,
+            0.5248,
+            0.5576,
+            0.5904,
+            0.6232,
+            0.656,
+            0.697,
+            0.738,
+            0.779
+          ],
+          "param5": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param6": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Sparks 'n' Splash",
+      "description": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing AoE Pyro DMG.",
+      "attributes": {
+        "labels": [
+          "Sparks 'n' Splash DMG|{param1:F1P}",
+          "Duration|{param5:F1}s",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.4264,
+            0.45838,
+            0.49036,
+            0.533,
+            0.56498,
+            0.59696,
+            0.6396,
+            0.68224,
+            0.72488,
+            0.76752,
+            0.81016,
+            0.8528,
+            0.9061,
+            0.9594,
+            1.0127
+          ],
+          "param2": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param3": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "param4": [
+            0.51168,
+            0.550056,
+            0.588432,
+            0.6396,
+            0.677976,
+            0.716352,
+            0.76752,
+            0.818688,
+            0.869856,
+            0.921024,
+            0.972192,
+            1.02336,
+            1.08732,
+            1.15128,
+            1.21524
+          ],
+          "param5": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Pounding Surprise",
+      "description": "When Jumpy Dumpty and Normal Attacks deal DMG, Klee has a 50% chance to obtain an Explosive Spark.\nThis Explosive Spark is consumed by the next Charged Attack, which costs no Stamina and deals 50% increased DMG."
+    },
+    {
+      "slot": "a4",
+      "name": "Sparkling Burst",
+      "description": "When Klee's Charged Attack results in a CRIT Hit, all party members gain 2 Elemental Energy."
+    },
+    {
+      "slot": "util",
+      "name": "All Of My Treasures!",
+      "description": "Displays the location of nearby resources unique to Mondstadt on the mini-map."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Chained Reactions",
+      "description": "Attacks and Skills have a certain chance to summon sparks that bombard opponents, dealing DMG equal to 120% of Sparks 'n' Splash's DMG."
+    },
+    {
+      "n": 2,
+      "name": "Explosive Frags",
+      "description": "Being hit by Jumpy Dumpty's mines decreases opponents' DEF by 23% for 10s."
+    },
+    {
+      "n": 3,
+      "name": "Exquisite Compound",
+      "description": "Increases the Level of Jumpy Dumpty by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Sparkly Explosion",
+      "description": "If Klee leaves the field during the duration of Sparks 'n' Splash, her departure triggers an explosion that deals 555% of her ATK as AoE Pyro DMG."
+    },
+    {
+      "n": 5,
+      "name": "Nova Burst",
+      "description": "Increases the Level of Sparks 'n' Splash by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Blazing Delight",
+      "description": "While under the effects of Sparks 'n' Splash, Klee will regenerate 3 Energy for all members of the party (excluding Klee) every 3s.\nWhen Sparks 'n' Splash is used, all party members will gain a 10% Pyro DMG Bonus for 25s."
+    }
+  ]
+}

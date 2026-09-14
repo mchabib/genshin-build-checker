@@ -1,0 +1,376 @@
+{
+  "key": "Prune",
+  "nameEn": "Prune",
+  "gdbName": "Prune",
+  "element": "Anemo",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "6.6",
+  "talents": {
+    "normal": {
+      "name": "Badaboom! Hexbuster Hammer",
+      "description": "Normal Attack\nPerforms up to 3 attacks by swinging the Banehunter Oathhammer, dealing Anemo DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina and performs an upward hammer swing, dealing Anemo DMG to opponents in front.\n\nPlunging Attack\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:F1P}",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:F1P}/{param8:F1P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.486208,
+            0.522674,
+            0.559139,
+            0.60776,
+            0.644226,
+            0.680691,
+            0.729312,
+            0.777933,
+            0.826554,
+            0.875174,
+            0.923795,
+            0.972416,
+            1.033192,
+            1.093968,
+            1.154744
+          ],
+          "param2": [
+            0.482808,
+            0.519019,
+            0.555229,
+            0.60351,
+            0.639721,
+            0.675931,
+            0.724212,
+            0.772493,
+            0.820774,
+            0.869054,
+            0.917335,
+            0.965616,
+            1.025967,
+            1.086318,
+            1.146669
+          ],
+          "param3": [
+            0.679768,
+            0.730751,
+            0.781733,
+            0.84971,
+            0.900693,
+            0.951675,
+            1.019652,
+            1.087629,
+            1.155606,
+            1.223582,
+            1.291559,
+            1.359536,
+            1.444507,
+            1.529478,
+            1.614449
+          ],
+          "param4": [
+            1.3352,
+            1.43534,
+            1.53548,
+            1.669,
+            1.76914,
+            1.86928,
+            2.0028,
+            2.13632,
+            2.26984,
+            2.40336,
+            2.53688,
+            2.6704,
+            2.8373,
+            3.0042,
+            3.1711
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param7": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param8": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Ring-A-Ding-Ding! Hexhunter Chime",
+      "description": "Determined to take down the \"evil\" witch and save her beloved Descartes, Prune unleashes the power of the wind! She strikes at the Witchlure Bell using her Banehunter Oathhammer, dealing Anemo DMG.\nIf Prune triggers a Swirl or Stellar Swirl reaction in the opponent with this attack, her Ring-A-Ding-Ding! Hexhunter Chime is changed to Clang Clang! Witch-tribution Comes! for the next 6s.\n\nClang Clang! Witch-tribution Comes!\nEnsconces the **Banehunter Oathhammer** in the element involved in the earlier Swirl or Stellar Swirl reaction. After tapping to unleash, Prune will launch a midair kick at the Banehunter Oathhammer, dealing DMG to opponents in front of her of the corresponding elemental type.",
+      "attributes": {
+        "labels": [
+          "Ring-A-Ding-Ding! Hexhunter Chime DMG|{param1:F1P}",
+          "Clang Clang! Witch-tribution Comes! DMG|{param2:F1P}",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.6744,
+            1.79998,
+            1.92556,
+            2.093,
+            2.21858,
+            2.34416,
+            2.5116,
+            2.67904,
+            2.84648,
+            3.01392,
+            3.18136,
+            3.3488,
+            3.5581,
+            3.7674,
+            3.9767
+          ],
+          "param2": [
+            2.0456,
+            2.19902,
+            2.35244,
+            2.557,
+            2.71042,
+            2.86384,
+            3.0684,
+            3.27296,
+            3.47752,
+            3.68208,
+            3.88664,
+            4.0912,
+            4.3469,
+            4.6026,
+            4.8583
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "The Bell Tolls! The Hunt Is On!",
+      "description": "Prune gently swings the Witchlure Bell, dealing Anemo DMG to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode.\n\nWitchlure Bell: Hunter-Seeker\nIn this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing AoE Anemo DMG. This DMG is considered Elemental Burst DMG.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Witchlure Bell DMG|{param2:F1P}",
+          "Hunter-Seeker Mode Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.9696,
+            1.04232,
+            1.11504,
+            1.212,
+            1.28472,
+            1.35744,
+            1.4544,
+            1.55136,
+            1.64832,
+            1.74528,
+            1.84224,
+            1.9392,
+            2.0604,
+            2.1816,
+            2.3028
+          ],
+          "param2": [
+            0.7044,
+            0.75723,
+            0.81006,
+            0.8805,
+            0.93333,
+            0.98616,
+            1.0566,
+            1.12704,
+            1.19748,
+            1.26792,
+            1.33836,
+            1.4088,
+            1.49685,
+            1.5849,
+            1.67295
+          ],
+          "param3": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param4": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param5": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Verdict and Punishment",
+      "description": "During the Elemental Burst **The Bell Tolls! The Hunt Is On!**, after the Witchlure Bell in Hunter-Seeker mode deals DMG to an opponent, if this DMG triggers Swirl or Stellar Swirl in an opponent, it will also summon a **Banehunter Oathhammer** that will deal 150% of Prune's ATK as DMG to them, with the DMG Type matching the Elemental Conversion from the Swirl or Stellar Swirl. This DMG is considered Elemental Burst DMG."
+    },
+    {
+      "slot": "a4",
+      "name": "Tolling Synchronicity",
+      "description": "After Prune hits an opponent with the **Banehunter Oathhammer** that has undergone Elemental Conversion, other nearby party members will gain the Tolling Rally effect for 5s: When Normal, Charged, or Plunging Attacks, or Elemental Skills and Bursts deal DMG to opponents, that attack's DMG will be increased based on the portion of Prune's ATK in excess of 2,000 when they become affected by the Tolling Rally effect. Every excess ATK point increases that instance of DMG by 0.025%, up to a total of 50% max."
+    },
+    {
+      "slot": "util",
+      "name": "Tinker-Tink, Clank, and Bang!",
+      "description": "Has a 10% chance to get 1 regional Character Talent Material (base material excluded) when crafting. The rarity is the same as the resulting material."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "With a Vow to Rescue, the Journey Begins",
+      "description": "After the **Banehunter Oathhammer** that has undergone Elemental Conversion hits an opponent, Prune will regain 2 Energy. This effect can occur once every 1.8s."
+    },
+    {
+      "n": 2,
+      "name": "Useful for Cleaning Messy Baggage, Elemental Powers Are Indeed",
+      "description": "During the Elemental Burst **The Bell Tolls! The Hunt Is On!**, when the Witchlure Bell is in Hunter-Seeker mode, Prune gains the Hunt the Witch effect: Prune's ATK increases by 10%, and when the Witchlure Bell and the **Banehunter Oathhammer** that has undergone Elemental Conversion hits an opponent, it further increases her ATK by 5%. Prune's ATK can be increased by up to 40% in this way.\nThe original instance of the above effect will be removed if \"The Bell Tolls! The Hunt Is On!\" is used again during this time."
+    },
+    {
+      "n": 3,
+      "name": "The Caravan Exits the Mountain Pass, the Scenery Once More Changed",
+      "description": "Increases the Level of **The Bell Tolls! The Hunt Is On!** by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Looking Back Following the Wind, One's Shadow Still Halved",
+      "description": "After the **Banehunter Oathhammer** that has undergone Elemental Conversion hits an opponent, it will ricochet and land on a nearby opponent, dealing 80% ATK as DMG of the corresponding Elemental Type."
+    },
+    {
+      "n": 5,
+      "name": "100 Defeats? No Problem, Tomorrow, We Go Again",
+      "description": "Increases the Level of **Ring-A-Ding-Ding! Hexhunter Chime** by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "And That's the Story! Share It With Your Friends!",
+      "description": "The duration of the Witchlure Bell's Hunter-Seeker mode from the Elemental Burst **The Bell Tolls! The Hunt Is On!** is extended by 4s.\nAdditionally, after party members affected by Tolling Rally trigger any Elemental Reaction, they will cause Prune and the other current active character(s) affected by Tolling Rally to gain 350 ATK for 5s."
+    }
+  ]
+}

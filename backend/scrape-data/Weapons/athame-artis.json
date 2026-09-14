@@ -1,0 +1,52 @@
+{
+  "id": 11518,
+  "name": "Athame Artis",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Day King's Splendor Solis",
+  "effectTemplate": "CRIT DMG from Elemental Bursts is increased by <color=#99FFFFFF>{0}</color>. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by <color=#99FFFFFF>{1}</color>. Nearby active party members other than the equipping character have their ATK increased by <color=#99FFFFFF>{2}</color> for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "CRIT DMG from Elemental Bursts is increased by 16%. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by 20%. Nearby active party members other than the equipping character have their ATK increased by 16% for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "16%",
+        "20%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "CRIT DMG from Elemental Bursts is increased by 20%. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by 25%. Nearby active party members other than the equipping character have their ATK increased by 20% for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "20%",
+        "25%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "CRIT DMG from Elemental Bursts is increased by 24%. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by 30%. Nearby active party members other than the equipping character have their ATK increased by 24% for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "24%",
+        "30%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "CRIT DMG from Elemental Bursts is increased by 28%. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by 35%. Nearby active party members other than the equipping character have their ATK increased by 28% for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "28%",
+        "35%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "CRIT DMG from Elemental Bursts is increased by 32%. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by 40%. Nearby active party members other than the equipping character have their ATK increased by 32% for 3s.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "32%",
+        "40%",
+        "32%"
+      ]
+    }
+  }
+}

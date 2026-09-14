@@ -1,0 +1,47 @@
+{
+  "id": 14406,
+  "name": "Prototype Amber",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Gilding",
+  "effectTemplate": "Using an Elemental Burst regenerates <color=#99FFFFFF>{0}</color> Energy every 2s for 6s. All party members will regenerate <color=#99FFFFFF>{1}</color> HP every 2s for this duration.",
+  "refinements": {
+    "r1": {
+      "description": "Using an Elemental Burst regenerates 4 Energy every 2s for 6s. All party members will regenerate 4% HP every 2s for this duration.",
+      "values": [
+        "4",
+        "4%"
+      ]
+    },
+    "r2": {
+      "description": "Using an Elemental Burst regenerates 4.5 Energy every 2s for 6s. All party members will regenerate 4.5% HP every 2s for this duration.",
+      "values": [
+        "4.5",
+        "4.5%"
+      ]
+    },
+    "r3": {
+      "description": "Using an Elemental Burst regenerates 5 Energy every 2s for 6s. All party members will regenerate 5% HP every 2s for this duration.",
+      "values": [
+        "5",
+        "5%"
+      ]
+    },
+    "r4": {
+      "description": "Using an Elemental Burst regenerates 5.5 Energy every 2s for 6s. All party members will regenerate 5.5% HP every 2s for this duration.",
+      "values": [
+        "5.5",
+        "5.5%"
+      ]
+    },
+    "r5": {
+      "description": "Using an Elemental Burst regenerates 6 Energy every 2s for 6s. All party members will regenerate 6% HP every 2s for this duration.",
+      "values": [
+        "6",
+        "6%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": 15410,
+  "name": "Alley Hunter",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Oppidan Ambush",
+  "effectTemplate": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by <color=#99FFFFFF>{0}</color> every second up to a max of <color=#99FFFFFF>{1}</color>. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by <color=#99FFFFFF>{2}</color> per second until it reaches 0%.",
+  "refinements": {
+    "r1": {
+      "description": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 2% every second up to a max of 20%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 4% per second until it reaches 0%.",
+      "values": [
+        "2%",
+        "20%",
+        "4%"
+      ]
+    },
+    "r2": {
+      "description": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 2.5% every second up to a max of 25%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 5% per second until it reaches 0%.",
+      "values": [
+        "2.5%",
+        "25%",
+        "5%"
+      ]
+    },
+    "r3": {
+      "description": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 3% every second up to a max of 30%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 6% per second until it reaches 0%.",
+      "values": [
+        "3%",
+        "30%",
+        "6%"
+      ]
+    },
+    "r4": {
+      "description": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 3.5% every second up to a max of 35%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 7% per second until it reaches 0%.",
+      "values": [
+        "3.5%",
+        "35%",
+        "7%"
+      ]
+    },
+    "r5": {
+      "description": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 4% every second up to a max of 40%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 8% per second until it reaches 0%.",
+      "values": [
+        "4%",
+        "40%",
+        "8%"
+      ]
+    }
+  }
+}

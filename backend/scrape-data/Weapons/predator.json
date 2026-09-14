@@ -1,0 +1,16 @@
+{
+  "id": 15415,
+  "name": "Predator",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Strong Strike",
+  "effectTemplate": "<color=#99FFFFFF>Effective only on the following platform: </color>\n<color=#99FFFFFF>\"PlayStation™Network\"</color>\nDealing Cryo DMG to opponents increases this character's Normal and Charged Attack DMG by 10% for 6s. This effect can have a maximum of 2 stacks. Additionally, when Aloy equips Predator, ATK is increased by 66.",
+  "refinements": {
+    "r1": {
+      "description": "Effective only on the following platform: \n\"PlayStation™Network\"\nDealing Cryo DMG to opponents increases this character's Normal and Charged Attack DMG by 10% for 6s. This effect can have a maximum of 2 stacks. Additionally, when Aloy equips Predator, ATK is increased by 66.",
+      "values": []
+    }
+  }
+}

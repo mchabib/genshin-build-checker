@@ -1,0 +1,23 @@
+{
+  "key": "Yoimiya",
+  "role": "dps",
+  "self": [
+    {
+      "id": "yoimiya_e",
+      "mode": "always",
+      "description": "Yoimiya E (Niwabi Fire-Dance): NA jadi Pyro dan ×~1.6 (lv10 Blazing Arrow).",
+      "mod": { "source": "Yoimiya E", "scope": "na", "talentMultBonus": "= round((pct(p('skill','param4')) - 100) * 10) / 10" }
+    },
+    {
+      "id": "yoimiya_a1",
+      "mode": "assume",
+      "description": "Yoimiya A1: selama E, tiap NA kena → Pyro DMG +2% per stack (max 10 = +20%).",
+      "mod": { "source": "Yoimiya A1 (10 stack)", "scope": "all", "elementalDmgBonus": { "pyro": 20 }, "uptime": 0.6 }
+    }
+  ],
+  "reactions": { "with": { "hydro": { "na": "vaporize", "burst": "vaporize" } } },
+  "rotations": [
+    { "label": "E > 3× N5 > Q", "counts": { "na1": 3, "na2": 3, "na3": 3, "na4": 3, "na5": 3, "burst1": 1 }, "duration": 18, "note": "≈18s (E CD 18s, Niwabi 10s)" }
+  ],
+  "teams": [["Yelan", "Bennett", "Zhongli"], ["Yelan", "Yunjin", "Zhongli"]]
+}

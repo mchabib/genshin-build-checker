@@ -1,0 +1,153 @@
+{
+  "uid": "817613918",
+  "characters": {
+    "YaeMiko": {
+      "rotation": "3[E] turret lv3 24s, Q di-skip (Stellar-Conduct)",
+      "total": 763749.2,
+      "hits": {
+        "na1": 2412.1,
+        "na2": 2342.8,
+        "na3": 3460.1,
+        "ca1": 8691.1,
+        "plunge1": 3456.4,
+        "plunge_low": 6911.4,
+        "plunge_high": 8632.7,
+        "skill1": 10575,
+        "skill2": 13218.7,
+        "skill3": 16523.4,
+        "skill4": 20654.3,
+        "burst1": 28464.6,
+        "burst2": 36545.9,
+        "skill5": 3873.3,
+        "skill6": 13070.8,
+        "skill7": 24270,
+        "skill8": 52283.4
+      },
+      "modifiers": [
+        "cryo_resonance",
+        "golden_troupe_4pc",
+        "odette_stellar_base",
+        "polestar_field",
+        "sandrone_stellar_base",
+        "w_kagura_verity",
+        "w_kagura_verity_elem",
+        "w_kagura_verity_stellar",
+        "yae_a4",
+        "yae_c1_self",
+        "yae_golden_troupe_offfield"
+      ]
+    },
+    "Sandrone": {
+      "rotation": "3[C E] (Q) Stellar-Conduct",
+      "total": 931647,
+      "hits": {
+        "na1": 6921,
+        "na2": 6096.4,
+        "na3": 9326.8,
+        "ca1": 3946,
+        "ca2": 11246.2,
+        "ca3": 67725.4,
+        "ca4": 56437.9,
+        "na4": 3901.2,
+        "plunge1": 6766.9,
+        "plunge_low": 13531,
+        "plunge_high": 16901,
+        "skill1": 1616.9,
+        "skill2": 38949.5,
+        "skill3": 32457.9,
+        "burst1": 7371.6,
+        "burst2": 27642.7,
+        "burst3": 166466.1,
+        "burst4": 138721.8
+      },
+      "modifiers": [
+        "cryo_resonance",
+        "disenchantment_4pc",
+        "odette_stellar_base",
+        "polestar_field",
+        "sandrone_a1",
+        "sandrone_a4",
+        "sandrone_polestar_field",
+        "sandrone_stellar_base_self",
+        "w_teaspoon",
+        "w_teaspoon_atk",
+        "yae_c1"
+      ]
+    },
+    "Odette": {
+      "rotation": "E E (Coda + Dance Double) Stellar-Conduct",
+      "total": 315557.6,
+      "hits": {
+        "na1": 2637.4,
+        "na2": 2619.7,
+        "na3": 3605.3,
+        "na4": 3792.7,
+        "na5": 4588,
+        "ca1": 4312.4,
+        "plunge1": 2566.7,
+        "plunge_low": 5132.3,
+        "plunge_high": 6410.5,
+        "skill1": 7686,
+        "skill2": 6815.5,
+        "skill3a": 119800.7,
+        "skill3b": 99834,
+        "skill4": 3060.7,
+        "skill5a": 10588.4,
+        "skill5b": 8821.9,
+        "skill6": 3659.8,
+        "skill7a": 12660.3,
+        "skill7b": 10549.3,
+        "burst1": 7345.3,
+        "burst2": 11351.9
+      },
+      "modifiers": [
+        "cryo_resonance",
+        "odette_a4",
+        "odette_polestar_field",
+        "odette_stellar_base_self",
+        "polestar_field",
+        "sandrone_stellar_base",
+        "w_haran_geppaku_na",
+        "yae_c1"
+      ]
+    },
+    "Qiqi": {
+      "rotation": "E + Q (healer, damage sampingan)",
+      "total": 70113.4,
+      "hits": {
+        "na1": 765.3,
+        "na2": 788,
+        "na3": 979.8,
+        "na4": 1000.7,
+        "na5": 1277.9,
+        "ca1": 2608.1,
+        "plunge1": 1296,
+        "plunge_low": 2591.5,
+        "plunge_high": 3237,
+        "skill1": 3149.6,
+        "skill2": 1181.1,
+        "skill3": 787.4,
+        "burst1": 10815.3,
+        "burst2": 48668.2
+      },
+      "modifiers": [
+        "cryo_resonance",
+        "noblesse_4pc_self",
+        "odette_stellar_base",
+        "polestar_field",
+        "sandrone_stellar_base",
+        "yae_c1"
+      ]
+    }
+  },
+  "teamRotation": {
+    "notation": "Yae 3[E] > Odette 2[E] > Qiqi E Q > Sandrone 3[C E] Q",
+    "total": 2057296.2,
+    "perCharacter": {
+      "YaeMiko": 762687.7,
+      "Odette": 307939.7,
+      "Qiqi": 72532.9,
+      "Sandrone": 914135.8
+    }
+  }
+}

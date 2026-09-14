@@ -1,0 +1,42 @@
+{
+  "id": 15405,
+  "name": "Rust",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Rapid Firing",
+  "effectTemplate": "Increases Normal Attack DMG by <color=#99FFFFFF>{0}</color> but decreases Charged Attack DMG by 10%.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Normal Attack DMG by 40% but decreases Charged Attack DMG by 10%.",
+      "values": [
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Normal Attack DMG by 50% but decreases Charged Attack DMG by 10%.",
+      "values": [
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Normal Attack DMG by 60% but decreases Charged Attack DMG by 10%.",
+      "values": [
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Normal Attack DMG by 70% but decreases Charged Attack DMG by 10%.",
+      "values": [
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Normal Attack DMG by 80% but decreases Charged Attack DMG by 10%.",
+      "values": [
+        "80%"
+      ]
+    }
+  }
+}

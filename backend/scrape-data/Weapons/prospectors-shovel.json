@@ -1,0 +1,52 @@
+{
+  "id": 13433,
+  "name": "Prospector's Shovel",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Swift and Sure",
+  "effectTemplate": "Electro-Charged DMG is increased by <color=#99FFFFFF>{0}</color>, and Lunar-Charged DMG is increased by <color=#99FFFFFF>{1}</color>. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Electro-Charged DMG is increased by 48%, and Lunar-Charged DMG is increased by 12%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 12%.",
+      "values": [
+        "48%",
+        "12%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Electro-Charged DMG is increased by 60%, and Lunar-Charged DMG is increased by 15%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 15%.",
+      "values": [
+        "60%",
+        "15%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Electro-Charged DMG is increased by 72%, and Lunar-Charged DMG is increased by 18%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 18%.",
+      "values": [
+        "72%",
+        "18%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Electro-Charged DMG is increased by 84%, and Lunar-Charged DMG is increased by 21%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 21%.",
+      "values": [
+        "84%",
+        "21%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Electro-Charged DMG is increased by 96%, and Lunar-Charged DMG is increased by 24%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 24%.",
+      "values": [
+        "96%",
+        "24%",
+        "24%"
+      ]
+    }
+  }
+}

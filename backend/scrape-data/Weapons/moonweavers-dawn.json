@@ -1,0 +1,47 @@
+{
+  "id": 11434,
+  "name": "Moonweaver's Dawn",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Secret Silver's Testament",
+  "effectTemplate": "Increases Elemental Burst DMG by <color=#99FFFFFF>{0}</color>. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Burst DMG by 20%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 16%/28%.",
+      "values": [
+        "20%",
+        "16%/28%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Burst DMG by 25%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 20%/35%.",
+      "values": [
+        "25%",
+        "20%/35%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Burst DMG by 30%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 24%/42%.",
+      "values": [
+        "30%",
+        "24%/42%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Burst DMG by 35%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 28%/49%.",
+      "values": [
+        "35%",
+        "28%/49%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Burst DMG by 40%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 32%/56%.",
+      "values": [
+        "40%",
+        "32%/56%"
+      ]
+    }
+  }
+}

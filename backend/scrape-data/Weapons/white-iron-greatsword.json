@@ -1,0 +1,42 @@
+{
+  "id": 12303,
+  "name": "White Iron Greatsword",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "Cull the Weak",
+  "effectTemplate": "Defeating an opponent restores <color=#99FFFFFF>{0}</color> HP.",
+  "refinements": {
+    "r1": {
+      "description": "Defeating an opponent restores 8% HP.",
+      "values": [
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "Defeating an opponent restores 10% HP.",
+      "values": [
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "Defeating an opponent restores 12% HP.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "Defeating an opponent restores 14% HP.",
+      "values": [
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "Defeating an opponent restores 16% HP.",
+      "values": [
+        "16%"
+      ]
+    }
+  }
+}

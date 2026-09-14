@@ -1,0 +1,42 @@
+{
+  "id": 13425,
+  "name": "Rightful Reward",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Tip of the Spear",
+  "effectTemplate": "When the wielder is healed, restore <color=#99FFFFFF>{0}</color> Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "When the wielder is healed, restore 8 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+      "values": [
+        "8"
+      ]
+    },
+    "r2": {
+      "description": "When the wielder is healed, restore 10 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+      "values": [
+        "10"
+      ]
+    },
+    "r3": {
+      "description": "When the wielder is healed, restore 12 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+      "values": [
+        "12"
+      ]
+    },
+    "r4": {
+      "description": "When the wielder is healed, restore 14 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+      "values": [
+        "14"
+      ]
+    },
+    "r5": {
+      "description": "When the wielder is healed, restore 16 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+      "values": [
+        "16"
+      ]
+    }
+  }
+}

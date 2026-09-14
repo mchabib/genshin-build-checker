@@ -1,0 +1,47 @@
+{
+  "id": 11413,
+  "name": "Festering Desire",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Undying Admiration",
+  "effectTemplate": "Increases Elemental Skill DMG by <color=#99FFFFFF>{0}</color> and Elemental Skill CRIT Rate by <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Skill DMG by 16% and Elemental Skill CRIT Rate by 6%.",
+      "values": [
+        "16%",
+        "6%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Skill DMG by 20% and Elemental Skill CRIT Rate by 7.5%.",
+      "values": [
+        "20%",
+        "7.5%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Skill DMG by 24% and Elemental Skill CRIT Rate by 9%.",
+      "values": [
+        "24%",
+        "9%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Skill DMG by 28% and Elemental Skill CRIT Rate by 10.5%.",
+      "values": [
+        "28%",
+        "10.5%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Skill DMG by 32% and Elemental Skill CRIT Rate by 12%.",
+      "values": [
+        "32%",
+        "12%"
+      ]
+    }
+  }
+}

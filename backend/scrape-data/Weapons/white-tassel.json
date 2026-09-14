@@ -1,0 +1,42 @@
+{
+  "id": 13301,
+  "name": "White Tassel",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Sharp",
+  "effectTemplate": "Increases Normal Attack DMG by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Normal Attack DMG by 24%.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Normal Attack DMG by 30%.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Normal Attack DMG by 36%.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Normal Attack DMG by 42%.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Normal Attack DMG by 48%.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

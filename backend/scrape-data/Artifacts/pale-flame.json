@@ -1,0 +1,10 @@
+{
+  "id": 15018,
+  "name": "Pale Flame",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Physical DMG is increased by 25%.",
+  "fourPc": "When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%."
+}

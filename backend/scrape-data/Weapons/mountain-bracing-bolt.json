@@ -1,0 +1,47 @@
+{
+  "id": 13430,
+  "name": "Mountain-Bracing Bolt",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Hope Beyond the Peaks",
+  "effectTemplate": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by <color=#99FFFFFF>{0}</color>. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by <color=#99FFFFFF>{1}</color> for 8s.",
+  "refinements": {
+    "r1": {
+      "description": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by 12%. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by 12% for 8s.",
+      "values": [
+        "12%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by 15%. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by 15% for 8s.",
+      "values": [
+        "15%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by 18%. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by 18% for 8s.",
+      "values": [
+        "18%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by 21%. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by 21% for 8s.",
+      "values": [
+        "21%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Decreases Climbing Stamina Consumption by 15% and increases Elemental Skill DMG by 24%. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by 24% for 8s.",
+      "values": [
+        "24%",
+        "24%"
+      ]
+    }
+  }
+}

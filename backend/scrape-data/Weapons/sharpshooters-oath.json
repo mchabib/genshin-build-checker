@@ -1,0 +1,42 @@
+{
+  "id": 15302,
+  "name": "Sharpshooter's Oath",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Precise",
+  "effectTemplate": "Increases DMG against weak spots by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against weak spots by 24%.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against weak spots by 30%.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against weak spots by 36%.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against weak spots by 42%.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against weak spots by 48%.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

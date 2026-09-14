@@ -1,0 +1,47 @@
+{
+  "id": 14517,
+  "name": "Starcaller's Watch",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Offering Unto Wind and Sun",
+  "effectTemplate": "Increases Elemental Mastery by <color=#99FFFFFF>{0}</color>. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals <color=#99FFFFFF>{1}</color> increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Mastery by 100. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 28% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+      "values": [
+        "100",
+        "28%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Mastery by 125. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 35% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+      "values": [
+        "125",
+        "35%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Mastery by 150. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 42% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+      "values": [
+        "150",
+        "42%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Mastery by 175. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 49% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+      "values": [
+        "175",
+        "49%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Mastery by 200. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 56% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
+      "values": [
+        "200",
+        "56%"
+      ]
+    }
+  }
+}

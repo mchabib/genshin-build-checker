@@ -1,0 +1,29 @@
+{
+  "key": "Zhongli",
+  "role": "shielder",
+  "self": [
+    {
+      "id": "zhongli_a4_q",
+      "mode": "always",
+      "description": "Zhongli A4: Q +33% Max HP (flat ke base DMG).",
+      "mod": { "source": "Zhongli A4 (Q)", "scope": "burst", "flatDmg": "= round(char.final.hp * 0.33)" }
+    },
+    {
+      "id": "zhongli_a4_e",
+      "mode": "always",
+      "description": "Zhongli A4: E (Stele/Resonance/Hold) +1.9% Max HP.",
+      "mod": { "source": "Zhongli A4 (E)", "scope": "skill", "flatDmg": "= round(char.final.hp * 0.019)" }
+    },
+    {
+      "id": "zhongli_a4_na",
+      "mode": "always",
+      "description": "Zhongli A4: NA/CA/Plunge +1.39% Max HP.",
+      "mod": { "source": "Zhongli A4 (NA)", "scope": ["na", "ca", "plunge"], "flatDmg": "= round(char.final.hp * 0.0139)" }
+    }
+  ],
+  "actions": { "E": { "skill1a": 1 }, "hE": { "skill2": 1, "skill1a": 1 }, "Q": { "burst1": 1 } },
+  "durations": { "hE": 2.0 },
+  "rotations": [
+    { "label": "Hold E + Q + 6 resonance", "counts": { "skill2": 1, "skill1a": 1, "skill1b": 6, "burst1": 1 }, "duration": 20, "note": "≈20s (shield 20s); shielder: damage bukan tujuan utama" }
+  ]
+}

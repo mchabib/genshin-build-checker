@@ -1,0 +1,47 @@
+{
+  "id": 14501,
+  "name": "Skyward Atlas",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Wandering Clouds",
+  "effectTemplate": "Increases Elemental DMG Bonus by <color=#99FFFFFF>{0}</color>. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing <color=#99FFFFFF>{1}</color> ATK DMG. Can only occur once every 30s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental DMG Bonus by 12%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 160% ATK DMG. Can only occur once every 30s.",
+      "values": [
+        "12%",
+        "160%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental DMG Bonus by 15%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 200% ATK DMG. Can only occur once every 30s.",
+      "values": [
+        "15%",
+        "200%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental DMG Bonus by 18%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 240% ATK DMG. Can only occur once every 30s.",
+      "values": [
+        "18%",
+        "240%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental DMG Bonus by 21%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 280% ATK DMG. Can only occur once every 30s.",
+      "values": [
+        "21%",
+        "280%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental DMG Bonus by 24%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 320% ATK DMG. Can only occur once every 30s.",
+      "values": [
+        "24%",
+        "320%"
+      ]
+    }
+  }
+}

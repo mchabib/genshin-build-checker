@@ -1,0 +1,18 @@
+{
+  "key": "Chasca",
+  "role": "dps",
+  "self": [
+    {
+      "id": "chasca_a1",
+      "mode": "assume",
+      "description": "Chasca A1 (Spirit of the Radiant Shadow): +15% Shining Shadowhunt Shell DMG per elemen eligible (Pyro/Hydro/Cryo/Electro) di tim, max 3.",
+      "mod": { "source": "= 'Chasca A1 (' + min(3, team.elements.filter(e => ['pyro','hydro','cryo','electro'].includes(e)).length) + ' elemen)'", "scope": "skill", "hitIds": ["skill4"], "dmgBonus": "= 15 * min(3, team.elements.filter(e => ['pyro','hydro','cryo','electro'].includes(e)).length)" }
+    }
+  ],
+  "actions": { "E": { "skill1": 1, "skill3": 6, "skill4": 12 }, "Q": { "burst1": 1, "burst2": 6 } },
+  "durations": { "E": 9.0 },
+  "rotations": [
+    { "label": "E: 3 Multitarget Fire (2 Shadowhunt + 4 Shining) + Q", "counts": { "skill1": 1, "skill3": 6, "skill4": 12, "burst1": 1, "burst2": 6 }, "duration": 15, "note": "≈15s (E CD 15s); Shining Shell elemen ikut tim (dihitung sebagai anemo di sini — aproksimasi)" }
+  ],
+  "teams": [["Bennett", "Furina", "Ororon"], ["Bennett", "Xilonen", "Furina"]]
+}

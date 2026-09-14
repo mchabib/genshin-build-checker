@@ -1,0 +1,487 @@
+{
+  "key": "SangonomiyaKokomi",
+  "nameEn": "Sangonomiya Kokomi",
+  "gdbName": "Sangonomiya Kokomi",
+  "element": "Hydro",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "2.1",
+  "talents": {
+    "normal": {
+      "name": "The Shape of Water",
+      "description": "Normal Attack\nPerforms up to 3 consecutive attacks that take the form of swimming fish, dealing Hydro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.\n\nPlunging Attack\nGathering the might of Hydro, Kokomi plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:P}",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:P}/{param8:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.68376,
+            0.735042,
+            0.786324,
+            0.8547,
+            0.905982,
+            0.957264,
+            1.02564,
+            1.094016,
+            1.162392,
+            1.230768,
+            1.299144,
+            1.36752,
+            1.45299,
+            1.53846,
+            1.62393
+          ],
+          "param2": [
+            0.615384,
+            0.661538,
+            0.707692,
+            0.76923,
+            0.815384,
+            0.861538,
+            0.923076,
+            0.984614,
+            1.046153,
+            1.107691,
+            1.16923,
+            1.230768,
+            1.307691,
+            1.384614,
+            1.461537
+          ],
+          "param3": [
+            0.943056,
+            1.013785,
+            1.084514,
+            1.17882,
+            1.249549,
+            1.320278,
+            1.414584,
+            1.50889,
+            1.603195,
+            1.697501,
+            1.791806,
+            1.886112,
+            2.003994,
+            2.121876,
+            2.239758
+          ],
+          "param4": [
+            1.4832,
+            1.59444,
+            1.70568,
+            1.854,
+            1.96524,
+            2.07648,
+            2.2248,
+            2.37312,
+            2.52144,
+            2.66976,
+            2.81808,
+            2.9664,
+            3.1518,
+            3.3372,
+            3.5226
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param7": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param8": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Kurage's Oath",
+      "description": "Summons a \"Bake-Kurage\" created from water that can heal her allies.\nUsing this skill will apply the Wet status to Sangonomiya Kokomi.\n\nBake-Kurage\nDeals Hydro DMG to surrounding opponents and heals nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.",
+      "attributes": {
+        "labels": [
+          "Regeneration|{param1:F1P} Max HP+{param2:I}",
+          "Ripple DMG|{param3:F1P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.044,
+            0.0473,
+            0.0506,
+            0.055,
+            0.0583,
+            0.0616,
+            0.066,
+            0.0704,
+            0.0748,
+            0.0792,
+            0.0836,
+            0.088,
+            0.0935,
+            0.099,
+            0.1045
+          ],
+          "param2": [
+            423.7063,
+            466.08282,
+            511.99072,
+            561.43,
+            614.40063,
+            670.90265,
+            730.9361,
+            794.50085,
+            861.59705,
+            932.22455,
+            1006.3835,
+            1084.0737,
+            1165.2954,
+            1250.0485,
+            1338.3329
+          ],
+          "param3": [
+            1.091904,
+            1.173797,
+            1.25569,
+            1.36488,
+            1.446773,
+            1.528666,
+            1.637856,
+            1.747046,
+            1.856237,
+            1.965427,
+            2.074618,
+            2.183808,
+            2.320296,
+            2.456784,
+            2.593272
+          ],
+          "param4": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param5": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Nereid's Ascension",
+      "description": "Summons the might of Watatsumi, dealing Hydro DMG to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.\n\nCeremonial Garment\n·Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP.\n·When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP.\n·Increases Sangonomiya Kokomi's resistance to interruption and allows her to walk on the water's surface.\n\nThese effects will be cleared once Sangonomiya Kokomi leaves the field.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P} Max HP",
+          "Normal Attack DMG Bonus|{param4:F1P} Max HP",
+          "Charged Attack DMG Bonus|{param5:F1P} Max HP",
+          "Bake-Kurage DMG Bonus|{param9:F1P} Max HP",
+          "HP Regeneration Per Hit|{param2:F2P} Max HP+{param3:I}",
+          "Duration|{param6:F1}s",
+          "CD|{param7:F1}s",
+          "Energy Cost|{param8:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.10416,
+            0.111972,
+            0.119784,
+            0.1302,
+            0.138012,
+            0.145824,
+            0.15624,
+            0.166656,
+            0.177072,
+            0.187488,
+            0.197904,
+            0.20832,
+            0.22134,
+            0.23436,
+            0.24738
+          ],
+          "param2": [
+            0.00808,
+            0.008686,
+            0.009292,
+            0.0101,
+            0.010706,
+            0.011312,
+            0.01212,
+            0.012928,
+            0.013736,
+            0.014544,
+            0.015352,
+            0.01616,
+            0.01717,
+            0.01818,
+            0.01919
+          ],
+          "param3": [
+            77.03738,
+            84.74218,
+            93.08906,
+            102.078,
+            111.70901,
+            121.982086,
+            132.89723,
+            144.45445,
+            156.65373,
+            169.49507,
+            182.97849,
+            197.10397,
+            211.87152,
+            227.28113,
+            243.33281
+          ],
+          "param4": [
+            0.0484,
+            0.05203,
+            0.05566,
+            0.0605,
+            0.06413,
+            0.06776,
+            0.0726,
+            0.07744,
+            0.08228,
+            0.08712,
+            0.09196,
+            0.0968,
+            0.10285,
+            0.1089,
+            0.11495
+          ],
+          "param5": [
+            0.06776,
+            0.072842,
+            0.077924,
+            0.0847,
+            0.089782,
+            0.094864,
+            0.10164,
+            0.108416,
+            0.115192,
+            0.121968,
+            0.128744,
+            0.13552,
+            0.14399,
+            0.15246,
+            0.16093
+          ],
+          "param6": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param7": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param8": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ],
+          "param9": [
+            0.070963,
+            0.076285,
+            0.081608,
+            0.088704,
+            0.094026,
+            0.099348,
+            0.106445,
+            0.113541,
+            0.120637,
+            0.127734,
+            0.13483,
+            0.141926,
+            0.150797,
+            0.159667,
+            0.168538
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Tamakushi Casket",
+      "description": "If Sangonomiya Kokomi's own Bake-Kurage is on the field when she uses Nereid's Ascension, the Bake-Kurage's duration will be refreshed."
+    },
+    {
+      "slot": "a4",
+      "name": "Song of Pearls",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, the Normal and Charged Attack DMG Bonus Sangonomiya Kokomi gains based on her Max HP will receive a further increase based on 15% of her Healing Bonus."
+    },
+    {
+      "slot": "util",
+      "name": "Princess of Watatsumi",
+      "description": "Decreases swimming Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects."
+    },
+    {
+      "slot": "other",
+      "name": "Flawless Strategy",
+      "description": "Sangonomiya Kokomi has a 25% Healing Bonus, but a 100% decrease in CRIT Rate."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "At Water's Edge",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, the final Normal Attack in Sangonomiya Kokomi's combo will unleash a swimming fish to deal 30% of her Max HP as Hydro DMG.\nThis DMG is not considered Normal Attack DMG."
+    },
+    {
+      "n": 2,
+      "name": "The Clouds Like Waves Rippling",
+      "description": "Sangonomiya Kokomi gains the following Healing Bonuses with regard to characters with 50% or less HP via the following methods:\n·Kurage's Oath Bake-Kurage: 4.5% of Kokomi's Max HP.\n·Nereid's Ascension Normal and Charged Attacks: 0.6% of Kokomi's Max HP."
+    },
+    {
+      "n": 3,
+      "name": "The Moon, A Ship O'er the Seas",
+      "description": "Increases the Level of Nereid's Ascension by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "The Moon Overlooks the Waters",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, Sangonomiya Kokomi's Normal Attack SPD is increased by 10%, and Normal Attacks that hit opponents will restore 0.8 Energy for her.\nThis effect can occur once every 0.2s."
+    },
+    {
+      "n": 5,
+      "name": "All Streams Flow to the Sea",
+      "description": "Increases the Level of Kurage's Oath by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Sango Isshin",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, Sangonomiya Kokomi gains a 40% Hydro DMG Bonus for 4s when her Normal and Charged Attacks heal, or would heal, any party member with 80% or more HP."
+    }
+  ]
+}

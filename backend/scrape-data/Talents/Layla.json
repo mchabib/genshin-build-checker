@@ -1,0 +1,428 @@
+{
+  "key": "Layla",
+  "nameEn": "Layla",
+  "gdbName": "Layla",
+  "element": "Cryo",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "version": "3.2",
+  "talents": {
+    "normal": {
+      "name": "Sword of the Radiant Path",
+      "description": "Normal Attack\nPerforms up to 3 rapid strikes.\n\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:F1P}+{param5:F1P}",
+          "Charged Attack Stamina Cost|{param6:F1}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.512173,
+            0.553862,
+            0.59555,
+            0.655105,
+            0.696793,
+            0.744438,
+            0.809948,
+            0.875459,
+            0.940969,
+            1.012435,
+            1.083901,
+            1.155367,
+            1.226833,
+            1.298299,
+            1.369765
+          ],
+          "param2": [
+            0.484834,
+            0.524297,
+            0.56376,
+            0.620136,
+            0.659599,
+            0.7047,
+            0.766714,
+            0.828727,
+            0.890741,
+            0.958392,
+            1.026043,
+            1.093694,
+            1.161346,
+            1.228997,
+            1.296648
+          ],
+          "param3": [
+            0.729736,
+            0.789133,
+            0.84853,
+            0.933383,
+            0.99278,
+            1.060663,
+            1.154001,
+            1.247339,
+            1.340677,
+            1.442501,
+            1.544325,
+            1.646148,
+            1.747972,
+            1.849795,
+            1.951619
+          ],
+          "param4": [
+            0.4773,
+            0.51615,
+            0.555,
+            0.6105,
+            0.64935,
+            0.69375,
+            0.7548,
+            0.81585,
+            0.8769,
+            0.9435,
+            1.0101,
+            1.0767,
+            1.1433,
+            1.2099,
+            1.2765
+          ],
+          "param5": [
+            0.52546,
+            0.56823,
+            0.611,
+            0.6721,
+            0.71487,
+            0.76375,
+            0.83096,
+            0.89817,
+            0.96538,
+            1.0387,
+            1.11202,
+            1.18534,
+            1.25866,
+            1.33198,
+            1.4053
+          ],
+          "param6": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param7": [
+            0.639324,
+            0.691362,
+            0.7434,
+            0.81774,
+            0.869778,
+            0.92925,
+            1.011024,
+            1.092798,
+            1.174572,
+            1.26378,
+            1.352988,
+            1.442196,
+            1.531404,
+            1.620612,
+            1.70982
+          ],
+          "param8": [
+            1.278377,
+            1.382431,
+            1.486485,
+            1.635134,
+            1.739187,
+            1.858106,
+            2.02162,
+            2.185133,
+            2.348646,
+            2.527025,
+            2.705403,
+            2.883781,
+            3.062159,
+            3.240537,
+            3.418915
+          ],
+          "param9": [
+            1.596762,
+            1.726731,
+            1.8567,
+            2.04237,
+            2.172339,
+            2.320875,
+            2.525112,
+            2.729349,
+            2.933586,
+            3.15639,
+            3.379194,
+            3.601998,
+            3.824802,
+            4.047606,
+            4.27041
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Nights of Formal Focus",
+      "description": "Puts forth a shield known as the Curtain of Slumber, dealing AoE Cryo DMG.\nThe Curtain of Slumber's DMG Absorption is based on Layla's Max HP and absorbs Cryo DMG with 250% effectiveness. When the shield is deployed, Layla will have Cryo applied to her briefly.\n\nNight Stars and Shooting Stars\nWhile the Curtain of Slumber is active, it will create 1 Night Star that will be attached to it every 1.5s. When a character protected by this shield uses an Elemental Skill, 2 Night Stars will be created. Night Stars can be created once every 0.3s in this way. A maximum of 4 Night Stars can be accumulated at any one time.\nOnce the Curtain of Slumber has accumulated 4 Night Stars and there are opponents nearby, these Night Stars will transform into homing Shooting Stars that will be fired off in sequence, dealing Cryo DMG to any opponents hit.\nIf the Curtain of Slumber's duration ends or it is destroyed, the Night Stars will disappear. If they are already being fired off as Shooting Stars, these Shooting Stars will last until this wave of shots ends.\n\nNew Night Stars cannot be created until the previous wave of Shooting Stars has been fired completely.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Shooting Star DMG|{param2:F1P}",
+          "Base Shield DMG Absorption|{param3:F1P} Max HP+{param4:I}",
+          "Shield Duration|{param5:F1}s",
+          "CD|{param6:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.128,
+            0.1376,
+            0.1472,
+            0.16,
+            0.1696,
+            0.1792,
+            0.192,
+            0.2048,
+            0.2176,
+            0.2304,
+            0.2432,
+            0.256,
+            0.272,
+            0.288,
+            0.304
+          ],
+          "param2": [
+            0.1472,
+            0.15824,
+            0.16928,
+            0.184,
+            0.19504,
+            0.20608,
+            0.2208,
+            0.23552,
+            0.25024,
+            0.26496,
+            0.27968,
+            0.2944,
+            0.3128,
+            0.3312,
+            0.3496
+          ],
+          "param3": [
+            0.108,
+            0.1161,
+            0.1242,
+            0.135,
+            0.1431,
+            0.1512,
+            0.162,
+            0.1728,
+            0.1836,
+            0.1944,
+            0.2052,
+            0.216,
+            0.2295,
+            0.243,
+            0.2565
+          ],
+          "param4": [
+            1040.007,
+            1144.0221,
+            1256.7052,
+            1378.0562,
+            1508.0751,
+            1646.762,
+            1794.1167,
+            1950.1394,
+            2114.83,
+            2288.1887,
+            2470.215,
+            2660.9097,
+            2860.272,
+            3068.3022,
+            3285.0005
+          ],
+          "param5": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param6": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Dream of the Star-Stream Shaker",
+      "description": "Unleashes a Celestial Dreamsphere that constantly fires Starlight Slugs at opponents within its AoE, dealing Cryo DMG.\nWhen a Starlight Slug hits, it will generate 1 Night Star for nearby Curtains of Slumber. Each Curtain of Slumber can gain 1 Night Star this way every 0.5s.",
+      "attributes": {
+        "labels": [
+          "Starlight Slug DMG|{param1:F1P} Max HP",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.046488,
+            0.049975,
+            0.053461,
+            0.05811,
+            0.061597,
+            0.065083,
+            0.069732,
+            0.074381,
+            0.07903,
+            0.083678,
+            0.088327,
+            0.092976,
+            0.098787,
+            0.104598,
+            0.110409
+          ],
+          "param2": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param3": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param4": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Like Nascent Light",
+      "description": "While the Curtain of Slumber is active, the Deep Sleep effect will activate each time the Curtain gains 1 Night Star:\n·The Shield Strength of a character under the effect of the Curtain of Slumber increases by 6%.\n·This effect can have a maximum of 4 stacks and persists until the Curtain of Slumber disappears."
+    },
+    {
+      "slot": "a4",
+      "name": "Sweet Slumber Undisturbed",
+      "description": "The DMG dealt by the Shooting Stars fired by Nights of Formal Focus is increased by 1.5% of Layla's Max HP."
+    },
+    {
+      "slot": "util",
+      "name": "Shadowy Dream-Signs",
+      "description": "When Layla crafts Character Talent Materials, she has a 10% chance to receive double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Fortress of Fantasy",
+      "description": "The Shield Absorption of the Curtain of Slumber generated by Nights of Formal Focus is increased by 20%.\nAdditionally, when unleashing Nights of Formal Focus, she will generate a shield for any nearby party members who are not being protected by a Curtain of Slumber. This shield will have 35% of the absorption of a Curtain of Slumber, will last for 12s, and will absorb Cryo DMG with 250% effectiveness."
+    },
+    {
+      "n": 2,
+      "name": "Light's Remit",
+      "description": "When Shooting Stars from Nights of Formal Focus strike opponents, they will each restore 1 Energy to Layla. Each Shooting Star can restore Energy to her in this manner once."
+    },
+    {
+      "n": 3,
+      "name": "Secrets of the Night",
+      "description": "Increases the Level of Nights of Formal Focus by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Starry Illumination",
+      "description": "When Nights of Formal Focus starts to fire off Shooting Stars, it will grant all nearby party members the Dawn Star effect, causing their Normal and Charged Attack DMG to increase based on 5% of Layla's Max HP.\nDawn Star can last up to 3s and will be removed 0.05s after dealing Normal or Charged Attack DMG."
+    },
+    {
+      "n": 5,
+      "name": "Stream of Consciousness",
+      "description": "Increases the Level of Dream of the Star-Stream Shaker by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Radiant Soulfire",
+      "description": "Shooting Stars from Nights of Formal Focus deal 40% increased DMG, and Starlight Slugs from Dream of the Star-Stream Shaker deal 40% increased DMG.\nAdditionally, the interval between the creation of Night Stars via Nights of Formal Focus is decreased by 20%."
+    }
+  ]
+}

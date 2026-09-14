@@ -1,0 +1,42 @@
+{
+  "id": 14404,
+  "name": "Royal Grimoire",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Focus",
+  "effectTemplate": "Upon damaging an opponent, increases CRIT Rate by <color=#99FFFFFF>{0}</color>. Max 5 stacks. A CRIT Hit removes all stacks.",
+  "refinements": {
+    "r1": {
+      "description": "Upon damaging an opponent, increases CRIT Rate by 8%. Max 5 stacks. A CRIT Hit removes all stacks.",
+      "values": [
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "Upon damaging an opponent, increases CRIT Rate by 10%. Max 5 stacks. A CRIT Hit removes all stacks.",
+      "values": [
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "Upon damaging an opponent, increases CRIT Rate by 12%. Max 5 stacks. A CRIT Hit removes all stacks.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "Upon damaging an opponent, increases CRIT Rate by 14%. Max 5 stacks. A CRIT Hit removes all stacks.",
+      "values": [
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "Upon damaging an opponent, increases CRIT Rate by 16%. Max 5 stacks. A CRIT Hit removes all stacks.",
+      "values": [
+        "16%"
+      ]
+    }
+  }
+}

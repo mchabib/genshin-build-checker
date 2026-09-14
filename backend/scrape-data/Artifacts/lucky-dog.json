@@ -1,0 +1,11 @@
+{
+  "id": 10011,
+  "name": "Lucky Dog",
+  "rarity": [
+    1,
+    2,
+    3
+  ],
+  "twoPc": "DEF increased by 100.",
+  "fourPc": "Picking up Mora restores 300 HP."
+}

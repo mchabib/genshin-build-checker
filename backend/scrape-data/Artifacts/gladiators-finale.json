@@ -1,0 +1,10 @@
+{
+  "id": 15001,
+  "name": "Gladiator's Finale",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%."
+}

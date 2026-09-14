@@ -1,0 +1,42 @@
+{
+  "id": 13302,
+  "name": "Halberd",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 3,
+  "baseAtkLv1": 39.8751,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Heavy",
+  "effectTemplate": "Normal Attacks deal an additional <color=#99FFFFFF>{0}</color> ATK as DMG. This effect can only occur once every 10s.",
+  "refinements": {
+    "r1": {
+      "description": "Normal Attacks deal an additional 160% ATK as DMG. Can only occur once every 10s.",
+      "values": [
+        "160%"
+      ]
+    },
+    "r2": {
+      "description": "Normal Attacks deal an additional 200% ATK as DMG. This effect can only occur once every 10s.",
+      "values": [
+        "200%"
+      ]
+    },
+    "r3": {
+      "description": "Normal Attacks deal an additional 240% ATK as DMG. This effect can only occur once every 10s.",
+      "values": [
+        "240%"
+      ]
+    },
+    "r4": {
+      "description": "Normal Attacks deal an additional 280% ATK as DMG. This effect can only occur once every 10s.",
+      "values": [
+        "280%"
+      ]
+    },
+    "r5": {
+      "description": "Normal Attacks deal an additional 320% ATK as DMG. This effect can only occur once every 10s.",
+      "values": [
+        "320%"
+      ]
+    }
+  }
+}

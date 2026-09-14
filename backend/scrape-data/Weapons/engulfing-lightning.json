@@ -1,0 +1,52 @@
+{
+  "id": 13509,
+  "name": "Engulfing Lightning",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Timeless Dream: Eternal Stove",
+  "effectTemplate": "ATK increased by <color=#99FFFFFF>{0}</color> of Energy Recharge over the base 100%. You can gain a maximum bonus of <color=#99FFFFFF>{1}</color> ATK. Gain <color=#99FFFFFF>{2}</color> Energy Recharge for 12s after using an Elemental Burst.",
+  "refinements": {
+    "r1": {
+      "description": "ATK increased by 28% of Energy Recharge over the base 100%. You can gain a maximum bonus of 80% ATK. Gain 30% Energy Recharge for 12s after using an Elemental Burst.",
+      "values": [
+        "28%",
+        "80%",
+        "30%"
+      ]
+    },
+    "r2": {
+      "description": "ATK increased by 35% of Energy Recharge over the base 100%. You can gain a maximum bonus of 90% ATK. Gain 35% Energy Recharge for 12s after using an Elemental Burst.",
+      "values": [
+        "35%",
+        "90%",
+        "35%"
+      ]
+    },
+    "r3": {
+      "description": "ATK increased by 42% of Energy Recharge over the base 100%. You can gain a maximum bonus of 100% ATK. Gain 40% Energy Recharge for 12s after using an Elemental Burst.",
+      "values": [
+        "42%",
+        "100%",
+        "40%"
+      ]
+    },
+    "r4": {
+      "description": "ATK increased by 49% of Energy Recharge over the base 100%. You can gain a maximum bonus of 110% ATK. Gain 45% Energy Recharge for 12s after using an Elemental Burst.",
+      "values": [
+        "49%",
+        "110%",
+        "45%"
+      ]
+    },
+    "r5": {
+      "description": "ATK increased by 56% of Energy Recharge over the base 100%. You can gain a maximum bonus of 120% ATK. Gain 50% Energy Recharge for 12s after using an Elemental Burst.",
+      "values": [
+        "56%",
+        "120%",
+        "50%"
+      ]
+    }
+  }
+}

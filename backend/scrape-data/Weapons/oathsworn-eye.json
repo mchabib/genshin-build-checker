@@ -1,0 +1,42 @@
+{
+  "id": 14415,
+  "name": "Oathsworn Eye",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "People of the Faltering Light",
+  "effectTemplate": "Increases Energy Recharge by <color=#99FFFFFF>{0}</color> for 10s after using an Elemental Skill.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Energy Recharge by 24% for 10s after using an Elemental Skill.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Energy Recharge by 30% for 10s after using an Elemental Skill.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Energy Recharge by 36% for 10s after using an Elemental Skill.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Energy Recharge by 42% for 10s after using an Elemental Skill.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Energy Recharge by 48% for 10s after using an Elemental Skill.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

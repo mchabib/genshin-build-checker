@@ -1,0 +1,430 @@
+{
+  "key": "Gorou",
+  "nameEn": "Gorou",
+  "gdbName": "Gorou",
+  "element": "Geo",
+  "weaponType": "WEAPON_BOW",
+  "version": "2.3",
+  "talents": {
+    "normal": {
+      "name": "Ripping Fang Fletching",
+      "description": "Normal Attack\nPerforms up to 4 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal Geo DMG.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "Aimed Shot|{param5:F1P}",
+          "Fully-Charged Aimed Shot|{param6:P}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.37754,
+            0.40827,
+            0.439,
+            0.4829,
+            0.51363,
+            0.54875,
+            0.59704,
+            0.64533,
+            0.69362,
+            0.7463,
+            0.79898,
+            0.85166,
+            0.90434,
+            0.95702,
+            1.0097
+          ],
+          "param2": [
+            0.37152,
+            0.40176,
+            0.432,
+            0.4752,
+            0.50544,
+            0.54,
+            0.58752,
+            0.63504,
+            0.68256,
+            0.7344,
+            0.78624,
+            0.83808,
+            0.88992,
+            0.94176,
+            0.9936
+          ],
+          "param3": [
+            0.4945,
+            0.53475,
+            0.575,
+            0.6325,
+            0.67275,
+            0.71875,
+            0.782,
+            0.84525,
+            0.9085,
+            0.9775,
+            1.0465,
+            1.1155,
+            1.1845,
+            1.2535,
+            1.3225
+          ],
+          "param4": [
+            0.58996,
+            0.63798,
+            0.686,
+            0.7546,
+            0.80262,
+            0.8575,
+            0.93296,
+            1.00842,
+            1.08388,
+            1.1662,
+            1.24852,
+            1.33084,
+            1.41316,
+            1.49548,
+            1.5778
+          ],
+          "param5": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param6": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Inuzaka All-Round Defense",
+      "description": "Deals AoE Geo DMG and sets up a General's War Banner.\n\nGeneral's War Banner\nProvides up to 3 buffs to active characters within the skill's AoE based on the number of Geo characters in the party at the time of casting:\n· 1 Geo character: Adds \"Standing Firm\" - DEF Bonus.\n· 2 Geo characters: Adds \"Impregnable\" - Increased resistance to interruption.\n· 3 Geo characters: Adds \"Crunch\" - Geo DMG Bonus.\n\nGorou can deploy only 1 General's War Banner on the field at any one time. Characters can only benefit from 1 General's War Banner at a time. When a party member leaves the field, the active buff will last for 2s.\n\nHold\nAdjust the location of the skill.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "DEF Increase|{param2:I}",
+          "Geo DMG Bonus|{param3:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.072,
+            1.1524,
+            1.2328,
+            1.34,
+            1.4204,
+            1.5008,
+            1.608,
+            1.7152,
+            1.8224,
+            1.9296,
+            2.0368,
+            2.144,
+            2.278,
+            2.412,
+            2.546
+          ],
+          "param2": [
+            206.16,
+            221.622,
+            237.084,
+            257.7,
+            273.162,
+            288.624,
+            309.24,
+            329.856,
+            350.472,
+            371.088,
+            391.704,
+            412.32,
+            438.09,
+            463.86,
+            489.63
+          ],
+          "param3": [
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15,
+            0.15
+          ],
+          "param4": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param5": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Juuga: Forward Unto Victory",
+      "description": "Displaying his valor as a general, Gorou deals AoE Geo DMG and creates a field known as General's Glory to embolden his comrades.\n\nGeneral's Glory\nThis field has the following properties:\n· Like the General's War Banner created by Inuzaka All-Round Defense, provides buffs to active characters within the skill's AoE based on the number of Geo characters in the party. Also moves together with your active character.\n· Generates 1 Crystal Collapse every 1.5s that deals AoE Geo DMG to 1 opponent within the skill's AoE.\n· Pulls 1 elemental shard in the skill's AoE to your active character's position every 1.5s (elemental shards are created by Crystallize reactions).\n\nIf a General's War Banner created by Gorou currently exists on the field when this ability is used, it will be destroyed. In addition, for the duration of General's Glory, Gorou's Elemental Skill \"Inuzaka All-Round Defense\" will not create the General's War Banner.\n If Gorou falls, the effects of General's Glory will be cleared.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:P} DEF",
+          "Crystal Collapse DMG|{param2:P} DEF",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.98216,
+            1.055822,
+            1.129484,
+            1.2277,
+            1.301362,
+            1.375024,
+            1.47324,
+            1.571456,
+            1.669672,
+            1.767888,
+            1.866104,
+            1.96432,
+            2.08709,
+            2.20986,
+            2.33263
+          ],
+          "param2": [
+            0.613,
+            0.658975,
+            0.70495,
+            0.76625,
+            0.812225,
+            0.8582,
+            0.9195,
+            0.9808,
+            1.0421,
+            1.1034,
+            1.1647,
+            1.226,
+            1.302625,
+            1.37925,
+            1.455875
+          ],
+          "param3": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "param4": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param5": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Heedless of the Wind and Weather",
+      "description": "After using Juuga: Forward Unto Victory, all nearby party members' DEF is increased by 25% for 12s."
+    },
+    {
+      "slot": "a4",
+      "name": "A Favor Repaid",
+      "description": "Gorou receives the following DMG Bonuses to his attacks based on his DEF:\n· Inuzaka All-Round Defense: Skill DMG increased by 156% of DEF\n· Juuga: Forward Unto Victory: Skill DMG and Crystal Collapse DMG increased by 15.6% of DEF"
+    },
+    {
+      "slot": "util",
+      "name": "Seeker of Shinies",
+      "description": "Displays the location of nearby resources unique to Inazuma on the mini-map."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Rushing Hound: Swift as the Wind",
+      "description": "When characters (other than Gorou) within the AoE of Gorou's General's War Banner or General's Glory deal Geo DMG to opponents, the CD of Gorou's Inuzaka All-Round Defense is decreased by 2s.\nThis effect can occur once every 10s."
+    },
+    {
+      "n": 2,
+      "name": "Sitting Hound: Steady as a Clock",
+      "description": "While General's Glory is in effect, its duration is extended by 1s when a nearby active character obtains an Elemental Shard from a Crystallize reaction, or triggers a Lunar-Crystallize reaction. \nThis effect can occur once every 0.1s. Max extension is 3s."
+    },
+    {
+      "n": 3,
+      "name": "Mauling Hound: Fierce as Fire",
+      "description": "Increases the Level of Inuzaka All-Round Defense by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Lapping Hound: Warm as Water",
+      "description": "When General's Glory is in the \"Impregnable\" or \"Crunch\" states, it will also heal active characters within its AoE by 50% of Gorou's own DEF every 1.5s."
+    },
+    {
+      "n": 5,
+      "name": "Striking Hound: Thunderous Force",
+      "description": "Increases the Level of Juuga: Forward Unto Victory by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Valiant Hound: Mountainous Fealty",
+      "description": "For 12s after using Inuzaka All-Round Defense or Juuga: Forward Unto Victory, increases the CRIT DMG of all nearby party members' Geo DMG based on the buff level of the skill's field at the time of use:\n· \"Standing Firm\": +10%\n· \"Impregnable\": +20%\n· \"Crunch\": +40%\n\nThis effect cannot stack and will take reference from the last instance of the effect that is triggered."
+    }
+  ]
+}

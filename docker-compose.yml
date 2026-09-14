@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: ./backend
+    env_file: ./backend/.env
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./backend:/app
+      - backend_node_modules:/app/node_modules
+    command: npm run dev
+
+volumes:
+  backend_node_modules:

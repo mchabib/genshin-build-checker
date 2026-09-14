@@ -1,0 +1,19 @@
+{
+  "key": "Neuvillette",
+  "role": "dps",
+  "self": [
+    {
+      "id": "neuvillette_a1",
+      "mode": "always",
+      "description": "Neuvillette A1 (Past Draconic Glories): Equitable Judgment ×1.1/1.25/1.6 per 1/2/3 stack reaksi hydro dari tim. Offline: stack = jumlah teammate (max 3).",
+      "mod": { "source": "= 'Neuvillette A1 (' + min(3, team.count) + ' stack)'", "scope": "all", "hitIds": ["ca2"], "talentMultBonus": "= [0, 10, 25, 60][min(3, team.count)]" }
+    }
+  ],
+  "reactions": { "with": { "pyro": { "ca": "vaporize", "skill": "vaporize", "burst": "vaporize" } } },
+  "actions": { "C": { "ca2": 6 }, "E": { "skill1": 1 }, "Q": { "burst1": 1, "burst2": 2 } },
+  "durations": { "C": 3.0 },
+  "rotations": [
+    { "label": "E + Q + 3 Equitable Judgment (≈18 tick)", "counts": { "skill1": 1, "burst1": 1, "burst2": 2, "ca2": 18 }, "duration": 20, "note": "≈20s; tiap CA ≈ 6 tick; aproksimasi" }
+  ],
+  "teams": [["Furina", "KaedeharaKazuha", "Zhongli"], ["Furina", "Xiangling", "Zhongli"]]
+}

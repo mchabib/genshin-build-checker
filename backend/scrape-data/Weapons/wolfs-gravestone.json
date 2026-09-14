@@ -1,0 +1,47 @@
+{
+  "id": 12502,
+  "name": "Wolf's Gravestone",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Wolfish Tracker",
+  "effectTemplate": "Increases ATK by <color=#99FFFFFF>{0}</color>. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by <color=#99FFFFFF>{1}</color> for 12s. Can only occur once every 30s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases ATK by 20%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 40% for 12s. Can only occur once every 30s.",
+      "values": [
+        "20%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Increases ATK by 25%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 50% for 12s. Can only occur once every 30s.",
+      "values": [
+        "25%",
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "Increases ATK by 30%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 60% for 12s. Can only occur once every 30s.",
+      "values": [
+        "30%",
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "Increases ATK by 35%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 70% for 12s. Can only occur once every 30s.",
+      "values": [
+        "35%",
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "Increases ATK by 40%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 80% for 12s. Can only occur once every 30s.",
+      "values": [
+        "40%",
+        "80%"
+      ]
+    }
+  }
+}

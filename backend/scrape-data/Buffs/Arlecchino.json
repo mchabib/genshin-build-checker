@@ -1,0 +1,17 @@
+{
+  "key": "Arlecchino",
+  "role": "dps",
+  "self": [
+    {
+      "id": "arlecchino_masque",
+      "mode": "always",
+      "description": "Masque of the Red Death: saat BoL ≥ 30% HP, NA Pyro + extra DMG per hit = ATK × 238% (lv10) × BoL%. Offline asumsi BoL 100%.",
+      "mod": { "source": "Masque of the Red Death (BoL 100%)", "scope": "na", "flatDmg": "= round(char.final.atk * p('normal','param12') * 1.0)", "note": "BoL% diasumsikan 100%" }
+    }
+  ],
+  "reactions": { "with": { "hydro": { "na": "vaporize", "ca": "vaporize", "skill": "vaporize", "burst": "vaporize" }, "cryo": { "na": "melt", "ca": "melt" } } },
+  "rotations": [
+    { "label": "E > 3× N6 > CA > Q", "counts": { "skill1": 1, "skill2": 1, "skill3": 2, "na1": 3, "na2": 3, "na3": 3, "na4": 3, "na5": 3, "na6": 3, "ca1": 1, "burst1": 1 }, "duration": 20, "note": "≈20s (E CD 30s dipotong A1, Q tiap rotasi)" }
+  ],
+  "teams": [["Yelan", "Zhongli", "Bennett"], ["Furina", "Yelan", "Zhongli"]]
+}

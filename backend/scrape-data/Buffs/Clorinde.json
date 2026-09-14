@@ -1,0 +1,23 @@
+{
+  "key": "Clorinde",
+  "role": "dps",
+  "self": [
+    {
+      "id": "clorinde_a1",
+      "mode": "assume",
+      "description": "Clorinde A1: setelah reaksi Electro dari tim, NA (Swift Hunt) & Last Lightfall +20% ATK per stack (max 3, cap 1800) sebagai flat DMG.",
+      "mod": { "source": "Clorinde A1 (3 stack)", "scope": "all", "hitIds": ["skill1a", "skill1b", "burst1"], "flatDmg": "= min(1800, round(char.final.atk * 0.6))" }
+    },
+    {
+      "id": "clorinde_a4",
+      "mode": "assume",
+      "description": "Clorinde A4: BoL ≥ 100% HP → CRIT Rate +10% per stack (max 2).",
+      "mod": { "source": "Clorinde A4 (2 stack)", "scope": "all", "critRate": 20 }
+    }
+  ],
+  "reactions": { "with": { "dendro": { "skill": "aggravate", "burst": "aggravate" }, "hydro": { "skill": "electroCharged" } } },
+  "rotations": [
+    { "label": "Night Vigil: 8 Swift Hunt (BoL tinggi) + 2 Impale + Q", "counts": { "skill1b": 8, "skill2c": 2, "burst1": 1 }, "duration": 16, "note": "≈16s (E CD 16s); skill1b = Swift Hunt saat BoL ≥100%; skill2c = Impale tahap 3 (×3)" }
+  ],
+  "teams": [["Nahida", "Fischl", "Zhongli"], ["Nahida", "Furina", "Xilonen"]]
+}

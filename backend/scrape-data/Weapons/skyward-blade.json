@@ -1,0 +1,57 @@
+{
+  "id": 11502,
+  "name": "Skyward Blade",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Sky-Piercing Fang",
+  "effectTemplate": "CRIT Rate increased by <color=#99FFFFFF>{0}</color>. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by <color=#99FFFFFF>{1}</color>, increases ATK SPD by <color=#99FFFFFF>{2}</color>, and Normal and Charged hits deal additional DMG equal to <color=#99FFFFFF>{3}</color> of ATK. Skypiercing Might lasts for 12s.",
+  "refinements": {
+    "r1": {
+      "description": "CRIT Rate increased by 4%. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 20% of ATK. Skypiercing Might lasts for 12s.",
+      "values": [
+        "4%",
+        "10%",
+        "10%",
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "CRIT Rate increased by 5%, Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 25% of ATK. Skypiercing Might lasts for 12s.",
+      "values": [
+        "5%",
+        "10%",
+        "10%",
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "CRIT Rate increased by 6%. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 30% of ATK. Skypiercing Might lasts for 12s.",
+      "values": [
+        "6%",
+        "10%",
+        "10%",
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "CRIT Rate increased by 7%. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 35% of ATK. Skypiercing Might lasts for 12s.",
+      "values": [
+        "7%",
+        "10%",
+        "10%",
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "CRIT Rate increased by 8%. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 40% of ATK. Skypiercing Might lasts for 12s.",
+      "values": [
+        "8%",
+        "10%",
+        "10%",
+        "40%"
+      ]
+    }
+  }
+}

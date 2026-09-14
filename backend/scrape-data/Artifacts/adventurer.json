@@ -1,0 +1,11 @@
+{
+  "id": 10010,
+  "name": "Adventurer",
+  "rarity": [
+    1,
+    2,
+    3
+  ],
+  "twoPc": "Max HP increased by 1,000.",
+  "fourPc": "Opening a chest regenerates 30% Max HP over 5s."
+}

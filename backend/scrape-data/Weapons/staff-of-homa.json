@@ -1,0 +1,52 @@
+{
+  "id": 13501,
+  "name": "Staff of Homa",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Reckless Cinnabar",
+  "effectTemplate": "HP increased by <color=#99FFFFFF>{0}</color>. Additionally, provides an ATK Bonus based on <color=#99FFFFFF>{1}</color> of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional <color=#99FFFFFF>{2}</color> of Max HP.",
+  "refinements": {
+    "r1": {
+      "description": "HP increased by 20%. Additionally, provides an ATK Bonus based on 0.8% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1% of Max HP.",
+      "values": [
+        "20%",
+        "0.8%",
+        "1%"
+      ]
+    },
+    "r2": {
+      "description": "HP increased by 25%. Additionally, provides an ATK Bonus based on 1% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1.2% of Max HP.",
+      "values": [
+        "25%",
+        "1%",
+        "1.2%"
+      ]
+    },
+    "r3": {
+      "description": "HP increased by 30%. Additionally, provides an ATK Bonus based on 1.2% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1.4% of Max HP.",
+      "values": [
+        "30%",
+        "1.2%",
+        "1.4%"
+      ]
+    },
+    "r4": {
+      "description": "HP increased by 35%. Additionally, provides an ATK Bonus based on 1.4% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1.6% of Max HP.",
+      "values": [
+        "35%",
+        "1.4%",
+        "1.6%"
+      ]
+    },
+    "r5": {
+      "description": "HP increased by 40%. Additionally, provides an ATK Bonus based on 1.6% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1.8% of Max HP.",
+      "values": [
+        "40%",
+        "1.6%",
+        "1.8%"
+      ]
+    }
+  }
+}

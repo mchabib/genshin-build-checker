@@ -1,0 +1,16 @@
+{
+  "key": "Wriothesley",
+  "role": "dps",
+  "self": [
+    {
+      "id": "wriothesley_e",
+      "mode": "always",
+      "description": "Wriothesley E (Chilling Penalty): Enhanced Repelling Fist ×~1.6 (lv10) saat HP > 50%.",
+      "mod": { "source": "Wriothesley E", "scope": "na", "talentMultBonus": "= round((pct(p('skill','param1')) - 100) * 10) / 10" }
+    }
+  ],
+  "reactions": { "with": { "pyro": { "na": "melt", "ca": "melt" } } },
+  "rotations": [
+    { "label": "E > 4× N5 > CA > Q", "counts": { "na1": 4, "na2": 4, "na3": 4, "na4": 4, "na5": 4, "ca1": 1, "burst1": 1 }, "duration": 16, "note": "≈16s (E CD 16s, Chilling Penalty 10s)" }
+  ]
+}

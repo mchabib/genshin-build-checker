@@ -1,0 +1,42 @@
+{
+  "id": 12431,
+  "name": "Earth Shaker",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Oath of Qhapaq Nan",
+  "effectTemplate": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by <color=#99FFFFFF>{0}</color> for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by 16% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+      "values": [
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by 20% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by 24% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by 28% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by 32% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+      "values": [
+        "32%"
+      ]
+    }
+  }
+}

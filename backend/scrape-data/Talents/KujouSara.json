@@ -1,0 +1,412 @@
+{
+  "key": "KujouSara",
+  "nameEn": "Kujou Sara",
+  "gdbName": "Kujou Sara",
+  "element": "Electro",
+  "weaponType": "WEAPON_BOW",
+  "version": "2.1",
+  "talents": {
+    "normal": {
+      "name": "Tengu Bowmanship",
+      "description": "Normal Attack\nPerforms up to 5 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, crackling lightning will accumulate on the arrowhead. An arrow fully charged with the storm's might will deal Electro DMG.\nWhen in the Crowfeather Cover state, a fully-charged arrow will leave a Crowfeather behind after it hits.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "5-Hit DMG|{param5:F1P}",
+          "Aimed Shot|{param6:F1P}",
+          "Fully-Charged Aimed Shot|{param7:P}",
+          "Plunge DMG|{param8:F1P}",
+          "Low/High Plunge DMG|{param9:P}/{param10:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.36894,
+            0.39897,
+            0.429,
+            0.4719,
+            0.50193,
+            0.53625,
+            0.58344,
+            0.63063,
+            0.67782,
+            0.7293,
+            0.78078,
+            0.83226,
+            0.88374,
+            0.93522,
+            0.9867
+          ],
+          "param2": [
+            0.387,
+            0.4185,
+            0.45,
+            0.495,
+            0.5265,
+            0.5625,
+            0.612,
+            0.6615,
+            0.711,
+            0.765,
+            0.819,
+            0.873,
+            0.927,
+            0.981,
+            1.035
+          ],
+          "param3": [
+            0.48504,
+            0.52452,
+            0.564,
+            0.6204,
+            0.65988,
+            0.705,
+            0.76704,
+            0.82908,
+            0.89112,
+            0.9588,
+            1.02648,
+            1.09416,
+            1.16184,
+            1.22952,
+            1.2972
+          ],
+          "param4": [
+            0.50396,
+            0.54498,
+            0.586,
+            0.6446,
+            0.68562,
+            0.7325,
+            0.79696,
+            0.86142,
+            0.92588,
+            0.9962,
+            1.06652,
+            1.13684,
+            1.20716,
+            1.27748,
+            1.3478
+          ],
+          "param5": [
+            0.5805,
+            0.62775,
+            0.675,
+            0.7425,
+            0.78975,
+            0.84375,
+            0.918,
+            0.99225,
+            1.0665,
+            1.1475,
+            1.2285,
+            1.3095,
+            1.3905,
+            1.4715,
+            1.5525
+          ],
+          "param6": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param7": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param8": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param9": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param10": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Tengu Stormcall",
+      "description": "Retreats rapidly with the speed of a tengu, summoning the protection of the Crowfeather.\nGains Crowfeather Cover for 18s, and when Kujou Sara fires a fully-charged Aimed Shot, Crowfeather Cover will be consumed, and will leave a Crowfeather at the target location.\nCrowfeathers will trigger Tengu Juurai: Ambush after a short time, dealing Electro DMG and granting the active character within its AoE an ATK Bonus based on Kujou Sara's Base ATK.\n\nThe ATK Bonuses from different Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect.",
+      "attributes": {
+        "labels": [
+          "Tengu Juurai: Ambush DMG|{param1:F1P}",
+          "ATK Bonus Ratio|{param2:P}",
+          "ATK Bonus Duration|{param3:F1}s",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.2576,
+            1.35192,
+            1.44624,
+            1.572,
+            1.66632,
+            1.76064,
+            1.8864,
+            2.01216,
+            2.13792,
+            2.26368,
+            2.38944,
+            2.5152,
+            2.6724,
+            2.8296,
+            2.9868
+          ],
+          "param2": [
+            0.4296,
+            0.46182,
+            0.49404,
+            0.537,
+            0.56922,
+            0.60144,
+            0.6444,
+            0.68736,
+            0.73032,
+            0.77328,
+            0.81624,
+            0.8592,
+            0.9129,
+            0.9666,
+            1.0203
+          ],
+          "param3": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "param4": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Subjugation: Koukou Sendou",
+      "description": "Casts down Tengu Juurai: Titanbreaker, dealing AoE Electro DMG. Afterwards, Tengu Juurai: Titanbreaker spreads out into 4 consecutive bouts of Tengu Juurai: Stormcluster, dealing AoE Electro DMG.\nTengu Juurai: Titanbreaker and Tengu Juurai: Stormcluster can provide the active character within their AoE with the same ATK Bonus as given by the Elemental Skill, Tengu Stormcall.\n\nThe ATK Bonus provided by various kinds of Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect.",
+      "attributes": {
+        "labels": [
+          "Tengu Juurai: Titanbreaker DMG|{param1:F1P}",
+          "Tengu Juurai: Stormcluster DMG|{param2:F1P}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            4.096,
+            4.4032,
+            4.7104,
+            5.12,
+            5.4272,
+            5.7344,
+            6.144,
+            6.5536,
+            6.9632,
+            7.3728,
+            7.7824,
+            8.192,
+            8.704,
+            9.216,
+            9.728
+          ],
+          "param2": [
+            0.3412,
+            0.36679,
+            0.39238,
+            0.4265,
+            0.45209,
+            0.47768,
+            0.5118,
+            0.54592,
+            0.58004,
+            0.61416,
+            0.64828,
+            0.6824,
+            0.72505,
+            0.7677,
+            0.81035
+          ],
+          "param3": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param4": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Immovable Will",
+      "description": "While in the Crowfeather Cover state provided by Tengu Stormcall, Aimed Shot charge times are decreased by 60%."
+    },
+    {
+      "slot": "a4",
+      "name": "Decorum",
+      "description": "When Tengu Juurai: Ambush hits opponents, Kujou Sara will restore 1.2 Energy to all party members for every 100% Energy Recharge she has. This effect can be triggered once every 3s."
+    },
+    {
+      "slot": "util",
+      "name": "Land Survey",
+      "description": "When dispatched on an expedition in Inazuma, time consumed is reduced by 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Crow's Eye",
+      "description": "When Tengu Juurai grants characters ATK Bonuses or hits opponents, the CD of Tengu Stormcall is decreased by 1s.\nThis effect can be triggered once every 3s."
+    },
+    {
+      "n": 2,
+      "name": "Dark Wings",
+      "description": "Unleashing Tengu Stormcall will leave a weaker Crowfeather at Kujou Sara's original position that will deal 30% of its original DMG."
+    },
+    {
+      "n": 3,
+      "name": "The War Within",
+      "description": "Increases the Level of Subjugation: Koukou Sendou by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Conclusive Proof",
+      "description": "The number of Tengu Juurai: Stormcluster released by Subjugation: Koukou Sendou is increased to 6."
+    },
+    {
+      "n": 5,
+      "name": "Spellsinger",
+      "description": "Increases the Level of Tengu Stormcall by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Sin of Pride",
+      "description": "The Electro DMG of characters who have had their ATK increased by Tengu Juurai has its CRIT DMG increased by 60%."
+    }
+  ]
+}

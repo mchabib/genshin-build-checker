@@ -1,0 +1,42 @@
+{
+  "id": 14301,
+  "name": "Magic Guide",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 3,
+  "baseAtkLv1": 37.6075,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Bane of Storm and Tide",
+  "effectTemplate": "Increases DMG against opponents affected by Hydro or Electro by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 12%.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 15%.",
+      "values": [
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 18%.",
+      "values": [
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 21%.",
+      "values": [
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 24%.",
+      "values": [
+        "24%"
+      ]
+    }
+  }
+}

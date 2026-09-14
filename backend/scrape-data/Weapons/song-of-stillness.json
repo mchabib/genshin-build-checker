@@ -1,0 +1,42 @@
+{
+  "id": 15425,
+  "name": "Song of Stillness",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Benthic Pulse",
+  "effectTemplate": "After the wielder is healed, they will deal <color=#99FFFFFF>{0}</color> more DMG for 8s. This can be triggered even when the character is not on the field.",
+  "refinements": {
+    "r1": {
+      "description": "After the wielder is healed, they will deal 16% more DMG for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "After the wielder is healed, they will deal 20% more DMG for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "After the wielder is healed, they will deal 24% more DMG for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "After the wielder is healed, they will deal 28% more DMG for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "After the wielder is healed, they will deal 32% more DMG for 8s. This can be triggered even when the character is not on the field.",
+      "values": [
+        "32%"
+      ]
+    }
+  }
+}

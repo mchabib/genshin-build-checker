@@ -1,0 +1,52 @@
+{
+  "id": 11501,
+  "name": "Aquila Favonia",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+  "effectName": "Falcon's Defiance",
+  "effectTemplate": "ATK is increased by <color=#99FFFFFF>{0}</color>. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to <color=#99FFFFFF>{1}</color> of ATK and dealing <color=#99FFFFFF>{2}</color> of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+  "refinements": {
+    "r1": {
+      "description": "ATK is increased by 20%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to 100% of ATK and dealing 200% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+      "values": [
+        "20%",
+        "100%",
+        "200%"
+      ]
+    },
+    "r2": {
+      "description": "ATK is increased by 25%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to 115% of ATK and dealing 230% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+      "values": [
+        "25%",
+        "115%",
+        "230%"
+      ]
+    },
+    "r3": {
+      "description": "ATK is increased by 30%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to 130% of ATK and dealing 260% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+      "values": [
+        "30%",
+        "130%",
+        "260%"
+      ]
+    },
+    "r4": {
+      "description": "ATK is increased by 35%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to 145% of ATK and dealing 290% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+      "values": [
+        "35%",
+        "145%",
+        "290%"
+      ]
+    },
+    "r5": {
+      "description": "ATK is increased by 40%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to 160% of ATK and dealing 320% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+      "values": [
+        "40%",
+        "160%",
+        "320%"
+      ]
+    }
+  }
+}

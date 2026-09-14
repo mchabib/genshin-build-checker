@@ -1,0 +1,10 @@
+{
+  "id": 10003,
+  "name": "Defender's Will",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "DEF +30%",
+  "fourPc": "For each different element present in your own party, the wearer's Elemental RES to that corresponding element is increased by 30%."
+}

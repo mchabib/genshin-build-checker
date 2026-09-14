@@ -1,0 +1,42 @@
+{
+  "id": 13403,
+  "name": "Crescent Pike",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+  "effectName": "Infusion Needle",
+  "effectTemplate": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to <color=#99FFFFFF>{0}</color> of ATK for 5s.",
+  "refinements": {
+    "r1": {
+      "description": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to 20% of ATK for 5s.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to 25% of ATK for 5s.",
+      "values": [
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to 30% of ATK for 5s.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to 35% of ATK for 5s.",
+      "values": [
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to 40% of ATK for 5s.",
+      "values": [
+        "40%"
+      ]
+    }
+  }
+}

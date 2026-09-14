@@ -1,0 +1,185 @@
+[
+  {
+    "id": "cw_4pc",
+    "set": "Crimson Witch of Flames",
+    "mode": "assume",
+    "description": "Crimson Witch 4pc: Vape/Melt +15%, Overloaded/Burning/Burgeon +40%; +7.5% Pyro DMG per stack E (max 3 = +22.5%).",
+    "mod": { "source": "Crimson Witch 4pc", "scope": "all", "elementalDmgBonus": { "pyro": 22.5 }, "reactionBonus": { "vaporize": 15, "melt": 15, "overloaded": 40, "burning": 40, "burgeon": 40 }, "note": "3 stack" }
+  },
+  {
+    "id": "emblem_4pc",
+    "set": "Emblem of Severed Fate",
+    "mode": "always",
+    "description": "Emblem 4pc: Burst DMG +25% dari ER (max 75%).",
+    "mod": { "source": "Emblem 4pc", "scope": "burst", "dmgBonus": "= min(75, round(er * 0.25 * 10) / 10)" }
+  },
+  {
+    "id": "marechaussee_4pc",
+    "set": "Marechaussee Hunter",
+    "mode": "assume",
+    "description": "Marechaussee 4pc: CRIT Rate +12% per stack saat HP berubah (max 3 = +36%) — NA & CA.",
+    "mod": { "source": "Marechaussee 4pc", "scope": ["na", "ca"], "critRate": 36, "note": "3 stack (butuh HP berubah, mis. Furina)" }
+  },
+  {
+    "id": "golden_troupe_4pc",
+    "set": "Golden Troupe",
+    "mode": "always",
+    "description": "Golden Troupe 2pc Skill DMG +20% (nggak ada di fightProp Enka) + 4pc +25% = +45%; +25% lagi kalau off-field (modul karakter, mis. Yae).",
+    "mod": { "source": "Golden Troupe 2pc+4pc", "scope": "skill", "dmgBonus": 45 }
+  },
+  {
+    "id": "obsidian_codex_4pc",
+    "set": "Obsidian Codex",
+    "mode": "assume",
+    "description": "Obsidian Codex 4pc: DMG +15% saat Nightsoul's Blessing; CRIT Rate +40% saat konsumsi Nightsoul point.",
+    "mod": { "source": "Obsidian Codex 4pc", "scope": "all", "dmgBonus": 15, "critRate": 40 }
+  },
+  {
+    "id": "harmonic_whimsy_4pc",
+    "set": "Fragment of Harmonic Whimsy",
+    "mode": "assume",
+    "description": "Harmonic Whimsy 4pc: DMG +18% per stack saat Bond of Life berubah (max 3 = +54%).",
+    "mod": { "source": "Harmonic Whimsy 4pc", "scope": "all", "dmgBonus": 54 }
+  },
+  {
+    "id": "vermillion_4pc",
+    "set": "Vermillion Hereafter",
+    "mode": "assume",
+    "description": "Vermillion 4pc: ATK +8% setelah Q, +10% per stack saat HP turun (max 4 = +48% total).",
+    "mod": { "source": "Vermillion 4pc", "scope": "all", "atkPct": 48 }
+  },
+  {
+    "id": "shimenawa_4pc",
+    "set": "Shimenawa's Reminiscence",
+    "mode": "assume",
+    "description": "Shimenawa 4pc: NA/CA/Plunge DMG +50% selama 10s setelah E (makan 15 energy).",
+    "mod": { "source": "Shimenawa 4pc", "scope": ["na", "ca", "plunge"], "dmgBonus": 50 }
+  },
+  {
+    "id": "gladiator_4pc",
+    "set": "Gladiator's Finale",
+    "mode": "always",
+    "description": "Gladiator 4pc: NA DMG +35% (sword/claymore/polearm).",
+    "mod": { "source": "Gladiator 4pc", "scope": "na", "dmgBonus": 35 }
+  },
+  {
+    "id": "wanderers_troupe_4pc",
+    "set": "Wanderer's Troupe",
+    "mode": "always",
+    "description": "Wanderer's Troupe 4pc: CA DMG +35% (catalyst/bow).",
+    "mod": { "source": "Wanderer's Troupe 4pc", "scope": "ca", "dmgBonus": 35 }
+  },
+  {
+    "id": "blizzard_4pc",
+    "set": "Blizzard Strayer",
+    "mode": "assume",
+    "description": "Blizzard Strayer 4pc: CRIT Rate +20% vs musuh Cryo, +20% lagi kalau Frozen.",
+    "mod": { "source": "Blizzard Strayer 4pc", "scope": "all", "critRate": 20, "note": "+20 lagi kalau frozen" }
+  },
+  {
+    "id": "husk_4pc",
+    "set": "Husk of Opulent Dreams",
+    "mode": "assume",
+    "description": "Husk 4pc: DEF +6% & Geo DMG +6% per stack (max 4 = +24%/+24%).",
+    "mod": { "source": "Husk 4pc", "scope": "all", "defPct": 24, "elementalDmgBonus": { "geo": 24 } }
+  },
+  {
+    "id": "pale_flame_4pc",
+    "set": "Pale Flame",
+    "mode": "assume",
+    "description": "Pale Flame 4pc: ATK +9% per stack (max 2), 2 stack → Physical DMG +25% tambahan.",
+    "mod": { "source": "Pale Flame 4pc", "scope": "all", "atkPct": 18, "elementalDmgBonus": { "physical": 25 } }
+  },
+  {
+    "id": "gilded_dreams_4pc",
+    "set": "Gilded Dreams",
+    "mode": "assume",
+    "description": "Gilded Dreams 4pc setelah reaksi: ATK +14% per teammate se-elemen, EM +50 per teammate beda elemen (max 3).",
+    "mod": {
+      "source": "Gilded Dreams 4pc",
+      "scope": "all",
+      "em": "= 50 * min(3, team.count - (team.sameElementCount))",
+      "atkPct": "= 14 * min(3, team.sameElementCount)",
+      "note": "= 'teammate beda elemen ' + min(3, team.count - team.sameElementCount) + ', se-elemen ' + min(3, team.sameElementCount)"
+    }
+  },
+  {
+    "id": "nighttime_whispers_4pc",
+    "set": "Nighttime Whispers in the Echoing Woods",
+    "mode": "assume",
+    "description": "Nighttime Whispers 4pc: Geo DMG +20% setelah E (10s), +150% kalau crystallize shield aktif.",
+    "mod": { "source": "Nighttime Whispers 4pc", "scope": "all", "elementalDmgBonus": { "geo": 20 } }
+  },
+  {
+    "id": "archaic_petra_4pc",
+    "set": "Archaic Petra",
+    "mode": "manual",
+    "description": "Archaic Petra 4pc: ambil crystallize shard → tim +35% DMG elemen itu (buff tim, bukan self).",
+    "mod": { "source": "Archaic Petra 4pc", "scope": "all", "dmgBonus": 0, "note": "buff buat teammate, nggak dihitung ke diri sendiri" }
+  },
+  {
+    "id": "deepwood_4pc_self",
+    "set": "Deepwood Memories",
+    "mode": "always",
+    "onlyElements": ["dendro"],
+    "description": "Deepwood 4pc dipakai sendiri: Dendro RES −30%.",
+    "mod": { "source": "Deepwood 4pc", "scope": "all", "resShred": { "dendro": 30 } }
+  },
+  {
+    "id": "thundering_fury_4pc",
+    "set": "Thundering Fury",
+    "mode": "assume",
+    "description": "Thundering Fury 4pc: Overloaded/EC/Superconduct/Hyperbloom +40%, Aggravate +20%.",
+    "mod": { "source": "Thundering Fury 4pc", "scope": "all", "reactionBonus": { "overloaded": 40, "electroCharged": 40, "superconduct": 40, "hyperbloom": 40, "aggravate": 20 } }
+  },
+  {
+    "id": "disenchantment_4pc",
+    "set": "Disenchantment in Deep Shadow",
+    "mode": "assume",
+    "description": "Disenchantment 4pc: Stellar-Conduct DMG +40%, Superconduct +80%; CRIT Rate +16% vs musuh kena Superconduct/Stellar-Conduct.",
+    "mod": { "source": "Disenchantment 4pc (Stellar-Conduct)", "scope": "all", "stellarBonus": 40, "critRate": 16, "reactionBonus": { "superconduct": 80 }, "note": "asumsi musuh sudah kena Stellar-Conduct; +40% = Stellar base DMG bonus, CR +16% ke semua hit" }
+  },
+  {
+    "id": "heart_of_the_furnace_4pc_self",
+    "set": "Heart of the Furnace",
+    "mode": "assume",
+    "description": "Heart of the Furnace 4pc (pemakai): ATK +12% setelah reaksi Stellar Glimmer; Stellar Glimmer DMG tim +50%.",
+    "mod": { "source": "Heart of the Furnace 4pc", "scope": "all", "atkPct": 12 }
+  },
+  {
+    "id": "heart_of_the_furnace_4pc_stellar",
+    "set": "Heart of the Furnace",
+    "mode": "assume",
+    "description": "(pasangan) HotF +50% Stellar Glimmer DMG ke hit Stellar sendiri.",
+    "mod": { "source": "Heart of the Furnace 4pc (Stellar +50%)", "scope": "all", "stellarBonus": 50 }
+  },
+  {
+    "id": "long_nights_oath_4pc",
+    "set": "Long Night's Oath",
+    "mode": "assume",
+    "description": "Long Night's Oath 4pc: Plunge/CA/skill dapat Gloom stack, +15% Plunge DMG per stack (max 5 = +75%).",
+    "mod": { "source": "Long Night's Oath 4pc", "scope": "plunge", "dmgBonus": 75, "note": "5 stack" }
+  },
+  {
+    "id": "desert_pavilion_4pc",
+    "set": "Desert Pavilion Chronicle",
+    "mode": "assume",
+    "description": "Desert Pavilion 4pc: setelah CA kena, NA/CA/Plunge DMG +40% selama 15s (2pc Anemo +15% sudah di Enka).",
+    "mod": { "source": "Desert Pavilion 4pc", "scope": ["na", "ca", "plunge"], "dmgBonus": 40, "note": "butuh 1 CA di awal" },
+    "duration": 15
+  },
+  {
+    "id": "noblesse_4pc_self",
+    "set": "Noblesse Oblige",
+    "mode": "always",
+    "description": "Noblesse 2pc: Burst DMG +20% (nggak ada di fightProp Enka; cuma kehitung kalau 4pc terpasang). 4pc ATK tim = _team.json noblesse_4pc.",
+    "mod": { "source": "Noblesse Oblige 2pc", "scope": "burst", "dmgBonus": 20 }
+  },
+  {
+    "id": "night_of_skys_unveiling_4pc",
+    "set": "Night of the Sky's Unveiling",
+    "mode": "assume",
+    "description": "Night of the Sky's Unveiling 4pc: Gleaming Moon: Intent — CRIT Rate +15%/+30% (Nascent/Ascendant Gleam) selama 4s setelah Lunar Reaction; Lunar DMG tim +10% (belum dimodelkan).",
+    "mod": { "source": "Night of the Sky's Unveiling 4pc", "scope": "all", "critRate": 30, "uptime": 0.8, "note": "asumsi Ascendant Gleam, Lunar reaction terus-menerus" }
+  }
+]

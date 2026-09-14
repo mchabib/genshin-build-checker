@@ -1,0 +1,47 @@
+{
+  "id": 14409,
+  "name": "Eye of Perception",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Echo",
+  "effectTemplate": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing <color=#99FFFFFF>{0}</color> ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every <color=#99FFFFFF>{1}</color>s.",
+  "refinements": {
+    "r1": {
+      "description": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 240% ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every 12s.",
+      "values": [
+        "240%",
+        "12"
+      ]
+    },
+    "r2": {
+      "description": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 270% ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every 11s.",
+      "values": [
+        "270%",
+        "11"
+      ]
+    },
+    "r3": {
+      "description": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 300% ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every 10s.",
+      "values": [
+        "300%",
+        "10"
+      ]
+    },
+    "r4": {
+      "description": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 330% ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every 9s.",
+      "values": [
+        "330%",
+        "9"
+      ]
+    },
+    "r5": {
+      "description": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 360% ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every 8s.",
+      "values": [
+        "360%",
+        "8"
+      ]
+    }
+  }
+}

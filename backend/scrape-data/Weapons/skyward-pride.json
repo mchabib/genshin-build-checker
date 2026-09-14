@@ -1,0 +1,47 @@
+{
+  "id": 12501,
+  "name": "Skyward Pride",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Sky-ripping Dragon Spine",
+  "effectTemplate": "Increases all DMG by <color=#99FFFFFF>{0}</color>. After using an Elemental Burst, a vacuum blade that does <color=#99FFFFFF>{1}</color> of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+  "refinements": {
+    "r1": {
+      "description": "Increases all DMG by 8%. After using an Elemental Burst, a vacuum blade that does 80% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+      "values": [
+        "8%",
+        "80%"
+      ]
+    },
+    "r2": {
+      "description": "Increases all DMG by 10%. After using an Elemental Burst, a vacuum blade that does 100% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+      "values": [
+        "10%",
+        "100%"
+      ]
+    },
+    "r3": {
+      "description": "Increases all DMG by 12%. After using an Elemental Burst, a vacuum blade that does 120% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+      "values": [
+        "12%",
+        "120%"
+      ]
+    },
+    "r4": {
+      "description": "Increases all DMG by 14%. After using an Elemental Burst, a vacuum blade that does 140% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+      "values": [
+        "14%",
+        "140%"
+      ]
+    },
+    "r5": {
+      "description": "Increases all DMG by 16%. After using an Elemental Burst, a vacuum blade that does 160% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+      "values": [
+        "16%",
+        "160%"
+      ]
+    }
+  }
+}

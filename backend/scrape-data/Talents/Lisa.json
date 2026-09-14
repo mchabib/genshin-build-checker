@@ -1,0 +1,448 @@
+{
+  "key": "Lisa",
+  "nameEn": "Lisa",
+  "gdbName": "Lisa",
+  "element": "Electro",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Lightning Touch",
+      "description": "Normal Attack\nPerforms up to 4 lightning attacks that deal Electro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina to deal AoE Electro DMG after a short casting time.\n\nPlunging Attack\nGathering the might of Electro, Lisa plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Electro DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "Charged Attack DMG|{param5:P}",
+          "Charged Attack Stamina Cost|{param6:F1}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.396,
+            0.4257,
+            0.4554,
+            0.495,
+            0.5247,
+            0.5544,
+            0.594,
+            0.6336,
+            0.6732,
+            0.7128,
+            0.753984,
+            0.80784,
+            0.861696,
+            0.915552,
+            0.969408
+          ],
+          "param2": [
+            0.3592,
+            0.38614,
+            0.41308,
+            0.449,
+            0.47594,
+            0.50288,
+            0.5388,
+            0.57472,
+            0.61064,
+            0.64656,
+            0.683917,
+            0.732768,
+            0.781619,
+            0.83047,
+            0.879322
+          ],
+          "param3": [
+            0.428,
+            0.4601,
+            0.4922,
+            0.535,
+            0.5671,
+            0.5992,
+            0.642,
+            0.6848,
+            0.7276,
+            0.7704,
+            0.814912,
+            0.87312,
+            0.931328,
+            0.989536,
+            1.047744
+          ],
+          "param4": [
+            0.5496,
+            0.59082,
+            0.63204,
+            0.687,
+            0.72822,
+            0.76944,
+            0.8244,
+            0.87936,
+            0.93432,
+            0.98928,
+            1.046438,
+            1.121184,
+            1.19593,
+            1.270675,
+            1.345421
+          ],
+          "param5": [
+            1.7712,
+            1.90404,
+            2.03688,
+            2.214,
+            2.34684,
+            2.47968,
+            2.6568,
+            2.83392,
+            3.01104,
+            3.18816,
+            3.372365,
+            3.613248,
+            3.854131,
+            4.095014,
+            4.335898
+          ],
+          "param6": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Violet Arc",
+      "description": "Channels the power of lightning to sweep bothersome matters away.\n\nPress\nReleases a homing Lightning Orb.\nOn hit, it deals Electro DMG and applies a stack of the Conductive status (max 3 stacks) to opponents in a small AoE.\n\nHold\nAfter an extended casting time, calls down lightning from the heavens, dealing massive Electro DMG to all nearby opponents.\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.",
+      "attributes": {
+        "labels": [
+          "Press DMG|{param6:F1P}",
+          "Press CD|{param7:F1}s",
+          "Non-Conductive Hold DMG|{param1:P}",
+          "Stack 1 Conductive Hold DMG|{param2:P}",
+          "Stack 2 Conductive Hold DMG|{param3:P}",
+          "Stack 3 Conductive Hold DMG|{param4:P}",
+          "Holding CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            3.2,
+            3.44,
+            3.68,
+            4,
+            4.24,
+            4.48,
+            4.8,
+            5.12,
+            5.44,
+            5.76,
+            6.08,
+            6.4,
+            6.8,
+            7.2,
+            7.6
+          ],
+          "param2": [
+            3.68,
+            3.956,
+            4.232,
+            4.6,
+            4.876,
+            5.152,
+            5.52,
+            5.888,
+            6.256,
+            6.624,
+            6.992,
+            7.36,
+            7.82,
+            8.28,
+            8.74
+          ],
+          "param3": [
+            4.24,
+            4.558,
+            4.876,
+            5.3,
+            5.618,
+            5.936,
+            6.36,
+            6.784,
+            7.208,
+            7.632,
+            8.056,
+            8.48,
+            9.01,
+            9.54,
+            10.07
+          ],
+          "param4": [
+            4.872,
+            5.2374,
+            5.6028,
+            6.09,
+            6.4554,
+            6.8208,
+            7.308,
+            7.7952,
+            8.2824,
+            8.7696,
+            9.2568,
+            9.744,
+            10.353,
+            10.962,
+            11.571
+          ],
+          "param5": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "param6": [
+            0.8,
+            0.86,
+            0.92,
+            1,
+            1.06,
+            1.12,
+            1.2,
+            1.28,
+            1.36,
+            1.44,
+            1.52,
+            1.6,
+            1.7,
+            1.8,
+            1.9
+          ],
+          "param7": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Lightning Rose",
+      "description": "Summons a Lightning Rose that unleashes powerful lightning bolts, launching surrounding opponents and dealing Electro DMG.\nThe Lightning Rose will continuously emit lightning to knock back opponents and deal Electro DMG throughout the ability's duration.",
+      "attributes": {
+        "labels": [
+          "Discharge DMG|{param1:F1P}",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.3656,
+            0.39302,
+            0.42044,
+            0.457,
+            0.48442,
+            0.51184,
+            0.5484,
+            0.58496,
+            0.62152,
+            0.65808,
+            0.69464,
+            0.7312,
+            0.7769,
+            0.8226,
+            0.8683
+          ],
+          "param2": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param3": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param4": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Induced Aftershock",
+      "description": "Hits by Charged Attacks apply Violet Arc's Conductive status to opponents."
+    },
+    {
+      "slot": "a4",
+      "name": "Static Electricity Field",
+      "description": "Opponents hit by Lightning Rose have their DEF decreased by 15% for 10s."
+    },
+    {
+      "slot": "util",
+      "name": "General Pharmaceutics",
+      "description": "When Lisa crafts a potion, she has a 20% chance to refund a portion of the crafting materials used."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Infinite Circuit",
+      "description": "Lisa regenerates 2 Energy for every opponent hit while holding Violet Arc.\nA maximum of 10 Energy can be regenerated in this manner at any one time."
+    },
+    {
+      "n": 2,
+      "name": "Electromagnetic Field",
+      "description": "Holding Violet Arc has the following effects:\n·Increases DEF by 25%.\n·Increases Lisa's resistance to interruption."
+    },
+    {
+      "n": 3,
+      "name": "Resonant Thunder",
+      "description": "Increases the Level of Lightning Rose by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Plasma Eruption",
+      "description": "Lightning Rose now unleashes 1-3 lightning bolts when it attacks."
+    },
+    {
+      "n": 5,
+      "name": "Electrocute",
+      "description": "Increases the Level of Violet Arc by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Pulsating Witch",
+      "description": "When Lisa takes the field, she applies 3 stacks of Violet Arc's Conductive status onto nearby opponents.\nThis effect can only occur once every 5s."
+    }
+  ]
+}

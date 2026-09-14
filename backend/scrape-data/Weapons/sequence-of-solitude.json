@@ -1,0 +1,42 @@
+{
+  "id": 15432,
+  "name": "Sequence of Solitude",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Silent Trigger",
+  "effectTemplate": "When an attack hits an opponent, deal AoE DMG equal to <color=#99FFFFFF>{0}</color> of Max HP at the target's location. This effect can be triggered once every 15s.",
+  "refinements": {
+    "r1": {
+      "description": "When an attack hits an opponent, deal AoE DMG equal to 40% of Max HP at the target location. This effect can be triggered once every 15s.",
+      "values": [
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "When an attack hits an opponent, deal AoE DMG equal to 50% of Max HP at the target's location. This effect can be triggered once every 15s.",
+      "values": [
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "When an attack hits an opponent, deal AoE DMG equal to 60% of Max HP at the target's location. This effect can be triggered once every 15s.",
+      "values": [
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "When an attack hits an opponent, deal AoE DMG equal to 70% of Max HP at the target's location. This effect can be triggered once every 15s.",
+      "values": [
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "When an attack hits an opponent, deal AoE DMG equal to 80% of Max HP at the target's location. This effect can be triggered once every 15s.",
+      "values": [
+        "80%"
+      ]
+    }
+  }
+}

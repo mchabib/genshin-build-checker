@@ -1,0 +1,42 @@
+{
+  "id": 13424,
+  "name": "Ballad of the Fjords",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Tales of the Tundra",
+  "effectTemplate": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by <color=#99FFFFFF>{0}</color>",
+  "refinements": {
+    "r1": {
+      "description": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by 120.",
+      "values": [
+        "120."
+      ]
+    },
+    "r2": {
+      "description": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by 150.",
+      "values": [
+        "150."
+      ]
+    },
+    "r3": {
+      "description": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by 180.",
+      "values": [
+        "180."
+      ]
+    },
+    "r4": {
+      "description": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by 210.",
+      "values": [
+        "210."
+      ]
+    },
+    "r5": {
+      "description": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by 240.",
+      "values": [
+        "240."
+      ]
+    }
+  }
+}

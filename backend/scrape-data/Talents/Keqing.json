@@ -1,0 +1,464 @@
+{
+  "key": "Keqing",
+  "nameEn": "Keqing",
+  "gdbName": "Keqing",
+  "element": "Electro",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Yunlai Swordsmanship",
+      "description": "Normal Attack\nPerforms up to 5 rapid strikes.\n\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+          "5-Hit DMG|{param6:F1P}",
+          "Charged Attack DMG|{param7:F1P}+{param8:F1P}",
+          "Charged Attack Stamina Cost|{param9:F1}",
+          "Plunge DMG|{param10:F1P}",
+          "Low/High Plunge DMG|{param11:P}/{param12:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.41022,
+            0.44361,
+            0.477,
+            0.5247,
+            0.55809,
+            0.59625,
+            0.64872,
+            0.70119,
+            0.75366,
+            0.8109,
+            0.86814,
+            0.92538,
+            0.98262,
+            1.03986,
+            1.0971
+          ],
+          "param2": [
+            0.41022,
+            0.44361,
+            0.477,
+            0.5247,
+            0.55809,
+            0.59625,
+            0.64872,
+            0.70119,
+            0.75366,
+            0.8109,
+            0.86814,
+            0.92538,
+            0.98262,
+            1.03986,
+            1.0971
+          ],
+          "param3": [
+            0.54438,
+            0.58869,
+            0.633,
+            0.6963,
+            0.74061,
+            0.79125,
+            0.86088,
+            0.93051,
+            1.00014,
+            1.0761,
+            1.15206,
+            1.22802,
+            1.30398,
+            1.37994,
+            1.4559
+          ],
+          "param4": [
+            0.31476,
+            0.34038,
+            0.366,
+            0.4026,
+            0.42822,
+            0.4575,
+            0.49776,
+            0.53802,
+            0.57828,
+            0.6222,
+            0.66612,
+            0.71004,
+            0.75396,
+            0.79788,
+            0.8418
+          ],
+          "param5": [
+            0.344,
+            0.372,
+            0.4,
+            0.44,
+            0.468,
+            0.5,
+            0.544,
+            0.588,
+            0.632,
+            0.68,
+            0.728,
+            0.776,
+            0.824,
+            0.872,
+            0.92
+          ],
+          "param6": [
+            0.66994,
+            0.72447,
+            0.779,
+            0.8569,
+            0.91143,
+            0.97375,
+            1.05944,
+            1.14513,
+            1.23082,
+            1.3243,
+            1.41778,
+            1.51126,
+            1.60474,
+            1.69822,
+            1.7917
+          ],
+          "param7": [
+            0.76798,
+            0.83049,
+            0.893,
+            0.9823,
+            1.04481,
+            1.11625,
+            1.21448,
+            1.31271,
+            1.41094,
+            1.5181,
+            1.62526,
+            1.73242,
+            1.83958,
+            1.94674,
+            2.0539
+          ],
+          "param8": [
+            0.86,
+            0.93,
+            1,
+            1.1,
+            1.17,
+            1.25,
+            1.36,
+            1.47,
+            1.58,
+            1.7,
+            1.82,
+            1.94,
+            2.06,
+            2.18,
+            2.3
+          ],
+          "param9": [
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "param10": [
+            0.639324,
+            0.691362,
+            0.7434,
+            0.81774,
+            0.869778,
+            0.92925,
+            1.011024,
+            1.092798,
+            1.174572,
+            1.26378,
+            1.352988,
+            1.442196,
+            1.531404,
+            1.620612,
+            1.70982
+          ],
+          "param11": [
+            1.278377,
+            1.382431,
+            1.486485,
+            1.635134,
+            1.739187,
+            1.858106,
+            2.02162,
+            2.185133,
+            2.348646,
+            2.527025,
+            2.705403,
+            2.883781,
+            3.062159,
+            3.240537,
+            3.418915
+          ],
+          "param12": [
+            1.596762,
+            1.726731,
+            1.8567,
+            2.04237,
+            2.172339,
+            2.320875,
+            2.525112,
+            2.729349,
+            2.933586,
+            3.15639,
+            3.379194,
+            3.601998,
+            3.824802,
+            4.047606,
+            4.27041
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Stellar Restoration",
+      "description": "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder.\nWhen the Stiletto hits its target, it deals Electro DMG to opponents in a small AoE, and places a Stiletto Mark on the spot hit.\n\nHold\nHold to adjust the direction in which the Stiletto shall be thrown.\nStilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time.\n\nLightning Stiletto\n If Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects:\n·If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash one slashing attack that deals AoE Electro DMG. When blinking to a Stiletto that was thrown from a Holding attack, Keqing can leap across obstructing terrain.\n·If Keqing uses a Charged Attack, she will ignite a series of thundering cuts at the Mark's location, dealing AoE Electro DMG.",
+      "attributes": {
+        "labels": [
+          "Lightning Stiletto DMG|{param1:F1P}",
+          "Slashing DMG|{param2:P}",
+          "Thunderclap Slash DMG|{param3:F1P}×2",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.504,
+            0.5418,
+            0.5796,
+            0.63,
+            0.6678,
+            0.7056,
+            0.756,
+            0.8064,
+            0.8568,
+            0.9072,
+            0.9576,
+            1.008,
+            1.071,
+            1.134,
+            1.197
+          ],
+          "param2": [
+            1.68,
+            1.806,
+            1.932,
+            2.1,
+            2.226,
+            2.352,
+            2.52,
+            2.688,
+            2.856,
+            3.024,
+            3.192,
+            3.36,
+            3.57,
+            3.78,
+            3.99
+          ],
+          "param3": [
+            0.84,
+            0.903,
+            0.966,
+            1.05,
+            1.113,
+            1.176,
+            1.26,
+            1.344,
+            1.428,
+            1.512,
+            1.596,
+            1.68,
+            1.785,
+            1.89,
+            1.995
+          ],
+          "param4": [
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5,
+            7.5
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Starward Sword",
+      "description": "Keqing unleashes the power of lightning, dealing Electro DMG in an AOE.\nShe then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of Electro DMG. The final attack deals massive AoE Electro DMG.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Consecutive Slash DMG|{param2:F1P}×8",
+          "Last Attack DMG|{param3:P}",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.88,
+            0.946,
+            1.012,
+            1.1,
+            1.166,
+            1.232,
+            1.32,
+            1.408,
+            1.496,
+            1.584,
+            1.672,
+            1.76,
+            1.87,
+            1.98,
+            2.09
+          ],
+          "param2": [
+            0.24,
+            0.258,
+            0.276,
+            0.3,
+            0.318,
+            0.336,
+            0.36,
+            0.384,
+            0.408,
+            0.432,
+            0.456,
+            0.48,
+            0.51,
+            0.54,
+            0.57
+          ],
+          "param3": [
+            1.888,
+            2.0296,
+            2.1712,
+            2.36,
+            2.5016,
+            2.6432,
+            2.832,
+            3.0208,
+            3.2096,
+            3.3984,
+            3.5872,
+            3.776,
+            4.012,
+            4.248,
+            4.484
+          ],
+          "param4": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param5": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Thundering Penance",
+      "description": "After recasting Stellar Restoration while a Lightning Stiletto is present, Keqing's weapon gains an Electro Infusion for 5s."
+    },
+    {
+      "slot": "a4",
+      "name": "Aristocratic Dignity",
+      "description": "When casting Starward Sword, Keqing's CRIT Rate is increased by 15%, and her Energy Recharge is increased by 15%. This effect lasts for 8s."
+    },
+    {
+      "slot": "util",
+      "name": "Land's Overseer",
+      "description": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Thundering Might",
+      "description": "Recasting Stellar Restoration while a Lightning Stiletto is present causes Keqing to deal 50% of her ATK as AoE Electro DMG at the start point and terminus of her Blink."
+    },
+    {
+      "n": 2,
+      "name": "Keen Extraction",
+      "description": "When Keqing's Normal and Charged Attacks hit opponents affected by Electro, they have a 50% chance of producing an Elemental Particle.\nThis effect can only occur once every 5s."
+    },
+    {
+      "n": 3,
+      "name": "Foreseen Reformation",
+      "description": "Increases the Level of Starward Sword by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Attunement",
+      "description": "For 10s after Keqing triggers an Electro-related Elemental Reaction, her ATK is increased by 25%."
+    },
+    {
+      "n": 5,
+      "name": "Beckoning Stars",
+      "description": "Increases the Level of Stellar Restoration by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Tenacious Star",
+      "description": "When initiating a Normal Attack, a Charged Attack, Elemental Skill or Elemental Burst, Keqing gains a 6% Electro DMG Bonus for 8s.\nEffects triggered by Normal Attacks, Charged Attacks, Elemental Skills and Elemental Bursts are considered independent entities."
+    }
+  ]
+}

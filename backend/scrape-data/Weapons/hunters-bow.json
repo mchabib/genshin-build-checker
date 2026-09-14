@@ -1,0 +1,11 @@
+{
+  "id": 15101,
+  "name": "Hunter's Bow",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 1,
+  "baseAtkLv1": 23.245,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

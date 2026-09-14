@@ -1,0 +1,52 @@
+{
+  "id": 12511,
+  "name": "Beacon of the Reed Sea",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 5,
+  "baseAtkLv1": 45.9364,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Desert Watch",
+  "effectTemplate": "After the character's Elemental Skill hits an opponent, their ATK will be increased by <color=#99FFFFFF>{0}</color> for 8s. After the character takes DMG, their ATK will be increased by <color=#99FFFFFF>{1}</color> for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "After the character's Elemental Skill hits an opponent, their ATK will be increased by 20% for 8s. After the character takes DMG, their ATK will be increased by 20% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by 32%.",
+      "values": [
+        "20%",
+        "20%",
+        "32%"
+      ]
+    },
+    "r2": {
+      "description": "After the character's Elemental Skill hits an opponent, their ATK will be increased by 25% for 8s. After the character takes DMG, their ATK will be increased by 25% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by 40%.",
+      "values": [
+        "25%",
+        "25%",
+        "40%"
+      ]
+    },
+    "r3": {
+      "description": "After the character's Elemental Skill hits an opponent, their ATK will be increased by 30% for 8s. After the character takes DMG, their ATK will be increased by 30% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by 48%.",
+      "values": [
+        "30%",
+        "30%",
+        "48%"
+      ]
+    },
+    "r4": {
+      "description": "After the character's Elemental Skill hits an opponent, their ATK will be increased by 35% for 8s. After the character takes DMG, their ATK will be increased by 35% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by 56%.",
+      "values": [
+        "35%",
+        "35%",
+        "56%"
+      ]
+    },
+    "r5": {
+      "description": "After the character's Elemental Skill hits an opponent, their ATK will be increased by 40% for 8s. After the character takes DMG, their ATK will be increased by 40% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by 64%.",
+      "values": [
+        "40%",
+        "40%",
+        "64%"
+      ]
+    }
+  }
+}

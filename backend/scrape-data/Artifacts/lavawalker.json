@@ -1,0 +1,10 @@
+{
+  "id": 14003,
+  "name": "Lavawalker",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Pyro RES increased by 40%.",
+  "fourPc": "Increases DMG against opponents affected by Pyro by 35%."
+}

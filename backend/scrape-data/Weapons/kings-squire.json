@@ -1,0 +1,47 @@
+{
+  "id": 15417,
+  "name": "King's Squire",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Labyrinth Lord's Instruction",
+  "effectTemplate": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by <color=#99FFFFFF>{0}</color> for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal <color=#99FFFFFF>{1}</color> of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+  "refinements": {
+    "r1": {
+      "description": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by 60 for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal 100% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+      "values": [
+        "60",
+        "100%"
+      ]
+    },
+    "r2": {
+      "description": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by 80 for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal 120% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+      "values": [
+        "80",
+        "120%"
+      ]
+    },
+    "r3": {
+      "description": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by 100 for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal 140% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+      "values": [
+        "100",
+        "140%"
+      ]
+    },
+    "r4": {
+      "description": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by 120 for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal 160% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+      "values": [
+        "120",
+        "160%"
+      ]
+    },
+    "r5": {
+      "description": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by 140 for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal 180% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
+      "values": [
+        "140",
+        "180%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 11432,
+  "name": "Calamity of Eshu",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Diffusing Boundary",
+  "effectTemplate": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by <color=#99FFFFFF>{0}</color>, and Normal and Charged Attack CRIT Rate is increased by <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by 20%, and Normal and Charged Attack CRIT Rate is increased by 8%.",
+      "values": [
+        "20%",
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by 25%, and Normal and Charged Attack CRIT Rate is increased by 10%.",
+      "values": [
+        "25%",
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by 30%, and Normal and Charged Attack CRIT Rate is increased by 12%.",
+      "values": [
+        "30%",
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by 35%, and Normal and Charged Attack CRIT Rate is increased by 14%.",
+      "values": [
+        "35%",
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by 40%, and Normal and Charged Attack CRIT Rate is increased by 16%.",
+      "values": [
+        "40%",
+        "16%"
+      ]
+    }
+  }
+}

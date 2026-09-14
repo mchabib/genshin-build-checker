@@ -1,0 +1,42 @@
+{
+  "id": 12406,
+  "name": "Prototype Archaic",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Crush",
+  "effectTemplate": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional <color=#99FFFFFF>{0}</color> ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+  "refinements": {
+    "r1": {
+      "description": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 240% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+      "values": [
+        "240%"
+      ]
+    },
+    "r2": {
+      "description": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 300% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+      "values": [
+        "300%"
+      ]
+    },
+    "r3": {
+      "description": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 360% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+      "values": [
+        "360%"
+      ]
+    },
+    "r4": {
+      "description": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 420% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+      "values": [
+        "420%"
+      ]
+    },
+    "r5": {
+      "description": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 480% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+      "values": [
+        "480%"
+      ]
+    }
+  }
+}

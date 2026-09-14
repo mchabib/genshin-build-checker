@@ -1,0 +1,412 @@
+{
+  "key": "YaeMiko",
+  "nameEn": "Yae Miko",
+  "gdbName": "Yae Miko",
+  "element": "Electro",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "2.5",
+  "talents": {
+    "normal": {
+      "name": "Spiritfox Sin-Eater",
+      "description": "Normal Attack\nSummons forth kitsune spirits, initiating a maximum of 3 attacks that deal Electro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina to deal AoE Electro DMG after a short casting time.\n\nPlunging Attack\nPlunges towards the ground from mid-air, damaging all opponents in her path with thunderous might. Deals AoE Electro DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Charged Attack DMG|{param4:F1P}",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:P}/{param8:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.396584,
+            0.426328,
+            0.456072,
+            0.49573,
+            0.525474,
+            0.555218,
+            0.594876,
+            0.634534,
+            0.674193,
+            0.713851,
+            0.75351,
+            0.793168,
+            0.842741,
+            0.892314,
+            0.941887
+          ],
+          "param2": [
+            0.385192,
+            0.414081,
+            0.442971,
+            0.48149,
+            0.510379,
+            0.539269,
+            0.577788,
+            0.616307,
+            0.654826,
+            0.693346,
+            0.731865,
+            0.770384,
+            0.818533,
+            0.866682,
+            0.914831
+          ],
+          "param3": [
+            0.568888,
+            0.611555,
+            0.654221,
+            0.71111,
+            0.753777,
+            0.796443,
+            0.853332,
+            0.910221,
+            0.96711,
+            1.023998,
+            1.080887,
+            1.137776,
+            1.208887,
+            1.279998,
+            1.351109
+          ],
+          "param4": [
+            1.428948,
+            1.53612,
+            1.643291,
+            1.786185,
+            1.893357,
+            2.000528,
+            2.143423,
+            2.286317,
+            2.429212,
+            2.572107,
+            2.715002,
+            2.857897,
+            3.036515,
+            3.215134,
+            3.393752
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param7": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param8": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Yakan Evocation: Sesshou Sakura",
+      "description": "To Yae, such dull tasks as can be accomplished by driving spirits out need not be done personally.\nMoves swiftly, leaving a Sesshou Sakura behind.\n\nSesshou Sakura\nHas the following properties:\n· Periodically strikes one nearby opponent with lightning, dealing Electro DMG\n· When there are other Sesshou Sakura nearby, their level will increase, boosting the DMG dealt by these lightning strikes.\n\nThis skill has three charges.\nA maximum of 3 Sesshou Sakura can exist simultaneously. The initial level of each Sesshou Sakura is 1, and the initial highest level each sakura can reach is 3. If a new Sesshou Sakura is created too close to an existing one, the existing one will be destroyed.",
+      "attributes": {
+        "labels": [
+          "Sesshou Sakura DMG: Level 1|{param1:F1P}",
+          "Sesshou Sakura DMG: Level 2|{param2:F1P}",
+          "Sesshou Sakura DMG: Level 3|{param3:F1P}",
+          "Sesshou Sakura DMG: Level 4|{param4:F1P}",
+          "Duration|{param5:F1}s",
+          "CD|{param6:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.60672,
+            0.652224,
+            0.697728,
+            0.7584,
+            0.803904,
+            0.849408,
+            0.91008,
+            0.970752,
+            1.031424,
+            1.092096,
+            1.152768,
+            1.21344,
+            1.28928,
+            1.36512,
+            1.44096
+          ],
+          "param2": [
+            0.7584,
+            0.81528,
+            0.87216,
+            0.948,
+            1.00488,
+            1.06176,
+            1.1376,
+            1.21344,
+            1.28928,
+            1.36512,
+            1.44096,
+            1.5168,
+            1.6116,
+            1.7064,
+            1.8012
+          ],
+          "param3": [
+            0.948,
+            1.0191,
+            1.0902,
+            1.185,
+            1.2561,
+            1.3272,
+            1.422,
+            1.5168,
+            1.6116,
+            1.7064,
+            1.8012,
+            1.896,
+            2.0145,
+            2.133,
+            2.2515
+          ],
+          "param4": [
+            1.185,
+            1.273875,
+            1.36275,
+            1.48125,
+            1.570125,
+            1.659,
+            1.7775,
+            1.896,
+            2.0145,
+            2.133,
+            2.2515,
+            2.37,
+            2.518125,
+            2.66625,
+            2.814375
+          ],
+          "param5": [
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "param6": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Great Secret Art: Tenko Kenshin",
+      "description": "Legends of \"kitsunetsuki,\" or the manifestation of a kitsune's might, are common in Inazuma's folktales. One that particularly captures the imagination is that of the Sky Kitsune, said to cause lightning to fall down upon the foes of the Grand Narukami Shrine. Summons a lightning strike, dealing AoE Electro DMG.\nWhen she uses this skill, Yae Miko will unseal nearby Sesshou Sakura, destroying their outer forms and transforming them into Tenko Thunderbolts that descend from the skies, dealing AoE Electro DMG. Each Sesshou Sakura destroyed in this way will create one Tenko Thunderbolt.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:P}",
+          "Tenko Thunderbolt DMG|{param2:P}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            2.6,
+            2.795,
+            2.99,
+            3.25,
+            3.445,
+            3.64,
+            3.9,
+            4.16,
+            4.42,
+            4.68,
+            4.94,
+            5.2,
+            5.525,
+            5.85,
+            6.175
+          ],
+          "param2": [
+            3.33816,
+            3.588522,
+            3.838884,
+            4.1727,
+            4.423062,
+            4.673424,
+            5.00724,
+            5.341056,
+            5.674872,
+            6.008688,
+            6.342504,
+            6.67632,
+            7.09359,
+            7.51086,
+            7.92813
+          ],
+          "param3": [
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "param4": [
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90,
+            90
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "The Shrine's Sacred Shade",
+      "description": "When casting Great Secret Art: Tenko Kenshin, each Sesshou Sakura destroyed resets the cooldown for 1 charge of Yakan Evocation: Sesshou Sakura."
+    },
+    {
+      "slot": "a4",
+      "name": "Enlightened Blessing",
+      "description": "Every point of Elemental Mastery Yae Miko possesses will increase Sesshou Sakura DMG by 0.15%."
+    },
+    {
+      "slot": "util",
+      "name": "Meditations of a Yako",
+      "description": "Has a 25% chance to get 1 regional Character Talent Material (base material excluded) when crafting. The rarity is that of the base material."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Yakan Offering",
+      "description": "Each time Great Secret Art: Tenko Kenshin activates a Tenko Thunderbolt, Yae Miko will restore 8 Elemental Energy for herself."
+    },
+    {
+      "n": 2,
+      "name": "Fox's Mooncall",
+      "description": "Sesshou Sakura start at Level 2 when created, their max level is increased to 4, and their attack range is increased by 60%."
+    },
+    {
+      "n": 3,
+      "name": "The Seven Glamours",
+      "description": "Increases the Level of Yakan Evocation: Sesshou Sakura by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Sakura Channeling",
+      "description": "When Sesshou Sakura lightning hits opponents, the Electro DMG Bonus of all nearby party members is increased by 20% for 5s."
+    },
+    {
+      "n": 5,
+      "name": "Mischievous Teasing",
+      "description": "Increases the Level of Great Secret Art: Tenko Kenshin by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Forbidden Art: Daisesshou",
+      "description": "The Sesshou Sakura's attacks will ignore 60% of the opponents' DEF."
+    }
+  ]
+}

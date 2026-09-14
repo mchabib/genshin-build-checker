@@ -1,0 +1,47 @@
+{
+  "id": 11433,
+  "name": "Serenity's Call",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Solemn Silence",
+  "effectTemplate": "Upon causing an Elemental Reaction, increases Max HP by <color=#99FFFFFF>{0}</color> for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by <color=#99FFFFFF>{1}</color>. This effect can be triggered even if the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "Upon causing an Elemental Reaction, increases Max HP by 16% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by 16%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "16%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Upon causing an Elemental Reaction, increases Max HP by 20% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by 20%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "20%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Upon causing an Elemental Reaction, increases Max HP by 24% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by 24%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "24%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Upon causing an Elemental Reaction, increases Max HP by 28% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by 28%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "28%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Upon causing an Elemental Reaction, increases Max HP by 32% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by 32%. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "32%",
+        "32%"
+      ]
+    }
+  }
+}

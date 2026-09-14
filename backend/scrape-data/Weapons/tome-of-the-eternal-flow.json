@@ -1,0 +1,52 @@
+{
+  "id": 14514,
+  "name": "Tome of the Eternal Flow",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Aeon Wave",
+  "effectTemplate": "HP is increased by <color=#99FFFFFF>{0}</color>. When current HP increases or decreases, Charged Attack DMG will be increased by <color=#99FFFFFF>{1}</color> for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, <color=#99FFFFFF>{2}</color> Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+  "refinements": {
+    "r1": {
+      "description": "HP is increased by 16%. When current HP increases or decreases, Charged Attack DMG will be increased by 14% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, 8 Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+      "values": [
+        "16%",
+        "14%",
+        "8"
+      ]
+    },
+    "r2": {
+      "description": "HP is increased by 20%. When current HP increases or decreases, Charged Attack DMG will be increased by 18% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, 9 Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+      "values": [
+        "20%",
+        "18%",
+        "9"
+      ]
+    },
+    "r3": {
+      "description": "HP is increased by 24%. When current HP increases or decreases, Charged Attack DMG will be increased by 22% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, 10 Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+      "values": [
+        "24%",
+        "22%",
+        "10"
+      ]
+    },
+    "r4": {
+      "description": "HP is increased by 28%. When current HP increases or decreases, Charged Attack DMG will be increased by 26% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, 11 Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+      "values": [
+        "28%",
+        "26%",
+        "11"
+      ]
+    },
+    "r5": {
+      "description": "HP is increased by 32%. When current HP increases or decreases, Charged Attack DMG will be increased by 30% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack's duration refreshes, 12 Energy will be restored. This Energy restoration effect can be triggered once every 12s.",
+      "values": [
+        "32%",
+        "30%",
+        "12"
+      ]
+    }
+  }
+}

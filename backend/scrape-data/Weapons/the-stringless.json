@@ -1,0 +1,42 @@
+{
+  "id": 15402,
+  "name": "The Stringless",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Arrowless Song",
+  "effectTemplate": "Increases Elemental Skill and Elemental Burst DMG by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Skill and Elemental Burst DMG by 24%.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Skill and Elemental Burst DMG by 30%.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Skill and Elemental Burst DMG by 36%.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Skill and Elemental Burst DMG by 42%.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Skill and Elemental Burst DMG by 48%.",
+      "values": [
+        "48%"
+      ]
+    }
+  }
+}

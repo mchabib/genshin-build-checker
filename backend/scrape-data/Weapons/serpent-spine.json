@@ -1,0 +1,47 @@
+{
+  "id": 12409,
+  "name": "Serpent Spine",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Wavesplitter",
+  "effectTemplate": "Every 4s a character is on the field, they will deal <color=#99FFFFFF>{0}</color> more DMG and take <color=#99FFFFFF>{1}</color> more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+  "refinements": {
+    "r1": {
+      "description": "Every 4s a character is on the field, they will deal 6% more DMG and take 3% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+      "values": [
+        "6%",
+        "3%"
+      ]
+    },
+    "r2": {
+      "description": "Every 4s a character is on the field, they will deal 7% more DMG and take 2.7% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+      "values": [
+        "7%",
+        "2.7%"
+      ]
+    },
+    "r3": {
+      "description": "Every 4s a character is on the field, they will deal 8% more DMG and take 2.4% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+      "values": [
+        "8%",
+        "2.4%"
+      ]
+    },
+    "r4": {
+      "description": "Every 4s a character is on the field, they will deal 9% more DMG and take 2.2% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+      "values": [
+        "9%",
+        "2.2%"
+      ]
+    },
+    "r5": {
+      "description": "Every 4s a character is on the field, they will deal 10% more DMG and take 2% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+      "values": [
+        "10%",
+        "2%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": 14433,
+  "name": "Blackmarrow Lantern",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Token of Covenant",
+  "effectTemplate": "Bloom DMG is increased by <color=#99FFFFFF>{0}</color>, and Lunar-Bloom DMG is increased by <color=#99FFFFFF>{1}</color>. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Bloom DMG is increased by 48%, and Lunar-Bloom DMG is increased by 12%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 12%.",
+      "values": [
+        "48%",
+        "12%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Bloom DMG is increased by 60%, and Lunar-Bloom DMG is increased by 15%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 15%.",
+      "values": [
+        "60%",
+        "15%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Bloom DMG is increased by 72%, and Lunar-Bloom DMG is increased by 18%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 18%.",
+      "values": [
+        "72%",
+        "18%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Bloom DMG is increased by 84%, and Lunar-Bloom DMG is increased by 21%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 21%.",
+      "values": [
+        "84%",
+        "21%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Bloom DMG is increased by 96%, and Lunar-Bloom DMG is increased by 24%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 24%.",
+      "values": [
+        "96%",
+        "24%",
+        "24%"
+      ]
+    }
+  }
+}

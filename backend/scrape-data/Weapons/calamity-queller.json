@@ -1,0 +1,47 @@
+{
+  "id": 13507,
+  "name": "Calamity Queller",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 49.1377,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Extinguishing Precept",
+  "effectTemplate": "Gain <color=#99FFFFFF>{0}</color> All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by <color=#99FFFFFF>{1}</color> per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+  "refinements": {
+    "r1": {
+      "description": "Gain 12% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 3.2% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+      "values": [
+        "12%",
+        "3.2%"
+      ]
+    },
+    "r2": {
+      "description": "Gain 15% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 4% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+      "values": [
+        "15%",
+        "4%"
+      ]
+    },
+    "r3": {
+      "description": "Gain 18% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 4.8% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+      "values": [
+        "18%",
+        "4.8%"
+      ]
+    },
+    "r4": {
+      "description": "Gain 21% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 5.6% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+      "values": [
+        "21%",
+        "5.6%"
+      ]
+    },
+    "r5": {
+      "description": "Gain 24% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 6.4% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+      "values": [
+        "24%",
+        "6.4%"
+      ]
+    }
+  }
+}

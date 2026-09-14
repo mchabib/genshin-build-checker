@@ -1,0 +1,42 @@
+{
+  "id": 15413,
+  "name": "Windblume Ode",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Windblume Wish",
+  "effectTemplate": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by <color=#99FFFFFF>{0}</color> for 6s.",
+  "refinements": {
+    "r1": {
+      "description": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by 16% for 6s.",
+      "values": [
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by 20% for 6s.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by 24% for 6s.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by 28% for 6s.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by 32% for 6s.",
+      "values": [
+        "32%"
+      ]
+    }
+  }
+}

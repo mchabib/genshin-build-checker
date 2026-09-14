@@ -1,0 +1,58 @@
+{
+  "key": "Sandrone",
+  "role": "dps",
+  "naElements": { "na": "physical", "ca": "cryo", "plunge": "physical" },
+  "self": [
+    {
+      "id": "sandrone_a1",
+      "mode": "assume",
+      "description": "Sandrone A1: Prism Shot ke-2 (Stellar-Conduct) ×400% saat Decoding Power > 50.",
+      "mod": { "source": "Sandrone A1 (Prism Shot ×4)", "scope": "skill", "hitIds": ["skill2", "skill3"], "talentMultBonus": 300 }
+    },
+    {
+      "id": "sandrone_a4",
+      "mode": "always",
+      "description": "Sandrone A4: EM +8 per 100 ATK (max 160). TIDAK masuk total Enka (diverifikasi in-game 2026-09-11: Enka 82, layar stat 242).",
+      "mod": { "source": "Sandrone A4", "scope": "all", "em": "= min(160, round(char.final.atk / 100 * 8))" }
+    },
+    {
+      "id": "sandrone_polestar_field",
+      "mode": "assume",
+      "requireTeamElement": "electro",
+      "description": "Polestar Field yang dipicu Sandrone sendiri (butuh Electro di tim). Nol kalau Odette ada di tim (sudah dihitung entry polestar_field di _team.json).",
+      "mod": {
+        "source": "Polestar Field",
+        "scope": "all",
+        "elementalDmgBonus": { "cryo": "= team.keys.includes('Odette') ? 0 : 30", "electro": "= team.keys.includes('Odette') ? 0 : 30" },
+        "resShred": { "physical": "= team.keys.includes('Odette') ? 0 : 40" },
+        "uptime": 0.9,
+        "note": "+30% (≈8 hit terekam), uptime 0.9"
+      }
+    },
+    {
+      "id": "sandrone_stellar_base_self",
+      "mode": "always",
+      "description": "Sandrone passive Stellar Jubilee (ke diri sendiri): Base DMG reaksi Stellar +0.7% per 100 ATK, max 14%.",
+      "mod": { "source": "Sandrone Stellar base DMG", "scope": "all", "stellarBonus": "= min(14, round(char.final.atk / 100 * 0.7 * 10) / 10)" }
+    }
+  ],
+  "reactions": { "with": { "electro": {}, "anemo": {} } },
+  "limits": {
+    "C": { "max": 2, "resetBy": ["E"], "overflow": { "ca1": 1, "na4": 2 } }
+  },
+  "_limits_comment": "Fagio: Decoding Power naik selama beam; mentok 100 → Power Overdrive (beam lemah, na4 'DMG When in Power Overdrive') sampai <50; E me-repair. Kalibrasi in-game 2026-09-11: CA ke-3 berturut-turut tanpa E ≈ overdrive (Sandrone real 1.23M vs 27 beam penuh 1.99M → ≈18 beam penuh = 2 CA penuh per E). KQM combo default C0 = 3[C E] (C lalu E, bukan 3 C berturut).",
+  "actions": {
+    "C": { "ca1": 1, "ca3": 3 },
+    "E": { "skill1": 1, "skill2": 1 },
+    "Q": { "burst1": 1, "burst3": 1 }
+  },
+  "rotations": [
+    {
+      "label": "3[C E] (Q) Stellar-Conduct",
+      "counts": { "ca1": 3, "ca3": 9, "skill1": 3, "skill2": 3, "burst1": 1, "burst3": 1 },
+      "duration": 10,
+      "note": "≈10s (aproksimasi). KQM combo 3[C E] (Q). 3 condensed beam per C (teks C6: beam ke-3 = Cluster Beam); varian Stellar-Conduct (butuh Electro di tim). Per-hit diverifikasi in-game 2026-09-11 (Sweeping Fire 3.027, beam biasa 8.628, beam Stellar maks 73.191 vs program 69.347)."
+    }
+  ],
+  "teams": [["YaeMiko", "Odette", "Qiqi"], ["YaeMiko", "Odette", "Alyosha"]]
+}

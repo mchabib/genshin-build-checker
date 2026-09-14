@@ -1,0 +1,47 @@
+{
+  "id": 15407,
+  "name": "Compound Bow",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+  "effectName": "Infusion Arrow",
+  "effectTemplate": "Normal Attack and Charged Attack hits increase ATK by <color=#99FFFFFF>{0}</color> and Normal ATK SPD by <color=#99FFFFFF>{1}</color> for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+  "refinements": {
+    "r1": {
+      "description": "Normal Attack and Charged Attack hits increase ATK by 4% and Normal ATK SPD by 1.2% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+      "values": [
+        "4%",
+        "1.2%"
+      ]
+    },
+    "r2": {
+      "description": "Normal Attack and Charged Attack hits increase ATK by 5% and Normal ATK SPD by 1.5% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+      "values": [
+        "5%",
+        "1.5%"
+      ]
+    },
+    "r3": {
+      "description": "Normal Attack and Charged Attack hits increase ATK by 6% and Normal ATK SPD by 1.8% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+      "values": [
+        "6%",
+        "1.8%"
+      ]
+    },
+    "r4": {
+      "description": "Normal Attack and Charged Attack hits increase ATK by 7% and Normal ATK SPD by 2.1% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+      "values": [
+        "7%",
+        "2.1%"
+      ]
+    },
+    "r5": {
+      "description": "Normal Attack and Charged Attack hits increase ATK by 8% and Normal ATK SPD by 2.4% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+      "values": [
+        "8%",
+        "2.4%"
+      ]
+    }
+  }
+}

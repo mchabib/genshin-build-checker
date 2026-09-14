@@ -1,0 +1,20 @@
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.local
+backend/.env
+frontend/.env
+.DS_Store
+coverage/
+.vite/
+.cache/
+backend/.cache/
+
+# sisa eksperimen scrape lama & screenshot lokal (bukan bagian repo)
+/kqm_all_characters_guide.json
+/odette_kqm_guide.json
+/Screenshoot/
+/scrape-data/
+backend/.tmp/

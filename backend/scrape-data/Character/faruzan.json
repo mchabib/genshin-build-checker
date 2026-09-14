@@ -1,0 +1,124 @@
+{
+  "slug": "faruzan",
+  "kqmName": "Faruzan",
+  "canonName": "Faruzan",
+  "sourceUrl": "https://keqingmains.com/q/faruzan-quickguide/",
+  "guideUpdated": "2026-02-16T04:26:00+00:00",
+  "scrapedAt": "2026-09-09T17:14:42.817Z",
+  "raw": {
+    "overview": "Anemo Support\n Faruzan excels at enhancing other Anemo characters with her high buff/debuff uptime (which is further increased by her C2 and C6). Her primary role is to support an Anemo on-field DPS unit such as Xiao or Wanderer. This role also extends to more quickswap Anemo teams such as with Heizou.\n On-Field Anemo DPS\n Faruzan can be built as an on-field Anemo DPS, buffing her own damage. Her C1 in particular synergizes with the Thundering Fury artifact set’s cooldown reduction, allowing her to fire additional Charged Shots. She is often built for EM and reaction damage, but her C6 increases her viability for a CRIT build. Thundering Fury Faruzan will not be covered in this quick guide; please see the full Faruzan guide for more information.",
+    "talents": "Burst ≥ Skill > Normal Attack\n Reaching Ascension 6 is recommended as Faruzan’s Anemo DMG% buff scales directly with her Burst’s level. Lv. 90 helps to maximize her Ascension 4 Passive bonus damage (and some collateral Swirl damage).\n At C6, Faruzan’s Burst periodically applies Pressurized Collapse, which deals Skill DMG — thus, leveling Faruzan’s Skill should be given equal priority to her Burst.",
+    "constellations": "Constellation 1\n Constellation 2\n Constellation 3\n Constellation 4\n Constellation 5\n Constellation 6\n Constellation 1\n Constellation 1 | Truth by Any Means \n Faruzan can fire off a maximum of 2 Hurricane Arrows using fully charged Aimed Shots while under a single Wind Realm of Nasamjnin effect. \n While seemingly a DPS increase, actively using this Constellation — performing 2 Charged Shots every Skill — actually results in an overall team DPS decrease from extending Faruzan’s field time. This fact is further supported by the 5.5s particle-generation cooldown, which limits any extra Energy from being created with a second Pressurized Collapse within her Skill cooldown time frame. However, C1 can still serve as a backup plan for whenever you miss your Charged Shot and consequently miss the Pressurized Collapse — making it a fine QoL Constellation.\n Constellation 2\n Constellation 2 | Overzealous Intellect \n The duration of the Dazzling Polyhedron created by The Wind's Secret Ways is increased by 6s. \n One of Faruzan’s better Constellations and a good stopping point. C2 prolongs her Burst, giving a total of 22s uptime on its Anemo DMG% buff and Anemo RES Shred. This Constellation also grants more flexibility in team rotations as Faruzan can be used at the beginning of a rotation and still maintain full uptime on buffs, allowing for other buffs with shorter uptime to be activated later.\n Constellation 3\n Constellation 3 | Spirit-Orchard Stroll \n Increases the Level of Wind Realm of Nasamjnin by 3.\nMaximum upgrade level is 15. \n There’s nothing to write home about giving her Skill extra multipliers as it does not enhance any of her roles within her teams. Its weight, however, can change upon obtaining Constellation 6. Overall a minor buff to Faruzan’s damage pre-C6.\n Constellation 4\n Constellation 4 | Divine Comprehension \n The vortex created by Pressurized Collapses will restore Energy to Faruzan based on the number of opponents hit: If it hits 1 opponent, it will restore 2 Energy for Faruzan. Each additional opponent hit will restore 0.5 more Energy for Faruzan.\nA maximum of 4 Energy can be restored to her per vortex. \n Supplies Faruzan with 2–4 Flat Energy for every Pressurized Collapse based on the amount of enemies hit. This Constellation somewhat eases her enormous ER requirements but does not solve it fully. With that said, if working in tandem with C6, players will have an easier time building her ER.\n Constellation 5\n Constellation 5 | Wonderland of Rumination \n Increases the Level of The Wind's Secret Ways by 3.\nMaximum upgrade level is 15. \n Increasing Faruzan’s Elemental Burst level means that both the damage of her Burst’s initial hit and her Anemo DMG% buff are boosted. As such, Faruzan’s C5 provides a decent increase to her teams’ DPS potential.\n Constellation 6\n Constellation 6 | The Wondrous Path of Truth \n Characters affected by The Wind's Secret Ways ' Prayerful Wind's Benefit have 40% increased CRIT DMG when they deal Anemo DMG . When the active character deals DMG while affected by Prayerful Wind's Benefit, they will apply Pressurized Collapse to the opponent damaged. This effect can be triggered once every 3s. This CD is shared between all party members. \n Hands down Faruzan’s most outstanding Constellation. The additional buff of 40% Anemo CRIT DMG elevates her above any other pure Anemo support. Besides that, this Constellation also helps mitigate Energy and range problems because of the periodic Pressurized Collapses, generating Anemo particles and shredding enemies' Anemo RES (through her A1).",
+    "erRequirements": "Assumes 22s rotations with 1 Favonius weapon proc.\n- 100% particles : Faruzan catches all her particles. \n- 50% particles : Faruzan catches 1 set of particles (2 particles). \n Scenario 2 Pressurized Collapse 1 Pressurized Collapse \n 100% Particles 50% Particles 100% Particles \n Double Anemo Pre-C6 220–240% 245–260% 275–300% \n C6 175–200% — — \n Triple Anemo Pre-C6 190–205% 200–225% 210–235% \n C6 160–185% — — \n- Each additional Favonius proc reduces ER requirements by ~35% or ~25% when caught by herself or a teammate, respectively. \n- 4pc The Exile on a teammate lowers Faruzan’s ER requirements by ~25%. \n- Triple Anemo ER requirements highly depend on the third Anemo character in the team. \n The values provided above are purely estimations. Use the Energy Recharge Calculator to determine exact requirements for your team and rotation.",
+    "artifactStats": "Sands \n Goblet \n Circlet \n Pre-C6 ER Anything with ER Anything with ER\nCRIT Rate (Favonius) \n C6 ER/ATK% Anemo DMG% CRIT Rate/DMG \n Substats : ER >> CRIT Rate > CRIT DMG = ATK% \n Faruzan’s main drawback, her high ER requirements, means that ER rolls should be prioritized over all other stats until you reach her recommended ER thresholds. Afterwards, any extra offensive stats (CRIT and ATK%) are welcomed to nudge her damage potential above her baseline.",
+    "artifactSets": "Faruzan’s Burst uptime is most important. Players should prioritize ER over set bonuses, especially if Faruzan is not C6. \n4pc Tenacity of the Millelith (TotM) At C6, 4TotM is Faruzan’s best support set. C6 Faruzan’s Burst consistently procs Pressurized Collapses and thus the 20% ATK buff.\nThis set is not recommended for pre-C6 Faruzan since she has lackluster uptime on the set bonus. \n4pc Golden Troupe (GT) At C6, 4GT is a viable option for personal damage if another teammate already holds 4NO or 4TotM. Otherwise, it is rarely the best choice for team damage. \n4pc Noblesse Oblige (NO) Bestows the whole team with a 20% ATK buff for 12s every Burst cast. Pre-C2, Faruzan often uses her Burst immediately before the on-field Anemo DPS, which synergizes well with 4NO. \n4pc Viridescent Venerer (VV) A staple choice for an Anemo character. Shredding Pyro, Hydro, Electro and Cryo RES—the set effectively buffs any of Faruzan’s teammates with said Elements as long as they share a good chunk of the team’s DPS. 4VV does not hold any value for the on-field Anemo DPS character but serves as a way to increase team DPS regardless. Note that this set does not trigger from off-field so players should keep in mind the 10s shred duration while rotating her in teams. \n4pc The Exile While inherently bottlenecked with 4-star stats, 4pc The Exile can help alleviate Faruzan's and her teammates’ Energy problems. As 4pc The Exile is hampered with 4-star stat volumes, it is highly recommended to maximize this set with a 5-star off-piece ER Sands. \n2pc Emblem of Severed Fate/2pc The Exile Mixing these 2pc sets gives Faruzan a whopping 40% ER and can be a quick fix when building her while offering more 5-star substats vs the 4pc The Exile. Still, its worth is not comparable to 4pc The Exile as it only helps with her own Energy.",
+    "weapons": "Favonius Warbow Undoubtedly Faruzan’s BiS 4* choice. Favonius lowers her own and her teammates’ ER requirements with the clear particles from its passive. \nElegy for the End Strong 5-star choice for Faruzan. Provides a substantial ER secondary stat while buffing her whole team.\nPre-C6, requires utilizing E > Q > 2CS to activate Millennial Movement: Farewell Song. C6 Faruzan can activate the buff immediately with E > Q > CS or allow the Sigils to build throughout Faruzan’s Burst duration. \nEnd of the Line / Fading Twilight Both weapons have smaller but highly-appreciated ER secondary stats, while possessing negligible offensive passives in Faruzan’s primary use cases. \nSacrificial Bow Good for the same reasons as the above options. It should be noted that the extra Pressurized Collapse from the extra Skill does not produce more particles, as it is gated by the 5.5s particle generation cooldown. \n Offensive Weapons Not recommended in cases where Faruzan doesn't have enough Energy to Burst consistently, which is typically when she isn't C6 and/or in Solo or Double Anemo teams. Nevertheless, offensive 5-star weapons can give an increase in team DPS through her A4 and have the potential to make Faruzan an off-field DPS with the presence of her buffs. Please see the full Faruzan guide for more information.",
+    "teams": "Anemo Hypercarry Support \nThis team archetype is centered around the Anemo on-field DPS character with Faruzan supporting them with her buffs. The flex slots can be filled by a third Anemo unit to lower ER requirements, a buffer, a defensive support, and/or an off-field damage contributor. Please see the full Faruzan guide, Wanderer guide, or Xiao guide for more specific flex slot recommendations.\n Notable Teammates\n Anemo On-Field DPS :\n Wanderer , Xiao Having Faruzan support any of these Anemo DPS units will help them reach their maximum damage potential.\nXiao in particular demands significant Energy with his normal on-field DPS build. It is highly recommended to run a Triple Anemo team catering to his Energy needs. \n Anemo Flex: \n Sucrose , Venti , Kazuha , Lynette , Jean , Xianyun A third Anemo unit to lower the ER requirements of Pre-C6 Faruzan and the Anemo on-field DPS.\nSucrose can hold TTDS and generates the most particles per rotation while Venti and Kazuha have additional grouping and more off-field damage. Lynette also has decent particle generation and provides some off-field damage. Jean serves as the team’s healer, giving Faruzan and the on-field Anemo much-needed survivability. Xianyun is a notable pick for Xiao teams where she provides a Plunging Attack buff as well as healing.\nJean and Venti with Constellations will provide extra Anemo RES Shred/DMG%. \n Example Teams\n This is not a comprehensive list of teams. The inclusion or exclusion of any given team does not necessarily reflect its power level.\n Faruzan — Wanderer — Yun Jin — Bennett \n Faruzan — Xiao — Xianyun — Furina \n Anemo Quickswap \nFaruzan’s disposition as an Anemo character allows her to be a flex support slot for any team needing a 4VV holder and grouping.\n Notable Teammates\n Anemo Flex: \n Heizou , Venti , Kazuha , Lynette , Jean Options for quickswap teams, or as a third Anemo unit to lower the ER requirements of Pre-C6 Faruzan and the Anemo on-field DPS.\nHeizou’s personal damage benefits from Faruzan’s buffs, and his cooldowns slot well in quickswap teams. Venti and Kazuha have additional grouping and more off-field damage. Lynette provides an ATK% buff and, at C1, minor grouping; her Anemo Infusion at C6 works well in quickswap teams. Jean serves as the team’s healer. \n Flex Options: \n Bennett , Xiangling , Xingqiu , Yelan The Bennett-Xiangling and Xingqiu-Yelan pairings are quite powerful and work well in quickswap teams. \n Example Teams\n This is not a comprehensive list of teams. The inclusion or exclusion of any given team does not necessarily reflect its power level.\n Faruzan — Heizou — Xingqiu — Yelan",
+    "newContent": "Xianyun Xianyun provides strong healing and a Plunging Attack buff. Combined with Faruzan’s Anemo support abilities, the two are a powerful inclusion to Xiao teams. \n Furina Furina provides a potent DMG% buff via her Burst. Because this buff is based on HP changes and her Skill has a teamwide HP drain, she greatly desires a strong healer on the team.\nNote that in Wanderer teams, running Furina often incentivizes a healer over a shielder. The lack of interruption resistance may result in an uncomfortable experience. \n Chiori Chiori is a relatively unobtrusive unit who provides good off-field damage. She is most notable in Double Geo compositions (usually with Zhongli) where she can gain a second Tamoto doll and benefit from Geo Resonance.",
+    "combos": "Skill -> Charged Shot -> Burst Performing a Fully Charged Shot to proc the Pressurized Collapse effect from her Skill and then catching her own Anemo particles after Bursting, alleviating Faruzan’s monstrous ER needs.\n Highly recommended in most situations, even at C6. \n Skill -> Burst -> Charged Shot Swapping immediately after Pressurized Collapse to funnel Anemo particles to another Energy-hungry Anemo character.\n Recommended in cases where Faruzan herself is equipped with an abundance of ER while the supported Anemo character lacks the needed Energy.",
+    "anemoHypercarrySupport": "This team archetype is centered around the Anemo on-field DPS character with Faruzan supporting them with her buffs. The flex slots can be filled by a third Anemo unit to lower ER requirements, a buffer, a defensive support, and/or an off-field damage contributor. Please see the full Faruzan guide, Wanderer guide, or Xiao guide for more specific flex slot recommendations.\n Notable Teammates\n Anemo On-Field DPS :\n Wanderer , Xiao Having Faruzan support any of these Anemo DPS units will help them reach their maximum damage potential.\nXiao in particular demands significant Energy with his normal on-field DPS build. It is highly recommended to run a Triple Anemo team catering to his Energy needs. \n Anemo Flex: \n Sucrose , Venti , Kazuha , Lynette , Jean , Xianyun A third Anemo unit to lower the ER requirements of Pre-C6 Faruzan and the Anemo on-field DPS.\nSucrose can hold TTDS and generates the most particles per rotation while Venti and Kazuha have additional grouping and more off-field damage. Lynette also has decent particle generation and provides some off-field damage. Jean serves as the team’s healer, giving Faruzan and the on-field Anemo much-needed survivability. Xianyun is a notable pick for Xiao teams where she provides a Plunging Attack buff as well as healing.\nJean and Venti with Constellations will provide extra Anemo RES Shred/DMG%. \n Example Teams\n This is not a comprehensive list of teams. The inclusion or exclusion of any given team does not necessarily reflect its power level.\n Faruzan — Wanderer — Yun Jin — Bennett \n Faruzan — Xiao — Xianyun — Furina",
+    "anemoQuickswap": "Faruzan’s disposition as an Anemo character allows her to be a flex support slot for any team needing a 4VV holder and grouping.\n Notable Teammates\n Anemo Flex: \n Heizou , Venti , Kazuha , Lynette , Jean Options for quickswap teams, or as a third Anemo unit to lower the ER requirements of Pre-C6 Faruzan and the Anemo on-field DPS.\nHeizou’s personal damage benefits from Faruzan’s buffs, and his cooldowns slot well in quickswap teams. Venti and Kazuha have additional grouping and more off-field damage. Lynette provides an ATK% buff and, at C1, minor grouping; her Anemo Infusion at C6 works well in quickswap teams. Jean serves as the team’s healer. \n Flex Options: \n Bennett , Xiangling , Xingqiu , Yelan The Bennett-Xiangling and Xingqiu-Yelan pairings are quite powerful and work well in quickswap teams. \n Example Teams\n This is not a comprehensive list of teams. The inclusion or exclusion of any given team does not necessarily reflect its power level.\n Faruzan — Heizou — Xingqiu — Yelan"
+  },
+  "parsed": {
+    "erRequirements": [
+      {
+        "label": "100% Particles — 1 Pressurized Collapse",
+        "min": 100,
+        "max": 100
+      },
+      {
+        "label": "Double Anemo — 1 Pressurized Collapse",
+        "min": 220,
+        "max": 240
+      },
+      {
+        "label": "Double Anemo",
+        "min": 245,
+        "max": 260
+      },
+      {
+        "label": "Double Anemo",
+        "min": 275,
+        "max": 300
+      },
+      {
+        "label": "C6 — 2 Pressurized Collapse",
+        "min": 175,
+        "max": 200
+      },
+      {
+        "label": "Triple Anemo — 1 Pressurized Collapse",
+        "min": 190,
+        "max": 205
+      },
+      {
+        "label": "Triple Anemo",
+        "min": 200,
+        "max": 225
+      },
+      {
+        "label": "Triple Anemo",
+        "min": 210,
+        "max": 235
+      },
+      {
+        "label": "C6 — 2 Pressurized Collapse",
+        "min": 160,
+        "max": 185
+      }
+    ],
+    "builds": [],
+    "sets": [
+      {
+        "pieces": 4,
+        "name": "Tenacity of the Millelith",
+        "note": "At C6, 4TotM is Faruzan’s best support set. C6 Faruzan’s Burst consistently procs Pressurized Collapses and thus the 20% ATK buff. This set is not recommended for pre-C6 Faruzan since she has lackluster uptime on the set bonus."
+      },
+      {
+        "pieces": 4,
+        "name": "Golden Troupe",
+        "note": "At C6, 4GT is a viable option for personal damage if another teammate already holds 4NO or 4TotM. Otherwise, it is rarely the best choice for team damage."
+      },
+      {
+        "pieces": 4,
+        "name": "Noblesse Oblige",
+        "note": "Bestows the whole team with a 20% ATK buff for 12s every Burst cast. Pre-C2, Faruzan often uses her Burst immediately before the on-field Anemo DPS, which synergizes well with 4NO."
+      },
+      {
+        "pieces": 4,
+        "name": "Viridescent Venerer",
+        "note": "A staple choice for an Anemo character. Shredding Pyro, Hydro, Electro and Cryo RES—the set effectively buffs any of Faruzan’s teammates with said Elements as long as they share a good chunk of the team’s DPS. 4VV does not hold any value for the on-field Anemo DPS character but serves as a way to increase team DPS regardless. Note that this set does not trigger from off-field so players should keep in mind the 10s shred duration while rotating her in teams."
+      },
+      {
+        "pieces": 4,
+        "name": "The Exile",
+        "note": "While inherently bottlenecked with 4-star stats, 4pc The Exile can help alleviate Faruzan's and her teammates’ Energy problems. As 4pc The Exile is hampered with 4-star stat volumes, it is highly recommended to maximize this set with a 5-star off-piece ER Sands."
+      },
+      {
+        "pieces": 2,
+        "name": "Emblem of Severed Fate",
+        "note": "Mixing these 2pc sets gives Faruzan a whopping 40% ER and can be a quick fix when building her while offering more 5-star substats vs the 4pc The Exile. Still, its worth is not comparable to 4pc The Exile as it only helps with her own Energy."
+      },
+      {
+        "pieces": 2,
+        "name": "The Exile",
+        "note": "Mixing these 2pc sets gives Faruzan a whopping 40% ER and can be a quick fix when building her while offering more 5-star substats vs the 4pc The Exile. Still, its worth is not comparable to 4pc The Exile as it only helps with her own Energy."
+      }
+    ],
+    "weaponsRanked": [
+      "Favonius Warbow",
+      "Elegy for the End",
+      "End of the Line / Fading Twilight",
+      "Sacrificial Bow"
+    ],
+    "constellations": {
+      "1": "Truth by Any Means Faruzan can fire off a maximum of 2 Hurricane Arrows using fully charged Aimed Shots while under a single Wind Realm of Nasamjnin effect. While seemingly a DPS increase, actively using this Constellation — performing 2 Charged Shots every Skill — actually results in an overall team DPS decrease from extending Faruzan’s field time. This fact is further supported by the 5.5s particle-generation cooldown, which limits any extra Energy from being created with a second Pressurized Collapse within her Skill cooldown time frame. However, C1 can still serve as a backup plan for when",
+      "2": "Overzealous Intellect The duration of the Dazzling Polyhedron created by The Wind's Secret Ways is increased by 6s. One of Faruzan’s better Constellations and a good stopping point. C2 prolongs her Burst, giving a total of 22s uptime on its Anemo DMG% buff and Anemo RES Shred. This Constellation also grants more flexibility in team rotations as Faruzan can be used at the beginning of a rotation and still maintain full uptime on buffs, allowing for other buffs with shorter uptime to be activated later. Constellation 3",
+      "3": "Spirit-Orchard Stroll Increases the Level of Wind Realm of Nasamjnin by 3. Maximum upgrade level is 15. There’s nothing to write home about giving her Skill extra multipliers as it does not enhance any of her roles within her teams. Its weight, however, can change upon obtaining Constellation 6. Overall a minor buff to Faruzan’s damage pre-C6. Constellation 4",
+      "4": "Divine Comprehension The vortex created by Pressurized Collapses will restore Energy to Faruzan based on the number of opponents hit: If it hits 1 opponent, it will restore 2 Energy for Faruzan. Each additional opponent hit will restore 0.5 more Energy for Faruzan. A maximum of 4 Energy can be restored to her per vortex. Supplies Faruzan with 2–4 Flat Energy for every Pressurized Collapse based on the amount of enemies hit. This Constellation somewhat eases her enormous ER requirements but does not solve it fully. With that said, if working in tandem with C6, players will have an easier time b",
+      "5": "Wonderland of Rumination Increases the Level of The Wind's Secret Ways by 3. Maximum upgrade level is 15. Increasing Faruzan’s Elemental Burst level means that both the damage of her Burst’s initial hit and her Anemo DMG% buff are boosted. As such, Faruzan’s C5 provides a decent increase to her teams’ DPS potential. Constellation 6",
+      "6": "The Wondrous Path of Truth Characters affected by The Wind's Secret Ways ' Prayerful Wind's Benefit have 40% increased CRIT DMG when they deal Anemo DMG . When the active character deals DMG while affected by Prayerful Wind's Benefit, they will apply Pressurized Collapse to the opponent damaged. This effect can be triggered once every 3s. This CD is shared between all party members. Hands down Faruzan’s most outstanding Constellation. The additional buff of 40% Anemo CRIT DMG elevates her above any other pure Anemo support. Besides that, this Constellation also helps mitigate Energy and range "
+    },
+    "talentPriority": "Burst ≥ Skill > Normal Attack"
+  }
+}

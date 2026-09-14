@@ -1,0 +1,10 @@
+{
+  "id": 14002,
+  "name": "Thundersoother",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Electro RES increased by 40%.",
+  "fourPc": "Increases DMG against opponents affected by Electro by 35%."
+}

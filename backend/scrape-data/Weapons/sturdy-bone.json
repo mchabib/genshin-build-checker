@@ -1,0 +1,42 @@
+{
+  "id": 11430,
+  "name": "Sturdy Bone",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Trapper's Pride",
+  "effectTemplate": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by <color=#99FFFFFF>{0}</color> of ATK. This effect expires after triggering 18 times or 7s.",
+  "refinements": {
+    "r1": {
+      "description": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 16% of ATK. This effect expires after triggering 18 times or 7s.",
+      "values": [
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 20% of ATK. This effect expires after triggering 18 times or 7s.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 24% of ATK. This effect expires after triggering 18 times or 7s.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 28% of ATK. This effect expires after triggering 18 times or 7s.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 32% of ATK. This effect expires after triggering 18 times or 7s.",
+      "values": [
+        "32%"
+      ]
+    }
+  }
+}

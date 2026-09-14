@@ -1,0 +1,10 @@
+{
+  "id": 10009,
+  "name": "The Exile",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "Energy Recharge +20%",
+  "fourPc": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+}

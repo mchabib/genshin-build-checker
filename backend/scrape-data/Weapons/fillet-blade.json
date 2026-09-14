@@ -1,0 +1,47 @@
+{
+  "id": 11305,
+  "name": "Fillet Blade",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Gash",
+  "effectTemplate": "On hit, has a 50% chance to deal <color=#99FFFFFF>{0}</color> ATK DMG to a single opponent. Can only occur once every <color=#99FFFFFF>{1}</color>s.",
+  "refinements": {
+    "r1": {
+      "description": "On hit, has a 50% chance to deal 240% ATK DMG to a single opponent. Can only occur once every 15s.",
+      "values": [
+        "240%",
+        "15"
+      ]
+    },
+    "r2": {
+      "description": "On hit, has a 50% chance to deal 280% ATK DMG to a single opponent. Can only occur once every 14s.",
+      "values": [
+        "280%",
+        "14"
+      ]
+    },
+    "r3": {
+      "description": "On hit, has a 50% chance to deal 320% ATK DMG to a single opponent. Can only occur once every 13s.",
+      "values": [
+        "320%",
+        "13"
+      ]
+    },
+    "r4": {
+      "description": "On hit, has a 50% chance to deal 360% ATK DMG to a single opponent. Can only occur once every 12s.",
+      "values": [
+        "360%",
+        "12"
+      ]
+    },
+    "r5": {
+      "description": "On hit, has a 50% chance to deal 400% ATK DMG to a single opponent. Can only occur once every 11s.",
+      "values": [
+        "400%",
+        "11"
+      ]
+    }
+  }
+}

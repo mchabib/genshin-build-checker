@@ -1,0 +1,42 @@
+{
+  "id": 11406,
+  "name": "Prototype Rancour",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+  "effectName": "Smashed Stone",
+  "effectTemplate": "On hit, Normal or Charged Attacks increase ATK and DEF by <color=#99FFFFFF>{0}</color> for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+  "refinements": {
+    "r1": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 4% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+      "values": [
+        "4%"
+      ]
+    },
+    "r2": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 5% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+      "values": [
+        "5%"
+      ]
+    },
+    "r3": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 6% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+      "values": [
+        "6%"
+      ]
+    },
+    "r4": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 7% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+      "values": [
+        "7%"
+      ]
+    },
+    "r5": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 8% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
+      "values": [
+        "8%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": 15016,
+  "name": "Heart of Depth",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Hydro DMG Bonus +15%",
+  "fourPc": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s."
+}

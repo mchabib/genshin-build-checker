@@ -1,0 +1,42 @@
+{
+  "id": 11302,
+  "name": "Harbinger of Dawn",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Vigorous",
+  "effectTemplate": "When HP is above 90%, increases CRIT Rate by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "When HP is above 90%, increases CRIT Rate by 14%.",
+      "values": [
+        "14%"
+      ]
+    },
+    "r2": {
+      "description": "When HP is above 90%, increases CRIT Rate by 17.5%.",
+      "values": [
+        "17.5%"
+      ]
+    },
+    "r3": {
+      "description": "When HP is above 90%, increases CRIT Rate by 21%.",
+      "values": [
+        "21%"
+      ]
+    },
+    "r4": {
+      "description": "When HP is above 90%, increases CRIT Rate by 24.5%.",
+      "values": [
+        "24.5%"
+      ]
+    },
+    "r5": {
+      "description": "When HP is above 90%, increases CRIT Rate by 28%.",
+      "values": [
+        "28%"
+      ]
+    }
+  }
+}

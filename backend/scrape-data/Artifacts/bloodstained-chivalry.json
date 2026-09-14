@@ -1,0 +1,10 @@
+{
+  "id": 15008,
+  "name": "Bloodstained Chivalry",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "Physical DMG +25%",
+  "fourPc": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s."
+}

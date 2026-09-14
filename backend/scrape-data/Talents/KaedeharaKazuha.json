@@ -1,0 +1,482 @@
+{
+  "key": "KaedeharaKazuha",
+  "nameEn": "Kaedehara Kazuha",
+  "gdbName": "Kaedehara Kazuha",
+  "element": "Anemo",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "version": "1.6",
+  "talents": {
+    "normal": {
+      "name": "Garyuu Bladework",
+      "description": "Normal Attack\nPerforms up to 5 rapid strikes.\n\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact. If this Plunging Attack is triggered by Chihayaburu, it will be converted to Plunging Attack: Midare Ranzan.\n\nPlunging Attack: Midare Ranzan\nWhen a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG and will create a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+          "4-Hit DMG|{param5:F1P}",
+          "5-Hit DMG|{param6:F1P}×3",
+          "Charged Attack DMG|{param7:F1P}+{param8:F1P}",
+          "Charged Attack Stamina Cost|{param9:F1}",
+          "Plunge DMG|{param10:F1P}",
+          "Low/High Plunge DMG|{param11:P}/{param12:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.44978,
+            0.48639,
+            0.523,
+            0.5753,
+            0.61191,
+            0.65375,
+            0.71128,
+            0.76881,
+            0.82634,
+            0.8891,
+            0.961013,
+            1.045582,
+            1.130151,
+            1.21472,
+            1.306977
+          ],
+          "param2": [
+            0.45236,
+            0.48918,
+            0.526,
+            0.5786,
+            0.61542,
+            0.6575,
+            0.71536,
+            0.77322,
+            0.83108,
+            0.8942,
+            0.966525,
+            1.051579,
+            1.136633,
+            1.221688,
+            1.314474
+          ],
+          "param3": [
+            0.258,
+            0.279,
+            0.3,
+            0.33,
+            0.351,
+            0.375,
+            0.408,
+            0.441,
+            0.474,
+            0.51,
+            0.55125,
+            0.59976,
+            0.64827,
+            0.69678,
+            0.7497
+          ],
+          "param4": [
+            0.3096,
+            0.3348,
+            0.36,
+            0.396,
+            0.4212,
+            0.45,
+            0.4896,
+            0.5292,
+            0.5688,
+            0.612,
+            0.6615,
+            0.719712,
+            0.777924,
+            0.836136,
+            0.89964
+          ],
+          "param5": [
+            0.60716,
+            0.65658,
+            0.706,
+            0.7766,
+            0.82602,
+            0.8825,
+            0.96016,
+            1.03782,
+            1.11548,
+            1.2002,
+            1.297275,
+            1.411435,
+            1.525595,
+            1.639756,
+            1.764294
+          ],
+          "param6": [
+            0.2537,
+            0.27435,
+            0.295,
+            0.3245,
+            0.34515,
+            0.36875,
+            0.4012,
+            0.43365,
+            0.4661,
+            0.5015,
+            0.542063,
+            0.589764,
+            0.637465,
+            0.685167,
+            0.737205
+          ],
+          "param7": [
+            0.43,
+            0.465,
+            0.5,
+            0.55,
+            0.585,
+            0.625,
+            0.68,
+            0.735,
+            0.79,
+            0.85,
+            0.91875,
+            0.9996,
+            1.08045,
+            1.1613,
+            1.2495
+          ],
+          "param8": [
+            0.74648,
+            0.80724,
+            0.868,
+            0.9548,
+            1.01556,
+            1.085,
+            1.18048,
+            1.27596,
+            1.37144,
+            1.4756,
+            1.59495,
+            1.735306,
+            1.875661,
+            2.016017,
+            2.169132
+          ],
+          "param9": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param10": [
+            0.818335,
+            0.884943,
+            0.951552,
+            1.046707,
+            1.113316,
+            1.18944,
+            1.294111,
+            1.398781,
+            1.503452,
+            1.617638,
+            1.731825,
+            1.846011,
+            1.960197,
+            2.074383,
+            2.18857
+          ],
+          "param11": [
+            1.636323,
+            1.769512,
+            1.902701,
+            2.092971,
+            2.22616,
+            2.378376,
+            2.587673,
+            2.79697,
+            3.006267,
+            3.234591,
+            3.462915,
+            3.69124,
+            3.919564,
+            4.147888,
+            4.376212
+          ],
+          "param12": [
+            2.043855,
+            2.210216,
+            2.376576,
+            2.614234,
+            2.780594,
+            2.97072,
+            3.232143,
+            3.493567,
+            3.75499,
+            4.040179,
+            4.325368,
+            4.610557,
+            4.895747,
+            5.180936,
+            5.466125
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Chihayaburu",
+      "description": "Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind.\nWithin 10s of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan.\n\nPress\nCan be used in mid-air.\n\nHold\nCharges up before unleashing greater Anemo DMG over a larger AoE than Press Mode.\n\nPlunging Attack: Midare Ranzan\nWhen a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG. On landing, Kazuha creates a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents.\nMidare Ranzan's DMG is considered Plunging Attack DMG.",
+      "attributes": {
+        "labels": [
+          "Press Skill DMG|{param1:P}",
+          "Press CD|{param2:F1}s",
+          "Hold Skill DMG|{param3:P}",
+          "Hold CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.92,
+            2.064,
+            2.208,
+            2.4,
+            2.544,
+            2.688,
+            2.88,
+            3.072,
+            3.264,
+            3.456,
+            3.648,
+            3.84,
+            4.08,
+            4.32,
+            4.56
+          ],
+          "param2": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "param3": [
+            2.608,
+            2.8036,
+            2.9992,
+            3.26,
+            3.4556,
+            3.6512,
+            3.912,
+            4.1728,
+            4.4336,
+            4.6944,
+            4.9552,
+            5.216,
+            5.542,
+            5.868,
+            6.194
+          ],
+          "param4": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Kazuha Slash",
+      "description": "The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG.\nThe blade's passage will leave behind a field named \"Autumn Whirlwind\" that periodically deals AoE Anemo DMG to opponents within its range.\n\nElemental Absorption\nIf Autumn Whirlwind comes into contact with Hydro/Pyro/Cryo/Electro, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.",
+      "attributes": {
+        "labels": [
+          "Slashing DMG|{param1:P}",
+          "DoT|{param2:P}",
+          "Additional Elemental DMG|{param3:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "parameters": {
+          "param1": [
+            2.624,
+            2.8208,
+            3.0176,
+            3.28,
+            3.4768,
+            3.6736,
+            3.936,
+            4.1984,
+            4.4608,
+            4.7232,
+            4.9856,
+            5.248,
+            5.576,
+            5.904,
+            6.232
+          ],
+          "param2": [
+            1.2,
+            1.29,
+            1.38,
+            1.5,
+            1.59,
+            1.68,
+            1.8,
+            1.92,
+            2.04,
+            2.16,
+            2.28,
+            2.4,
+            2.55,
+            2.7,
+            2.85
+          ],
+          "param3": [
+            0.36,
+            0.387,
+            0.414,
+            0.45,
+            0.477,
+            0.504,
+            0.54,
+            0.576,
+            0.612,
+            0.648,
+            0.684,
+            0.72,
+            0.765,
+            0.81,
+            0.855
+          ],
+          "param4": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "param5": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param6": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Soumon Swordsmanship",
+      "description": "If Chihayaburu comes into contact with Hydro/Pyro/Cryo/Electro when cast, this Chihayaburu will absorb that element and if Plunging Attack: Midare Ranzan is used before the effect expires, it will deal an additional 200% ATK of the absorbed elemental type as DMG. This will be considered Plunging Attack DMG.\nElemental Absorption may only occur once per use of Chihayaburu."
+    },
+    {
+      "slot": "a4",
+      "name": "Poetics of Fuubutsu",
+      "description": "Upon triggering a Swirl or Stellar Swirl reaction, Kaedehara Kazuha will grant all party members a 0.04% Elemental DMG Bonus to the element absorbed by Swirl for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist."
+    },
+    {
+      "slot": "util",
+      "name": "Cloud Strider",
+      "description": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Scarlet Hills",
+      "description": "Decreases Chihayaburu's CD by 10%.\nUsing Kazuha Slash resets the CD of Chihayaburu."
+    },
+    {
+      "n": 2,
+      "name": "Yamaarashi Tailwind",
+      "description": "The Autumn Whirlwind field created by Kazuha Slash has the following effects:\n· Increases Kaedehara Kazuha's own Elemental Mastery by 200 for its duration.\n· Increases the Elemental Mastery of characters within the field by 200.\n\nThe Elemental Mastery-increasing effects of this Constellation do not stack."
+    },
+    {
+      "n": 3,
+      "name": "Maple Monogatari",
+      "description": "Increases the Level of Chihayaburu by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Oozora Genpou",
+      "description": "When Kaedehara Kazuha's Energy is lower than 45, he obtains the following effects:\n·Pressing or Holding Chihayaburu regenerates 3 or 4 Energy for Kaedehara Kazuha, respectively.\n·When gliding, Kaedehara Kazuha regenerates 2 Energy per second."
+    },
+    {
+      "n": 5,
+      "name": "Wisdom of Bansei",
+      "description": "Increases the Level of Kazuha Slash by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Crimson Momiji",
+      "description": "After using Chihayaburu or Kazuha Slash, Kaedehara Kazuha gains an Anemo Infusion for 5s. Additionally, each point of Elemental Mastery will increase the DMG dealt by Kaedehara Kazuha's Normal, Charged, and Plunging Attacks by 0.2%."
+    }
+  ]
+}

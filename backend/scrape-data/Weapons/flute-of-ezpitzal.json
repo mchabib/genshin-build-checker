@@ -1,0 +1,42 @@
+{
+  "id": 11431,
+  "name": "Flute of Ezpitzal",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "Smoke-and-Mirror Mystery",
+  "effectTemplate": "Using an Elemental Skill increases DEF by <color=#99FFFFFF>{0}</color> for 15s.",
+  "refinements": {
+    "r1": {
+      "description": "Using an Elemental Skill increases DEF by 16% for 15s.",
+      "values": [
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Using an Elemental Skill increases DEF by 20% for 15s.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Using an Elemental Skill increases DEF by 24% for 15s.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Using an Elemental Skill increases DEF by 28% for 15s.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Using an Elemental Skill increases DEF by 32% for 15s.",
+      "values": [
+        "32%"
+      ]
+    }
+  }
+}

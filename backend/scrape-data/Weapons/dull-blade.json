@@ -1,0 +1,11 @@
+{
+  "id": 11101,
+  "name": "Dull Blade",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 1,
+  "baseAtkLv1": 23.245,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

@@ -1,0 +1,429 @@
+{
+  "key": "Yelan",
+  "nameEn": "Yelan",
+  "gdbName": "Yelan",
+  "element": "Hydro",
+  "weaponType": "WEAPON_BOW",
+  "version": "2.7",
+  "talents": {
+    "normal": {
+      "name": "Stealthy Bowshot",
+      "description": "Normal Attack\nPerforms up to 4 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, flowing water will accumulate on the arrowhead. A fully charged torrential arrow will deal Hydro DMG.\n\nBreakthrough\nYelan will enter a \"Breakthrough\" state after spending 5s out of combat, which will cause her next Charged Aimed Shot to have 80% decreased charge time, and once charged, she can fire a \"Breakthrough Barb\" that will deal AoE Hydro DMG based on Yelan's Max HP.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}+{param4:F1P}",
+          "Aimed Shot|{param5:F1P}",
+          "Fully-Charged Aimed Shot|{param6:P}",
+          "Breakthrough Barb DMG|{param7:F2P} Max HP",
+          "Plunge DMG|{param8:F1P}",
+          "Low/High Plunge DMG|{param9:P}/{param10:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.40678,
+            0.43989,
+            0.473,
+            0.5203,
+            0.55341,
+            0.59125,
+            0.64328,
+            0.69531,
+            0.74734,
+            0.8041,
+            0.86086,
+            0.91762,
+            0.97438,
+            1.03114,
+            1.0879
+          ],
+          "param2": [
+            0.39044,
+            0.42222,
+            0.454,
+            0.4994,
+            0.53118,
+            0.5675,
+            0.61744,
+            0.66738,
+            0.71732,
+            0.7718,
+            0.82628,
+            0.88076,
+            0.93524,
+            0.98972,
+            1.0442
+          ],
+          "param3": [
+            0.516,
+            0.558,
+            0.6,
+            0.66,
+            0.702,
+            0.75,
+            0.816,
+            0.882,
+            0.948,
+            1.02,
+            1.092,
+            1.164,
+            1.236,
+            1.308,
+            1.38
+          ],
+          "param4": [
+            0.32508,
+            0.35154,
+            0.378,
+            0.4158,
+            0.44226,
+            0.4725,
+            0.51408,
+            0.55566,
+            0.59724,
+            0.6426,
+            0.68796,
+            0.73332,
+            0.77868,
+            0.82404,
+            0.8694
+          ],
+          "param5": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param6": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param7": [
+            0.11576,
+            0.124442,
+            0.133124,
+            0.1447,
+            0.153382,
+            0.162064,
+            0.17364,
+            0.185216,
+            0.196792,
+            0.208368,
+            0.219944,
+            0.23152,
+            0.24599,
+            0.26046,
+            0.27493
+          ],
+          "param8": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param9": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param10": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Lingering Lifeline",
+      "description": "Fires off a Lifeline that allows her to move rapidly, entangling and marking opponents along its path.\nWhen this rapid movement ends, the Lifeline will explode, dealing Hydro DMG to the marked opponents based on Yelan's Max HP.\n\nTap\nMoves a certain distance forward swiftly.\n\nHold\nEngages in continuous, swift movement, during which Yelan's resistance to interruption is increased.\nDuring this time, Yelan can control this rapid movement and end it by using this Skill again.\n\nAdditionally, each opponent marked by the Lifeline when it explodes grants Yelan a 34% chance to reset her Breakthrough state.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P} Max HP",
+          "Max Duration (Hold)|{param3:F1}s",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.226136,
+            0.243096,
+            0.260056,
+            0.28267,
+            0.29963,
+            0.31659,
+            0.339204,
+            0.361818,
+            0.384431,
+            0.407045,
+            0.429658,
+            0.452272,
+            0.480539,
+            0.508806,
+            0.537073
+          ],
+          "param2": [
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34,
+            0.34
+          ],
+          "param3": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "param4": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Depth-Clarion Dice",
+      "description": "Deals AoE Hydro DMG and creates an \"Exquisite Throw,\" which aids her in battle.\n\nExquisite Throw\nFollows the character around and will initiate a coordinated attack under the following circumstances, dealing Hydro DMG based on Yelan's Max HP:\n·Can occur once every second when your active character uses a Normal Attack.\n·Will occur each time Yelan's Lifeline explodes and hits opponents.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F2P} Max HP",
+          "Exquisite Throw DMG|{param2:F2P} Max HP ×3",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.07308,
+            0.078561,
+            0.084042,
+            0.09135,
+            0.096831,
+            0.102312,
+            0.10962,
+            0.116928,
+            0.124236,
+            0.131544,
+            0.138852,
+            0.14616,
+            0.155295,
+            0.16443,
+            0.173565
+          ],
+          "param2": [
+            0.04872,
+            0.052374,
+            0.056028,
+            0.0609,
+            0.064554,
+            0.068208,
+            0.07308,
+            0.077952,
+            0.082824,
+            0.087696,
+            0.092568,
+            0.09744,
+            0.10353,
+            0.10962,
+            0.11571
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param4": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param5": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Turn Control",
+      "description": "When the party has 1/2/3/4 Elemental Types, Yelan's Max HP is increased by 6%/12%/18%/30%."
+    },
+    {
+      "slot": "a4",
+      "name": "Adapt With Ease",
+      "description": "So long as an Exquisite Throw is in play, your own active character deals 1% more DMG. This increases by a further 3.5% DMG every second. The maximum increase to DMG dealt is 50%.\nThe pre-existing effect will be dispelled if Depth-Clarion Dice is recast during its duration."
+    },
+    {
+      "slot": "util",
+      "name": "Necessary Calculation",
+      "description": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Enter the Plotters",
+      "description": "Lingering Lifeline gains 1 additional charge."
+    },
+    {
+      "n": 2,
+      "name": "Taking All Comers",
+      "description": "When Exquisite Throw conducts a coordinated attack, it will fire an additional water arrow that will deal 14% of Yelan's Max HP as Hydro DMG.\nThis effect can trigger once every 1.8s."
+    },
+    {
+      "n": 3,
+      "name": "Beware the Trickster's Dice",
+      "description": "Increases the Level of Depth-Clarion Dice by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Bait-and-Switch",
+      "description": "Increases all party members' Max HP by 10% for 25s for every opponent marked by Lifeline when the Lifeline explodes. A maximum increase of 40% Max HP can be attained in this manner."
+    },
+    {
+      "n": 5,
+      "name": "Dealer's Sleight",
+      "description": "Increases the Level of Lingering Lifeline by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Winner Takes All",
+      "description": "After using Depth-Clarion Dice, Yelan will enter the Mastermind state.\nIn this state, all of Yelan's Normal Attacks will be special Breakthrough Barbs. These Breakthrough Barbs will have similar abilities to normal ones and the DMG dealt will be considered Charged Attack DMG, dealing 156% of a normal Breakthrough Barb's DMG.\n\nThe Mastermind state lasts 20s and will be cleared after Yelan fires 5 arrows."
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "key": "Aino",
+  "nameEn": "Aino",
+  "gdbName": "Aino",
+  "element": "Hydro",
+  "weaponType": "WEAPON_CLAYMORE",
+  "version": "6.0",
+  "talents": {
+    "normal": {
+      "name": "Bish-Bash-Bosh Repair",
+      "description": "Normal Attack\nPerforms up to 3 consecutive strikes.\n\nCharged Attack\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}×2",
+          "Charged Attack Loop DMG|{param4:F1P}",
+          "Charged Attack Final DMG|{param5:P}",
+          "Charged Attack Stamina Cost|{param6:F1}/s",
+          "Max Duration|{param7:F1}s",
+          "Plunge DMG|{param8:F1P}",
+          "Low/High Plunge DMG|{param9:P}/{param10:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.664986,
+            0.719113,
+            0.77324,
+            0.850564,
+            0.904691,
+            0.96655,
+            1.051606,
+            1.136663,
+            1.221719,
+            1.314508,
+            1.407297,
+            1.500086,
+            1.592874,
+            1.685663,
+            1.778452
+          ],
+          "param2": [
+            0.661916,
+            0.715793,
+            0.76967,
+            0.846637,
+            0.900514,
+            0.962087,
+            1.046751,
+            1.131415,
+            1.216079,
+            1.308439,
+            1.400799,
+            1.49316,
+            1.58552,
+            1.677881,
+            1.770241
+          ],
+          "param3": [
+            0.492165,
+            0.532225,
+            0.572285,
+            0.629514,
+            0.669573,
+            0.715356,
+            0.778308,
+            0.841259,
+            0.90421,
+            0.972885,
+            1.041559,
+            1.110233,
+            1.178907,
+            1.247581,
+            1.316256
+          ],
+          "param4": [
+            0.62522,
+            0.67611,
+            0.727,
+            0.7997,
+            0.85059,
+            0.90875,
+            0.98872,
+            1.06869,
+            1.14866,
+            1.2359,
+            1.32314,
+            1.41038,
+            1.49762,
+            1.58486,
+            1.6721
+          ],
+          "param5": [
+            1.1309,
+            1.22295,
+            1.315,
+            1.4465,
+            1.53855,
+            1.64375,
+            1.7884,
+            1.93305,
+            2.0777,
+            2.2355,
+            2.3933,
+            2.5511,
+            2.7089,
+            2.8667,
+            3.0245
+          ],
+          "param6": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "param7": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "param8": [
+            0.745878,
+            0.806589,
+            0.8673,
+            0.95403,
+            1.014741,
+            1.084125,
+            1.179528,
+            1.274931,
+            1.370334,
+            1.47441,
+            1.578486,
+            1.682562,
+            1.786638,
+            1.890714,
+            1.99479
+          ],
+          "param9": [
+            1.49144,
+            1.612836,
+            1.734233,
+            1.907656,
+            2.029052,
+            2.167791,
+            2.358556,
+            2.549322,
+            2.740087,
+            2.948195,
+            3.156303,
+            3.364411,
+            3.572519,
+            3.780627,
+            3.988735
+          ],
+          "param10": [
+            1.862889,
+            2.01452,
+            2.16615,
+            2.382765,
+            2.534396,
+            2.707688,
+            2.945964,
+            3.184241,
+            3.422517,
+            3.682455,
+            3.942393,
+            4.202331,
+            4.462269,
+            4.722207,
+            4.982145
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Musecatcher",
+      "description": "Aino throws a Musecatcher forward, dealing Hydro DMG and dragging her along behind it. When the dragging stops, Aino deals AoE Hydro DMG to nearby opponents.\nHolding the Skill will cause it to behave differently.\n\nHold\nEnter Aiming Mode to adjust the Musecatcher's throwing direction.",
+      "attributes": {
+        "labels": [
+          "Stage 1 DMG|{param1:F1P}",
+          "Stage 2 DMG|{param2:F1P}",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.656,
+            0.7052,
+            0.7544,
+            0.82,
+            0.8692,
+            0.9184,
+            0.984,
+            1.0496,
+            1.1152,
+            1.1808,
+            1.2464,
+            1.312,
+            1.394,
+            1.476,
+            1.558
+          ],
+          "param2": [
+            1.888,
+            2.0296,
+            2.1712,
+            2.36,
+            2.5016,
+            2.6432,
+            2.832,
+            3.0208,
+            3.2096,
+            3.3984,
+            3.5872,
+            3.776,
+            4.012,
+            4.248,
+            4.484
+          ],
+          "param3": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Precision Hydronic Cooler",
+      "description": "Aino deploys a custom water-spraying device, the Cool Your Jets Ducky to establish a Focused Hydronic Cooling Zone.\nWhile active, the Cool Your Jets Ducky will periodically fire water balls at nearby opponents, dealing Hydro DMG.",
+      "attributes": {
+        "labels": [
+          "Water Ball DMG|{param1:F1P}",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.20112,
+            0.216204,
+            0.231288,
+            0.2514,
+            0.266484,
+            0.281568,
+            0.30168,
+            0.321792,
+            0.341904,
+            0.362016,
+            0.382128,
+            0.40224,
+            0.42738,
+            0.45252,
+            0.47766
+          ],
+          "param2": [
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "param3": [
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5,
+            13.5
+          ],
+          "param4": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Modular Efficiency Protocol",
+      "description": "Aino will be granted the corresponding buff effects based on the party's Moonsign.\n\nMoonsign: Ascendant Gleam: Her Elemental Burst **Precision Hydronic Cooler** is enhanced: The Cool Your Jets Ducky will fire water balls more frequently, and the water balls will deal AoE Hydro DMG over a larger area of effect."
+    },
+    {
+      "slot": "a4",
+      "name": "Structured Power Booster",
+      "description": "Aino's Elemental Burst DMG is increased by 50% of her Elemental Mastery."
+    },
+    {
+      "slot": "util",
+      "name": "Moonsign Benediction: Force Limit Analysis",
+      "description": "When Aino is in the party, the party's Moonsign will increase by 1 level."
+    },
+    {
+      "slot": "other",
+      "name": "Miniaturized Detection Sensor",
+      "description": "Displays the location of nearby resources unique to Nod-Krai on the mini-map.\nAdditionally, Aino appears to be able to alter the Cool Your Jets Ducky's appearance in some way..."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "The Theory of Ash—Field Equilibrium",
+      "description": "After Aino uses her Elemental Skill **Musecatcher** or her Elemental Burst **Precision Hydronic Cooler**, her Elemental Mastery will be increased by 80. The Elemental Mastery of other nearby active party members will be increased by 80 for 15s.\n\nThe Elemental Mastery-increasing effects of this Constellation do not stack."
+    },
+    {
+      "n": 2,
+      "name": "The Principle of Transference in Gear Differentials",
+      "description": "If Aino is off-field while the Focused Hydronic Cooling Zone of her Elemental Burst **Precision Hydronic Cooler** is active, when your active party member hits a nearby opponent with an attack, the Cool Your Jets Ducky will fire an additional water ball at that opponent, dealing AoE Hydro DMG equal to 25% of Aino's ATK and 100% of her Elemental Mastery. This DMG is considered Elemental Burst DMG. This effect can be triggered once every 5s."
+    },
+    {
+      "n": 3,
+      "name": "Cake and the Art of Mechanism Repair",
+      "description": "Increases the Level of **Precision Hydronic Cooler** by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Butter and Cats and the Law of Energy Supply",
+      "description": "When the Elemental Skill **Musecatcher** hits an opponent, it will restore 10 Elemental Energy for Aino. Energy can be restored to her in this manner once every 10s."
+    },
+    {
+      "n": 5,
+      "name": "Perpetual Turbine of Metal and Light",
+      "description": "Increases the Level of **Musecatcher** by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "The Burden of Creative Genius",
+      "description": "For the next 15s after using the Elemental Burst **Precision Hydronic Cooler**, DMG from nearby active characters' Electro-Charged, Bloom, Lunar-Charged, Lunar-Bloom, and Lunar-Crystallize reactions is increased by 15%.\nMoonsign: Ascendant Gleam: DMG from the aforementioned reactions will be further increased by 20%."
+    }
+  ]
+}

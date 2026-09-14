@@ -1,0 +1,47 @@
+{
+  "id": 11409,
+  "name": "The Black Sword",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Justice",
+  "effectTemplate": "Increases DMG dealt by Normal and Charged Attacks by <color=#99FFFFFF>{0}</color>. Additionally, regenerates <color=#99FFFFFF>{1}</color> of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG dealt by Normal and Charged Attacks by 20%. Additionally, regenerates 60% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+      "values": [
+        "20%",
+        "60%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG dealt by Normal and Charged Attacks by 25%. Additionally, regenerates 70% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+      "values": [
+        "25%",
+        "70%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG dealt by Normal and Charged Attacks by 30%. Additionally, regenerates 80% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+      "values": [
+        "30%",
+        "80%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG dealt by Normal and Charged Attacks by 35%. Additionally, regenerates 90% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+      "values": [
+        "35%",
+        "90%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG dealt by Normal and Charged Attacks by 40%. Additionally, regenerates 100% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+      "values": [
+        "40%",
+        "100%"
+      ]
+    }
+  }
+}

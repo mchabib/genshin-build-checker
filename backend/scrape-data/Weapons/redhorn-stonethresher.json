@@ -1,0 +1,47 @@
+{
+  "id": 12510,
+  "name": "Redhorn Stonethresher",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 5,
+  "baseAtkLv1": 44.3358,
+  "mainStatType": "FIGHT_PROP_CRITICAL_HURT",
+  "effectName": "Gokadaiou Otogibanashi",
+  "effectTemplate": "DEF is increased by <color=#99FFFFFF>{0}</color>. Normal and Charged Attack DMG is increased by <color=#99FFFFFF>{1}</color> of DEF.",
+  "refinements": {
+    "r1": {
+      "description": "DEF is increased by 28%. Normal and Charged Attack DMG is increased by 40% of DEF.",
+      "values": [
+        "28%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "DEF is increased by 35%. Normal and Charged Attack DMG is increased by 50% of DEF.",
+      "values": [
+        "35%",
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "DEF is increased by 42%. Normal and Charged Attack DMG is increased by 60% of DEF.",
+      "values": [
+        "42%",
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "DEF is increased by 49%. Normal and Charged Attack DMG is increased by 70% of DEF.",
+      "values": [
+        "49%",
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "DEF is increased by 56%. Normal and Charged Attack DMG is increased by 80% of DEF.",
+      "values": [
+        "56%",
+        "80%"
+      ]
+    }
+  }
+}

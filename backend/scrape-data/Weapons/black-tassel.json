@@ -1,0 +1,42 @@
+{
+  "id": 13303,
+  "name": "Black Tassel",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 3,
+  "baseAtkLv1": 37.6075,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Bane of the Soft",
+  "effectTemplate": "Increases DMG against slimes by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against slimes by 40%.",
+      "values": [
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against slimes by 50%.",
+      "values": [
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against slimes by 60%.",
+      "values": [
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against slimes by 70%.",
+      "values": [
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against slimes by 80%.",
+      "values": [
+        "80%"
+      ]
+    }
+  }
+}

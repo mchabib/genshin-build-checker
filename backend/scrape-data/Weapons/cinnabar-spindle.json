@@ -1,0 +1,42 @@
+{
+  "id": 11415,
+  "name": "Cinnabar Spindle",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "Spotless Heart",
+  "effectTemplate": "Elemental Skill DMG is increased by <color=#99FFFFFF>{0}</color> of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+  "refinements": {
+    "r1": {
+      "description": "Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+      "values": [
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Elemental Skill DMG is increased by 50% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+      "values": [
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "Elemental Skill DMG is increased by 60% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+      "values": [
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "Elemental Skill DMG is increased by 70% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+      "values": [
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "Elemental Skill DMG is increased by 80% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
+      "values": [
+        "80%"
+      ]
+    }
+  }
+}

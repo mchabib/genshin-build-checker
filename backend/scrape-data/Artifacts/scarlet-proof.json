@@ -1,0 +1,10 @@
+{
+  "id": 15047,
+  "name": "Scarlet Proof",
+  "rarity": [
+    4,
+    5
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+}

@@ -1,0 +1,47 @@
+{
+  "id": 11426,
+  "name": "Fleuve Cendre Ferryman",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Ironbone",
+  "effectTemplate": "Increases Elemental Skill CRIT Rate by <color=#99FFFFFF>{0}</color>. Additionally, increases Energy Recharge by <color=#99FFFFFF>{1}</color> for 5s after using an Elemental Skill.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Skill CRIT Rate by 8%. Additionally, increases Energy Recharge by 16% for 5s after using an Elemental Skill.",
+      "values": [
+        "8%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Skill CRIT Rate by 10%. Additionally, increases Energy Recharge by 20% for 5s after using an Elemental Skill.",
+      "values": [
+        "10%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Skill CRIT Rate by 12%. Additionally, increases Energy Recharge by 24% for 5s after using an Elemental Skill.",
+      "values": [
+        "12%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Skill CRIT Rate by 14%. Additionally, increases Energy Recharge by 28% for 5s after using an Elemental Skill.",
+      "values": [
+        "14%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Skill CRIT Rate by 16%. Additionally, increases Energy Recharge by 32% for 5s after using an Elemental Skill.",
+      "values": [
+        "16%",
+        "32%"
+      ]
+    }
+  }
+}

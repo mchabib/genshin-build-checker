@@ -1,0 +1,41 @@
+{
+  "key": "Columbina",
+  "role": "subdps",
+  "_comment": "Lunar enabler (Moonsign). E: Gravity Ripple tick tiap 2s selama 20s (HP scaling) + Gravity Interference tiap ~60 Gravity (20/2s saat ada Lunar dmg → ~tiap 6s) = direct Lunar-Charged (skill3, HP scaling ×3). Q jarang dipakai (ER).",
+  "self": [
+    {
+      "id": "columbina_lunar_base_self",
+      "mode": "always",
+      "description": "Columbina Moonsign Benediction (ke diri sendiri): Base DMG reaksi Lunar +0.2% per 1000 Max HP (max 7%).",
+      "mod": { "source": "Columbina Moonsign (Lunar base)", "scope": "all", "lunarBaseBonus": "= min(7, round(char.final.hp / 1000 * 0.2 * 10) / 10)" }
+    },
+    {
+      "id": "columbina_a1_cr",
+      "mode": "assume",
+      "description": "Columbina A1 Lunacy: CRIT Rate +5% per Gravity Interference (max 3 = +15%), 10s, gampang full uptime.",
+      "mod": { "source": "Columbina A1 (3 stack)", "scope": "all", "critRate": 15 }
+    },
+    {
+      "id": "columbina_q_lunar_self",
+      "mode": "manual",
+      "description": "Columbina Q (butuh Q): Lunar Reaction DMG Bonus +param2 (lv10 40%) 20s.",
+      "mod": { "source": "Columbina Q Lunar Domain", "scope": "all", "lunarBonus": "= round(pct(p('burst','param2')) * 10) / 10" }
+    }
+  ],
+  "reactions": { "with": { "electro": {}, "dendro": {}, "geo": {} } },
+  "actions": {
+    "E": { "skill1": 1, "skill2": 10, "skill3": 4, "react:lunarCharged": 9 },
+    "Q": { "burst1": 1, "react:lunarCharged": 1 }
+  },
+  "_actions_comment": "Ripple 10 tick nge-apply Hydro → 9 proc Lunar-Charged/20s (in-game). Gravity Interference ≈4/20s (in-game 2 run: 671k vs 380k dengan proc sama → GI 3–6, crit ~156k) — Gravity +20/2s tiap ada reaksi/Lunar dmg.",
+  "durations": { "E": 1.0 },
+  "rotations": [
+    {
+      "label": "E (Ripple 20s + 3 Gravity Interference LC)",
+      "counts": { "skill1": 1, "skill2": 10, "skill3": 4, "react:lunarCharged": 9 },
+      "duration": 20,
+      "note": "Ripple 10 tick/20s; Gravity Interference ≈4×/20s (bervariasi 3–6 in-game); 9 proc reaksi dipicu Ripple."
+    }
+  ],
+  "teams": [["Ineffa", "Furina", "Yelan"], ["Ineffa", "Furina", "Zhongli"]]
+}

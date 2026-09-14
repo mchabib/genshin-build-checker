@@ -1,0 +1,47 @@
+{
+  "id": 13434,
+  "name": "Sacrificer's Staff",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 45.0687,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Untainted Desire",
+  "effectTemplate": "For 6s after an Elemental Skill hits an opponent, ATK is increased by <color=#99FFFFFF>{0}</color> and Energy Recharge is increased by <color=#99FFFFFF>{1}</color>. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 8% and Energy Recharge is increased by 6%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "8%",
+        "6%"
+      ]
+    },
+    "r2": {
+      "description": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 10% and Energy Recharge is increased by 7.5%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "10%",
+        "7.5%"
+      ]
+    },
+    "r3": {
+      "description": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 12% and Energy Recharge is increased by 9%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "12%",
+        "9%"
+      ]
+    },
+    "r4": {
+      "description": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 14% and Energy Recharge is increased by 10.5%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "14%",
+        "10.5%"
+      ]
+    },
+    "r5": {
+      "description": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 16% and Energy Recharge is increased by 12%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+      "values": [
+        "16%",
+        "12%"
+      ]
+    }
+  }
+}

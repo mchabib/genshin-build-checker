@@ -1,0 +1,63 @@
+{
+  "key": "YaeMiko",
+  "role": "subdps",
+  "_comment": "Kit 6.7 (Witch's Revelation) — hit baru skill5..skill8 didefinisikan di src/data/talentOverrides.ts karena dump genshin-db masih v2.5. Sumber: guide KQM Yae (Agustus 2026). Turret 24s, 8 tembakan per turret (maks 24).",
+  "self": [
+    {
+      "id": "yae_a4",
+      "mode": "always",
+      "description": "Yae A4: Sesshou Sakura DMG +0.15% per EM.",
+      "mod": { "source": "Yae A4", "scope": "skill", "dmgBonus": "= round(char.final.em * 0.15 * 10) / 10" }
+    },
+    {
+      "id": "yae_golden_troupe_offfield",
+      "mode": "assume",
+      "requireSet": "Golden Troupe",
+      "description": "Golden Troupe 4pc off-field: tambahan +25% Skill DMG di atas 2pc+4pc (+45%) di _sets.json (Yae main off-field). Nggak ngaruh ke hit Stellar.",
+      "mod": { "source": "Golden Troupe off-field (+25%)", "scope": "skill", "dmgBonus": 25 }
+    },
+    {
+      "id": "yae_c1_self",
+      "mode": "always",
+      "requireCon": 1,
+      "description": "Yae C1 (6.7): setelah Yae memicu Superconduct/Stellar-Conduct atau ngasih Stellar-Conduct DMG, party (termasuk Yae) +50% Electro DMG & +50% Stellar-Conduct DMG 10s, uptime penuh.",
+      "mod": { "source": "Yae C1", "scope": "all", "elementalDmgBonus": { "electro": 50 }, "stellarBonus": 50, "note": "10s, di-refresh tiap pemicu → uptime penuh (KQM)" }
+    },
+    {
+      "id": "yae_c2_em_self",
+      "mode": "always",
+      "requireCon": 2,
+      "description": "Yae C2 (6.7): EM +50 per level Sesshou Sakura (lv4 = +200) buat Yae & on-fielder selama turret ada.",
+      "mod": { "source": "Yae C2 EM", "scope": "all", "em": 200 }
+    },
+    {
+      "id": "yae_c6_stellar_cd",
+      "mode": "always",
+      "requireCon": 6,
+      "description": "Yae C6 (6.7): CRIT DMG hit Stellar-Conduct Yae +200% (DEF ignore 60% turret di catalog lama).",
+      "mod": { "source": "Yae C6", "scope": "all", "hitLabelMatch": "Stellar", "critDmg": 200 }
+    },
+    {
+      "id": "yae_c6_defignore",
+      "mode": "always",
+      "requireCon": 6,
+      "description": "Yae C6: Sesshou Sakura ignore 60% DEF (hit non-Stellar).",
+      "mod": { "source": "Yae C6 DEF ignore", "scope": "skill", "defIgnore": 60 }
+    }
+  ],
+  "reactions": { "with": { "dendro": { "skill": "aggravate", "burst": "aggravate" }, "cryo": {} } },
+  "actions": {
+    "E": { "skill3": 4.33, "skill7": 2.33, "skill8": 2.33, "skill6": 0.33 },
+    "Q": { "burst1": 1, "burst2": 3 }
+  },
+  "durations": { "E": 1.0 },
+  "rotations": [
+    {
+      "label": "3[E] turret lv3 24s, Q di-skip (Stellar-Conduct)",
+      "counts": { "skill3": 13, "skill7": 7, "skill8": 7, "skill6": 1 },
+      "duration": 20,
+      "note": "≈20s dari turret 24s: 3 turret × ~7 tembakan = 20 tembakan; ~7 di antaranya enhanced (Edict, ICD 2.5s, butuh Stellar-Conduct dipicu — tracker in-game user: 7 pemicu/22s) → skill7 (Lv3 + 80% ATK) + skill8 (200% ATK Stellar); E ke-3 saat 3 turret ada → skill6 (50% ATK Stellar). Di tim non-Stellar ganti counts: skill3 20 saja."
+    }
+  ],
+  "teams": [["Sandrone", "Odette", "Qiqi"], ["Sandrone", "Odette", "Alyosha"]]
+}

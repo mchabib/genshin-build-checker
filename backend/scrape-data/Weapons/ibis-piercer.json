@@ -1,0 +1,42 @@
+{
+  "id": 15419,
+  "name": "Ibis Piercer",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Secret Wisdom's Favor",
+  "effectTemplate": "The character's Elemental Mastery will increase by <color=#99FFFFFF>{0}</color> within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+  "refinements": {
+    "r1": {
+      "description": "The character's Elemental Mastery will increase by 40 within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+      "values": [
+        "40"
+      ]
+    },
+    "r2": {
+      "description": "The character's Elemental Mastery will increase by 50 within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+      "values": [
+        "50"
+      ]
+    },
+    "r3": {
+      "description": "The character's Elemental Mastery will increase by 60 within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+      "values": [
+        "60"
+      ]
+    },
+    "r4": {
+      "description": "The character's Elemental Mastery will increase by 70 within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+      "values": [
+        "70"
+      ]
+    },
+    "r5": {
+      "description": "The character's Elemental Mastery will increase by 80 within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
+      "values": [
+        "80"
+      ]
+    }
+  }
+}

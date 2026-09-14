@@ -1,0 +1,47 @@
+{
+  "id": 13419,
+  "name": "Missive Windspear",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "The Wind Unattained",
+  "effectTemplate": "Within 10s after an Elemental Reaction is triggered, ATK is increased by <color=#99FFFFFF>{0}</color> and Elemental Mastery is increased by <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 12% and Elemental Mastery is increased by 48.",
+      "values": [
+        "12%",
+        "48"
+      ]
+    },
+    "r2": {
+      "description": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 15% and Elemental Mastery is increased by 60.",
+      "values": [
+        "15%",
+        "60"
+      ]
+    },
+    "r3": {
+      "description": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 18% and Elemental Mastery is increased by 72.",
+      "values": [
+        "18%",
+        "72"
+      ]
+    },
+    "r4": {
+      "description": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 21% and Elemental Mastery is increased by 84.",
+      "values": [
+        "21%",
+        "84"
+      ]
+    },
+    "r5": {
+      "description": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 24% and Elemental Mastery is increased by 96.",
+      "values": [
+        "24%",
+        "96"
+      ]
+    }
+  }
+}

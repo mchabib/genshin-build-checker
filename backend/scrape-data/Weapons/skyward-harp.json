@@ -1,0 +1,52 @@
+{
+  "id": 15501,
+  "name": "Skyward Harp",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Echoing Ballad",
+  "effectTemplate": "Increases CRIT DMG by <color=#99FFFFFF>{0}</color>. Hits have a <color=#99FFFFFF>{1}</color> chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every <color=#99FFFFFF>{2}</color>s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases CRIT DMG by 20%. Hits have a 60% chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every 4s.",
+      "values": [
+        "20%",
+        "60%",
+        "4"
+      ]
+    },
+    "r2": {
+      "description": "Increases CRIT DMG by 25%. Hits have a 70% chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every 3.5s.",
+      "values": [
+        "25%",
+        "70%",
+        "3.5"
+      ]
+    },
+    "r3": {
+      "description": "Increases CRIT DMG by 30%. Hits have a 80% chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every 3s.",
+      "values": [
+        "30%",
+        "80%",
+        "3"
+      ]
+    },
+    "r4": {
+      "description": "Increases CRIT DMG by 35%. Hits have a 90% chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every 2.5s.",
+      "values": [
+        "35%",
+        "90%",
+        "2.5"
+      ]
+    },
+    "r5": {
+      "description": "Increases CRIT DMG by 40%. Hits have a 100% chance to inflict a small AoE attack, dealing 125% Physical ATK DMG. Can only occur once every 2s.",
+      "values": [
+        "40%",
+        "100%",
+        "2"
+      ]
+    }
+  }
+}

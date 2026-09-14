@@ -1,0 +1,445 @@
+{
+  "key": "Barbara",
+  "nameEn": "Barbara",
+  "gdbName": "Barbara",
+  "element": "Hydro",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Whisper of Water",
+      "description": "Normal Attack\nPerforms up to 4 water splash attacks that deal Hydro DMG.\n\nCharged Attack\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.\n\nPlunging Attack\nGathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "Charged Attack DMG|{param5:P}",
+          "Charged Attack Stamina Cost|{param6:F1}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.3784,
+            0.40678,
+            0.43516,
+            0.473,
+            0.50138,
+            0.52976,
+            0.5676,
+            0.60544,
+            0.64328,
+            0.68112,
+            0.720474,
+            0.771936,
+            0.823398,
+            0.874861,
+            0.926323
+          ],
+          "param2": [
+            0.3552,
+            0.38184,
+            0.40848,
+            0.444,
+            0.47064,
+            0.49728,
+            0.5328,
+            0.56832,
+            0.60384,
+            0.63936,
+            0.676301,
+            0.724608,
+            0.772915,
+            0.821222,
+            0.86953
+          ],
+          "param3": [
+            0.4104,
+            0.44118,
+            0.47196,
+            0.513,
+            0.54378,
+            0.57456,
+            0.6156,
+            0.65664,
+            0.69768,
+            0.73872,
+            0.781402,
+            0.837216,
+            0.89303,
+            0.948845,
+            1.004659
+          ],
+          "param4": [
+            0.552,
+            0.5934,
+            0.6348,
+            0.69,
+            0.7314,
+            0.7728,
+            0.828,
+            0.8832,
+            0.9384,
+            0.9936,
+            1.051008,
+            1.12608,
+            1.201152,
+            1.276224,
+            1.351296
+          ],
+          "param5": [
+            1.6624,
+            1.78708,
+            1.91176,
+            2.078,
+            2.20268,
+            2.32736,
+            2.4936,
+            2.65984,
+            2.82608,
+            2.99232,
+            3.16521,
+            3.391296,
+            3.617382,
+            3.843469,
+            4.069555
+          ],
+          "param6": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Let the Show Begin♪",
+      "description": "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them.\n\nMelody Loop\n·On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP.\n·On hit, Barbara's Charged Attack generates 4 times the amount of healing.\n·Periodically regenerates your own active character's HP.\n·Applies the Wet status to the character and to opponents who come in contact with them.",
+      "attributes": {
+        "labels": [
+          "HP Regeneration Per Hit|{param3:F2P} Max HP+{param4:I}",
+          "Continuous Regeneration|{param1:F2P} Max HP+{param2:I}",
+          "Droplet DMG|{param5:F1P}",
+          "Duration|{param6:F1}s",
+          "CD|{param7:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.04,
+            0.043,
+            0.046,
+            0.05,
+            0.053,
+            0.056,
+            0.06,
+            0.064,
+            0.068,
+            0.072,
+            0.076,
+            0.08,
+            0.085,
+            0.09,
+            0.095
+          ],
+          "param2": [
+            385.18774,
+            423.71188,
+            465.44635,
+            510.39117,
+            558.5463,
+            609.9118,
+            664.4877,
+            722.27386,
+            783.2704,
+            847.4773,
+            914.89453,
+            985.5221,
+            1059.36,
+            1136.4082,
+            1216.6669
+          ],
+          "param3": [
+            0.0075,
+            0.008063,
+            0.008625,
+            0.009375,
+            0.009938,
+            0.0105,
+            0.01125,
+            0.012,
+            0.01275,
+            0.0135,
+            0.01425,
+            0.015,
+            0.015938,
+            0.016875,
+            0.017812
+          ],
+          "param4": [
+            72.2227,
+            79.44598,
+            87.271194,
+            95.69834,
+            104.72743,
+            114.35847,
+            124.59144,
+            135.42635,
+            146.8632,
+            158.902,
+            171.54272,
+            184.78539,
+            198.63,
+            213.07655,
+            228.12503
+          ],
+          "param5": [
+            0.584,
+            0.6278,
+            0.6716,
+            0.73,
+            0.7738,
+            0.8176,
+            0.876,
+            0.9344,
+            0.9928,
+            1.0512,
+            1.1096,
+            1.168,
+            1.241,
+            1.314,
+            1.387
+          ],
+          "param6": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param7": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Shining Miracle♪",
+      "description": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP.",
+      "attributes": {
+        "labels": [
+          "Regeneration|{param1:F1P} Max HP+{param2:I}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.176,
+            0.1892,
+            0.2024,
+            0.22,
+            0.2332,
+            0.2464,
+            0.264,
+            0.2816,
+            0.2992,
+            0.3168,
+            0.3344,
+            0.352,
+            0.374,
+            0.396,
+            0.418
+          ],
+          "param2": [
+            1694.2819,
+            1863.7336,
+            2047.3063,
+            2245,
+            2456.8147,
+            2682.7502,
+            2922.807,
+            3176.9846,
+            3445.2832,
+            3727.7026,
+            4024.2432,
+            4334.905,
+            4659.687,
+            4998.591,
+            5351.615
+          ],
+          "param3": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param4": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Glorious Season",
+      "description": "The Stamina Consumption of characters within Let the Show Begin♪'s Melody Loop is reduced by 12%."
+    },
+    {
+      "slot": "a4",
+      "name": "Encore",
+      "description": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin♪ is extended by 1s.\nThe maximum extension is 5s."
+    },
+    {
+      "slot": "util",
+      "name": "With My Whole Heart♪",
+      "description": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Gleeful Songs",
+      "description": "Barbara regenerates 1 Energy every 10s."
+    },
+    {
+      "n": 2,
+      "name": "Vitality Burst",
+      "description": "Decreases the CD of Let the Show Begin♪ by 15%.\nDuring the ability's duration, your active character gains a 15% Hydro DMG Bonus."
+    },
+    {
+      "n": 3,
+      "name": "Star of Tomorrow",
+      "description": "Increases the Level of Shining Miracle♪ by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Attentiveness Be My Power",
+      "description": "Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her.\nA maximum of 5 energy can be regenerated in this manner with any one Charged Attack."
+    },
+    {
+      "n": 5,
+      "name": "The Purest Companionship",
+      "description": "Increases the Level of Let the Show Begin♪ by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Dedicating Everything to You",
+      "description": "When Barbara is in the party but not on the field, and one of your own party members falls:\n·Automatically revives the fallen character.\n·Fully restores the revived character's HP to 100%.\nThis effect can only occur once every 15 mins."
+    }
+  ]
+}

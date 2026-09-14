@@ -1,0 +1,42 @@
+{
+  "id": 11301,
+  "name": "Cool Steel",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Bane of Water and Ice",
+  "effectTemplate": "Increases DMG against opponents affected by Hydro or Cryo by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against opponents affected by Hydro or Cryo by 12%.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against opponents affected by Hydro or Cryo by 15%.",
+      "values": [
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against opponents affected by Hydro or Cryo by 18%.",
+      "values": [
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against opponents affected by Hydro or Cryo by 21%.",
+      "values": [
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against opponents affected by Hydro or Cryo by 24%.",
+      "values": [
+        "24%"
+      ]
+    }
+  }
+}

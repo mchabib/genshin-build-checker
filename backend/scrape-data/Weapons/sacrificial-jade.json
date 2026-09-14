@@ -1,0 +1,47 @@
+{
+  "id": 14424,
+  "name": "Sacrificial Jade",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Jade Circulation",
+  "effectTemplate": "When not on the field for more than 5s, Max HP will be increased by <color=#99FFFFFF>{0}</color> and Elemental Mastery will be increased by <color=#99FFFFFF>{1}</color>. These effects will be canceled after the wielder has been on the field for 10s.",
+  "refinements": {
+    "r1": {
+      "description": "When not on the field for more than 5s, Max HP will be increased by 32% and Elemental Mastery will be increased by 40. These effects will be canceled after the wielder has been on the field for 10s.",
+      "values": [
+        "32%",
+        "40"
+      ]
+    },
+    "r2": {
+      "description": "When not on the field for more than 5s, Max HP will be increased by 40% and Elemental Mastery will be increased by 50. These effects will be canceled after the wielder has been on the field for 10s.",
+      "values": [
+        "40%",
+        "50"
+      ]
+    },
+    "r3": {
+      "description": "When not on the field for more than 5s, Max HP will be increased by 48% and Elemental Mastery will be increased by 60. These effects will be canceled after the wielder has been on the field for 10s.",
+      "values": [
+        "48%",
+        "60"
+      ]
+    },
+    "r4": {
+      "description": "When not on the field for more than 5s, Max HP will be increased by 56% and Elemental Mastery will be increased by 70. These effects will be canceled after the wielder has been on the field for 10s.",
+      "values": [
+        "56%",
+        "70"
+      ]
+    },
+    "r5": {
+      "description": "When not on the field for more than 5s, Max HP will be increased by 64% and Elemental Mastery will be increased by 80. These effects will be canceled after the wielder has been on the field for 10s.",
+      "values": [
+        "64%",
+        "80"
+      ]
+    }
+  }
+}

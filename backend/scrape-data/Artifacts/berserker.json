@@ -1,0 +1,10 @@
+{
+  "id": 10005,
+  "name": "Berserker",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "CRIT Rate +12%",
+  "fourPc": "When HP is below 70%, CRIT Rate increases by an additional 24%."
+}

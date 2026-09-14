@@ -1,0 +1,47 @@
+{
+  "id": 13505,
+  "name": "Primordial Jade Winged-Spear",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Eagle Spear of Justice",
+  "effectTemplate": "On hit, increases ATK by <color=#99FFFFFF>{0}</color> for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "On hit, increases ATK by 3.2% for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by 12%.",
+      "values": [
+        "3.2%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "On hit, increases ATK by 3.9% for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by 15%.",
+      "values": [
+        "3.9%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "On hit, increases ATK by 4.6% for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by 18%.",
+      "values": [
+        "4.6%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "On hit, increases ATK by 5.3% for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by 21%.",
+      "values": [
+        "5.3%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "On hit, increases ATK by 6% for 6s. Max 7 stacks. This effect can only occur once every 0.3s. While in possession of the maximum possible stacks, DMG dealt is increased by 24%.",
+      "values": [
+        "6%",
+        "24%"
+      ]
+    }
+  }
+}

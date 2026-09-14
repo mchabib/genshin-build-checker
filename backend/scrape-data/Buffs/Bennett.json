@@ -1,0 +1,119 @@
+{
+  "key": "Bennett",
+  "_comment": "Dibuat `npm run module:new`. Isi angka di `mod` tiap entry (lihat _README.md), ganti mode manual → always/assume kalau wajar dianggap aktif, hapus entry yang nggak ngaruh damage. `_hits` cuma referensi id hit (diabaikan loader).",
+  "role": "buffer",
+  "_hits": [
+    "na1: 1-Hit DMG [na]",
+    "na2: 2-Hit DMG [na]",
+    "na3: 3-Hit DMG [na]",
+    "na4: 4-Hit DMG [na]",
+    "na5: 5-Hit DMG [na]",
+    "ca1: Charged Attack DMG [ca]",
+    "plunge1: Plunge DMG [plunge]",
+    "plunge_low: Low Plunge DMG [plunge]",
+    "plunge_high: High Plunge DMG [plunge]",
+    "skill1: Press DMG [skill]",
+    "skill2: Charge Level 1 DMG [skill]",
+    "skill3: Charge Level 2 DMG [skill]",
+    "skill4: Explosion DMG [skill]",
+    "burst1: Skill DMG [burst]"
+  ],
+  "self": [
+    {
+      "id": "bennett_a1",
+      "description": "A1 Rekindle: Decreases Passion Overload's CD by 20%.",
+      "mode": "manual",
+      "mod": {
+        "source": "Bennett A1",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_a4",
+      "description": "A4 Fearnaught: Within the area created by Fantastic Voyage, Passion Overload takes on the following effects: ·CD is reduced by 50%. ·Bennett will not be launched by the effects of Charge Level 2.",
+      "mode": "manual",
+      "mod": {
+        "source": "Bennett A4",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c1",
+      "description": "C1 Grand Expectation: Fantastic Voyage's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK.",
+      "mode": "manual",
+      "requireCon": 1,
+      "mod": {
+        "source": "Bennett C1",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c2",
+      "description": "C2 Impasse Conqueror: When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%.",
+      "mode": "manual",
+      "requireCon": 2,
+      "mod": {
+        "source": "Bennett C2",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c3",
+      "description": "C3 Unstoppable Fervor: Increases the Level of Passion Overload by 3. Maximum upgrade level is 15.",
+      "mode": "manual",
+      "requireCon": 3,
+      "mod": {
+        "source": "Bennett C3",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c4",
+      "description": "C4 Unexpected Odyssey: Using a Normal Attack as the second attack of Passion Overload's Charge Level 1 will perform a follow-up attack. This additional attack does 135% of the second attack's DMG.",
+      "mode": "manual",
+      "requireCon": 4,
+      "mod": {
+        "source": "Bennett C4",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c5",
+      "description": "C5 True Explorer: Increases the Level of Fantastic Voyage by 3. Maximum upgrade level is 15.",
+      "mode": "manual",
+      "requireCon": 5,
+      "mod": {
+        "source": "Bennett C5",
+        "scope": "all"
+      }
+    },
+    {
+      "id": "bennett_c6",
+      "description": "C6 Fire Ventures With Me: Sword, Claymore, or Polearm-wielding characters inside Fantastic Voyage's radius gain a 15% Pyro DMG Bonus and their weapons are infused with Pyro.",
+      "mode": "manual",
+      "requireCon": 6,
+      "mod": {
+        "source": "Bennett C6",
+        "scope": "all"
+      }
+    }
+  ],
+  "rotations": [
+    {
+      "label": "KQM: Q tE N1",
+      "kqm": "Q tE N1",
+      "note": "notasi KQM \"Q tE N1\" (section combos) — cek: E/Q kena SEMUA varian hit; pakai counts kalau ada varian yang nggak semua kena"
+    }
+  ],
+  "teams": [
+    [
+      "Lyney",
+      "Zhongli"
+    ],
+    [
+      "Klee",
+      "Xiangling",
+      "KaedeharaKazuha"
+    ]
+  ]
+}

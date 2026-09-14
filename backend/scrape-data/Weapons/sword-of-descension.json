@@ -1,0 +1,20 @@
+{
+  "id": 11412,
+  "name": "Sword of Descension",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 4,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Descension",
+  "effectTemplate": "<color=#99FFFFFF>Effective only on the following platform: </color>\n<color=#99FFFFFF>\"PlayStation™Network\"</color>\nHitting opponents with Normal and Charged Attacks grants a <color=#99FFFFFF>{0}</color> chance to deal <color=#99FFFFFF>{1}</color> ATK as DMG in a small AoE. This effect can only occur once every 10s. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Effective only on the following platform: \n\"PlayStation™Network\"\nHitting opponents with Normal and Charged Attacks grants a 50% chance to deal 200% ATK as DMG in a small AoE. This effect can only occur once every 10s. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by 66.",
+      "values": [
+        "50%",
+        "200%",
+        "66"
+      ]
+    }
+  }
+}

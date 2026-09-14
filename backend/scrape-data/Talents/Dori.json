@@ -1,0 +1,464 @@
+{
+  "key": "Dori",
+  "nameEn": "Dori",
+  "gdbName": "Dori",
+  "element": "Electro",
+  "weaponType": "WEAPON_CLAYMORE",
+  "version": "3.0",
+  "talents": {
+    "normal": {
+      "name": "Marvelous Sword-Dance (Modified)",
+      "description": "Normal Attack\nPerforms up to 3 consecutive strikes.\n\nCharged Attack\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}+{param3:F1P}",
+          "3-Hit DMG|{param4:F1P}",
+          "Charged Attack Spinning DMG|{param5:F1P}",
+          "Charged Attack Final DMG|{param6:P}",
+          "Charged Attack Stamina Cost|{param7:F1}/s",
+          "Max Duration|{param8:F1}s",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:P}/{param11:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.90214,
+            0.97557,
+            1.049,
+            1.1539,
+            1.22733,
+            1.31125,
+            1.42664,
+            1.54203,
+            1.65742,
+            1.7833,
+            1.90918,
+            2.03506,
+            2.16094,
+            2.28682,
+            2.4127
+          ],
+          "param2": [
+            0.410736,
+            0.444168,
+            0.4776,
+            0.52536,
+            0.558792,
+            0.597,
+            0.649536,
+            0.702072,
+            0.754608,
+            0.81192,
+            0.869232,
+            0.926544,
+            0.983856,
+            1.041168,
+            1.09848
+          ],
+          "param3": [
+            0.431204,
+            0.466302,
+            0.5014,
+            0.55154,
+            0.586638,
+            0.62675,
+            0.681904,
+            0.737058,
+            0.792212,
+            0.85238,
+            0.912548,
+            0.972716,
+            1.032884,
+            1.093052,
+            1.15322
+          ],
+          "param4": [
+            1.28398,
+            1.38849,
+            1.493,
+            1.6423,
+            1.74681,
+            1.86625,
+            2.03048,
+            2.19471,
+            2.35894,
+            2.5381,
+            2.71726,
+            2.89642,
+            3.07558,
+            3.25474,
+            3.4339
+          ],
+          "param5": [
+            0.625455,
+            0.676364,
+            0.727273,
+            0.8,
+            0.850909,
+            0.909091,
+            0.989091,
+            1.069091,
+            1.149091,
+            1.236364,
+            1.336364,
+            1.453964,
+            1.571564,
+            1.689164,
+            1.817455
+          ],
+          "param6": [
+            1.1309,
+            1.22295,
+            1.315,
+            1.4465,
+            1.53855,
+            1.64375,
+            1.7884,
+            1.93305,
+            2.0777,
+            2.2355,
+            2.416313,
+            2.628948,
+            2.841584,
+            3.054219,
+            3.286185
+          ],
+          "param7": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "param8": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "param9": [
+            0.745878,
+            0.806589,
+            0.8673,
+            0.95403,
+            1.014741,
+            1.084125,
+            1.179528,
+            1.274931,
+            1.370334,
+            1.47441,
+            1.578486,
+            1.682562,
+            1.786638,
+            1.890714,
+            1.99479
+          ],
+          "param10": [
+            1.49144,
+            1.612836,
+            1.734233,
+            1.907656,
+            2.029052,
+            2.167791,
+            2.358556,
+            2.549322,
+            2.740087,
+            2.948195,
+            3.156303,
+            3.364411,
+            3.572519,
+            3.780627,
+            3.988735
+          ],
+          "param11": [
+            1.862889,
+            2.01452,
+            2.16615,
+            2.382765,
+            2.534396,
+            2.707688,
+            2.945964,
+            3.184241,
+            3.422517,
+            3.682455,
+            3.942393,
+            4.202331,
+            4.462269,
+            4.722207,
+            4.982145
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Spirit-Warding Lamp: Troubleshooter Cannon",
+      "description": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing Electro DMG.\nAfter the Troubleshooter Shot hits, it will create 2 After-Sales Service Rounds that will automatically track nearby opponents and deal Electro DMG.",
+      "attributes": {
+        "labels": [
+          "Troubleshooter Shot DMG|{param1:F1P}",
+          "After-Sales Service Round DMG|{param2:F1P}",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.4728,
+            1.58326,
+            1.69372,
+            1.841,
+            1.95146,
+            2.06192,
+            2.2092,
+            2.35648,
+            2.50376,
+            2.65104,
+            2.79832,
+            2.9456,
+            3.1297,
+            3.3138,
+            3.4979
+          ],
+          "param2": [
+            0.3156,
+            0.33927,
+            0.36294,
+            0.3945,
+            0.41817,
+            0.44184,
+            0.4734,
+            0.50496,
+            0.53652,
+            0.56808,
+            0.59964,
+            0.6312,
+            0.67065,
+            0.7101,
+            0.74955
+          ],
+          "param3": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Alcazarzaray's Exactitude",
+      "description": "Summons forth the Jinni within the lamp to give the client various kinds of aid.\n\nJinni\nConnects to a nearby character. The connected character will:\n· Continuously restore HP based on Dori's Max HP.\n· Continuously regenerate Energy.\n· Be affected by Electro.\nWhen the connector between the Jinni and the character touches opponents, it will deal one instance of Electro DMG to them every 0.4s.\n\nOnly one Jinni can exist at one time.",
+      "attributes": {
+        "labels": [
+          "Connector DMG|{param1:P}",
+          "Continuous Healing|{param2:F1P} Max HP+{param3:I}",
+          "Energy Regeneration|{param4:F1}",
+          "Duration|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.158824,
+            0.170736,
+            0.182648,
+            0.19853,
+            0.210442,
+            0.222354,
+            0.238236,
+            0.254118,
+            0.270001,
+            0.285883,
+            0.301766,
+            0.317648,
+            0.337501,
+            0.357354,
+            0.377207
+          ],
+          "param2": [
+            0.0667,
+            0.071702,
+            0.076705,
+            0.083375,
+            0.088377,
+            0.09338,
+            0.10005,
+            0.10672,
+            0.11339,
+            0.12006,
+            0.12673,
+            0.1334,
+            0.141737,
+            0.150075,
+            0.158412
+          ],
+          "param3": [
+            641.97955,
+            706.18646,
+            775.7439,
+            850.6519,
+            930.9105,
+            1016.5197,
+            1107.4795,
+            1203.7898,
+            1305.4507,
+            1412.4622,
+            1524.8242,
+            1642.5369,
+            1765.6,
+            1894.0138,
+            2027.7781
+          ],
+          "param4": [
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2,
+            2.1,
+            2.2,
+            2.3,
+            2.4,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "param5": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param6": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param7": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "An Eye for Gold",
+      "description": "After a character connected to the Jinni triggers an Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, Electro Swirl, or Electro Crystallize reaction, the CD of Spirit-Warding Lamp: Troubleshooter Cannon is decreased by 1s.\nThis effect can be triggered once every 3s."
+    },
+    {
+      "slot": "a4",
+      "name": "Compound Interest",
+      "description": "When the Troubleshooter Shots or After-Sales Service Rounds from Spirit-Warding Lamp: Troubleshooter Cannon hit opponents, Dori will restore 5 Elemental Energy for every 100% Energy Recharge possessed.\nPer Spirit-Warding Lamp: Troubleshooter Cannon, only one instance of Energy restoration can be triggered and a maximum of 15 Energy can be restored this way."
+    },
+    {
+      "slot": "util",
+      "name": "Unexpected Order",
+      "description": "Has a 25% chance to recover some of the materials used when crafting Character and Weapon Materials."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Additional Investment",
+      "description": "The number of After-Sales Service Rounds created by Troubleshooter Shots is increased by 1."
+    },
+    {
+      "n": 2,
+      "name": "Special Franchise",
+      "description": "When you are in combat and the Jinni heals the character it is connected to, it will fire a Jinni Toop from that character's position that deals 50% of Dori's ATK DMG."
+    },
+    {
+      "n": 3,
+      "name": "Wonders Never Cease",
+      "description": "Increases the Level of Alcazarzaray's Exactitude by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Discretionary Supplement",
+      "description": "The character connected to the Jinni will obtain the following buffs based on their current HP and Energy:\n·When their HP is lower than 50%, they gain 50% Incoming Healing Bonus.\n·When their Energy is less than 50%, they gain 30% Energy Recharge."
+    },
+    {
+      "n": 5,
+      "name": "Value for Mora",
+      "description": "Increases the Level of Spirit-Warding Lamp: Troubleshooter Cannon by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Sprinkling Weight",
+      "description": "Dori gains the following effects for 3s after using Spirit-Warding Lamp: Troubleshooter Cannon:\n·Electro Infusion.\n·When Normal Attacks hit opponents, all nearby party members will heal HP equivalent to 4% of Dori's Max HP. This type of healing can occur once every 0.1s."
+    }
+  ]
+}

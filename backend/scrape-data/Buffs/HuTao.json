@@ -1,0 +1,38 @@
+{
+  "key": "HuTao",
+  "role": "dps",
+  "self": [
+    {
+      "id": "hutao_e",
+      "mode": "always",
+      "description": "Hu Tao E: ATK += 6.26% Max HP (lv10), cap 400% base ATK; NA/CA/plunge jadi Pyro.",
+      "mod": { "source": "Hu Tao E (Paramita)", "scope": "all", "atkFromStat": { "stat": "hp", "pct": "= pct(p('skill','param2'))", "capPctOfBaseAtk": 400 } }
+    },
+    {
+      "id": "hutao_a4",
+      "mode": "assume",
+      "description": "Hu Tao A4: Pyro DMG +33% saat HP ≤ 50%.",
+      "mod": { "source": "Hu Tao A4 (HP<50%)", "scope": "all", "elementalDmgBonus": { "pyro": 33 } }
+    },
+    {
+      "id": "hutao_c2",
+      "mode": "always",
+      "requireCon": 2,
+      "description": "Hu Tao C2: Blood Blossom +10% Max HP flat.",
+      "mod": { "source": "Hu Tao C2", "scope": "skill", "flatDmg": "= round(char.final.hp * 0.1)" }
+    }
+  ],
+  "reactions": {
+    "with": {
+      "hydro": { "ca": "vaporize", "skill": "vaporize", "burst": "vaporize" },
+      "cryo": { "ca": "melt", "burst": "melt" }
+    }
+  },
+  "actions": {
+    "E": { "skill1": 2 },
+    "Q": { "burst2": 1 }
+  },
+  "rotations": [
+    { "label": "9N2C + Q (low HP)", "counts": { "na1": 9, "na2": 9, "ca1": 9, "burst2": 1, "skill1": 2 }, "duration": 16, "note": "≈16s (E CD 16s, 9N2C muat di 9s Paramita); KQM: N2C ×9, Q saat HP<50%" }
+  ]
+}

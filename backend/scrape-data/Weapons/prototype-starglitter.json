@@ -1,0 +1,42 @@
+{
+  "id": 13402,
+  "name": "Prototype Starglitter",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Magic Affinity",
+  "effectTemplate": "After using an Elemental Skill, increases Normal and Charged Attack DMG by <color=#99FFFFFF>{0}</color> for 12s. Max 2 stacks.",
+  "refinements": {
+    "r1": {
+      "description": "After using an Elemental Skill, increases Normal and Charged Attack DMG by 8% for 12s. Max 2 stacks.",
+      "values": [
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "After using an Elemental Skill, increases Normal and Charged Attack DMG by 10% for 12s. Max 2 stacks.",
+      "values": [
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "After using an Elemental Skill, increases Normal and Charged Attack DMG by 12% for 12s. Max 2 stacks.",
+      "values": [
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "After using an Elemental Skill, increases Normal and Charged Attack DMG by 14% for 12s. Max 2 stacks.",
+      "values": [
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "After using an Elemental Skill, increases Normal and Charged Attack DMG by 16% for 12s. Max 2 stacks.",
+      "values": [
+        "16%"
+      ]
+    }
+  }
+}

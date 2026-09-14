@@ -1,0 +1,206 @@
+[
+  {
+    "id": "w_staff_of_homa",
+    "weapon": "Staff of Homa",
+    "mode": "manual",
+    "description": "Homa <50% HP: ATK tambahan {2}% Max HP (bagian 0.8% + HP 20% sudah di Enka).",
+    "mod": { "source": "Staff of Homa <50% HP", "scope": "all", "atkFlat": "= round(char.final.hp * wv(2) / 100)", "note": "cuma saat HP < 50%" }
+  },
+  {
+    "id": "w_pjws",
+    "weapon": "Primordial Jade Winged-Spear",
+    "mode": "assume",
+    "description": "PJWS 7 stack: ATK +{0}×7, DMG +{1} saat stack penuh.",
+    "mod": { "source": "Primordial Jade Winged-Spear 7 stack", "scope": "all", "atkPct": "= round(wv(0) * 7 * 10) / 10", "dmgBonus": "= wv(1)", "uptime": 0.9, "note": "stack cepat penuh saat spam hit" }
+  },
+  {
+    "id": "w_lost_prayer",
+    "weapon": "Lost Prayer to the Sacred Winds",
+    "mode": "assume",
+    "description": "Lost Prayer 4 stack: Elemental DMG +{0}×4 (butuh 16s di combat).",
+    "mod": { "source": "Lost Prayer 4 stack", "scope": "all", "elementalDmgBonus": { "$self": "= wv(0) * 4" }, "uptime": 0.75, "note": "stack butuh 16s, rata-rata 3 stack" }
+  },
+  {
+    "id": "w_absolution",
+    "weapon": "Absolution",
+    "mode": "assume",
+    "description": "Absolution: DMG +{1} per BoL naik, max 3 stack (CD +{0} sudah di Enka).",
+    "mod": { "source": "Absolution 3 stack", "scope": "all", "dmgBonus": "= wv(1) * 3" }
+  },
+  {
+    "id": "w_aqua_simulacra",
+    "weapon": "Aqua Simulacra",
+    "mode": "always",
+    "description": "Aqua Simulacra: DMG +{1} kalau ada musuh dekat (HP +{0} sudah di Enka).",
+    "mod": { "source": "Aqua Simulacra", "scope": "all", "dmgBonus": "= wv(1)" }
+  },
+  {
+    "id": "w_light_of_foliar_incision",
+    "weapon": "Light of Foliar Incision",
+    "mode": "always",
+    "description": "Foliar Incision: NA & E DMG +{1}% EM sebagai flat DMG setelah NA kena (CR +{0} sudah di Enka).",
+    "mod": { "source": "Light of Foliar Incision", "scope": ["na", "skill"], "flatDmg": "= round(char.final.em * wv(1) / 100)" }
+  },
+  {
+    "id": "w_engulfing_lightning",
+    "weapon": "Engulfing Lightning",
+    "mode": "manual",
+    "description": "Engulfing: ATK dari ER (sudah di Enka). +{2} ER setelah Q → cuma efek ke Emblem/Raiden A4, kecil; abaikan.",
+    "mod": { "source": "Engulfing Lightning post-Q ER", "scope": "burst", "dmgBonus": 0, "note": "efek ER post-Q nggak dihitung" }
+  },
+  {
+    "id": "w_splendor_of_tranquil_waters",
+    "weapon": "Splendor of Tranquil Waters",
+    "mode": "assume",
+    "description": "Splendor: E DMG +{0}×3 saat HP sendiri berubah; HP +{1}×2 saat HP teammate berubah.",
+    "mod": { "source": "Splendor of Tranquil Waters", "scope": "all", "hpPct": "= wv(1) * 2", "note": "3 stack E + 2 stack HP" }
+  },
+  {
+    "id": "w_splendor_skill",
+    "weapon": "Splendor of Tranquil Waters",
+    "mode": "assume",
+    "description": "(pasangan) Splendor E DMG bonus.",
+    "mod": { "source": "Splendor of Tranquil Waters (E)", "scope": "skill", "dmgBonus": "= wv(0) * 3" }
+  },
+  {
+    "id": "w_crimson_moons_semblance",
+    "weapon": "Crimson Moon's Semblance",
+    "mode": "assume",
+    "description": "Crimson Moon: DMG +{0} saat punya BoL, +{1} lagi kalau BoL ≥ 30% HP.",
+    "mod": { "source": "Crimson Moon's Semblance (BoL ≥30%)", "scope": "all", "dmgBonus": "= wv(0) + wv(1)" }
+  },
+  {
+    "id": "w_flower_wreathed_feathers",
+    "weapon": "Flower-Wreathed Feathers",
+    "mode": "assume",
+    "description": "Flower-Wreathed Feathers: CA DMG +{0} per 0.5s aiming, max 6 stack.",
+    "mod": { "source": "Flower-Wreathed Feathers 6 stack", "scope": "ca", "dmgBonus": "= wv(0) * 6", "uptime": 0.7 }
+  },
+  {
+    "id": "w_wolfs_gravestone",
+    "weapon": "Wolf's Gravestone",
+    "mode": "assume",
+    "description": "Wolf's Gravestone: ATK +{0} (sudah di Enka); kena musuh HP<30% → tim ATK +{1}.",
+    "mod": { "source": "Wolf's Gravestone (musuh <30% HP)", "scope": "all", "atkPct": "= wv(1)", "uptime": 0.3 }
+  },
+  {
+    "id": "w_mistsplitter",
+    "weapon": "Mistsplitter Reforged",
+    "mode": "assume",
+    "description": "Mistsplitter: Elemental DMG +{0} (Enka) + emblem 3 stack {1} (asumsi stack 2-3).",
+    "mod": { "source": "Mistsplitter 3 stack", "scope": "all", "elementalDmgBonus": { "$self": "= wv(1)" }, "uptime": 0.85 }
+  },
+  {
+    "id": "w_serpent_spine",
+    "weapon": "Serpent Spine",
+    "mode": "assume",
+    "description": "Serpent Spine 5 stack: DMG +{0}×5.",
+    "mod": { "source": "Serpent Spine 5 stack", "scope": "all", "dmgBonus": "= wv(0) * 5" }
+  },
+  {
+    "id": "w_the_catch",
+    "weapon": "\"The Catch\"",
+    "mode": "always",
+    "description": "The Catch: Burst DMG +{0}, Burst CRIT Rate +{1}.",
+    "mod": { "source": "The Catch", "scope": "burst", "dmgBonus": "= wv(0)", "critRate": "= wv(1)" }
+  },
+  {
+    "id": "w_deathmatch",
+    "weapon": "Deathmatch",
+    "mode": "always",
+    "description": "Deathmatch: 1 musuh → ATK +{2}.",
+    "mod": { "source": "Deathmatch (1 musuh)", "scope": "all", "atkPct": "= wv(2)" }
+  },
+  {
+    "id": "w_calamity_queller",
+    "weapon": "Calamity Queller",
+    "mode": "assume",
+    "description": "Calamity Queller: Elemental DMG +{0} (Enka); setelah E ATK +{1}×6 (×2 off-field).",
+    "mod": { "source": "Calamity Queller 6 stack", "scope": "all", "atkPct": "= wv(1) * 6" }
+  },
+  {
+    "id": "w_thundering_pulse",
+    "weapon": "Thundering Pulse",
+    "mode": "assume",
+    "description": "Thundering Pulse 3 stack: NA DMG +{1} (ATK +{0} sudah di Enka).",
+    "mod": { "source": "Thundering Pulse 3 stack", "scope": "na", "dmgBonus": "= wv(1)" }
+  },
+  {
+    "id": "w_polar_star",
+    "weapon": "Polar Star",
+    "mode": "assume",
+    "description": "Polar Star 4 stack: ATK +{1}.",
+    "mod": { "source": "Polar Star 4 stack", "scope": "all", "atkPct": "= wv(1)" }
+  },
+  {
+    "id": "w_polar_star_eq",
+    "weapon": "Polar Star",
+    "mode": "always",
+    "description": "(pasangan) Polar Star E/Q DMG +{0}.",
+    "mod": { "source": "Polar Star (E/Q)", "scope": ["skill", "burst"], "dmgBonus": "= wv(0)" }
+  },
+  {
+    "id": "w_jade_cutter",
+    "weapon": "Primordial Jade Cutter",
+    "mode": "manual",
+    "description": "Jade Cutter: HP +20%, ATK +1.2% HP — dua-duanya sudah di Enka.",
+    "mod": { "source": "Primordial Jade Cutter", "scope": "all", "dmgBonus": 0, "note": "sudah di Enka" }
+  },
+  {
+    "id": "w_kagura_verity",
+    "weapon": "Kagura's Verity",
+    "mode": "assume",
+    "description": "Kagura 3 stack: Skill DMG +{0}×3, Stellar-Conduct DMG +{1}×3, All Elemental DMG +{2} (24s per stack).",
+    "mod": { "source": "Kagura's Verity 3 stack", "scope": "skill", "dmgBonus": "= wv(0) * 3", "note": "3 stack (Yae 3[E])" }
+  },
+  {
+    "id": "w_kagura_verity_elem",
+    "weapon": "Kagura's Verity",
+    "mode": "assume",
+    "description": "(pasangan) Kagura 3 stack: All Elemental DMG +{2}.",
+    "mod": { "source": "Kagura's Verity (3 stack elemental)", "scope": "all", "elementalDmgBonus": { "$self": "= wv(2)" } }
+  },
+  {
+    "id": "w_kagura_verity_stellar",
+    "weapon": "Kagura's Verity",
+    "mode": "assume",
+    "description": "(pasangan) Kagura 3 stack: Stellar-Conduct DMG +{1}×3.",
+    "mod": { "source": "Kagura's Verity (Stellar)", "scope": "all", "stellarBonus": "= wv(1) * 3" }
+  },
+  {
+    "id": "w_haran_geppaku",
+    "weapon": "Haran Geppaku Futsu",
+    "mode": "manual",
+    "description": "Haran: All Elemental DMG +{0} — statis, SUDAH masuk total Enka (diverifikasi angka in-game Odette 2026-09-11), jangan dihitung lagi.",
+    "mod": { "source": "Haran Geppaku Futsu", "scope": "all", "elementalDmgBonus": { "$self": "= wv(0)" }, "note": "sudah di Enka" }
+  },
+  {
+    "id": "w_haran_geppaku_na",
+    "weapon": "Haran Geppaku Futsu",
+    "mode": "assume",
+    "description": "(pasangan) Haran Rippling Upheaval 2 stack: NA DMG +{1}×2 selama 8s setelah E (butuh 2 E teammate sebelumnya).",
+    "mod": { "source": "Haran Geppaku Futsu 2 Wavespike", "scope": "na", "dmgBonus": "= wv(1) * 2" },
+    "duration": 8
+  },
+  {
+    "id": "w_teaspoon_atk",
+    "weapon": "A Teaspoon of Transcendence",
+    "mode": "always",
+    "description": "Teaspoon: ATK +{0} — TIDAK masuk total Enka (diverifikasi in-game Sandrone 2026-09-11: CA real = program × 1.105 = +28% base ATK).",
+    "mod": { "source": "A Teaspoon of Transcendence ATK", "scope": "all", "atkPct": "= wv(0)" }
+  },
+  {
+    "id": "w_teaspoon",
+    "weapon": "A Teaspoon of Transcendence",
+    "mode": "assume",
+    "description": "Teaspoon Transcendence 3 stack: Stellar-Conduct/Stellar Swirl DMG +{1}×3 selama 5s setelah CA kena.",
+    "mod": { "source": "A Teaspoon of Transcendence 3 stack", "scope": "all", "stellarBonus": "= wv(1) * 3", "uptime": 0.75, "note": "stack dari CA kena (5s, max 3) — beam pertama tiap laser belum penuh (in-game 45k→73k), rata-rata ≈75%" }
+  },
+  {
+    "id": "w_bloodsoaked_ruins",
+    "weapon": "Bloodsoaked Ruins",
+    "mode": "assume",
+    "description": "Bloodsoaked Ruins: Lunar-Charged DMG +{0} 3.5s setelah Q (belum dimodelkan); Requiem of Ruin: CRIT DMG +{1} 6s setelah picu Lunar-Charged.",
+    "mod": { "source": "Bloodsoaked Ruins (Requiem of Ruin)", "scope": "all", "critDmg": "= wv(1)", "uptime": 0.75, "note": "6s, di-refresh tiap Lunar-Charged → rata-rata 75%" }
+  }
+]

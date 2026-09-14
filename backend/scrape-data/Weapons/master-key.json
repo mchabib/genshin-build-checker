@@ -1,0 +1,47 @@
+{
+  "id": 12433,
+  "name": "Master Key",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Fall Into Place",
+  "effectTemplate": "Upon causing an Elemental Reaction, increases Elemental Mastery by <color=#99FFFFFF>{0}</color> for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by <color=#99FFFFFF>{1}</color>. This effect can be triggered even if the equipping character is off-field.",
+  "refinements": {
+    "r1": {
+      "description": "Upon causing an Elemental Reaction, increases Elemental Mastery by 60 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 60. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "60",
+        "60"
+      ]
+    },
+    "r2": {
+      "description": "Upon causing an Elemental Reaction, increases Elemental Mastery by 75 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 75. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "75",
+        "75"
+      ]
+    },
+    "r3": {
+      "description": "Upon causing an Elemental Reaction, increases Elemental Mastery by 90 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 90. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "90",
+        "90"
+      ]
+    },
+    "r4": {
+      "description": "Upon causing an Elemental Reaction, increases Elemental Mastery by 105 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 105. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "105",
+        "105"
+      ]
+    },
+    "r5": {
+      "description": "Upon causing an Elemental Reaction, increases Elemental Mastery by 120 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 120. This effect can be triggered even if the equipping character is off-field.",
+      "values": [
+        "120",
+        "120"
+      ]
+    }
+  }
+}

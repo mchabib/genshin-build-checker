@@ -1,0 +1,10 @@
+{
+  "id": 10002,
+  "name": "Brave Heart",
+  "rarity": [
+    3,
+    4
+  ],
+  "twoPc": "ATK +18%.",
+  "fourPc": "Increases DMG by 30% against opponents with more than 50% HP."
+}

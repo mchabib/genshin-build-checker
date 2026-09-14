@@ -1,0 +1,429 @@
+{
+  "key": "Amber",
+  "nameEn": "Amber",
+  "gdbName": "Amber",
+  "element": "Pyro",
+  "weaponType": "WEAPON_BOW",
+  "version": "1.0",
+  "talents": {
+    "normal": {
+      "name": "Sharpshooter",
+      "description": "Normal Attack\nPerforms up to 5 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, flames will accumulate on the arrowhead. A fully charged flaming arrow will deal Pyro DMG.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "5-Hit DMG|{param5:F1P}",
+          "Aimed Shot|{param6:F1P}",
+          "Fully-Charged Aimed Shot|{param7:P}",
+          "Plunge DMG|{param8:F1P}",
+          "Low/High Plunge DMG|{param9:P}/{param10:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.3612,
+            0.3906,
+            0.42,
+            0.462,
+            0.4914,
+            0.525,
+            0.5712,
+            0.6174,
+            0.6636,
+            0.714,
+            0.7644,
+            0.8148,
+            0.8652,
+            0.9156,
+            0.966
+          ],
+          "param2": [
+            0.3612,
+            0.3906,
+            0.42,
+            0.462,
+            0.4914,
+            0.525,
+            0.5712,
+            0.6174,
+            0.6636,
+            0.714,
+            0.7644,
+            0.8148,
+            0.8652,
+            0.9156,
+            0.966
+          ],
+          "param3": [
+            0.4644,
+            0.5022,
+            0.54,
+            0.594,
+            0.6318,
+            0.675,
+            0.7344,
+            0.7938,
+            0.8532,
+            0.918,
+            0.9828,
+            1.0476,
+            1.1124,
+            1.1772,
+            1.242
+          ],
+          "param4": [
+            0.473,
+            0.5115,
+            0.55,
+            0.605,
+            0.6435,
+            0.6875,
+            0.748,
+            0.8085,
+            0.869,
+            0.935,
+            1.001,
+            1.067,
+            1.133,
+            1.199,
+            1.265
+          ],
+          "param5": [
+            0.5934,
+            0.6417,
+            0.69,
+            0.759,
+            0.8073,
+            0.8625,
+            0.9384,
+            1.0143,
+            1.0902,
+            1.173,
+            1.2558,
+            1.3386,
+            1.4214,
+            1.5042,
+            1.587
+          ],
+          "param6": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param7": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param8": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param9": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param10": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Explosive Puppet",
+      "description": "The ever-reliable Baron Bunny takes the stage.\n\nBaron Bunny\n·Continuously taunts the enemy, drawing their fire.\n·Baron Bunny's HP scales with Amber's Max HP.\n·When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG.\n\nHold\nAdjusts the throwing direction of Baron Bunny.\nThe longer the button is held, the further the throw.",
+      "attributes": {
+        "labels": [
+          "Inherited HP|{param1:F1P}",
+          "Explosion DMG|{param2:P}",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.4136,
+            0.44462,
+            0.47564,
+            0.517,
+            0.54802,
+            0.57904,
+            0.6204,
+            0.66176,
+            0.70312,
+            0.74448,
+            0.78584,
+            0.8272,
+            0.8789,
+            0.9306,
+            0.9823
+          ],
+          "param2": [
+            1.232,
+            1.3244,
+            1.4168,
+            1.54,
+            1.6324,
+            1.7248,
+            1.848,
+            1.9712,
+            2.0944,
+            2.2176,
+            2.3408,
+            2.464,
+            2.618,
+            2.772,
+            2.926
+          ],
+          "param3": [
+            -0.5864,
+            -0.55538,
+            -0.52436,
+            -0.483,
+            -0.45198,
+            -0.42096,
+            -0.3796,
+            -0.33824,
+            -0.29688,
+            -0.25552,
+            -0.21416,
+            -0.1728,
+            -0.1211,
+            -0.0694,
+            -0.0177
+          ],
+          "param4": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Fiery Rain",
+      "description": "Fires off a shower of arrows, dealing continuous AoE Pyro DMG.",
+      "attributes": {
+        "labels": [
+          "Fiery Rain DMG Per Wave|{param1:F1P}",
+          "Total Fiery Rain DMG|{param4:P}",
+          "Duration|{param5:F1}s",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.2808,
+            0.30186,
+            0.32292,
+            0.351,
+            0.37206,
+            0.39312,
+            0.4212,
+            0.44928,
+            0.47736,
+            0.50544,
+            0.53352,
+            0.5616,
+            0.5967,
+            0.6318,
+            0.6669
+          ],
+          "param2": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param3": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "param4": [
+            5.0544,
+            5.43348,
+            5.81256,
+            6.318,
+            6.69708,
+            7.07616,
+            7.5816,
+            8.08704,
+            8.59248,
+            9.09792,
+            9.60336,
+            10.1088,
+            10.7406,
+            11.3724,
+            12.0042
+          ],
+          "param5": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Every Arrow Finds Its Target",
+      "description": "Increases the CRIT Rate of Fiery Rain by 10% and widens its AoE by 30%."
+    },
+    {
+      "slot": "a4",
+      "name": "Precise Shot",
+      "description": "Aimed Shot hits on weak points increase ATK by 15% for 10s."
+    },
+    {
+      "slot": "util",
+      "name": "Gliding Champion",
+      "description": "Decreases gliding Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "One Arrow to Rule Them All",
+      "description": "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG."
+    },
+    {
+      "n": 2,
+      "name": "Bunny Triggered",
+      "description": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\nExplosion via manual detonation deals 200% additional DMG."
+    },
+    {
+      "n": 3,
+      "name": "It Burns!",
+      "description": "Increases the Level of Fiery Rain by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "It's Not Just Any Doll...",
+      "description": "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge."
+    },
+    {
+      "n": 5,
+      "name": "It's Baron Bunny!",
+      "description": "Increases the Level of Explosive Puppet by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Wildfire",
+      "description": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
+    }
+  ]
+}

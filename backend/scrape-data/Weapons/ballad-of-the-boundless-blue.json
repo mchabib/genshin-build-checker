@@ -1,0 +1,47 @@
+{
+  "id": 14426,
+  "name": "Ballad of the Boundless Blue",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Azure Skies",
+  "effectTemplate": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by <color=#99FFFFFF>{0}</color> and Charged Attack DMG will be increased by <color=#99FFFFFF>{1}</color>. Max 3 stacks. This effect can be triggered once every 0.3s.",
+  "refinements": {
+    "r1": {
+      "description": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 8% and Charged Attack DMG will be increased by 6%. Max 3 stacks. This effect can be triggered once every 0.3s.",
+      "values": [
+        "8%",
+        "6%"
+      ]
+    },
+    "r2": {
+      "description": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 10% and Charged Attack DMG will be increased by 7.5%. Max 3 stacks. This effect can be triggered once every 0.3s.",
+      "values": [
+        "10%",
+        "7.5%"
+      ]
+    },
+    "r3": {
+      "description": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 12% and Charged Attack DMG will be increased by 9%. Max 3 stacks. This effect can be triggered once every 0.3s.",
+      "values": [
+        "12%",
+        "9%"
+      ]
+    },
+    "r4": {
+      "description": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 14% and Charged Attack DMG will be increased by 10.5%. Max 3 stacks. This effect can be triggered once every 0.3s.",
+      "values": [
+        "14%",
+        "10.5%"
+      ]
+    },
+    "r5": {
+      "description": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 16% and Charged Attack DMG will be increased by 12%. Max 3 stacks. This effect can be triggered once every 0.3s.",
+      "values": [
+        "16%",
+        "12%"
+      ]
+    }
+  }
+}

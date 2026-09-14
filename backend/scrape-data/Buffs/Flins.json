@@ -1,0 +1,8 @@
+{
+  "key": "Flins",
+  "role": "dps",
+  "self": [],
+  "rotations": [
+    { "label": "Manifest Flame: 2× N5 + CA + 2 Spearstorm + Q", "counts": { "skill1": 2, "skill2": 2, "skill3": 2, "skill4": 2, "skill5": 2, "skill6": 1, "skill7": 2, "burst1": 1, "burst4": 1 }, "duration": 18, "note": "≈18s (aproksimasi); Lunar-Charged (burst2/3) belum dimodelkan sebagai reaksi; A4 EM dari ATK diasumsikan sudah di Enka" }
+  ]
+}

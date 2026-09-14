@@ -1,0 +1,20 @@
+[
+  {
+    "key": "MavuikaTrial",
+    "nameEn": "Mavuika (Trial)",
+    "reason": "not_found",
+    "gdbName": null
+  },
+  {
+    "key": "HuTaoTrial",
+    "nameEn": "Hu Tao (Trial)",
+    "reason": "not_found",
+    "gdbName": null
+  },
+  {
+    "key": "PyroArchonTest",
+    "nameEn": "Pyro Archon (Test)",
+    "reason": "not_found",
+    "gdbName": null
+  }
+]

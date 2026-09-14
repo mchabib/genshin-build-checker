@@ -1,0 +1,102 @@
+[
+  {
+    "replacesKey": true,
+    "avatarId": 10000125,
+    "key": "Columbina",
+    "nameEn": "Columbina",
+    "element": "Hydro",
+    "weaponType": "WEAPON_CATALYST",
+    "rarity": 5,
+    "version": "6.3"
+  },
+  {
+    "avatarId": 10000126,
+    "key": "Zibai",
+    "nameEn": "Zibai",
+    "element": "Geo",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "rarity": 5,
+    "version": "6.3"
+  },
+  {
+    "avatarId": 10000127,
+    "key": "Illuga",
+    "nameEn": "Illuga",
+    "element": "Geo",
+    "weaponType": "WEAPON_POLE",
+    "rarity": 4,
+    "version": "6.3"
+  },
+  {
+    "avatarId": 10000128,
+    "key": "Varka",
+    "nameEn": "Varka",
+    "element": "Anemo",
+    "weaponType": "WEAPON_CLAYMORE",
+    "rarity": 5,
+    "version": "6.4"
+  },
+  {
+    "avatarId": 10000129,
+    "key": "Lohen",
+    "nameEn": "Lohen",
+    "element": "Cryo",
+    "weaponType": "WEAPON_POLE",
+    "rarity": 5,
+    "version": "6.6"
+  },
+  {
+    "avatarId": 10000130,
+    "key": "Linnea",
+    "nameEn": "Linnea",
+    "element": "Geo",
+    "weaponType": "WEAPON_BOW",
+    "rarity": 5,
+    "version": "6.5"
+  },
+  {
+    "avatarId": 10000131,
+    "key": "Nicole",
+    "nameEn": "Nicole",
+    "element": "Pyro",
+    "weaponType": "WEAPON_CATALYST",
+    "rarity": 5,
+    "version": "6.6"
+  },
+  {
+    "avatarId": 10000132,
+    "key": "Prune",
+    "nameEn": "Prune",
+    "element": "Anemo",
+    "weaponType": "WEAPON_CATALYST",
+    "rarity": 4,
+    "version": "6.6"
+  },
+  {
+    "avatarId": 10000133,
+    "key": "Sandrone",
+    "nameEn": "Sandrone",
+    "element": "Cryo",
+    "weaponType": "WEAPON_CLAYMORE",
+    "rarity": 5,
+    "version": "6.7"
+  },
+  {
+    "avatarId": 10000148,
+    "key": "Alyosha",
+    "nameEn": "Alyosha",
+    "element": "Electro",
+    "weaponType": "WEAPON_POLE",
+    "rarity": 4,
+    "version": "7.0"
+  },
+  {
+    "avatarId": 10000150,
+    "key": "Odette",
+    "nameEn": "Odette",
+    "element": "Cryo",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "rarity": 5,
+    "version": "7.0"
+  }
+]

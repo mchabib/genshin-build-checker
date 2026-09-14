@@ -1,0 +1,42 @@
+{
+  "id": 12407,
+  "name": "Whiteblind",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_DEFENSE_PERCENT",
+  "effectName": "Infusion Blade",
+  "effectTemplate": "On hit, Normal or Charged Attacks increase ATK and DEF by <color=#99FFFFFF>{0}</color> for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+  "refinements": {
+    "r1": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 6% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+      "values": [
+        "6%"
+      ]
+    },
+    "r2": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 7.5% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+      "values": [
+        "7.5%"
+      ]
+    },
+    "r3": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 9% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+      "values": [
+        "9%"
+      ]
+    },
+    "r4": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 10.5% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+      "values": [
+        "10.5%"
+      ]
+    },
+    "r5": {
+      "description": "On hit, Normal or Charged Attacks increase ATK and DEF by 12% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+      "values": [
+        "12%"
+      ]
+    }
+  }
+}

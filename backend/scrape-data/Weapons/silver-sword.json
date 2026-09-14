@@ -1,0 +1,11 @@
+{
+  "id": 11201,
+  "name": "Silver Sword",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 2,
+  "baseAtkLv1": 32.93,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

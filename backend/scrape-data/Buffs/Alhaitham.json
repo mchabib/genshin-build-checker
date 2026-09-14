@@ -1,0 +1,17 @@
+{
+  "key": "Alhaitham",
+  "role": "dps",
+  "self": [
+    {
+      "id": "alhaitham_a4",
+      "mode": "always",
+      "description": "Alhaitham A4: Mirror (E) & Q DMG +0.1% per EM, max +100%.",
+      "mod": { "source": "Alhaitham A4", "scope": ["skill", "burst"], "dmgBonus": "= min(100, round(char.final.em * 0.1 * 10) / 10)" }
+    }
+  ],
+  "reactions": { "with": { "electro": { "na": "spread", "ca": "spread", "skill": "spread", "burst": "spread" }, "hydro": { "skill": "bloom" } } },
+  "rotations": [
+    { "label": "E > Q > N3 ×3 (3 mirror)", "counts": { "skill1": 1, "skill4": 4, "skill3": 2, "burst1": 6, "na1": 3, "na2": 3, "na3": 3 }, "duration": 18, "note": "≈18s (E CD 18s); aproksimasi rotasi Spread; burst 6 instance (C0 + 3 mirror)" }
+  ],
+  "teams": [["Nahida", "KukiShinobu", "Yaoyao"], ["Nahida", "Fischl", "Zhongli"]]
+}

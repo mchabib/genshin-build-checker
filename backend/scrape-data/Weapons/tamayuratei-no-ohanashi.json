@@ -1,0 +1,42 @@
+{
+  "id": 13432,
+  "name": "Tamayuratei no Ohanashi",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Busybody's Running Light",
+  "effectTemplate": "Increase ATK by <color=#99FFFFFF>{0}</color> and Movement SPD by 10% for 10s when using an Elemental Skill.",
+  "refinements": {
+    "r1": {
+      "description": "Increase ATK by 20% and Movement SPD by 10% for 10s when using an Elemental Skill.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Increase ATK by 25% and Movement SPD by 10% for 10s when using an Elemental Skill.",
+      "values": [
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "Increase ATK by 30% and Movement SPD by 10% for 10s when using an Elemental Skill.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "Increase ATK by 35% and Movement SPD by 10% for 10s when using an Elemental Skill.",
+      "values": [
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "Increase ATK by 40% and Movement SPD by 10% for 10s when using an Elemental Skill.",
+      "values": [
+        "40%"
+      ]
+    }
+  }
+}

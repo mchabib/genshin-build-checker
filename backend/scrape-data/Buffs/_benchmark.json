@@ -1,0 +1,34 @@
+{
+  "_comment": "Build acuan benchmark (ala KQM Standards / KQMS). Artifact 5★ lv20: 20 roll tetap (fixedRollsPerSubstat × 10 jenis substat) + liquidRolls roll bebas, maks maxLiquidPerSubstatPerArtifact per jenis per artifact (artifact yang main stat-nya sama nggak dihitung). Nilai roll = rata-rata 5★. Main stat sands/goblet/circlet dari guide KQM (pilihan pertama); flower/plume tetap. Roll bebas: ER sampai ER requirement (erTarget) dulu, lalu urutan substatPriority guide; 'CRIT' = CR/CD dijaga rasio critRatio.",
+  "fixedRollsPerSubstat": 2,
+  "liquidRolls": 20,
+  "maxLiquidPerSubstatPerArtifact": 2,
+  "critRatio": 2,
+  "rollValue": {
+    "CRIT Rate": 3.31,
+    "CRIT DMG": 6.62,
+    "ATK%": 4.96,
+    "HP%": 4.96,
+    "DEF%": 6.2,
+    "EM": 19.82,
+    "ER": 5.51,
+    "Flat ATK": 16.54,
+    "Flat HP": 253.94,
+    "Flat DEF": 19.68
+  },
+  "mainStatValue": {
+    "Flat HP": 4780,
+    "Flat ATK": 311,
+    "HP%": 46.6,
+    "ATK%": 46.6,
+    "DEF%": 58.3,
+    "EM": 186.5,
+    "ER": 51.8,
+    "CRIT Rate": 31.1,
+    "CRIT DMG": 62.2,
+    "Elemental DMG": 46.6,
+    "Physical DMG": 58.3,
+    "Healing Bonus": 35.9
+  },
+  "grade": { "pass": 0.9, "warn": 0.75 }
+}

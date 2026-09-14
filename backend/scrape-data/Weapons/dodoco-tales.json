@@ -1,0 +1,47 @@
+{
+  "id": 14413,
+  "name": "Dodoco Tales",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Dodoventure!",
+  "effectTemplate": "Normal Attack hits on opponents increase Charged Attack DMG by <color=#99FFFFFF>{0}</color> for 6s. Charged Attack hits on opponents increase ATK by <color=#99FFFFFF>{1}</color> for 6s.",
+  "refinements": {
+    "r1": {
+      "description": "Normal Attack hits on opponents increase Charged Attack DMG by 16% for 6s. Charged Attack hits on opponents increase ATK by 8% for 6s.",
+      "values": [
+        "16%",
+        "8%"
+      ]
+    },
+    "r2": {
+      "description": "Normal Attack hits on opponents increase Charged Attack DMG by 20% for 6s. Charged Attack hits on opponents increase ATK by 10% for 6s.",
+      "values": [
+        "20%",
+        "10%"
+      ]
+    },
+    "r3": {
+      "description": "Normal Attack hits on opponents increase Charged Attack DMG by 24% for 6s. Charged Attack hits on opponents increase ATK by 12% for 6s.",
+      "values": [
+        "24%",
+        "12%"
+      ]
+    },
+    "r4": {
+      "description": "Normal Attack hits on opponents increase Charged Attack DMG by 28% for 6s. Charged Attack hits on opponents increase ATK by 14% for 6s.",
+      "values": [
+        "28%",
+        "14%"
+      ]
+    },
+    "r5": {
+      "description": "Normal Attack hits on opponents increase Charged Attack DMG by 32% for 6s. Charged Attack hits on opponents increase ATK by 16% for 6s.",
+      "values": [
+        "32%",
+        "16%"
+      ]
+    }
+  }
+}

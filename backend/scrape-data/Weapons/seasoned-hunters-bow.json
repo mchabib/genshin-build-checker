@@ -1,0 +1,11 @@
+{
+  "id": 15201,
+  "name": "Seasoned Hunter's Bow",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 2,
+  "baseAtkLv1": 32.93,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

@@ -1,0 +1,11 @@
+{
+  "id": 14201,
+  "name": "Pocket Grimoire",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 2,
+  "baseAtkLv1": 32.93,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

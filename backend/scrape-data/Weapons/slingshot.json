@@ -1,0 +1,42 @@
+{
+  "id": 15304,
+  "name": "Slingshot",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 3,
+  "baseAtkLv1": 37.6075,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Slingshot",
+  "effectTemplate": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by <color=#99FFFFFF>{0}</color>. Otherwise, decreases DMG by 10%.",
+  "refinements": {
+    "r1": {
+      "description": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 36%. Otherwise, decreases DMG by 10%.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r2": {
+      "description": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 42%. Otherwise, decreases DMG by 10%.",
+      "values": [
+        "42%"
+      ]
+    },
+    "r3": {
+      "description": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 48%. Otherwise, decreases DMG by 10%.",
+      "values": [
+        "48%"
+      ]
+    },
+    "r4": {
+      "description": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 54%. Otherwise, decreases DMG by 10%.",
+      "values": [
+        "54%"
+      ]
+    },
+    "r5": {
+      "description": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 60%. Otherwise, decreases DMG by 10%.",
+      "values": [
+        "60%"
+      ]
+    }
+  }
+}

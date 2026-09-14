@@ -1,0 +1,47 @@
+{
+  "id": 14410,
+  "name": "Wine and Song",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Ever-Changing",
+  "effectTemplate": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by <color=#99FFFFFF>{0}</color> for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by <color=#99FFFFFF>{1}</color> for 5s.",
+  "refinements": {
+    "r1": {
+      "description": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 14% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 20% for 5s.",
+      "values": [
+        "14%",
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 16% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 25% for 5s.",
+      "values": [
+        "16%",
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 18% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 30% for 5s.",
+      "values": [
+        "18%",
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 20% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 35% for 5s.",
+      "values": [
+        "20%",
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 22% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 40% for 5s.",
+      "values": [
+        "22%",
+        "40%"
+      ]
+    }
+  }
+}

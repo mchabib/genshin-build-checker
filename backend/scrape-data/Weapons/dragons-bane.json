@@ -1,0 +1,42 @@
+{
+  "id": 13401,
+  "name": "Dragon's Bane",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Bane of Flame and Water",
+  "effectTemplate": "Increases DMG against opponents affected by Hydro or Pyro by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against opponents affected by Hydro or Pyro by 20%.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against opponents affected by Hydro or Pyro by 24%.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against opponents affected by Hydro or Pyro by 28%.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against opponents affected by Hydro or Pyro by 32%.",
+      "values": [
+        "32%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against opponents affected by Hydro or Pyro by 36%.",
+      "values": [
+        "36%"
+      ]
+    }
+  }
+}

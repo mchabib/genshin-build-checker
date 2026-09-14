@@ -1,0 +1,47 @@
+{
+  "id": 12301,
+  "name": "Ferrous Shadow",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 3,
+  "baseAtkLv1": 38.7413,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Unbending",
+  "effectTemplate": "When HP falls below <color=#99FFFFFF>{0}</color>, increases Charged Attack DMG by <color=#99FFFFFF>{1}</color> and Charged Attacks become harder to interrupt.",
+  "refinements": {
+    "r1": {
+      "description": "When HP falls below 70%, increases Charged Attack DMG by 30% and Charged Attacks become harder to interrupt.",
+      "values": [
+        "70%",
+        "30%"
+      ]
+    },
+    "r2": {
+      "description": "When HP falls below 75%, increases Charged Attack DMG by 35% and Charged Attacks become harder to interrupt.",
+      "values": [
+        "75%",
+        "35%"
+      ]
+    },
+    "r3": {
+      "description": "When HP falls below 80%, increases Charged Attack DMG by 40% and Charged Attacks become harder to interrupt.",
+      "values": [
+        "80%",
+        "40%"
+      ]
+    },
+    "r4": {
+      "description": "When HP falls below 85%, increases Charged Attack DMG by 45% and Charged Attacks become harder to interrupt.",
+      "values": [
+        "85%",
+        "45%"
+      ]
+    },
+    "r5": {
+      "description": "When HP falls below 90%, increases Charged Attack DMG by 50% and Charged Attacks become harder to interrupt.",
+      "values": [
+        "90%",
+        "50%"
+      ]
+    }
+  }
+}

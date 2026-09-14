@@ -1,0 +1,42 @@
+{
+  "id": 12405,
+  "name": "Rainslasher",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Bane of Storm and Tide",
+  "effectTemplate": "Increases DMG against opponents affected by Hydro or Electro by <color=#99FFFFFF>{0}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 20%.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 24%.",
+      "values": [
+        "24%"
+      ]
+    },
+    "r3": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 28%.",
+      "values": [
+        "28%"
+      ]
+    },
+    "r4": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 32%.",
+      "values": [
+        "32%"
+      ]
+    },
+    "r5": {
+      "description": "Increases DMG against opponents affected by Hydro or Electro by 36%.",
+      "values": [
+        "36%"
+      ]
+    }
+  }
+}

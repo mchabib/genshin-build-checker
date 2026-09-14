@@ -1,0 +1,47 @@
+{
+  "id": 13512,
+  "name": "Crimson Moon's Semblance",
+  "weaponType": "WEAPON_POLE",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Ashen Sun's Shadow",
+  "effectTemplate": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a <color=#99FFFFFF>{0}</color> DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional <color=#99FFFFFF>{1}</color> DMG Bonus.",
+  "refinements": {
+    "r1": {
+      "description": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 12% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 24% DMG Bonus.",
+      "values": [
+        "12%",
+        "24%"
+      ]
+    },
+    "r2": {
+      "description": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 16% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 32% DMG Bonus.",
+      "values": [
+        "16%",
+        "32%"
+      ]
+    },
+    "r3": {
+      "description": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 20% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 40% DMG Bonus.",
+      "values": [
+        "20%",
+        "40%"
+      ]
+    },
+    "r4": {
+      "description": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 24% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 48% DMG Bonus.",
+      "values": [
+        "24%",
+        "48%"
+      ]
+    },
+    "r5": {
+      "description": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 28% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 56% DMG Bonus.",
+      "values": [
+        "28%",
+        "56%"
+      ]
+    }
+  }
+}

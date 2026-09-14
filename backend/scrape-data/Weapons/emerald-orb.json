@@ -1,0 +1,42 @@
+{
+  "id": 14304,
+  "name": "Emerald Orb",
+  "weaponType": "WEAPON_CATALYST",
+  "rarity": 3,
+  "baseAtkLv1": 39.8751,
+  "mainStatType": "FIGHT_PROP_ELEMENT_MASTERY",
+  "effectName": "Rapids",
+  "effectTemplate": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by <color=#99FFFFFF>{0}</color> for 12s.",
+  "refinements": {
+    "r1": {
+      "description": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by 20% for 12s.",
+      "values": [
+        "20%"
+      ]
+    },
+    "r2": {
+      "description": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by 25% for 12s.",
+      "values": [
+        "25%"
+      ]
+    },
+    "r3": {
+      "description": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by 30% for 12s.",
+      "values": [
+        "30%"
+      ]
+    },
+    "r4": {
+      "description": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by 35% for 12s.",
+      "values": [
+        "35%"
+      ]
+    },
+    "r5": {
+      "description": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by 40% for 12s.",
+      "values": [
+        "40%"
+      ]
+    }
+  }
+}

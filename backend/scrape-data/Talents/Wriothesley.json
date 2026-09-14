@@ -1,0 +1,464 @@
+{
+  "key": "Wriothesley",
+  "nameEn": "Wriothesley",
+  "gdbName": "Wriothesley",
+  "element": "Cryo",
+  "weaponType": "WEAPON_CATALYST",
+  "version": "4.1",
+  "talents": {
+    "normal": {
+      "name": "Forceful Fists of Frost",
+      "description": "Normal Attack\nCoalescing frost about his fist, Wriothesley will unleash powerful Repelling Fists, performing up to 5 rapid attacks that deal Cryo DMG.\nApart from this, Normal Attack combo count will not reset for a short time after using Icefang Rush or sprinting.\n\nCharged Attack\nConsumes a fixed amount of Stamina to leap and unleash a Vaulting Fist, dealing AoE Cryo DMG.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE Cryo DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+          "5-Hit DMG|{param6:F1P}",
+          "Charged Attack DMG|{param7:F1P}",
+          "Charged Attack Stamina Cost|{param8:F1}",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:P}/{param11:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.533596,
+            0.577028,
+            0.62046,
+            0.682506,
+            0.725938,
+            0.775575,
+            0.843826,
+            0.912076,
+            0.980327,
+            1.054782,
+            1.129237,
+            1.203692,
+            1.278148,
+            1.352603,
+            1.427058
+          ],
+          "param2": [
+            0.517987,
+            0.560148,
+            0.60231,
+            0.662541,
+            0.704703,
+            0.752888,
+            0.819142,
+            0.885396,
+            0.95165,
+            1.023927,
+            1.096204,
+            1.168481,
+            1.240759,
+            1.313036,
+            1.385313
+          ],
+          "param3": [
+            0.672228,
+            0.726944,
+            0.78166,
+            0.859826,
+            0.914542,
+            0.977075,
+            1.063058,
+            1.14904,
+            1.235023,
+            1.328822,
+            1.422621,
+            1.51642,
+            1.61022,
+            1.704019,
+            1.797818
+          ],
+          "param4": [
+            0.379041,
+            0.409893,
+            0.440745,
+            0.48482,
+            0.515672,
+            0.550931,
+            0.599413,
+            0.647895,
+            0.696377,
+            0.749266,
+            0.802156,
+            0.855045,
+            0.907935,
+            0.960824,
+            1.013713
+          ],
+          "param5": [
+            0.379041,
+            0.409893,
+            0.440745,
+            0.48482,
+            0.515672,
+            0.550931,
+            0.599413,
+            0.647895,
+            0.696377,
+            0.749266,
+            0.802156,
+            0.855045,
+            0.907935,
+            0.960824,
+            1.013713
+          ],
+          "param6": [
+            0.90742,
+            0.98128,
+            1.05514,
+            1.160654,
+            1.234514,
+            1.318925,
+            1.43499,
+            1.551056,
+            1.667121,
+            1.793738,
+            1.920355,
+            2.046972,
+            2.173588,
+            2.300205,
+            2.426822
+          ],
+          "param7": [
+            1.5296,
+            1.64432,
+            1.75904,
+            1.912,
+            2.02672,
+            2.14144,
+            2.2944,
+            2.44736,
+            2.60032,
+            2.75328,
+            2.90624,
+            3.0592,
+            3.2504,
+            3.4416,
+            3.6328
+          ],
+          "param8": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param9": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param10": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param11": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Icefang Rush",
+      "description": "Adjusting his breathing, rhythm, and pace, Wriothesley sprints forward a short distance, entering the Chilling Penalty state and unleashing more powerful attacks than before.\n\nChilling Penalty\n·Increases Wriothesley's interruption resistance\n·When his HP is above 50%, it will enhance the Repelling Fists of Normal Attack: Forceful Fists of Frost and increase its DMG. When such an attack hits, it will consume a fixed amount of Wriothesley's HP. HP can be lost this way once every 0.1s.\nThis effect will be canceled should Wriothesley leave the field.",
+      "attributes": {
+        "labels": [
+          "Enhanced Repelling Fist DMG|{param1:F1P} Normal Attack DMG",
+          "HP Cost|{param2:F1P} Max HP",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.431695,
+            1.457545,
+            1.483395,
+            1.517,
+            1.54285,
+            1.5687,
+            1.602305,
+            1.63591,
+            1.669515,
+            1.70312,
+            1.736725,
+            1.77033,
+            1.803935,
+            1.83754,
+            1.871145
+          ],
+          "param2": [
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045,
+            0.045
+          ],
+          "param3": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "param4": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "param8": [
+            0.431695,
+            0.457545,
+            0.483395,
+            0.517,
+            0.54285,
+            0.5687,
+            0.602305,
+            0.63591,
+            0.669515,
+            0.70312,
+            0.736725,
+            0.77033,
+            0.803935,
+            0.83754,
+            0.871145
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Darkgold Wolfbite",
+      "description": "Activating his boxing gloves, Wriothesley strikes out with an icy straight, then uses Icicle Impact to cause multiple instances of AoE Cryo DMG in a frontal area.\n\nArkhe: Ousia\nAfter Icicle Impact ends, a Surging Blade will descend upon the opponent's position, dealing Ousia-aligned Cryo DMG.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F2P}×5",
+          "Surging Blade DMG|{param2:F2P}",
+          "CD|{param3:F1}s",
+          "Surging Blade CD|{param5:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.272,
+            1.3674,
+            1.4628,
+            1.59,
+            1.6854,
+            1.7808,
+            1.908,
+            2.0352,
+            2.1624,
+            2.2896,
+            2.4168,
+            2.544,
+            2.703,
+            2.862,
+            3.021
+          ],
+          "param2": [
+            0.424,
+            0.4558,
+            0.4876,
+            0.53,
+            0.5618,
+            0.5936,
+            0.636,
+            0.6784,
+            0.7208,
+            0.7632,
+            0.8056,
+            0.848,
+            0.901,
+            0.954,
+            1.007
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param4": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "param5": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "There Shall Be a Plea for Justice",
+      "description": "When Wriothesley's HP is less than 60%, he will obtain a Gracious Rebuke. The next Charged Attack of his Normal Attack: Forceful Fists of Frost will be enhanced to become Rebuke: Vaulting Fist. It will not consume Stamina, will deal 50% increased DMG, and after hitting will restore HP for Wriothesley equal to 30% of his Max HP.\nYou can gain a Gracious Rebuke this way once every 5s."
+    },
+    {
+      "slot": "a4",
+      "name": "There Shall Be a Reckoning for Sin",
+      "description": "When Wriothesley's current HP increases or decreases, if he is in the Chilling Penalty state conferred by Icefang Rush, Chilling Penalty will gain one stack of Prosecution Edict. Max 5 stacks. Each stack will increase Wriothesley's ATK by 6%."
+    },
+    {
+      "slot": "util",
+      "name": "The Duke's Grace",
+      "description": "When Wriothesley crafts Weapon Ascension Materials, he has a 10% chance to receive double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Terror for the Evildoers",
+      "description": "The Gracious Rebuke from the Ascension Talent \"There Shall Be a Plea for Justice\" is changed to this:\nWhen Wriothesley's HP is less than 60% or while he is in the Chilling Penalty state caused by Icefang Rush, when the fifth attack of Repelling Fists hits, it will create a Gracious Rebuke. 1 Gracious Rebuke effect can be obtained every 2.5s.\n\nAdditionally, Rebuke: Vaulting Fist will obtain the following enhancement:\n· The DMG Bonus gained will be further increased to 200%.\n· When it hits while Wriothesley is in the Chilling Penalty state, that state's duration is extended by 4s. 1 such extension can occur per 1 Chilling Penalty duration.\n\nYou must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\""
+    },
+    {
+      "n": 2,
+      "name": "Shackles for the Arrogant",
+      "description": "When using Darkgold Wolfbite, each Prosecution Edict stack from the Ascension Talent \"There Shall Be a Reckoning for Sin\" will increase said ability's DMG dealt by 40%.\nYou must first unlock the Ascension Talent \"There Shall Be a Reckoning for Sin.\""
+    },
+    {
+      "n": 3,
+      "name": "Punishment for the Frauds",
+      "description": "Increases the Level of Normal Attack: Forceful Fists of Frost by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Redemption for the Suffering",
+      "description": "The HP restored to Wriothesley through Rebuke: Vaulting Fist will be increased to 50% of his Max HP. You must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\"\nAdditionally, when Wriothesley is healed, if the amount of healing overflows, the following effects will occur depending on whether he is on the field or not. If he is on the field, his ATK SPD will be increased by 20% for 4s. If he is off-field, all of your own party members' ATK SPD will be increased by 10% for 6s. These two methods of increasing ATK SPD cannot stack."
+    },
+    {
+      "n": 5,
+      "name": "Mercy for the Wronged",
+      "description": "Increases the Level of Darkgold Wolfbite by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Esteem for the Innocent",
+      "description": "The CRIT Rate of Rebuke: Vaulting Fist will be increased by 10%, and its CRIT DMG by 80%. When unleashed, it will also create an additional icicle that deals 100% of Rebuke: Vaulting Fist's Base DMG as Cryo DMG. DMG dealt this way is regarded as Charged Attack DMG.\nYou must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\""
+    }
+  ]
+}

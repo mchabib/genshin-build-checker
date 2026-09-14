@@ -1,0 +1,47 @@
+{
+  "id": 12412,
+  "name": "Luxurious Sea-Lord",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 41.0671,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Oceanic Victory",
+  "effectTemplate": "Increases Elemental Burst DMG by <color=#99FFFFFF>{0}</color>. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals <color=#99FFFFFF>{1}</color> ATK as AoE DMG. This effect can occur once every 15s.",
+  "refinements": {
+    "r1": {
+      "description": "Increases Elemental Burst DMG by 12%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 100% ATK as AoE DMG. This effect can occur once every 15s.",
+      "values": [
+        "12%",
+        "100%"
+      ]
+    },
+    "r2": {
+      "description": "Increases Elemental Burst DMG by 15%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 125% ATK as AoE DMG. This effect can occur once every 15s.",
+      "values": [
+        "15%",
+        "125%"
+      ]
+    },
+    "r3": {
+      "description": "Increases Elemental Burst DMG by 18%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 150% ATK as AoE DMG. This effect can occur once every 15s.",
+      "values": [
+        "18%",
+        "150%"
+      ]
+    },
+    "r4": {
+      "description": "Increases Elemental Burst DMG by 21%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 175% ATK as AoE DMG. This effect can occur once every 15s.",
+      "values": [
+        "21%",
+        "175%"
+      ]
+    },
+    "r5": {
+      "description": "Increases Elemental Burst DMG by 24%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 200% ATK as AoE DMG. This effect can occur once every 15s.",
+      "values": [
+        "24%",
+        "200%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": 12402,
+  "name": "The Bell",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_HP_PERCENT",
+  "effectName": "Rebellious Guardian",
+  "effectTemplate": "Taking DMG generates a shield which absorbs DMG up to <color=#99FFFFFF>{0}</color> of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every <color=#99FFFFFF>{1}</color>s. While protected by a shield, the character gains <color=#99FFFFFF>{2}</color> increased DMG.",
+  "refinements": {
+    "r1": {
+      "description": "Taking DMG generates a shield which absorbs DMG up to 20% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 12% increased DMG.",
+      "values": [
+        "20%",
+        "45",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "Taking DMG generates a shield which absorbs DMG up to 23% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 15% increased DMG.",
+      "values": [
+        "23%",
+        "45",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "Taking DMG generates a shield which absorbs DMG up to 26% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 18% increased DMG.",
+      "values": [
+        "26%",
+        "45",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "Taking DMG generates a shield which absorbs DMG up to 29% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 21% increased DMG.",
+      "values": [
+        "29%",
+        "45",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "Taking DMG generates a shield which absorbs DMG up to 32% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 24% increased DMG.",
+      "values": [
+        "32%",
+        "45",
+        "24%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 12426,
+  "name": "\"Ultimate Overlord's Mega Magic Sword\"",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+  "effectName": "Melussistance!",
+  "effectTemplate": "ATK increased by <color=#99FFFFFF>{0}</color>. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional <color=#99FFFFFF>{1}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "ATK increased by 12%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 12%.",
+      "values": [
+        "12%",
+        "12%"
+      ]
+    },
+    "r2": {
+      "description": "ATK increased by 15%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 15%.",
+      "values": [
+        "15%",
+        "15%"
+      ]
+    },
+    "r3": {
+      "description": "ATK increased by 18%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 18%.",
+      "values": [
+        "18%",
+        "18%"
+      ]
+    },
+    "r4": {
+      "description": "ATK increased by 21%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 21%.",
+      "values": [
+        "21%",
+        "21%"
+      ]
+    },
+    "r5": {
+      "description": "ATK increased by 24%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 24%.",
+      "values": [
+        "24%",
+        "24%"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 12430,
+  "name": "Fruitful Hook",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 4,
+  "baseAtkLv1": 43.7349,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "The Weight of Falling Branches",
+  "effectTemplate": "Increase Plunging Attack CRIT Rate by <color=#99FFFFFF>{0}</color>; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by <color=#99FFFFFF>{1}</color> for 10s.",
+  "refinements": {
+    "r1": {
+      "description": "Increase Plunging Attack CRIT Rate by 16%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 16% for 10s.",
+      "values": [
+        "16%",
+        "16%"
+      ]
+    },
+    "r2": {
+      "description": "Increase Plunging Attack CRIT Rate by 20%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 20% for 10s.",
+      "values": [
+        "20%",
+        "20%"
+      ]
+    },
+    "r3": {
+      "description": "Increase Plunging Attack CRIT Rate by 24%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 24% for 10s.",
+      "values": [
+        "24%",
+        "24%"
+      ]
+    },
+    "r4": {
+      "description": "Increase Plunging Attack CRIT Rate by 28%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 28% for 10s.",
+      "values": [
+        "28%",
+        "28%"
+      ]
+    },
+    "r5": {
+      "description": "Increase Plunging Attack CRIT Rate by 32%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 32% for 10s.",
+      "values": [
+        "32%",
+        "32%"
+      ]
+    }
+  }
+}

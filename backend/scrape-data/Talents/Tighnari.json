@@ -1,0 +1,430 @@
+{
+  "key": "Tighnari",
+  "nameEn": "Tighnari",
+  "gdbName": "Tighnari",
+  "element": "Dendro",
+  "weaponType": "WEAPON_BOW",
+  "version": "3.0",
+  "talents": {
+    "normal": {
+      "name": "Khanda Barrier-Buster",
+      "description": "Normal Attack\nPerforms up to 4 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, the power of Dendro will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off an arrow carrying the power of flora that deals Dendro DMG.\n·Charge Level 2: Fires off a Wreath Arrow that deals Dendro DMG. Upon hit, the Wreath Arrow will create 4 Clusterbloom Arrows that will track nearby opponents automatically and deal Dendro DMG.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}×2",
+          "4-Hit DMG|{param4:F1P}",
+          "Aimed Shot|{param5:F1P}",
+          "Level 1 Aimed Shot|{param6:P}",
+          "Wreath Arrow DMG|{param7:F1P}",
+          "Clusterbloom Arrow DMG|{param8:F1P}",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:P}/{param11:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.44634,
+            0.48267,
+            0.519,
+            0.5709,
+            0.60723,
+            0.64875,
+            0.70584,
+            0.76293,
+            0.82002,
+            0.8823,
+            0.94458,
+            1.00686,
+            1.06914,
+            1.13142,
+            1.1937
+          ],
+          "param2": [
+            0.41968,
+            0.45384,
+            0.488,
+            0.5368,
+            0.57096,
+            0.61,
+            0.66368,
+            0.71736,
+            0.77104,
+            0.8296,
+            0.88816,
+            0.94672,
+            1.00528,
+            1.06384,
+            1.1224
+          ],
+          "param3": [
+            0.26445,
+            0.285975,
+            0.3075,
+            0.33825,
+            0.359775,
+            0.384375,
+            0.4182,
+            0.452025,
+            0.48585,
+            0.52275,
+            0.55965,
+            0.59655,
+            0.63345,
+            0.67035,
+            0.70725
+          ],
+          "param4": [
+            0.68628,
+            0.74214,
+            0.798,
+            0.8778,
+            0.93366,
+            0.9975,
+            1.08528,
+            1.17306,
+            1.26084,
+            1.3566,
+            1.45236,
+            1.54812,
+            1.64388,
+            1.73964,
+            1.8354
+          ],
+          "param5": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param6": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param7": [
+            0.872,
+            0.9374,
+            1.0028,
+            1.09,
+            1.1554,
+            1.2208,
+            1.308,
+            1.3952,
+            1.4824,
+            1.5696,
+            1.6568,
+            1.744,
+            1.853,
+            1.962,
+            2.071
+          ],
+          "param8": [
+            0.386,
+            0.41495,
+            0.4439,
+            0.4825,
+            0.51145,
+            0.5404,
+            0.579,
+            0.6176,
+            0.6562,
+            0.6948,
+            0.7334,
+            0.772,
+            0.82025,
+            0.8685,
+            0.91675
+          ],
+          "param9": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param10": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param11": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Vijnana-Phala Mine",
+      "description": "Tighnari throws a Vijnana Stormheart ahead that deals AoE Dendro DMG, creating a Vijnana-Khanda Field that creates mysterious illusions that taunt opponents and draw their fire.\nAdditionally, Tighnari gains the Vijnana Suffusion effect, which will decrease the Wreath Arrow's charging time by 2.4s. This effect will dissipate once the skill duration ends or after Tighnari has fired 3 Wreath Arrows.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Vijnana-Khanda Field Duration|{param2:F1}s",
+          "Vijnana Suffusion Duration|{param3:F1}s",
+          "CD|{param4:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.496,
+            1.6082,
+            1.7204,
+            1.87,
+            1.9822,
+            2.0944,
+            2.244,
+            2.3936,
+            2.5432,
+            2.6928,
+            2.8424,
+            2.992,
+            3.179,
+            3.366,
+            3.553
+          ],
+          "param2": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "param3": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param4": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Fashioner's Tanglevine Shaft",
+      "description": "Combines the power of all seeds to fire 6 Tanglevine Shafts that can track opponents and deal Dendro DMG.\nAfter they hit, the Tanglevine Shafts will create a secondary wave of Tanglevine Shafts that can also track nearby opponents and deal Dendro DMG on hit.",
+      "attributes": {
+        "labels": [
+          "Tanglevine Shaft DMG|{param1:F1P}",
+          "Secondary Tanglevine Shaft DMG|{param2:F1P}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "parameters": {
+          "param1": [
+            0.5562,
+            0.597915,
+            0.63963,
+            0.69525,
+            0.736965,
+            0.77868,
+            0.8343,
+            0.88992,
+            0.94554,
+            1.00116,
+            1.05678,
+            1.1124,
+            1.181925,
+            1.25145,
+            1.320975
+          ],
+          "param2": [
+            0.6798,
+            0.730785,
+            0.78177,
+            0.84975,
+            0.900735,
+            0.95172,
+            1.0197,
+            1.08768,
+            1.15566,
+            1.22364,
+            1.29162,
+            1.3596,
+            1.444575,
+            1.52955,
+            1.614525
+          ],
+          "param3": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param4": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Keen Sight",
+      "description": "After Tighnari fires a Wreath Arrow, his Elemental Mastery is increased by 50 for 4s."
+    },
+    {
+      "slot": "a4",
+      "name": "Scholarly Blade",
+      "description": "For every point of Elemental Mastery Tighnari possesses, his Charged Attack and Fashioner's Tanglevine Shaft DMG are increased by 0.06%.\nThe maximum DMG Bonus obtainable this way is 60%."
+    },
+    {
+      "slot": "util",
+      "name": "Encyclopedic Knowledge",
+      "description": "Displays the location of nearby resources unique to Sumeru on the mini-map."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Beginnings Determined at the Roots",
+      "description": "Tighnari's Charged Attack CRIT Rate is increased by 15%."
+    },
+    {
+      "n": 2,
+      "name": "Origins Known From the Stem",
+      "description": "When there are opponents within the Vijnana-Khanda Field created by Vijnana-Phala Mine, Tighnari gains 20% Dendro DMG Bonus.\nThe effect will last up to 6s if the field's duration ends or if it no longer has opponents within it."
+    },
+    {
+      "n": 3,
+      "name": "Fortunes Read Amongst the Branches",
+      "description": "Increases the Level of Fashioner's Tanglevine Shaft by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Withering Glimpsed in the Leaves",
+      "description": "When Fashioner's Tanglevine Shaft is unleashed, all nearby party members gain 60 Elemental Mastery for 8s. If the Fashioner's Tanglevine Shaft triggers a Burning, Bloom, Lunar-Bloom, Quicken, or Spread reaction, their Elemental Mastery will be further increased by 60. This latter case will also refresh the buff state's duration."
+    },
+    {
+      "n": 5,
+      "name": "Comprehension Amidst the Flowers",
+      "description": "Increases the Level of Vijnana-Phala Mine by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Karma Adjudged From the Leaden Fruit",
+      "description": "Wreath Arrow's charging time is decreased by 0.9s, and will produce 1 additional Clusterbloom Arrow upon hit. This arrow deals 150% of Tighnari's ATK as DMG."
+    }
+  ]
+}

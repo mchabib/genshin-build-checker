@@ -1,0 +1,483 @@
+{
+  "key": "Faruzan",
+  "nameEn": "Faruzan",
+  "gdbName": "Faruzan",
+  "element": "Anemo",
+  "weaponType": "WEAPON_BOW",
+  "version": "3.3",
+  "talents": {
+    "normal": {
+      "name": "Parthian Shot",
+      "description": "Normal Attack\nPerforms up to 4 consecutive shots with a bow.\n\nCharged Attack\nPerforms a more precise Aimed Shot with increased DMG.\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal Anemo DMG.\n\nPlunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}",
+          "Aimed Shot|{param5:F1P}",
+          "Fully-Charged Aimed Shot|{param6:P}",
+          "Plunge DMG|{param7:F1P}",
+          "Low/High Plunge DMG|{param8:P}/{param9:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.447295,
+            0.483702,
+            0.52011,
+            0.572121,
+            0.608529,
+            0.650137,
+            0.70735,
+            0.764562,
+            0.821774,
+            0.884187,
+            0.9466,
+            1.009013,
+            1.071427,
+            1.13384,
+            1.196253
+          ],
+          "param2": [
+            0.421864,
+            0.456202,
+            0.49054,
+            0.539594,
+            0.573932,
+            0.613175,
+            0.667134,
+            0.721094,
+            0.775053,
+            0.833918,
+            0.892783,
+            0.951648,
+            1.010512,
+            1.069377,
+            1.128242
+          ],
+          "param3": [
+            0.531635,
+            0.574907,
+            0.61818,
+            0.679998,
+            0.723271,
+            0.772725,
+            0.840725,
+            0.908725,
+            0.976724,
+            1.050906,
+            1.125088,
+            1.199269,
+            1.273451,
+            1.347632,
+            1.421814
+          ],
+          "param4": [
+            0.706206,
+            0.763688,
+            0.82117,
+            0.903287,
+            0.960769,
+            1.026463,
+            1.116791,
+            1.20712,
+            1.297449,
+            1.395989,
+            1.494529,
+            1.59307,
+            1.69161,
+            1.790151,
+            1.888691
+          ],
+          "param5": [
+            0.4386,
+            0.4743,
+            0.51,
+            0.561,
+            0.5967,
+            0.6375,
+            0.6936,
+            0.7497,
+            0.8058,
+            0.867,
+            0.9282,
+            0.9894,
+            1.0506,
+            1.1118,
+            1.173
+          ],
+          "param6": [
+            1.24,
+            1.333,
+            1.426,
+            1.55,
+            1.643,
+            1.736,
+            1.86,
+            1.984,
+            2.108,
+            2.232,
+            2.356,
+            2.48,
+            2.635,
+            2.79,
+            2.945
+          ],
+          "param7": [
+            0.568288,
+            0.614544,
+            0.6608,
+            0.72688,
+            0.773136,
+            0.826,
+            0.898688,
+            0.971376,
+            1.044064,
+            1.12336,
+            1.202656,
+            1.281952,
+            1.361248,
+            1.440544,
+            1.51984
+          ],
+          "param8": [
+            1.136335,
+            1.228828,
+            1.32132,
+            1.453452,
+            1.545944,
+            1.65165,
+            1.796995,
+            1.94234,
+            2.087686,
+            2.246244,
+            2.404802,
+            2.563361,
+            2.721919,
+            2.880478,
+            3.039036
+          ],
+          "param9": [
+            1.419344,
+            1.534872,
+            1.6504,
+            1.81544,
+            1.930968,
+            2.063,
+            2.244544,
+            2.426088,
+            2.607632,
+            2.80568,
+            3.003728,
+            3.201776,
+            3.399824,
+            3.597872,
+            3.79592
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Wind Realm of Nasamjnin",
+      "description": "Faruzan deploys a polyhedron that deals AoE Anemo DMG to nearby opponents. She will also enter the Manifest Gale state.\nWhile in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals Anemo DMG based on the DMG of a fully charged Aimed Shot from \"Normal Attack: Parthian Shot.\"\n\nPressurized Collapse\nThe Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals AoE Anemo DMG and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or character, it will create a Pressurized Collapse effect at its point of impact.\nThe vortex DMG is considered Elemental Skill DMG.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Pressurized Collapse Vortex DMG|{param2:F1P}",
+          "Manifest Gale Duration|{param4:F1}s",
+          "CD|{param5:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            1.488,
+            1.5996,
+            1.7112,
+            1.86,
+            1.9716,
+            2.0832,
+            2.232,
+            2.3808,
+            2.5296,
+            2.6784,
+            2.8272,
+            2.976,
+            3.162,
+            3.348,
+            3.534
+          ],
+          "param2": [
+            1.08,
+            1.161,
+            1.242,
+            1.35,
+            1.431,
+            1.512,
+            1.62,
+            1.728,
+            1.836,
+            1.944,
+            2.052,
+            2.16,
+            2.295,
+            2.43,
+            2.565
+          ],
+          "param4": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param5": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "param6": [
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5,
+            5.5
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "The Wind's Secret Ways",
+      "description": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals AoE Anemo DMG.\nWhile the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash 1 more Whirlwind Pulse.\n\nWhirlwind Pulse\n·When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their Anemo RES.\n·The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an Anemo DMG Bonus.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Anemo DMG Bonus|{param2:F1P}",
+          "Prayerful Wind's Benefit Duration|{param3:F1}s",
+          "Anemo RES Decrease|{param4:F1P}",
+          "Perfidious Wind's Bale Duration|{param5:F1}s",
+          "Duration|{param6:F1}s",
+          "CD|{param7:F1}s",
+          "Energy Cost|{param8:I}"
+        ],
+        "parameters": {
+          "param1": [
+            3.776,
+            4.0592,
+            4.3424,
+            4.72,
+            5.0032,
+            5.2864,
+            5.664,
+            6.0416,
+            6.4192,
+            6.7968,
+            7.1744,
+            7.552,
+            8.024,
+            8.496,
+            8.968
+          ],
+          "param2": [
+            0.18,
+            0.1935,
+            0.207,
+            0.225,
+            0.2385,
+            0.252,
+            0.27,
+            0.288,
+            0.306,
+            0.324,
+            0.342,
+            0.36,
+            0.3825,
+            0.405,
+            0.4275
+          ],
+          "param3": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "param4": [
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "param5": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "param6": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "param7": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "param8": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "Impetuous Flow",
+      "description": "When Faruzan is in the Manifest Gale state created by Wind Realm of Nasamjnin, the amount of time taken to charge a shot is decreased by 60%, and she can apply The Wind's Secret Ways' Perfidious Wind's Bale to opponents who are hit by the vortex created by Pressurized Collapse."
+    },
+    {
+      "slot": "a4",
+      "name": "Lost Wisdom of the Seven Caverns",
+      "description": "When characters affected by The Wind's Secret Ways' Prayerful Wind's Benefit deal Anemo DMG using Normal, Charged, Plunging Attacks, Elemental Skills, or Elemental Bursts to opponents, they will gain the Hurricane Guard effect: This DMG will be increased based on 32% of Faruzan's Base ATK. 1 instance of Hurricane Guard can occur once every 0.8s. This DMG Bonus will be cleared after Prayerful Wind's Benefit expires or after the effect is triggered once."
+    },
+    {
+      "slot": "util",
+      "name": "Tomes Light the Path",
+      "description": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Truth by Any Means",
+      "description": "Faruzan can fire off a maximum of 2 Hurricane Arrows using fully charged Aimed Shots while under the effect of a single Manifest Gale created by Wind Realm of Nasamjnin."
+    },
+    {
+      "n": 2,
+      "name": "Overzealous Intellect",
+      "description": "The duration of the Dazzling Polyhedron created by The Wind's Secret Ways is increased by 6s."
+    },
+    {
+      "n": 3,
+      "name": "Spirit-Orchard Stroll",
+      "description": "Increases the Level of Wind Realm of Nasamjnin by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Divine Comprehension",
+      "description": "The vortex created by Pressurized Collapses will restore Energy to Faruzan based on the number of opponents hit: If it hits 1 opponent, it will restore 2 Energy for Faruzan. Each additional opponent hit will restore 0.5 more Energy for Faruzan.\nA maximum of 4 Energy can be restored to her per vortex."
+    },
+    {
+      "n": 5,
+      "name": "Wonderland of Rumination",
+      "description": "Increases the Level of The Wind's Secret Ways by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "The Wondrous Path of Truth",
+      "description": "Characters affected by The Wind's Secret Ways' Prayerful Wind's Benefit have 40% increased CRIT DMG when they deal Anemo DMG. When the active character deals DMG while affected by Prayerful Wind's Benefit, they will apply Pressurized Collapse to the opponent damaged. This effect can be triggered once every 3s. This CD is shared between all party members."
+    }
+  ]
+}

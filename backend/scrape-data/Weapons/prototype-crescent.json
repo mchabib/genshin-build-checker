@@ -1,0 +1,42 @@
+{
+  "id": 15406,
+  "name": "Prototype Crescent",
+  "weaponType": "WEAPON_BOW",
+  "rarity": 4,
+  "baseAtkLv1": 42.401,
+  "mainStatType": "FIGHT_PROP_ATTACK_PERCENT",
+  "effectName": "Unreturning",
+  "effectTemplate": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by <color=#99FFFFFF>{0}</color> for 10s.",
+  "refinements": {
+    "r1": {
+      "description": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by 36% for 10s.",
+      "values": [
+        "36%"
+      ]
+    },
+    "r2": {
+      "description": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by 45% for 10s.",
+      "values": [
+        "45%"
+      ]
+    },
+    "r3": {
+      "description": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by 54% for 10s.",
+      "values": [
+        "54%"
+      ]
+    },
+    "r4": {
+      "description": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by 63% for 10s.",
+      "values": [
+        "63%"
+      ]
+    },
+    "r5": {
+      "description": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by 72% for 10s.",
+      "values": [
+        "72%"
+      ]
+    }
+  }
+}

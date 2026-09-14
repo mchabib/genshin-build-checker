@@ -1,0 +1,52 @@
+{
+  "id": 11517,
+  "name": "Azurelight",
+  "weaponType": "WEAPON_SWORD_ONE_HAND",
+  "rarity": 5,
+  "baseAtkLv1": 47.537,
+  "mainStatType": "FIGHT_PROP_CRITICAL",
+  "effectName": "Whitehill's Bestowal",
+  "effectTemplate": "Within 12s after an Elemental Skill is used, ATK is increased by <color=#99FFFFFF>{0}</color>. During this time, when the equipping character has 0 Energy, ATK will be further increased by <color=#99FFFFFF>{1}</color>, and CRIT DMG will be increased by <color=#99FFFFFF>{2}</color>.",
+  "refinements": {
+    "r1": {
+      "description": "Within 12s after an Elemental Skill is used, ATK is increased by 24%. During this time, when the equipping character has 0 Energy, ATK will be further increased by 24%, and CRIT DMG will be increased by 40%.",
+      "values": [
+        "24%",
+        "24%",
+        "40%"
+      ]
+    },
+    "r2": {
+      "description": "Within 12s after an Elemental Skill is used, ATK is increased by 30%. During this time, when the equipping character has 0 Energy, ATK will be further increased by 30%, and CRIT DMG will be increased by 50%.",
+      "values": [
+        "30%",
+        "30%",
+        "50%"
+      ]
+    },
+    "r3": {
+      "description": "Within 12s after an Elemental Skill is used, ATK is increased by 36%. During this time, when the equipping character has 0 Energy, ATK will be further increased by 36%, and CRIT DMG will be increased by 60%.",
+      "values": [
+        "36%",
+        "36%",
+        "60%"
+      ]
+    },
+    "r4": {
+      "description": "Within 12s after an Elemental Skill is used, ATK is increased by 42%. During this time, when the equipping character has 0 Energy, ATK will be further increased by 42%, and CRIT DMG will be increased by 70%.",
+      "values": [
+        "42%",
+        "42%",
+        "70%"
+      ]
+    },
+    "r5": {
+      "description": "Within 12s after an Elemental Skill is used, ATK is increased by 48%. During this time, when the equipping character has 0 Energy, ATK will be further increased by 48%, and CRIT DMG will be increased by 80%.",
+      "values": [
+        "48%",
+        "48%",
+        "80%"
+      ]
+    }
+  }
+}

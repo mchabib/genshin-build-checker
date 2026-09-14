@@ -1,0 +1,11 @@
+{
+  "id": 12201,
+  "name": "Old Merc's Pal",
+  "weaponType": "WEAPON_CLAYMORE",
+  "rarity": 2,
+  "baseAtkLv1": 32.93,
+  "mainStatType": null,
+  "effectName": null,
+  "effectTemplate": null,
+  "refinements": {}
+}

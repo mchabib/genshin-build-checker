@@ -1,0 +1,19 @@
+{
+  "key": "Yelan",
+  "role": "subdps",
+  "self": [
+    {
+      "id": "yelan_a1",
+      "mode": "always",
+      "description": "Yelan A1: Max HP +6/12/18/30% tergantung jumlah elemen berbeda di tim.",
+      "mod": { "source": "= 'Yelan A1 (' + team.elements.length + ' elemen)'", "scope": "all", "hpPct": "= [0, 6, 12, 18, 30][min(4, team.elements.length)]" }
+    }
+  ],
+  "reactions": { "with": { "pyro": { "burst": "vaporize", "skill": "vaporize", "ca": "vaporize" } } },
+  "actions": { "E": { "skill1": 1, "react:lunarCharged": 1 }, "Q": { "burst1": 1, "burst2": 6, "react:lunarCharged": 4 } },
+  "_actions_comment": "react:lunarCharged = proc Lunar-Charged yang dipicu aplikasi Hydro Yelan (E 1×, Exquisite Throw ICD ≈4/Q) — cuma kehitung kalau Lunar aktif di tim.",
+  "rotations": [
+    { "label": "E + Q + 6 Exquisite Throw (×3)", "counts": { "skill1": 1, "burst1": 1, "burst2": 6, "ca1": 1 }, "duration": 18, "note": "≈18s (Q CD 18s); Exquisite Throw tiap NA on-fielder, ≈6 per rotasi" }
+  ],
+  "teams": [["HuTao", "Xingqiu", "Zhongli"], ["Neuvillette", "Furina", "KaedeharaKazuha"]]
+}

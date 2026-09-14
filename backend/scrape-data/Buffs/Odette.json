@@ -1,0 +1,52 @@
+{
+  "key": "Odette",
+  "role": "subdps",
+  "self": [
+    {
+      "id": "odette_a4",
+      "mode": "always",
+      "description": "Odette A4: Stellar Glimmer DMG +1.5% per 100 ATK di atas 1000 (max +30%).",
+      "mod": { "source": "Odette A4", "scope": "all", "stellarBonus": "= min(30, max(0, round((char.final.atk - 1000) / 100 * 1.5 * 10) / 10))" }
+    },
+    {
+      "id": "odette_polestar_field",
+      "mode": "assume",
+      "requireTeamElement": "electro",
+      "description": "Polestar Field yang dipicu Odette sendiri (butuh Electro di tim). Nol kalau Sandrone ada di tim (sudah dihitung entry polestar_field di _team.json).",
+      "mod": {
+        "source": "Polestar Field",
+        "scope": "all",
+        "elementalDmgBonus": { "cryo": "= team.keys.includes('Sandrone') ? 0 : 30", "electro": "= team.keys.includes('Sandrone') ? 0 : 30" },
+        "resShred": { "physical": "= team.keys.includes('Sandrone') ? 0 : 40" },
+        "uptime": 0.9,
+        "note": "+30% (≈8 hit terekam), uptime 0.9"
+      }
+    },
+    {
+      "id": "odette_stellar_base_self",
+      "mode": "always",
+      "description": "Odette passive Stellar Jubilee (ke diri sendiri): Base DMG reaksi Stellar +0.7% per 100 ATK, max 14%.",
+      "mod": { "source": "Odette Stellar base DMG", "scope": "all", "stellarBonus": "= min(14, round(char.final.atk / 100 * 0.7 * 10) / 10)" }
+    },
+    {
+      "id": "odette_q_dream",
+      "mode": "manual",
+      "description": "Odette Q (Snow Swan's Dream): Stellar Glimmer DMG Odette sendiri +param3 (Q jarang dipakai menurut KQM).",
+      "mod": { "source": "Odette Q Snow Swan's Dream", "scope": "all", "stellarBonus": "= round(pct(p('burst','param3')) * 10) / 10" }
+    }
+  ],
+  "reactions": { "with": { "electro": {}, "anemo": {} } },
+  "actions": {
+    "E": { "skill1": 1, "skill2": 3, "skill3a": 0.5, "skill5a": 3, "skill7a": 3 },
+    "Q": { "burst1": 1, "burst2": 1 }
+  },
+  "rotations": [
+    {
+      "label": "E E (Coda + Dance Double) Stellar-Conduct",
+      "counts": { "skill1": 2, "skill2": 6, "skill3a": 1, "skill5a": 6, "skill7a": 6 },
+      "duration": 12,
+      "note": "≈12s (aproksimasi). KQM combo E E: E ke-2 = Coda → DoT ≈6 tick (skill2) + 1 hit final Stellar-Conduct (skill3a, diverifikasi in-game 88.578 crit vs program 86.755); Dance Double ≈6 Plume + 6 Wing varian Stellar-Conduct (butuh Polestar Field). `actions.E` = rata-rata 2 cast (Coda 0.5/E)."
+    }
+  ],
+  "teams": [["Sandrone", "YaeMiko", "Qiqi"], ["YumemizukiMizuki", "Sandrone", "Qiqi"]]
+}

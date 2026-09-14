@@ -1,0 +1,417 @@
+{
+  "key": "Kinich",
+  "nameEn": "Kinich",
+  "gdbName": "Kinich",
+  "element": "Dendro",
+  "weaponType": "WEAPON_CLAYMORE",
+  "version": "5.0",
+  "talents": {
+    "normal": {
+      "name": "Nightsun Style",
+      "description": "Normal Attack\nPerforms up to 3 rapid strikes.\nAfter using his Elemental Skill \"Canopy Hunter: Riding High\"'s mid-air swing, he can perform a Normal Attack in mid-air before landing.\n\nCharged Attack\nConsumes a certain amount of Stamina to spin and throw his Claymore forward to attack opponents.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "attributes": {
+        "labels": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "Mid-Air Normal Attack DMG|{param9:F1P}",
+          "Charged Attack DMG|{param4:F1P}×3",
+          "Charged Attack Stamina Cost|{param5:F1}",
+          "Plunge DMG|{param6:F1P}",
+          "Low/High Plunge DMG|{param7:P}/{param8:P}"
+        ],
+        "parameters": {
+          "param1": [
+            0.98986,
+            1.07043,
+            1.151,
+            1.2661,
+            1.34667,
+            1.43875,
+            1.56536,
+            1.69197,
+            1.81858,
+            1.9567,
+            2.09482,
+            2.23294,
+            2.37106,
+            2.50918,
+            2.6473
+          ],
+          "param2": [
+            0.82904,
+            0.89652,
+            0.964,
+            1.0604,
+            1.12788,
+            1.205,
+            1.31104,
+            1.41708,
+            1.52312,
+            1.6388,
+            1.75448,
+            1.87016,
+            1.98584,
+            2.10152,
+            2.2172
+          ],
+          "param3": [
+            1.23496,
+            1.33548,
+            1.436,
+            1.5796,
+            1.68012,
+            1.795,
+            1.95296,
+            2.11092,
+            2.26888,
+            2.4412,
+            2.61352,
+            2.78584,
+            2.95816,
+            3.13048,
+            3.3028
+          ],
+          "param4": [
+            0.48418,
+            0.52359,
+            0.563,
+            0.6193,
+            0.65871,
+            0.70375,
+            0.76568,
+            0.82761,
+            0.88954,
+            0.9571,
+            1.02466,
+            1.09222,
+            1.15978,
+            1.22734,
+            1.2949
+          ],
+          "param5": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "param6": [
+            0.745878,
+            0.806589,
+            0.8673,
+            0.95403,
+            1.014741,
+            1.084125,
+            1.179528,
+            1.274931,
+            1.370334,
+            1.47441,
+            1.578486,
+            1.682562,
+            1.786638,
+            1.890714,
+            1.99479
+          ],
+          "param7": [
+            1.49144,
+            1.612836,
+            1.734233,
+            1.907656,
+            2.029052,
+            2.167791,
+            2.358556,
+            2.549322,
+            2.740087,
+            2.948195,
+            3.156303,
+            3.364411,
+            3.572519,
+            3.780627,
+            3.988735
+          ],
+          "param8": [
+            1.862889,
+            2.01452,
+            2.16615,
+            2.382765,
+            2.534396,
+            2.707688,
+            2.945964,
+            3.184241,
+            3.422517,
+            3.682455,
+            3.942393,
+            4.202331,
+            4.462269,
+            4.722207,
+            4.982145
+          ],
+          "param9": [
+            1.677,
+            1.8135,
+            1.95,
+            2.145,
+            2.2815,
+            2.4375,
+            2.652,
+            2.8665,
+            3.081,
+            3.315,
+            3.549,
+            3.783,
+            4.017,
+            4.251,
+            4.485
+          ]
+        }
+      }
+    },
+    "skill": {
+      "name": "Canopy Hunter: Riding High",
+      "description": "Kinich uses his big-game hunting skills to either move swiftly or attack his opponent.\nWhen there is an opponent or object that can be attacked nearby, he will attach a grappling hook to the target and enter Nightsoul's Blessing with 0 Nightsoul points. If neither is nearby, he fires a grappling hook forward and swings in mid-air, and this Skill's CD is decreased by 60%.\nThis skill can be Held to release. When it is Held, Kinich can aim the grappling hook.\n\nNightsoul's Blessing: Kinich\nKinich's Nightsoul's Blessing lasts 10s and generates 2 Nightsoul points every second.\nIn this state, Kinich will hook onto a nearby opponent and perform a variable attack:\n·When using a Normal Attack, Kinich will fire Loop Shots as he loops around the grappled target based on his current movement direction, dealing Nightsoul-aligned Dendro DMG and generating 3 Nightsoul points. Loop Shot DMG is considered Elemental Skill DMG.\n·When Nightsoul points are at max, he can use the Elemental Skill \"Scalespiker Cannon\": Consume all Nightsoul points to deal Nightsoul-aligned Dendro DMG. When \"Scalespiker Cannon\" is Held, Kinich can aim this shot. After firing the Cannon, Kinich will try to grapple to its target.\nWhile in Nightsoul's Blessing, after grappling an opponent or firing \"Scalespiker Cannon,\" a Blind Spot will be generated next to the opponent. When Kinich enters this Blind Spot, it will disappear and he will generate 4 Nightsoul points.\nIf the grapple connection should snap due to exceeding the maximum distance or some other reason, using a Normal Attack will establish a new connection with a nearby opponent before performing Loop Shots.",
+      "attributes": {
+        "labels": [
+          "Loop Shot DMG|{param1:F1P}×2",
+          "Scalespiker Cannon DMG|{param2:F1P}",
+          "Nightsoul Point Limit|{param4:F1}",
+          "CD|{param3:F1}s"
+        ],
+        "parameters": {
+          "param1": [
+            0.5728,
+            0.61576,
+            0.65872,
+            0.716,
+            0.75896,
+            0.80192,
+            0.8592,
+            0.91648,
+            0.97376,
+            1.03104,
+            1.08832,
+            1.1456,
+            1.2172,
+            1.2888,
+            1.3604
+          ],
+          "param2": [
+            6.8744,
+            7.38998,
+            7.90556,
+            8.593,
+            9.10858,
+            9.62416,
+            10.3116,
+            10.99904,
+            11.68648,
+            12.37392,
+            13.06136,
+            13.7488,
+            14.6081,
+            15.4674,
+            16.3267
+          ],
+          "param3": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param4": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
+        }
+      }
+    },
+    "burst": {
+      "name": "Hail to the Almighty Dragonlord",
+      "description": "Unleashes the power of the Almighty Dragonlord, K'uhul Ajaw (on a limited, conditional, restricted, contractual, partial, temporary basis), dealing Nightsoul-aligned AoE Dendro DMG. Ajaw will unleash his Dragon Breath at intervals, dealing Nightsoul-aligned AoE Dendro DMG.\nIf Kinich is in Nightsoul's Blessing when this is used, this Blessing's duration is extended by 1.7s.",
+      "attributes": {
+        "labels": [
+          "Skill DMG|{param1:F1P}",
+          "Dragon Breath DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "parameters": {
+          "param1": [
+            1.34,
+            1.4405,
+            1.541,
+            1.675,
+            1.7755,
+            1.876,
+            2.01,
+            2.144,
+            2.278,
+            2.412,
+            2.546,
+            2.68,
+            2.8475,
+            3.015,
+            3.1825
+          ],
+          "param2": [
+            1.20736,
+            1.297912,
+            1.388464,
+            1.5092,
+            1.599752,
+            1.690304,
+            1.81104,
+            1.931776,
+            2.052512,
+            2.173248,
+            2.293984,
+            2.41472,
+            2.56564,
+            2.71656,
+            2.86748
+          ],
+          "param3": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "param4": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "param5": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ]
+        }
+      }
+    }
+  },
+  "passives": [
+    {
+      "slot": "a1",
+      "name": "The Price of Desolation",
+      "description": "When Kinich is in Nightsoul's Blessing state, opponents hit by his Elemental Skill will enter the Desolation state, and when affected by Burning or Burgeon reaction DMG, they will restore 7 Nightsoul points to him. Nightsoul points can be gained this way once every 0.8s. The Desolation state will persist until this instance of Kinich's Nightsoul's Blessing state ends."
+    },
+    {
+      "slot": "a4",
+      "name": "Flame Spirit Pact",
+      "description": "After a nearby party member triggers a Nightsoul Burst, Kinich will gain 1 stack of Hunter's Experience that lasts 15s. Max 2 stacks. When Kinich uses Canopy Hunter: Riding High's Scalespiker Cannon, all stacks of Hunter's Experience will be consumed, with each stack consumed increasing the DMG dealt by this Cannon shot by 320% of Kinich's ATK."
+    },
+    {
+      "slot": "util",
+      "name": "Night Realm's Gift: Repaid in Full",
+      "description": "When Kinich is in the air following Canopy Hunter: Riding High's mid-air swing, he can consume 10 Phlogiston points to perform another mid-air swing.\nWhile in an area with Phlogiston Mechanics within Natlan, he can use Nightsoul Transmission: Kinich. When the current active character is sprinting, in movement states that result from specific Talents, or in the air, when you switch to Kinich: Kinich will perform one of the following actions depending on the conditions met:\n·When facing a Coilgrass Sigil that can be interacted with: He will fire a grappling hook towards it to move;\n·When there are nearby opponents and you are in combat: Kinich will use Canopy Hunter: Riding High in the direction of the opponents;\nOtherwise, Kinich will fire a grappling hook and swing, prioritizing valid Coilgrass Sigils as grapple targets.\nNightsoul Transmission can be triggered once every 10s by your own party.\n\nWhen interacting with Coilgrass Sigils and other items that Yumkasaurs can interact with, \"Canopy Hunter: Riding High\" will be converted to \"Yumkasaur Mimesis,\" which causes interactions with such items to follow rules applicable to Yumkasaurs, and which will not put Canopy Hunter: Riding High on CD."
+    },
+    {
+      "slot": "other",
+      "name": "Swift Envoy",
+      "description": "While in an area with Phlogiston Mechanics within Natlan, interacting with some harvestable items will increase your own party members' Movement SPD by 15% for 10s. Additionally, the location of nearby resources unique to Natlan will appear on your mini-map."
+    }
+  ],
+  "constellations": [
+    {
+      "n": 1,
+      "name": "Parrot's Beak",
+      "description": "After Kinich lands from Canopy Hunter: Riding High's mid-air swing, his Movement SPD will increase by 30% for 6s.\nAdditionally, Scalespiker Cannon's CRIT DMG is increased by 100%."
+    },
+    {
+      "n": 2,
+      "name": "Tiger Beetle's Palm",
+      "description": "When Kinich's Elemental Skill hits an opponent, it will decrease their Dendro RES by 30% for 6s.\nAdditionally, the first Scalespiker Cannon Kinich fires after entering Nightsoul's Blessing has increased AoE, and its DMG increases by 100%."
+    },
+    {
+      "n": 3,
+      "name": "Protosuchian's Claw",
+      "description": "Increases the Level of Canopy Hunter: Riding High by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 4,
+      "name": "Hummingbird's Feather",
+      "description": "When in Nightsoul's Blessing, Kinich will restore 5 Energy after using his Loop Shots or after unleashing the Scalespiker Cannon. Energy can be regenerated this way once every 2.8s.\nAdditionally, Hail to the Almighty Dragonlord deals 70% more DMG."
+    },
+    {
+      "n": 5,
+      "name": "Howler Monkey's Tail",
+      "description": "Increases the Level of Hail to the Almighty Dragonlord by 3.\nMaximum upgrade level is 15."
+    },
+    {
+      "n": 6,
+      "name": "Auspicious Beast's Shape",
+      "description": "After Scalespiker Cannon hits an opponent, it will bounce between opponents once, dealing 700% of Kinich's ATK as Dendro DMG.\nIf this Scalespiker Cannon triggers the buffs that Ascension Talent \"Flame Spirit Pact\" or the Constellation \"Tiger Beetle's Palm\" grant to the Cannon, the bouncing attack will also obtain the relevant buffs."
+    }
+  ]
+}
