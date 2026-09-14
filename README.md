@@ -23,16 +23,39 @@ Mekanik yang dimodelkan: reaksi amplifying/additive/transformative, **Stellar-Co
 bonus kelas Stellar), **Lunar-Charged** (proc per aplikasi, kontributor dirangking, direct Lunar), uptime buff dari
 durasi/CD talent, batas aksi berurutan (Decoding Power Sandrone), kit yang di-rework (Yae 6.7) lewat override.
 
-## Menjalankan
+## Instalasi
 
-Butuh Docker Desktop. Node **tidak** perlu di host.
+Prasyarat: **Docker Desktop** (Windows: butuh WSL2) dan **Git**. Node **tidak** perlu di host — semuanya jalan di
+container. Semua data referensi (guide KQM, dump genshin-db, buff) sudah ada di repo; mapping Enka di-download
+otomatis saat pertama jalan.
 
 ```powershell
-cp backend/.env.example backend/.env     # isi ENKA_USER_AGENT (wajib jelas + kontak); LLM_API_KEY opsional
-docker compose up -d --build
+git clone https://github.com/mchabib/genshin-build-checker.git
+cd genshin-build-checker
+copy backend\.env.example backend\.env    # Linux/macOS: cp backend/.env.example backend/.env
 ```
 
-Wrapper CLI `gbc.ps1` nyalain container kalau belum jalan dan meneruskan argumen ke `npm run cli`:
+Edit `backend/.env`:
+- `ENKA_USER_AGENT` — wajib diganti ke nama proyek + kontakmu (Enka.Network minta User-Agent yang jelas).
+- `LLM_API_KEY` — **opsional**, cuma buat `--llm`. Kosong = fitur LLM mati, semua kalkulator tetap jalan.
+
+```powershell
+docker compose up -d --build              # pertama kali ±1–2 menit (install dependency di container)
+curl http://localhost:4000/api/health     # {"status":"ok","characters":...,"guides":...}
+```
+
+UI: **http://localhost:4000**. CLI lewat wrapper `gbc.ps1` (Windows; nyalain container kalau belum jalan) atau
+langsung `docker compose exec backend npm run cli -- <perintah>` (semua OS):
+
+```powershell
+.\gbc.ps1 enka <uid>
+docker compose exec backend npm run cli -- enka <uid>    # setara, tanpa wrapper
+```
+
+Kalau ganti `package.json` (dependency): `docker compose up -d --build` lagi; kalau volume `node_modules` basi:
+`docker compose rm -sf backend; docker volume rm <project>_backend_node_modules; docker compose up -d --build`.
+
+## Perintah
 
 ```powershell
 .\gbc.ps1 enka 815634265
