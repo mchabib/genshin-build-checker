@@ -115,6 +115,39 @@
   .stats-line { color: var(--dim); font-size: 12px; margin: 10px 0 4px; }
   button.sm { padding: 6px 10px; font-size: 12px; background: var(--panel2); border-color: var(--line); color: var(--text); font-weight: 500; }
   button.sm:hover:not(:disabled) { background: #2a2a36; }
+
+  /* Fase 3: tab + rotasi tim */
+  .tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--line); margin: 6px 0 16px; }
+  .tab {
+    background: none; border: none; border-bottom: 2px solid transparent; border-radius: 0;
+    color: var(--dim); font-weight: 500; padding: 8px 12px; margin-bottom: -1px;
+  }
+  .tab:hover:not(.on) { color: var(--text); background: none; }
+  .tab.on { color: var(--text); border-bottom-color: #0ea5e9; background: none; }
+
+  .rot { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); padding: 18px; }
+  .rot > label.lbl { color: var(--dimmer); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; display: block; margin-bottom: 4px; }
+  .rot input#r-notasi { width: 100%; font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 13px; }
+  .ctl-rot { grid-template-columns: repeat(4, 1fr) auto; margin-top: 10px; }
+  @media (max-width: 640px) { .ctl-rot { grid-template-columns: 1fr 1fr; } }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 2px; }
+  .chip {
+    font-size: 12px; padding: 4px 9px; border-radius: 999px; font-weight: 500;
+    background: var(--panel2); border: 1px solid var(--line); color: var(--dim);
+  }
+  .chip:hover:not(:disabled) { background: #2a2a36; color: var(--text); border-color: #4b5563; }
+  code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 12px; background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
+
+  .rchar { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px; }
+  .rchar .rhead { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .rchar .rname { font-weight: 600; }
+  .rchar .rnot { font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: var(--dim); }
+  .rchar .rsub { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .share { height: 5px; border-radius: 3px; background: var(--line); margin: 6px 0 2px; overflow: hidden; }
+  .share i { display: block; height: 100%; background: #0ea5e9; }
+  .rtotal { margin-top: 16px; border-top: 2px solid var(--line); padding-top: 12px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .rtotal .big { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .rtotal .dps { color: var(--info); font-weight: 600; }
 </style>
 </head>
 <body>
@@ -133,8 +166,42 @@
 
   <div id="msg"></div>
   <div id="player" class="player" hidden></div>
-  <div id="grid" class="grid"></div>
-  <div id="out"></div>
+
+  <div class="tabs" id="tabs" hidden>
+    <button class="tab on" data-tab="char" type="button">Karakter</button>
+    <button class="tab" data-tab="rot" type="button">Rotasi Tim</button>
+  </div>
+
+  <div id="tab-char">
+    <div id="grid" class="grid"></div>
+    <div id="out"></div>
+  </div>
+
+  <div id="tab-rot" hidden>
+    <div class="rot">
+      <label class="lbl" for="r-notasi">Notasi rotasi tim</label>
+      <input id="r-notasi" placeholder="Yae 3[E] &gt; Qiqi E &gt; Odette 2[E] &gt; Sandrone 3[C E] Q" autocomplete="off" />
+      <div class="chips" id="r-chips"></div>
+      <div class="ctl ctl-rot">
+        <div><label for="r-lvl">Lv musuh</label><input id="r-lvl" type="number" value="90" min="1" max="100" /></div>
+        <div><label for="r-res">RES %</label><input id="r-res" type="number" value="10" min="-100" max="100" /></div>
+        <div><label for="r-dur">Durasi (detik)</label><input id="r-dur" type="number" placeholder="auto" min="1" /></div>
+        <div><label for="r-stellar">Stellar hits</label><input id="r-stellar" type="number" placeholder="8" min="0" max="12" /></div>
+        <div class="chk">
+          <input id="r-assume" type="checkbox" checked />
+          <label for="r-assume" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="anggap buff kondisional aktif (stack max, dsb)">asumsi</label>
+          <button class="sm" id="r-go" type="button">Hitung</button>
+        </div>
+      </div>
+      <div class="hint" style="margin:10px 0 0">
+        Notasi KQM: <code>N3</code> 3× normal · <code>C</code> charged · <code>E</code>/<code>Q</code> skill/burst ·
+        <code>hP</code>/<code>lP</code> plunge · <code>3[C E]</code> ulang 3× · <code>&gt;</code> ganti karakter.
+        Klik nama karakter buat nambahin ke notasi. <b>Durasi</b> diisi manual kalau semua aksi off-field
+        (cast 5 detik tapi summon jalan 20 detik).
+      </div>
+      <div id="r-out"></div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -154,13 +221,15 @@ $("f").addEventListener("submit", async (e) => {
   if (!/^[1-9]\d{8,9}$/.test(v)) return msg("UID harus 9–10 digit.", "err");
   uid = v;
   $("go").disabled = true;
-  $("grid").innerHTML = ""; $("out").innerHTML = ""; $("player").hidden = true;
+  $("grid").innerHTML = ""; $("out").innerHTML = ""; $("r-out").innerHTML = ""; $("player").hidden = true;
   msg("Mengambil data dari Enka…");
   try {
     const r = await fetch(`/api/enka/${uid}`);
     const d = await r.json();
     if (!r.ok) throw new Error(d.message || d.error || `HTTP ${r.status}`);
     chars = d.characters || [];
+    $("tabs").hidden = false;
+    renderChips();
     $("player").hidden = false;
     $("player").textContent =
       `${d.player.nickname ?? "?"} · AR ${d.player.level ?? "?"} · ${d.meta.cached ? "dari cache" : "fresh"} · ` +
@@ -175,6 +244,101 @@ $("f").addEventListener("submit", async (e) => {
     $("go").disabled = false;
   }
 });
+
+// ---------- tab ----------
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t));
+  $("tab-char").hidden = t.dataset.tab !== "char";
+  $("tab-rot").hidden = t.dataset.tab !== "rot";
+}));
+
+// ---------- rotasi tim ----------
+function renderChips() {
+  $("r-chips").innerHTML = chars.filter(c => c.supported)
+    .map(c => `<button class="chip" type="button" data-n="${esc(c.name)}">${esc(c.name)}</button>`).join("");
+  $("r-chips").querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    const el = $("r-notasi"), cur = el.value.trim();
+    el.value = (cur ? cur + " > " : "") + b.dataset.n + " E";
+    el.focus();
+  }));
+}
+
+function rotChar(c, total) {
+  const rep = c.report, rot = rep.rotation;
+  const buffs = (rep.modifiers || []).filter(m => m.origin === "team" || m.origin === "assume" || m.origin === "catalog")
+    .map(m => esc(m.source) + (m.origin === "assume" ? "*" : "")).join(", ");
+  const reacts = Object.entries(rep.reactions || {}).filter(([, v]) => v).map(([k, v]) => `${k}=${v}`).join(", ");
+  const teamStr = rep.team.members.map(m => m.name).join(", ") || "solo";
+  const pct = total ? Math.round((c.subtotal / total) * 100) : 0;
+  return `<div class="rchar">
+    <div class="rhead">
+      <span class="rname">${esc(c.name)}</span>
+      <span class="rnot">${esc(c.notation)}${c.duration != null ? ` · ${c.duration}s` : ""}</span>
+      <span class="rsub">${n0(c.subtotal)} <span class="sub" style="font-weight:400">(${pct}%)</span></span>
+    </div>
+    <div class="share"><i style="width:${pct}%"></i></div>
+    <div class="stats-line">tim: ${esc(teamStr)}${reacts ? ` · reaksi: ${esc(reacts)}` : ""}</div>
+    ${buffs ? `<div class="stats-line">buff: ${buffs}</div>` : ""}
+    ${rot?.rows?.length ? `<div class="tbl-wrap"><table>
+        <tr><th>hit</th><th class="num">×</th><th class="num">avg</th><th class="num">subtotal</th></tr>
+        ${rot.rows.map(x => `<tr><td>${esc(x.label)} <span class="sub">${esc(x.id)}</span></td>
+          <td class="num">${x.count}</td><td class="num">${n0(x.avg)}</td><td class="num">${n0(x.subtotal)}</td></tr>`).join("")}
+      </table></div>` : ""}
+  </div>`;
+}
+
+async function rotation() {
+  const notasi = $("r-notasi").value.trim();
+  const out = $("r-out");
+  if (!uid) return out.innerHTML = `<div class="msg err">Fetch UID dulu di tab Karakter.</div>`;
+  if (!notasi) return out.innerHTML = `<div class="msg err">Notasi rotasi masih kosong.</div>`;
+  out.innerHTML = `<div class="msg load">Menghitung rotasi tim… (offline, tanpa AI)</div>`;
+  $("r-go").disabled = true;
+  try {
+    const q = new URLSearchParams({ r: notasi });
+    q.set("enemyLvl", $("r-lvl").value || "90");
+    q.set("enemyRes", $("r-res").value || "10");
+    if ($("r-dur").value) q.set("duration", $("r-dur").value);
+    if ($("r-stellar").value) q.set("stellarHits", $("r-stellar").value);
+    if (!$("r-assume").checked) q.set("noAssume", "1");
+    const res = await fetch(`/api/rotation/${uid}?${q}`);
+    const d = await res.json();
+    if (!res.ok) throw new Error(d.message || d.error || `HTTP ${res.status}`);
+
+    const lunar = d.lunar ? `<div class="rchar">
+        <div class="rhead">
+          <span class="rname">Reaksi Lunar-Charged <span class="tag">tim</span></span>
+          <span class="rnot">${d.lunar.ticks}× ${n0(d.lunar.perTick)}</span>
+          <span class="rsub">${n0(d.lunar.total)}</span>
+        </div>
+        ${d.lunar.contributors?.length ? `<div class="stats-line">kontributor: ${d.lunar.contributors
+          .map(c => `${esc(c.name)} ${n0(c.dmg)}×${c.weight === 1 ? "1" : c.weight === 0.5 ? "½" : "1/12"}`).join(" · ")}</div>` : ""}
+      </div>` : "";
+
+    out.innerHTML = `
+      <div class="stats-line" style="margin-top:14px">
+        <span class="tag">mode OFFLINE</span>Musuh Lv ${d.characters[0]?.report.enemy.level ?? 90},
+        RES ${Math.round((d.characters[0]?.report.enemy.res.pyro ?? .1) * 100)}% · ${d.characters.length} karakter
+      </div>
+      ${d.characters.map(c => rotChar(c, d.total)).join("")}
+      ${lunar}
+      <div class="rtotal">
+        <span class="sub">TOTAL TIM per rotasi</span>
+        <span class="big">${n0(d.total)}</span>
+        ${d.duration != null ? `<span class="sub">${d.duration}s</span><span class="dps">DPS ${n0(d.dps ?? 0)}</span>`
+          : `<span class="warns" style="margin:0">durasi nggak diketahui</span>`}
+      </div>
+      ${d.warnings?.length ? `<details style="margin-top:10px"><summary>Catatan (${d.warnings.length})</summary>
+        <div class="warns">${d.warnings.map(esc).join("<br>")}</div></details>` : ""}
+      <div class="foot">* = asumsi kondisional; matikan lewat checkbox "asumsi".</div>`;
+  } catch (err) {
+    out.innerHTML = `<div class="msg err">${esc(err.message)}</div>`;
+  } finally {
+    $("r-go").disabled = false;
+  }
+}
+$("r-go").addEventListener("click", rotation);
+$("r-notasi").addEventListener("keydown", (e) => { if (e.key === "Enter") rotation(); });
 
 function renderGrid() {
   $("grid").innerHTML = chars.map(c => {
@@ -314,6 +478,9 @@ function render(b) {
           </select></div>
         <div><label>Lv musuh</label><input id="d-lvl" type="number" value="90" min="1" max="100" /></div>
         <div><label>RES %</label><input id="d-res" type="number" value="10" min="-100" max="100" /></div>
+        <div style="grid-column:1/3"><label>Rotasi (notasi KQM / na1=9,ca1=9 — kosong = preset modul)</label><input id="d-rot" placeholder="E 9[N1C] Q" /></div>
+        <div><label>Durasi (detik)</label><input id="d-dur" type="number" placeholder="auto" min="1" /></div>
+        <div><label>Stellar hits</label><input id="d-stellar" type="number" placeholder="8" min="0" max="12" /></div>
         <div class="chk">
           <input id="d-assume" type="checkbox" checked /><label for="d-assume" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="anggap buff kondisional aktif (stack max, dsb)">asumsi</label>
           <input id="d-llm" type="checkbox" /><label for="d-llm" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="pakai LLM buat milih tim/buff/reaksi/rotasi">LLM</label>
@@ -390,6 +557,9 @@ async function damage(key) {
     q.set("enemyLvl", $("d-lvl").value || "90");
     q.set("enemyRes", $("d-res").value || "10");
     q.set("llm", $("d-llm").checked ? "1" : "0");
+    if ($("d-rot").value.trim()) q.set("rotation", $("d-rot").value.trim());
+    if ($("d-dur").value) q.set("duration", $("d-dur").value);
+    if ($("d-stellar").value) q.set("stellarHits", $("d-stellar").value);
     if (!$("d-assume").checked) q.set("noAssume", "1");
     llmParams(q);
     const r = await fetch(`/api/damage/${uid}/${encodeURIComponent(key)}?${q}`);
