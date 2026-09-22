@@ -58,12 +58,12 @@ Kalau ganti `package.json` (dependency): `docker compose up -d --build` lagi; ka
 ## Perintah
 
 ```powershell
-.\gbc.ps1 enka 815634265
-.\gbc.ps1 check 815634265 alhaitham [--er "<label>"] [--build <n>]
-.\gbc.ps1 benchmark 815634265 yelan [--build <n>] [--er <label> | --er-target 130]
-.\gbc.ps1 damage 815634265 xiao [--team furina,faruzan] [--reaction vaporize] [--no-assume] [--rotation "E 9[N1C] Q"] [--duration 20]
-.\gbc.ps1 rotation 817613918 "Yae 3[E] > Qiqi E > Odette 2[E] > Sandrone 3[C E]" --enemy-lvl 100 --enemy-res 10
-.\gbc.ps1 rotation 817613918 "Ineffa E > Columbina E > Furina E > Yelan 2[E]" --duration 20
+.\gbc.ps1 enka <uid>
+.\gbc.ps1 check <uid> alhaitham [--er "<label>"] [--build <n>]
+.\gbc.ps1 benchmark <uid> yelan [--build <n>] [--er <label> | --er-target 130]
+.\gbc.ps1 damage <uid> xiao [--team furina,faruzan] [--reaction vaporize] [--no-assume] [--rotation "E 9[N1C] Q"] [--duration 20]
+.\gbc.ps1 rotation <uid> "Yae 3[E] > Qiqi E > Odette 2[E] > Sandrone 3[C E]" --enemy-lvl 100 --enemy-res 10
+.\gbc.ps1 rotation <uid> "Ineffa E > Columbina E > Furina E > Yelan 2[E]" --duration 20
 ```
 
 Flag umum: `--enemy-lvl` (default 90) · `--enemy-res` (persen, default 10) · `--no-assume` (matikan buff kondisional

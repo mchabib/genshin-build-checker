@@ -1,11 +1,11 @@
 # Genshin Build Checker CLI wrapper.
 #   .\gbc.ps1 characters
 #   .\gbc.ps1 guide furina
-#   .\gbc.ps1 enka 815634265
-#   .\gbc.ps1 check 815634265 xiao --er faruzan
+#   .\gbc.ps1 enka <uid>
+#   .\gbc.ps1 check <uid> xiao --er faruzan
 #   .\gbc.ps1 check-manual hu-tao --cr 70 --cd 200 --er 110 --em 100
-#   .\gbc.ps1 assess 815634265 xiao --llm
-#   .\gbc.ps1 damage 815634265 xiao --team furina,faruzan,xianyun [--no-llm] [--reaction vaporize]
+#   .\gbc.ps1 assess <uid> xiao --llm
+#   .\gbc.ps1 damage <uid> xiao --team furina,faruzan,xianyun [--no-llm] [--reaction vaporize]
 
 $ErrorActionPreference = "Stop"
 

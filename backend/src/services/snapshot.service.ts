@@ -21,8 +21,8 @@ export const SNAPSHOT_DIR = path.resolve("src/fixtures/snapshots");
 
 /** UID yang di-snapshot + notasi rotasi tim (opsional) */
 export const SNAPSHOT_TARGETS: { uid: string; teamRotation?: string }[] = [
-  { uid: "815634265" },
-  { uid: "817613918", teamRotation: "Yae 3[E] > Odette 2[E] > Qiqi E Q > Sandrone 3[C E] Q" },
+  { uid: "100000001" },
+  { uid: "100000002", teamRotation: "Yae 3[E] > Odette 2[E] > Qiqi E Q > Sandrone 3[C E] Q" },
 ];
 
 export interface CharacterSnapshot {

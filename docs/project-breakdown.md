@@ -72,7 +72,7 @@ Default musuh Lv 90, RES 10%. Level multiplier reaksi di `data/reactionLevelMult
 **Fase 2 DITUTUP 2026-09-11.** Sudah termasuk (melampaui rencana awal): semua reaksi, buff tim/set/senjata, katalog JSON,
 character module (`scrape-data/Buffs/`), jalur offline default + LLM opsional, rotasi dari notasi KQM (1 karakter & tim,
 `rotation <uid> "..."`, buff support aktif hanya kalau aksinya ada di urutan, `actions` per modul), fallback karakter baru
-di luar store Enka. Diuji di 2 akun (815634265: 12 char; 817613918: Yae/Sandrone/Odette/Qiqi). 33 test.
+di luar store Enka. Diuji di 2 akun (fixture A: 12 char; fixture B: Yae/Sandrone/Odette/Qiqi). 33 test.
 
 ---
 
@@ -107,7 +107,7 @@ hasilnya *detail tanpa LLM*:
 - **Tooling:** `npm run check:buffs` (validator, jalan di `npm test`; langsung nemu 2 error data lama), `npm run module:new -- <Key>`
   (scaffold modul dari dump + KQM). Data ditambah: senjata Kagura/Haran/Teaspoon/Bloodsoaked, set Desert Pavilion/Noblesse 2pc/
   Night of the Sky's Unveiling, Golden Troupe 2pc dibenerin (+20 skill), `actions`/`durations` Neuvillette/Furina/Chasca/Yelan/Xiao/Zhongli.
-- Test 47. Hasil benchmark UID 815634265: 86–120% dari standar (Yelan 86% CR 52 vs 88, Furina 88%).
+- Test 47. Hasil benchmark fixture A: 86–120% dari standar (Yelan 86% CR 52 vs 88, Furina 88%).
 
 **Kalibrasi in-game (11–12 Sep 2026, DPS meter stage latihan, Lv 100 RES 10%):**
 - Tim Stellar-Conduct (Yae C1/Odette/Sandrone/Qiqi C6): real 2.364M vs program 2.415M (+2%). Yang ketemu: rumus hit
