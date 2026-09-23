@@ -17,7 +17,8 @@ LLM (DeepSeek, opsional) cuma buat verdict naratif dan pemilihan buff kalau dimi
 | Damage per hit | `damage <uid> <char>` | tabel non-crit/crit/avg tiap hit, baseline vs dengan buff tim/asumsi, rotasi, DPS |
 | Rotasi tim | `rotation <uid> "<notasi KQM>"` | tiap karakter dihitung dengan tim = yang lain; buff support cuma nyala kalau aksinya ada; total tim + DPS |
 | Brief AI | `assess <uid> <char> [--llm]` | semua data + hasil cek + guide mentah; `--llm` = verdict dari LLM |
-| UI | `http://localhost:4000` | 1 halaman statis: UID → karakter → grade, benchmark, damage |
+| Planner primogem | `primo <YYYY-MM-DD>` | estimasi primo/fate sampai tanggal target (daily, Welkin/BP, Abyss/Theater/Stygian, event patch) → berapa wish |
+| UI | `http://localhost:4000` | 1 halaman statis, 3 tab: Karakter · Rotasi Tim · Primogem |
 
 Mekanik yang dimodelkan: reaksi amplifying/additive/transformative, **Stellar-Conduct** (koefisien Polestar Field,
 bonus kelas Stellar), **Lunar-Charged** (proc per aplikasi, kontributor dirangking, direct Lunar), uptime buff dari
@@ -64,6 +65,7 @@ Kalau ganti `package.json` (dependency): `docker compose up -d --build` lagi; ka
 .\gbc.ps1 damage <uid> xiao [--team furina,faruzan] [--reaction vaporize] [--no-assume] [--rotation "E 9[N1C] Q"] [--duration 20]
 .\gbc.ps1 rotation <uid> "Yae 3[E] > Qiqi E > Odette 2[E] > Sandrone 3[C E]" --enemy-lvl 100 --enemy-res 10
 .\gbc.ps1 rotation <uid> "Ineffa E > Columbina E > Furina E > Yelan 2[E]" --duration 20
+.\gbc.ps1 primo 2026-11-04 --welkin --bp paid --abyss 36 --theater visionary --stygian hard
 ```
 
 Flag umum: `--enemy-lvl` (default 90) · `--enemy-res` (persen, default 10) · `--no-assume` (matikan buff kondisional
@@ -104,9 +106,10 @@ Range "tanpa asumsi" → "maks" adalah bagian dari output, bukan bug: yang real 
 | Guide & benchmark (ER, main stat, substat priority, set, senjata, combo, tim) | KQM quick guides | `scrape-data/Character/<slug>.json` (raw + parsed) | `npm run scrape:kqm` |
 | Multiplier talent, passive, constellation, senjata, set | `genshin-db` (npm) | `scrape-data/Talents\|Weapons\|Artifacts/` | `npm run dump:gdb` |
 | **Data tangan**: buff karakter/set/senjata/tim, durasi, standar benchmark, mekanik | ditulis manual, format di [`scrape-data/Buffs/_README.md`](backend/scrape-data/Buffs/_README.md) | `scrape-data/Buffs/` | — |
+| **Data tangan**: income primogem (reward per sumber, jadwal patch) | ditulis manual, format di [`scrape-data/Primogems/_README.md`](backend/scrape-data/Primogems/_README.md) | `scrape-data/Primogems/` | — |
 
 Prinsip: **pembaca dipisah dari data**. Scraper cuma nulis file; refresh KQM/genshin-db tidak butuh perubahan kode.
-Data tangan hanya di `Buffs/`; scraper tidak pernah menyentuhnya.
+Data tangan hanya di `Buffs/` & `Primogems/`; scraper tidak pernah menyentuhnya.
 
 ```powershell
 docker compose exec backend npm run scrape:kqm            # semua guide KQM (atau: ... scrape:kqm furina yelan)
@@ -137,6 +140,8 @@ Kalau dump genshin-db belum punya kit terbaru (rework), hit tambahan didefinisik
 | `GET /api/damage/:uid/:char?team=&reaction=&rotation=&duration=&stellarHits=&noAssume=1` | tabel damage + rotasi + DPS |
 | `GET /api/rotation/:uid?r=<notasi>&duration=&enemyLvl=&enemyRes=` | rotasi tim |
 | `GET /api/benchmark/:uid/:char?build=&er=&erTarget=&full=1` | benchmark vs build acuan |
+| `GET /api/primogems?to=&from=&welkin=&bp=&abyssStars=&theater=&stygian=` | estimasi income primogem → wish |
+| `GET /api/primogems/sources` | angka & pilihan tier yang tersedia (buat dropdown UI) |
 
 ## Struktur
 
@@ -147,6 +152,7 @@ backend/
     Character/                 guide KQM (scraped)
     Talents|Weapons|Artifacts/ dump genshin-db (scraped)
     Buffs/                     DATA TANGAN: <Key>.json, _team/_sets/_weapons/_durations/_benchmark.json, _README.md
+    Primogems/                 DATA TANGAN: _sources.json (income primogem, jadwal patch), _README.md
   scripts/                     scrape-kqm.mjs, dump-genshin-db.mjs
   src/
     cli.ts                     CLI (gbc.ps1 → npm run cli)
@@ -158,6 +164,7 @@ backend/
       characterStore/guideStore/gameDataStore/buffStore   loader data
       scoring/check            cek build vs KQM (+ benchmark)
       benchmark.service        build acuan KQMS & rasio
+      primogem.service         income primogem sampai tanggal target → wish
       damage.service           rumus murni (hit, reaksi, Stellar, Lunar)
       damage.run               orkestrasi 1 karakter (tim, buff, uptime, rotasi, DPS)
       rotation.run             rotasi tim

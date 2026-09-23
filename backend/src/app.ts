@@ -10,6 +10,7 @@ import { assessRouter } from "./routes/assess.route";
 import { damageRouter } from "./routes/damage.route";
 import { rotationRouter } from "./routes/rotation.route";
 import { benchmarkRouter } from "./routes/benchmark.route";
+import { primogemsRouter } from "./routes/primogems.route";
 
 export function createApp() {
   const app = express();
@@ -28,6 +29,7 @@ export function createApp() {
   app.use("/api/damage", damageRouter);
   app.use("/api/rotation", rotationRouter);
   app.use("/api/benchmark", benchmarkRouter);
+  app.use("/api/primogems", primogemsRouter);
 
   app.use((_req, res) => {
     res.status(404).json({ error: "not_found" });

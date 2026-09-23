@@ -10,7 +10,7 @@
     "cli": "tsx src/cli.ts",
     "scrape:kqm": "node scripts/scrape-kqm.mjs",
     "dump:gdb": "node scripts/dump-genshin-db.mjs",
-    "test": "tsx --test src/lib/talentLabel.test.ts src/services/damage.service.test.ts src/services/damage.rules.test.ts src/services/damage.llm.test.ts src/services/benchmark.service.test.ts src/services/buffCheck.test.ts src/services/damage.snapshot.test.ts",
+    "test": "tsx --test src/lib/talentLabel.test.ts src/services/damage.service.test.ts src/services/damage.rules.test.ts src/services/damage.llm.test.ts src/services/benchmark.service.test.ts src/services/primogem.service.test.ts src/services/buffCheck.test.ts src/services/damage.snapshot.test.ts",
     "check:buffs": "tsx src/tools/checkBuffs.ts",
     "module:new": "tsx src/tools/newModule.ts",
     "snapshot:update": "tsx src/tools/snapshot.ts",

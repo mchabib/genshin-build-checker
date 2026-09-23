@@ -148,6 +148,19 @@
   .rtotal { margin-top: 16px; border-top: 2px solid var(--line); padding-top: 12px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .rtotal .big { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
   .rtotal .dps { color: var(--info); font-weight: 600; }
+
+  /* primogem planner */
+  .ctl-primo { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 640px) { .ctl-primo { grid-template-columns: 1fr 1fr; } }
+  .wish { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 14px;
+          border-top: 2px solid var(--line); padding-top: 12px; }
+  .wish .big { font-size: 26px; font-weight: 700; color: #fbbf24; font-variant-numeric: tabular-nums; }
+  .pchips { color: var(--dimmer); font-size: 12px; margin-top: 8px; }
+  .evlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 4px 12px; margin-top: 8px; }
+  .evlist label { display: flex; align-items: baseline; gap: 6px; font-size: 12.5px; color: var(--dim); text-transform: none; letter-spacing: 0; }
+  .evlist label input { width: auto; }
+  .evlist .amt { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--text); }
+  .evlist .dt { color: var(--dimmer); font-size: 11px; }
 </style>
 </head>
 <body>
@@ -167,9 +180,10 @@
   <div id="msg"></div>
   <div id="player" class="player" hidden></div>
 
-  <div class="tabs" id="tabs" hidden>
+  <div class="tabs" id="tabs">
     <button class="tab on" data-tab="char" type="button">Karakter</button>
     <button class="tab" data-tab="rot" type="button">Rotasi Tim</button>
+    <button class="tab" data-tab="primo" type="button">Primogem</button>
   </div>
 
   <div id="tab-char">
@@ -200,6 +214,43 @@
         (cast 5 detik tapi summon jalan 20 detik).
       </div>
       <div id="r-out"></div>
+    </div>
+  </div>
+
+  <div id="tab-primo" hidden>
+    <div class="rot">
+      <div class="ctl ctl-primo">
+        <div><label for="p-from">Dari tanggal</label><input id="p-from" type="date" /></div>
+        <div><label for="p-to">Sampai tanggal</label><input id="p-to" type="date" /></div>
+        <div><label for="p-have">Primo sekarang</label><input id="p-have" type="number" value="0" min="0" /></div>
+        <div><label for="p-fates">Fate sekarang</label><input id="p-fates" type="number" value="0" min="0" /></div>
+      </div>
+      <div class="ctl ctl-primo" style="margin-top:8px">
+        <div><label for="p-bp">Battle Pass</label><select id="p-bp"></select></div>
+        <div><label for="p-bplevel">Level BP sekarang</label><input id="p-bplevel" type="number" value="0" min="0" max="50" /></div>
+        <div><label for="p-abyss">Abyss (bintang)</label><input id="p-abyss" type="number" value="36" min="0" max="36" /></div>
+        <div><label for="p-extra">Quest/eksplorasi (manual)</label><input id="p-extra" type="number" value="0" min="0" /></div>
+      </div>
+      <div class="ctl ctl-primo" style="margin-top:8px">
+        <div><label for="p-theater">Imaginarium Theater</label><select id="p-theater"></select></div>
+        <div><label for="p-stygian">Stygian Onslaught</label><select id="p-stygian"></select></div>
+        <div class="chk" style="grid-column:3/5">
+          <input id="p-welkin" type="checkbox" /><label for="p-welkin" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)">Welkin</label>
+          <input id="p-stardust" type="checkbox" /><label for="p-stardust" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="beli 5 Intertwined Fate tiap reset bulanan">Stardust</label>
+          <input id="p-events" type="checkbox" checked /><label for="p-events" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="kode livestream, kompensasi maintenance, estimasi event patch yang belum terdaftar">patch</label>
+          <button class="sm" id="p-go" type="button">Hitung</button>
+        </div>
+      </div>
+      <details id="p-evbox" style="margin-top:10px"><summary>Event yang dihitung (<span id="p-evcount">0</span>)</summary>
+        <div id="p-events-list" class="evlist"></div>
+      </details>
+      <div class="chips" id="p-quick"></div>
+      <div class="hint" style="margin:8px 0 0">
+        Estimasi income primogem — nggak butuh UID. Siklus yang <b>sedang jalan</b> nggak dihitung
+        (anggap rewardnya udah diambil). Angka tiap sumber ada di
+        <code>scrape-data/Primogems/_sources.json</code>, bebas kamu ubah.
+      </div>
+      <div id="p-out"></div>
     </div>
   </div>
 </div>
@@ -248,9 +299,117 @@ $("f").addEventListener("submit", async (e) => {
 // ---------- tab ----------
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t));
-  $("tab-char").hidden = t.dataset.tab !== "char";
-  $("tab-rot").hidden = t.dataset.tab !== "rot";
+  for (const name of ["char", "rot", "primo"]) $("tab-" + name).hidden = t.dataset.tab !== name;
 }));
+
+// ---------- primogem planner ----------
+const dstr = (ms) => new Date(ms).toISOString().slice(0, 10);
+
+let primoEvents = [];
+
+/** daftar event yang tanggalnya masuk rentang, bisa dicentang satu-satu */
+function renderEvents() {
+  const from = $("p-from").value, to = $("p-to").value;
+  const inRange = primoEvents.filter(e => e.date > from && e.date <= to);
+  $("p-evcount").textContent = inRange.length;
+  $("p-evbox").hidden = !primoEvents.length;
+  $("p-events-list").innerHTML = inRange.length
+    ? inRange.map(e => `<label><input type="checkbox" class="p-ev" value="${esc(e.id)}" checked />
+        <span>${esc(e.label)} <span class="dt">${esc(e.date)}</span></span>
+        <span class="amt">${n0(e.primogems)}${e.fates ? ` +${e.fates}f` : ""}</span></label>`).join("")
+    : `<div class="sub" style="margin-top:6px">Nggak ada event terdaftar di rentang ini — patch-nya pakai estimasi.</div>`;
+}
+
+async function initPrimo() {
+  const today = Date.now();
+  $("p-from").value = dstr(today);
+  $("p-to").value = dstr(today + 42 * 86400000);
+  try {
+    const s = await (await fetch("/api/primogems/sources")).json();
+    if (s.error) throw new Error(s.message);
+    const fill = (id, tiers, dflt) => {
+      $(id).innerHTML = Object.entries(tiers)
+        .map(([k, t]) => `<option value="${esc(k)}"${k === dflt ? " selected" : ""}>${esc(t.label)}</option>`).join("");
+    };
+    fill("p-bp", s.battlePass.tiers, "none");
+    fill("p-theater", s.cycles.theater.tiers, "visionary");
+    fill("p-stygian", s.cycles.stygian.tiers, "hard");
+    primoEvents = s.events || [];
+    renderEvents();
+    $("p-from").addEventListener("change", renderEvents);
+    $("p-to").addEventListener("change", renderEvents);
+    // tombol cepat: akhir tiap patch ke depan
+    const cyc = s.patch.cycleDays * 86400000;
+    const anchor = Date.parse(s.patch.anchor.start + "T00:00:00Z");
+    let v = s.patch.anchor.version, start = anchor;
+    while (start + cyc < today) { start += cyc; v = nextVer(v); }
+    const quick = [];
+    for (let i = 1; i <= 3; i++) {
+      const end = start + i * cyc;
+      quick.push(`<button class="chip" type="button" data-d="${dstr(end)}">akhir ${v} → ${dstr(end)}</button>`);
+      v = nextVer(v);
+    }
+    $("p-quick").innerHTML = quick.join("");
+    $("p-quick").querySelectorAll(".chip").forEach(b =>
+      b.addEventListener("click", () => { $("p-to").value = b.dataset.d; renderEvents(); primogems(); }));
+  } catch (err) {
+    $("p-out").innerHTML = `<div class="msg err">${esc(err.message)}</div>`;
+  }
+}
+function nextVer(v) {
+  const [a, b] = v.split(".").map(Number);
+  return b >= 8 ? `${a + 1}.0` : `${a}.${b + 1}`;
+}
+
+async function primogems() {
+  const out = $("p-out");
+  out.innerHTML = `<div class="msg load">Menghitung…</div>`;
+  $("p-go").disabled = true;
+  try {
+    const q = new URLSearchParams({ to: $("p-to").value, from: $("p-from").value });
+    q.set("bp", $("p-bp").value);
+    q.set("bpLevel", $("p-bplevel").value || "0");
+    q.set("abyssStars", $("p-abyss").value || "0");
+    q.set("theater", $("p-theater").value);
+    q.set("stygian", $("p-stygian").value);
+    q.set("welkin", $("p-welkin").checked ? "1" : "0");
+    q.set("stardust", $("p-stardust").checked ? "1" : "0");
+    q.set("events", $("p-events").checked ? "1" : "0");
+    const skip = [...document.querySelectorAll(".p-ev")].filter(c => !c.checked).map(c => c.value);
+    if (skip.length) q.set("skipEvents", skip.join(","));
+    if (+$("p-extra").value) q.set("extra", $("p-extra").value);
+    if (+$("p-have").value) q.set("currentPrimogems", $("p-have").value);
+    if (+$("p-fates").value) q.set("currentFates", $("p-fates").value);
+    const r = await fetch(`/api/primogems?${q}`);
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.message || d.error || `HTTP ${r.status}`);
+
+    out.innerHTML = `
+      <div class="stats-line" style="margin-top:14px">
+        ${esc(d.from)} → ${esc(d.to)} · <b>${d.days} hari</b> · ${d.patchFraction} patch
+        (${d.patches.map(p => esc(p.version)).join(", ") || "-"})
+      </div>
+      <div class="tbl-wrap"><table>
+        <tr><th>sumber</th><th>rincian</th><th class="num">primogem</th><th class="num">fate</th></tr>
+        ${d.rows.map(x => `<tr><td>${esc(x.label)}</td><td class="sub">${esc(x.detail)}</td>
+          <td class="num">${n0(x.primogems)}</td><td class="num">${x.fates || ""}</td></tr>`).join("")}
+        <tr><td><b>TOTAL</b></td><td></td><td class="num"><b>${n0(d.totalPrimogems)}</b></td><td class="num"><b>${d.totalFates || ""}</b></td></tr>
+      </table></div>
+      <div class="wish">
+        <span class="big">${d.wishes} wish</span>
+        <span class="sub">${n0(d.totalPrimogems)} primo ÷ ${d.perWish}${d.totalFates ? ` + ${d.totalFates} fate` : ""} · sisa ${d.leftover} primo</span>
+      </div>
+      <div class="pchips">${d.patches.map(p => `${esc(p.version)}: ${esc(p.start)} → ${esc(p.end)} (${p.overlapDays} hari)`).join(" · ")}</div>
+      ${d.warnings?.length ? `<details style="margin-top:8px"><summary>Catatan (${d.warnings.length})</summary>
+        <div class="warns">${d.warnings.map(esc).join("<br>")}</div></details>` : ""}`;
+  } catch (err) {
+    out.innerHTML = `<div class="msg err">${esc(err.message)}</div>`;
+  } finally {
+    $("p-go").disabled = false;
+  }
+}
+$("p-go").addEventListener("click", primogems);
+initPrimo();
 
 // ---------- rotasi tim ----------
 function renderChips() {

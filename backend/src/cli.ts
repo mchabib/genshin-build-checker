@@ -21,6 +21,7 @@ import { runCheck, CheckError } from "./services/check.service";
 import { buildAssessBrief, formatAssessBrief } from "./services/assess.service";
 import { parseRotationParam, runDamage, DamageError, type DamageReport } from "./services/damage.run";
 import { runBenchmark } from "./services/benchmark.service";
+import { planPrimogems, PrimogemError } from "./services/primogem.service";
 import { runTeamRotation, RotationError } from "./services/rotation.run";
 import { assessWithLlm, formatAssessLlm } from "./services/assess.llm";
 import { describeLlmOptions, isLlmConfigured, LlmError, parseLlmOptions } from "./services/llm.client";
@@ -44,7 +45,7 @@ const MARK: Record<string, string> = {
 };
 
 /** flag tanpa nilai (biar nggak "makan" argumen berikutnya) */
-const BOOL_FLAGS = new Set(["json", "raw", "full", "no-llm", "llm", "show-prompt", "no-assume"]);
+const BOOL_FLAGS = new Set(["json", "raw", "full", "no-llm", "llm", "show-prompt", "no-assume", "welkin", "stardust", "no-events", "no-oneoff"]);
 
 function parseFlags(args: string[]) {
   const flags: Record<string, string> = {};
@@ -523,6 +524,46 @@ async function cmdBenchmark(uid: string, q: string, flags: Record<string, string
   }
 }
 
+async function cmdPrimogems(to: string, flags: Record<string, string>) {
+  if (!to) return console.error("Tanggal target kosong. Contoh: primo 2026-11-05 --welkin --bp paid --abyss 36");
+  try {
+    const r = await planPrimogems({
+      to,
+      from: flags.from,
+      welkin: Boolean(flags.welkin),
+      stardust: Boolean(flags.stardust),
+      battlePass: flags.bp,
+      bpLevel: flags["bp-level"] ? Number(flags["bp-level"]) : undefined,
+      skipEvents: flags["skip-events"]?.split(","),
+      abyssStars: flags.abyss ? Number(flags.abyss) : undefined,
+      theater: flags.theater,
+      stygian: flags.stygian,
+      events: !flags["no-events"],
+      oneOff: !flags["no-oneoff"],
+      extraPrimogems: flags.extra ? Number(flags.extra) : undefined,
+      currentPrimogems: flags.have ? Number(flags.have) : undefined,
+      currentFates: flags.fates ? Number(flags.fates) : undefined,
+    });
+    if (flags.json) return console.log(JSON.stringify(r, null, 2));
+
+    console.log(`\n${r.from} → ${r.to}  (${r.days} hari · ${r.patchFraction} patch: ${r.patches.map((p) => p.version).join(", ") || "-"})\n`);
+    const W = Math.max(...r.rows.map((x) => x.label.length), 10);
+    for (const row of r.rows)
+      console.log(`  ${row.label.padEnd(W)}  ${row.detail.padEnd(36).slice(0, 36)} ${fmtN(row.primogems).padStart(8)}${row.fates ? `  +${row.fates} fate` : ""}`);
+    console.log(`  ${"".padEnd(W, "─")}  ${"".padEnd(36, "─")} ${"────────"}`);
+    console.log(`  ${"TOTAL".padEnd(W)}  ${"".padEnd(36)} ${fmtN(r.totalPrimogems).padStart(8)}${r.totalFates ? `  +${r.totalFates} fate` : ""}`);
+    console.log(`\n  = ${r.wishes} wish  (${fmtN(r.totalPrimogems)} primo / ${r.perWish}${r.totalFates ? ` + ${r.totalFates} fate` : ""}, sisa ${r.leftover} primo)`);
+    for (const p of r.patches) console.log(`  · ${p.version}: ${p.start} → ${p.end} (${p.overlapDays} hari masuk rentang)`);
+    if (r.warnings.length) {
+      console.log("\n  Catatan:");
+      for (const w of r.warnings) console.log(`   - ${w}`);
+    }
+  } catch (e) {
+    if (e instanceof PrimogemError) return console.error(e.message);
+    throw e;
+  }
+}
+
 // ---------- main ----------
 async function main() {
   const [cmd, ...rest] = process.argv.slice(2);
@@ -556,6 +597,10 @@ async function main() {
     case "benchmark":
       await cmdBenchmark(pos[0], pos.slice(1).join(" "), flags);
       break;
+    case "primo":
+    case "primogems":
+      await cmdPrimogems(pos[0], flags);
+      break;
     default:
       console.log(
         [
@@ -575,6 +620,9 @@ async function main() {
           "         cuma aktif kalau E/Q-nya ada di urutan. [--enemy-lvl] [--enemy-res] [--no-assume] [--json]",
           "  benchmark <uid> <key|nama> [--build n] [--er label | --er-target 160] [--team] [--rotation] [--json]",
           "         build kamu vs build acuan (artifact standar KQMS, sisanya sama) → % dari standar + stat yang ketinggalan",
+          "  primo <YYYY-MM-DD> [--from tgl] [--welkin] [--bp free|paid] [--abyss 36] [--theater visionary] [--stygian hard] [--stardust] [--bp-level 0]",
+          "         [--no-events] [--no-oneoff] [--extra 0] [--have 0] [--fates 0] [--json]",
+          "         estimasi primogem sampai tanggal target (daily, welkin/BP, Abyss/Theater/Stygian, event patch) → berapa wish",
           "  Opsi LLM (assess --llm & damage): --model deepseek-v4-pro|deepseek-flash  --thinking on|off  --effort low|medium|high",
           `         default dari .env: ${describeLlmOptions()}`,
         ].join("\n"),
