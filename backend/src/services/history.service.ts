@@ -35,8 +35,14 @@ export interface HistoryStats {
 const DATA_DIR = process.env.HISTORY_DIR ?? path.resolve(".data");
 const FILE = path.join(DATA_DIR, "uid-history.json");
 const FLUSH_MS = Number(process.env.HISTORY_FLUSH_MS ?? 5000);
-/** batas entri yang disimpan; yang paling lama nggak dipakai dibuang duluan */
-const MAX_ENTRIES = Number(process.env.HISTORY_MAX ?? 5000);
+/**
+ * Batas entri. Default **0 = tanpa batas** — nggak ada data yang dibuang diam-diam;
+ * kalau filenya kegedean tinggal dipindah/di-archive manual. Isi `HISTORY_MAX` kalau mau auto-buang
+ * yang paling lama nggak kepakai. `HISTORY_WARN_AT` = kapan mulai ngingetin di log.
+ */
+const MAX_ENTRIES = Number(process.env.HISTORY_MAX ?? 0);
+const WARN_AT = Number(process.env.HISTORY_WARN_AT ?? 20000);
+let warned = false;
 
 let entries = new Map<string, UidHistoryEntry>();
 let loaded = false;
@@ -111,10 +117,13 @@ export async function recordUid(uid: string, nickname: string | null, level: num
     if (level != null) cur.level = level;
   } else {
     entries.set(uid, { uid, nickname, level, count: 1, firstSeen: now, lastSeen: now });
-    // buang yang paling lama nggak kepakai kalau kebanyakan
-    if (entries.size > MAX_ENTRIES) {
+    // cuma buang kalau HISTORY_MAX diisi; default: simpan semua
+    if (MAX_ENTRIES > 0 && entries.size > MAX_ENTRIES) {
       const sorted = [...entries.values()].sort((a, b) => a.lastSeen.localeCompare(b.lastSeen));
       for (const e of sorted.slice(0, entries.size - MAX_ENTRIES)) entries.delete(e.uid);
+    } else if (!warned && entries.size >= WARN_AT) {
+      warned = true;
+      console.warn(`[history] ${entries.size} UID di ${FILE} — pertimbangkan pindahkan/arsipkan filenya.`);
     }
   }
   dirty = true;
