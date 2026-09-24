@@ -156,11 +156,6 @@
           border-top: 2px solid var(--line); padding-top: 12px; }
   .wish .big { font-size: 26px; font-weight: 700; color: #fbbf24; font-variant-numeric: tabular-nums; }
   .pchips { color: var(--dimmer); font-size: 12px; margin-top: 8px; }
-  .evlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 4px 12px; margin-top: 8px; }
-  .evlist label { display: flex; align-items: baseline; gap: 6px; font-size: 12.5px; color: var(--dim); text-transform: none; letter-spacing: 0; }
-  .evlist label input { width: auto; }
-  .evlist .amt { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--text); }
-  .evlist .dt { color: var(--dimmer); font-size: 11px; }
 </style>
 </head>
 <body>
@@ -237,17 +232,15 @@
         <div class="chk" style="grid-column:3/5">
           <input id="p-welkin" type="checkbox" /><label for="p-welkin" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)">Welkin</label>
           <input id="p-stardust" type="checkbox" /><label for="p-stardust" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="beli 5 Intertwined Fate tiap reset bulanan">Stardust</label>
-          <input id="p-events" type="checkbox" checked /><label for="p-events" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="kode livestream, kompensasi maintenance, estimasi event patch yang belum terdaftar">patch</label>
+          <input id="p-events" type="checkbox" checked /><label for="p-events" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="kode livestream + kompensasi maintenance tiap patch">patch</label>
           <button class="sm" id="p-go" type="button">Hitung</button>
         </div>
       </div>
-      <details id="p-evbox" style="margin-top:10px"><summary>Event yang dihitung (<span id="p-evcount">0</span>)</summary>
-        <div id="p-events-list" class="evlist"></div>
-      </details>
       <div class="chips" id="p-quick"></div>
       <div class="hint" style="margin:8px 0 0">
         Estimasi income primogem — nggak butuh UID. Siklus yang <b>sedang jalan</b> nggak dihitung
-        (anggap rewardnya udah diambil). Angka tiap sumber ada di
+        (anggap rewardnya udah diambil). <b>Income dari event nggak dihitung</b> karena beda-beda tiap patch —
+        pakai kolom <i>Quest/eksplorasi</i> kalau mau nambahin sendiri. Angka tiap sumber ada di
         <code>scrape-data/Primogems/_sources.json</code>, bebas kamu ubah.
       </div>
       <div id="p-out"></div>
@@ -302,23 +295,22 @@ document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () =>
   for (const name of ["char", "rot", "primo"]) $("tab-" + name).hidden = t.dataset.tab !== name;
 }));
 
+// ---------- fitur LLM: sembunyiin semua kontrolnya kalau dimatikan di .env ----------
+let llmOn = false;
+async function initLlmFlag() {
+  try {
+    const h = await (await fetch("/api/health")).json();
+    llmOn = !!(h.llm?.enabled ?? h.llmConfigured);
+  } catch { llmOn = false; }
+  applyLlmFlag();
+}
+function applyLlmFlag() {
+  for (const el of document.querySelectorAll(".llm-only")) el.hidden = !llmOn;
+}
+initLlmFlag();
+
 // ---------- primogem planner ----------
 const dstr = (ms) => new Date(ms).toISOString().slice(0, 10);
-
-let primoEvents = [];
-
-/** daftar event yang tanggalnya masuk rentang, bisa dicentang satu-satu */
-function renderEvents() {
-  const from = $("p-from").value, to = $("p-to").value;
-  const inRange = primoEvents.filter(e => e.date > from && e.date <= to);
-  $("p-evcount").textContent = inRange.length;
-  $("p-evbox").hidden = !primoEvents.length;
-  $("p-events-list").innerHTML = inRange.length
-    ? inRange.map(e => `<label><input type="checkbox" class="p-ev" value="${esc(e.id)}" checked />
-        <span>${esc(e.label)} <span class="dt">${esc(e.date)}</span></span>
-        <span class="amt">${n0(e.primogems)}${e.fates ? ` +${e.fates}f` : ""}</span></label>`).join("")
-    : `<div class="sub" style="margin-top:6px">Nggak ada event terdaftar di rentang ini — patch-nya pakai estimasi.</div>`;
-}
 
 async function initPrimo() {
   const today = Date.now();
@@ -334,10 +326,6 @@ async function initPrimo() {
     fill("p-bp", s.battlePass.tiers, "none");
     fill("p-theater", s.cycles.theater.tiers, "visionary");
     fill("p-stygian", s.cycles.stygian.tiers, "hard");
-    primoEvents = s.events || [];
-    renderEvents();
-    $("p-from").addEventListener("change", renderEvents);
-    $("p-to").addEventListener("change", renderEvents);
     // tombol cepat: akhir tiap patch ke depan
     const cyc = s.patch.cycleDays * 86400000;
     const anchor = Date.parse(s.patch.anchor.start + "T00:00:00Z");
@@ -351,7 +339,7 @@ async function initPrimo() {
     }
     $("p-quick").innerHTML = quick.join("");
     $("p-quick").querySelectorAll(".chip").forEach(b =>
-      b.addEventListener("click", () => { $("p-to").value = b.dataset.d; renderEvents(); primogems(); }));
+      b.addEventListener("click", () => { $("p-to").value = b.dataset.d; primogems(); }));
   } catch (err) {
     $("p-out").innerHTML = `<div class="msg err">${esc(err.message)}</div>`;
   }
@@ -375,8 +363,6 @@ async function primogems() {
     q.set("welkin", $("p-welkin").checked ? "1" : "0");
     q.set("stardust", $("p-stardust").checked ? "1" : "0");
     q.set("events", $("p-events").checked ? "1" : "0");
-    const skip = [...document.querySelectorAll(".p-ev")].filter(c => !c.checked).map(c => c.value);
-    if (skip.length) q.set("skipEvents", skip.join(","));
     if (+$("p-extra").value) q.set("extra", $("p-extra").value);
     if (+$("p-have").value) q.set("currentPrimogems", $("p-have").value);
     if (+$("p-fates").value) q.set("currentFates", $("p-fates").value);
@@ -591,7 +577,7 @@ function render(b) {
       </table>
     </details>
 
-    <div class="ctl" style="grid-template-columns: 1.4fr 1fr 1fr; margin-top: 14px">
+    <div class="ctl llm-only" style="grid-template-columns: 1.4fr 1fr 1fr; margin-top: 14px">
       <div><label>Model LLM</label>
         <select id="l-model">
           <option value="">default (.env)</option>
@@ -603,7 +589,7 @@ function render(b) {
       <div><label>Reasoning effort</label>
         <select id="l-effort"><option value="">default</option><option value="low">low</option><option value="medium">medium</option><option value="high">high</option></select></div>
     </div>
-    <div id="llm-assess" style="margin-top:10px">
+    <div id="llm-assess" class="llm-only" style="margin-top:10px">
       <button class="sm" id="btn-llm-assess" type="button">Minta verdict LLM</button>
     </div>
 
@@ -631,12 +617,13 @@ function render(b) {
         <div><label>Stellar hits</label><input id="d-stellar" type="number" placeholder="8" min="0" max="12" /></div>
         <div class="chk">
           <input id="d-assume" type="checkbox" checked /><label for="d-assume" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="anggap buff kondisional aktif (stack max, dsb)">asumsi</label>
-          <input id="d-llm" type="checkbox" /><label for="d-llm" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="pakai LLM buat milih tim/buff/reaksi/rotasi">LLM</label>
+          <input id="d-llm" type="checkbox" class="llm-only" /><label for="d-llm" class="llm-only" style="margin:0;text-transform:none;font-size:13px;color:var(--dim)" title="pakai LLM buat milih tim/buff/reaksi/rotasi">LLM</label>
           <button class="sm" id="d-go" type="button">Hitung</button></div>
       </div>
       <div id="d-out"></div>
     </div>
   </div>`;
+  applyLlmFlag(); // markup di atas baru dibikin, sembunyiin lagi kalau LLM mati
   $("btn-llm-assess").addEventListener("click", () => llmAssess(b.character.key));
   if ($("b-go")) $("b-go").addEventListener("click", () => benchmark(b.character.key));
   $("d-go").addEventListener("click", () => damage(b.character.key));

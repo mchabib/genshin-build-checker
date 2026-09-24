@@ -21,8 +21,16 @@ export class LlmError extends Error {
   }
 }
 
+/** Fitur LLM bisa dipakai? Butuh `LLM_ENABLED` nyala DAN `LLM_API_KEY` terisi. */
 export function isLlmConfigured(): boolean {
-  return env.llm.apiKey.trim() !== "";
+  return env.llm.enabled && env.llm.apiKey.trim() !== "";
+}
+
+/** Kenapa LLM mati (buat pesan yang jelas ke user); null kalau nyala. */
+export function llmDisabledReason(): string | null {
+  if (!env.llm.enabled) return "LLM dimatikan (set LLM_ENABLED=true di backend/.env kalau mau dipakai)";
+  if (!env.llm.apiKey.trim()) return "LLM_API_KEY belum diisi di backend/.env";
+  return null;
 }
 
 export type Thinking = "on" | "off";
@@ -105,7 +113,8 @@ async function chatRaw(
   messages: ChatMessage[],
   opts: { temperature: number; maxTokens: number; json: boolean; llm: LlmOptions },
 ) {
-  if (!isLlmConfigured()) throw new LlmError("not_configured", "LLM_API_KEY belum diisi di backend/.env");
+  const off = llmDisabledReason();
+  if (off) throw new LlmError("not_configured", off);
   const r = resolveLlmOptions(opts.llm);
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), env.llm.timeoutMs);

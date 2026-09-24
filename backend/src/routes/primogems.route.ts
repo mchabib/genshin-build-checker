@@ -16,7 +16,7 @@ primogemsRouter.get("/sources", async (_req, res) => {
 
 /**
  * GET /api/primogems?to=2026-11-05&from=&welkin=1&bp=paid&abyssStars=36&theater=visionary&stygian=hard
- *                    &events=1&oneOff=1&extra=0&currentPrimogems=0&currentFates=0
+ *                    &events=1&extra=0&currentPrimogems=0&currentFates=0
  * Estimasi income primogem sampai tanggal target → total primo/fate → berapa wish.
  */
 primogemsRouter.get("/", async (req, res) => {
@@ -41,8 +41,6 @@ primogemsRouter.get("/", async (req, res) => {
       theater: str("theater"),
       stygian: str("stygian"),
       events: bool("events", true),
-      oneOff: bool("oneOff", true),
-      skipEvents: str("skipEvents")?.split(",").map((x) => x.trim()).filter(Boolean),
       extraPrimogems: num("extra"),
       currentPrimogems: num("currentPrimogems"),
       currentFates: num("currentFates"),

@@ -17,7 +17,7 @@ LLM (DeepSeek, opsional) cuma buat verdict naratif dan pemilihan buff kalau dimi
 | Damage per hit | `damage <uid> <char>` | tabel non-crit/crit/avg tiap hit, baseline vs dengan buff tim/asumsi, rotasi, DPS |
 | Rotasi tim | `rotation <uid> "<notasi KQM>"` | tiap karakter dihitung dengan tim = yang lain; buff support cuma nyala kalau aksinya ada; total tim + DPS |
 | Brief AI | `assess <uid> <char> [--llm]` | semua data + hasil cek + guide mentah; `--llm` = verdict dari LLM |
-| Planner primogem | `primo <YYYY-MM-DD>` | estimasi primo/fate sampai tanggal target (daily, Welkin/BP, Abyss/Theater/Stygian, event patch) → berapa wish |
+| Planner primogem | `primo <YYYY-MM-DD>` | estimasi primo/fate sampai tanggal target (daily, Welkin, BP per level, Stardust, Abyss/Theater/Stygian, kode+kompensasi patch) → berapa wish. Income event **tidak** dihitung |
 | UI | `http://localhost:4000` | 1 halaman statis, 3 tab: Karakter · Rotasi Tim · Primogem |
 
 Mekanik yang dimodelkan: reaksi amplifying/additive/transformative, **Stellar-Conduct** (koefisien Polestar Field,
@@ -38,7 +38,9 @@ copy backend\.env.example backend\.env    # Linux/macOS: cp backend/.env.example
 
 Edit `backend/.env`:
 - `ENKA_USER_AGENT` — wajib diganti ke nama proyek + kontakmu (Enka.Network minta User-Agent yang jelas).
-- `LLM_API_KEY` — **opsional**, cuma buat `--llm`. Kosong = fitur LLM mati, semua kalkulator tetap jalan.
+- `LLM_ENABLED` — **default `false`**. Biarin mati kalau di-hosting, biar kuota API-mu nggak kepakai orang lain.
+  Nyalain cuma kalau kamu butuh `--llm`: `LLM_ENABLED=true` **dan** isi `LLM_API_KEY`. Semua kalkulator tetap jalan tanpa ini
+  (kontrol LLM di UI otomatis disembunyiin kalau mati).
 
 ```powershell
 docker compose up -d --build              # pertama kali ±1–2 menit (install dependency di container)
@@ -65,7 +67,7 @@ Kalau ganti `package.json` (dependency): `docker compose up -d --build` lagi; ka
 .\gbc.ps1 damage <uid> xiao [--team furina,faruzan] [--reaction vaporize] [--no-assume] [--rotation "E 9[N1C] Q"] [--duration 20]
 .\gbc.ps1 rotation <uid> "Yae 3[E] > Qiqi E > Odette 2[E] > Sandrone 3[C E]" --enemy-lvl 100 --enemy-res 10
 .\gbc.ps1 rotation <uid> "Ineffa E > Columbina E > Furina E > Yelan 2[E]" --duration 20
-.\gbc.ps1 primo 2026-11-04 --welkin --bp paid --abyss 36 --theater visionary --stygian hard
+.\gbc.ps1 primo 2026-11-04 --welkin --bp paid --bp-level 12 --stardust --abyss 36 --theater visionary --stygian hard
 ```
 
 Flag umum: `--enemy-lvl` (default 90) · `--enemy-res` (persen, default 10) · `--no-assume` (matikan buff kondisional
@@ -140,7 +142,7 @@ Kalau dump genshin-db belum punya kit terbaru (rework), hit tambahan didefinisik
 | `GET /api/damage/:uid/:char?team=&reaction=&rotation=&duration=&stellarHits=&noAssume=1` | tabel damage + rotasi + DPS |
 | `GET /api/rotation/:uid?r=<notasi>&duration=&enemyLvl=&enemyRes=` | rotasi tim |
 | `GET /api/benchmark/:uid/:char?build=&er=&erTarget=&full=1` | benchmark vs build acuan |
-| `GET /api/primogems?to=&from=&welkin=&bp=&abyssStars=&theater=&stygian=` | estimasi income primogem → wish |
+| `GET /api/primogems?to=&from=&welkin=&bp=&bpLevel=&stardust=&abyssStars=&theater=&stygian=` | estimasi income primogem → wish |
 | `GET /api/primogems/sources` | angka & pilihan tier yang tersedia (buat dropdown UI) |
 
 ## Struktur

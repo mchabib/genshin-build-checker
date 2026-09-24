@@ -1,79 +1,129 @@
 {
-  "_comment": "Angka income primogem. SEMUA angka di sini boleh diubah kalau HoYo ganti reward — kode nggak perlu disentuh. Dibaca src/services/primogem.service.ts. Lihat _README.md.",
+  "_comment": "Angka income primogem. SEMUA angka di sini boleh diubah kalau HoYo ganti reward — kode nggak perlu disentuh. Dibaca src/services/primogem.service.ts. Lihat _README.md. CATATAN: income dari EVENT sengaja TIDAK dihitung (jumlahnya beda-beda tiap patch dan nggak bisa ditebak) — pakai kolom \"Quest/eksplorasi (manual)\" kalau mau nambahin sendiri.",
   "perWish": 160,
-
   "daily": {
-    "commission": { "label": "Daily commission", "perDay": 60 }
+    "commission": {
+      "label": "Daily commission",
+      "perDay": 60
+    }
   },
-
-  "welkin": { "label": "Welkin Moon", "perDay": 90, "onPurchase": 300, "purchaseDays": 30 },
-
-  "stardust": { "label": "Toko Stardust (Intertwined Fate)", "resetDays": [1], "fates": 5 },
-
+  "welkin": {
+    "label": "Welkin Moon",
+    "perDay": 90,
+    "onPurchase": 300,
+    "purchaseDays": 30
+  },
+  "stardust": {
+    "label": "Toko Stardust (Intertwined Fate)",
+    "resetDays": [
+      1
+    ],
+    "fates": 5
+  },
   "battlePass": {
     "label": "Battle Pass",
     "maxLevel": 50,
     "levelsPerDay": 1.5,
     "tiers": {
-      "none": { "label": "nggak pakai", "primogems": 0, "fates": 0 },
-      "free": { "label": "gratis (Sojourner)", "primogems": 0, "fates": 4 },
-      "paid": { "label": "berbayar (Gnostic Hymn)", "primogems": 680, "fates": 4 }
+      "none": {
+        "label": "nggak pakai",
+        "primogems": 0,
+        "fates": 0
+      },
+      "free": {
+        "label": "gratis (Sojourner)",
+        "primogems": 0,
+        "fates": 4
+      },
+      "paid": {
+        "label": "berbayar (Gnostic Hymn)",
+        "primogems": 680,
+        "fates": 4
+      }
     }
   },
-
   "cycles": {
     "abyss": {
       "label": "Spiral Abyss",
-      "resetDays": [1, 16],
+      "resetDays": [
+        1,
+        16
+      ],
       "maxPrimogems": 600,
       "maxUnits": 36,
       "unitLabel": "bintang"
     },
     "theater": {
       "label": "Imaginarium Theater",
-      "resetDays": [1],
+      "resetDays": [
+        1
+      ],
       "tiers": {
-        "skip": { "label": "nggak main", "primogems": 0 },
-        "easy": { "label": "Easy", "primogems": 150 },
-        "normal": { "label": "Normal", "primogems": 250 },
-        "hard": { "label": "Hard", "primogems": 350 },
-        "visionary": { "label": "Visionary (full clear)", "primogems": 420 }
+        "skip": {
+          "label": "nggak main",
+          "primogems": 0
+        },
+        "easy": {
+          "label": "Easy",
+          "primogems": 150
+        },
+        "normal": {
+          "label": "Normal",
+          "primogems": 250
+        },
+        "hard": {
+          "label": "Hard",
+          "primogems": 350
+        },
+        "visionary": {
+          "label": "Visionary (full clear)",
+          "primogems": 420
+        }
       }
     },
     "stygian": {
       "label": "Stygian Onslaught",
-      "resetDays": [1],
+      "resetDays": [
+        1
+      ],
       "_note": "450 = Normal+Advancing+Hard (150 tiap tier); Menacing/Fearless/Dire nggak ngasih primo. CEK siklus reset-nya kalau berubah.",
       "tiers": {
-        "skip": { "label": "nggak main", "primogems": 0 },
-        "normal": { "label": "Normal", "primogems": 150 },
-        "advancing": { "label": "Advancing", "primogems": 300 },
-        "hard": { "label": "Hard (maks primo)", "primogems": 450 }
+        "skip": {
+          "label": "nggak main",
+          "primogems": 0
+        },
+        "normal": {
+          "label": "Normal",
+          "primogems": 150
+        },
+        "advancing": {
+          "label": "Advancing",
+          "primogems": 300
+        },
+        "hard": {
+          "label": "Hard (maks primo)",
+          "primogems": 450
+        }
       }
     }
   },
-
   "patch": {
     "cycleDays": 42,
-    "anchor": { "version": "7.1", "start": "2026-09-23" },
-    "perPatch": {
-      "codes": { "label": "Kode livestream", "primogems": 300, "fates": 0 },
-      "maintenance": { "label": "Kompensasi maintenance", "primogems": 300, "fates": 0 }
+    "anchor": {
+      "version": "7.1",
+      "start": "2026-09-23"
     },
-    "eventsEstimate": {
-      "label": "Event patch (estimasi)",
-      "primogems": 2400,
-      "fates": 4,
-      "_note": "dipakai cuma buat patch yang BELUM ada daftar event-nya di `events` di bawah"
+    "perPatch": {
+      "codes": {
+        "label": "Kode livestream",
+        "primogems": 300,
+        "fates": 0
+      },
+      "maintenance": {
+        "label": "Kompensasi maintenance",
+        "primogems": 300,
+        "fates": 0
+      }
     }
-  },
-
-  "_events_note": "Event bertanggal. Yang tanggalnya masuk rentang dihitung (bisa dimatikan satu-satu lewat UI / --skip-events). Patch yang nggak punya entry di sini pakai patch.eventsEstimate. Tanggal = kapan primonya bisa diambil.",
-  "events": [
-    { "id": "aq-7.1", "date": "2026-09-23", "patch": "7.1", "label": "Archon Quest 7.1", "primogems": 600 },
-    { "id": "anniv-6", "date": "2026-09-28", "patch": "7.1", "label": "Anniversary ke-6 (login + mail)", "primogems": 1600, "fates": 10 },
-    { "id": "flagship-7.1", "date": "2026-09-30", "patch": "7.1", "label": "Event flagship 7.1", "primogems": 1200 },
-    { "id": "mini-7.1a", "date": "2026-10-07", "patch": "7.1", "label": "Event mini 7.1 (fase 1)", "primogems": 420 },
-    { "id": "mini-7.1b", "date": "2026-10-20", "patch": "7.1", "label": "Event mini 7.1 (fase 2)", "primogems": 420 }
-  ]
+  }
 }

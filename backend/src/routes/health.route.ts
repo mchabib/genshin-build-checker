@@ -3,7 +3,7 @@ import { allResolved, loadCharacterStore } from "../services/characterStore";
 import { guideStoreStats, loadGuideStore } from "../services/guideStore";
 import { gameDataStats, loadGameDataStore } from "../services/gameDataStore";
 import { buffStoreStats, loadBuffStore } from "../services/buffStore";
-import { isLlmConfigured } from "../services/llm.client";
+import { isLlmConfigured, llmDisabledReason } from "../services/llm.client";
 
 export const healthRouter = Router();
 
@@ -21,6 +21,7 @@ healthRouter.get("/", async (_req, res) => {
     artifacts: gd.artifacts,
     buffModules: b.modules,
     buffEntries: b.team + b.sets + b.weapons,
+    llm: { enabled: isLlmConfigured(), reason: llmDisabledReason() },
     llmConfigured: isLlmConfigured(),
     time: new Date().toISOString(),
   });

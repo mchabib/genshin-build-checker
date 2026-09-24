@@ -23,14 +23,6 @@ export interface CycleSource {
   unitLabel?: string;
   tiers?: Record<string, PrimogemTier>;
 }
-export interface PrimogemEvent {
-  id: string;
-  date: string;
-  label: string;
-  primogems: number;
-  fates?: number;
-  patch?: string;
-}
 export interface PrimogemSources {
   perWish: number;
   daily: Record<string, { label: string; perDay: number }>;
@@ -42,9 +34,7 @@ export interface PrimogemSources {
     cycleDays: number;
     anchor: { version: string; start: string };
     perPatch: Record<string, PrimogemTier>;
-    eventsEstimate?: PrimogemTier;
   };
-  events: PrimogemEvent[];
 }
 
 export class PrimogemError extends Error {
@@ -178,14 +168,10 @@ export interface PrimogemOptions {
   theater?: string;
   /** key di `cycles.stygian.tiers` */
   stygian?: string;
-  /** ikut event patch, kode livestream, kompensasi maintenance (default true) */
+  /** ikut income per patch: kode livestream, kompensasi maintenance (default true) */
   events?: boolean;
   /** primo tambahan dari quest/eksplorasi, perkiraan sendiri */
   extraPrimogems?: number;
-  /** ikut hitung event bertanggal (default true) */
-  oneOff?: boolean;
-  /** id event yang mau dilewati (mis. event yang kamu nggak ikut) */
-  skipEvents?: string[];
   /** primo & fate yang SUDAH dipunya sekarang */
   currentPrimogems?: number;
   currentFates?: number;
@@ -311,30 +297,8 @@ export async function planPrimogems(opts: PrimogemOptions): Promise<PrimogemRepo
       add(`patch.${key}`, p.label, `${pf} patch (${patchLabel})`, p.primogems * patchFraction, Math.floor((p.fates ?? 0) * patchFraction));
   }
 
-  // event bertanggal; patch yang belum punya daftar event pakai estimasi (prorate dari overlap)
-  const skip = new Set(opts.skipEvents ?? []);
-  if (opts.oneOff !== false) {
-    for (const e of s.events ?? []) {
-      if (skip.has(e.id)) continue;
-      const d = parseDay(e.date, `event "${e.label}"`);
-      if (d > from && d <= to) add(`event.${e.id}`, e.label, `${e.date}${e.patch ? ` · ${e.patch}` : ""}`, e.primogems, e.fates ?? 0);
-    }
-  }
-  if (opts.events !== false && s.patch.eventsEstimate) {
-    const est = s.patch.eventsEstimate;
-    for (const p of patches) {
-      const ps = parseDay(p.start, "patch.start");
-      const pe = parseDay(p.end, "patch.end");
-      const punya = (s.events ?? []).some((e) => {
-        const d = parseDay(e.date, "event.date");
-        return d >= ps && d < pe;
-      });
-      if (punya) continue;
-      const frac = p.overlapDays / Math.max(1, s.patch.cycleDays);
-      add(`patch.eventsEstimate.${p.version}`, `${est.label} ${p.version}`, `${Math.round(frac * 100) / 100} patch`, est.primogems * frac, Math.floor((est.fates ?? 0) * frac));
-    }
-  }
-
+  // Income dari EVENT sengaja nggak dihitung: jumlahnya beda-beda tiap patch dan nggak bisa ditebak.
+  // Kalau mau nambahin sendiri, pakai `extraPrimogems`.
   if (opts.extraPrimogems) add("extra", "Quest & eksplorasi (manual)", "input kamu", opts.extraPrimogems);
 
   const totalPrimogems = rows.reduce((a, r) => a + r.primogems, 0);

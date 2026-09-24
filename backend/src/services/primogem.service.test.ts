@@ -51,7 +51,7 @@ test("patchesInRange: overlap hari + label versi, termasuk patch sebelum anchor"
 });
 
 test("planPrimogems: total = jumlah baris, wish = primo/160 + fate; F2P polos cuma daily", async () => {
-  const r = await planPrimogems({ from: "2026-09-23", to: "2026-11-04", events: false, oneOff: false });
+  const r = await planPrimogems({ from: "2026-09-23", to: "2026-11-04", events: false });
   assert.equal(r.days, 42);
   assert.equal(r.patchFraction, 1);
   // cuma daily commission: 60 × 42
@@ -94,12 +94,8 @@ test("planPrimogems: welkin, BP, Abyss per bintang, Theater, Stygian, event patc
   assert.equal(row("cycle.stygian")!.primogems, 450 * 2);
   // per patch: kode livestream + kompensasi, penuh 1 patch
   assert.equal(row("patch.codes")!.primogems, 300);
-  // event bertanggal: anniversary masuk, yang tanggalnya = `from` nggak (batas kiri eksklusif)
-  assert.ok(row("event.anniv-6"));
-  assert.equal(row("event.anniv-6")!.fates, 10);
-  assert.ok(!row("event.aq-7.1"), "event tanggal 23 Sep = tanggal mulai, nggak ikut");
-  // patch 7.1 udah punya daftar event → nggak ada baris estimasi
-  assert.ok(!r.rows.some((x) => x.key.startsWith("patch.eventsEstimate")));
+  // income event sengaja nggak dihitung sama sekali
+  assert.ok(!r.rows.some((x) => x.key.startsWith("event.") || x.key.includes("eventsEstimate")));
   assert.equal(
     r.totalPrimogems,
     r.rows.reduce((a, x) => a + x.primogems, 0),
@@ -108,14 +104,14 @@ test("planPrimogems: welkin, BP, Abyss per bintang, Theater, Stygian, event patc
 });
 
 test("planPrimogems: per-patch di-prorate, bukan lonjakan di batas patch", async () => {
-  const separuh = await planPrimogems({ from: "2026-09-23", to: "2026-10-14", oneOff: false });
-  const penuh = await planPrimogems({ from: "2026-09-23", to: "2026-11-04", oneOff: false });
+  const separuh = await planPrimogems({ from: "2026-09-23", to: "2026-10-14" });
+  const penuh = await planPrimogems({ from: "2026-09-23", to: "2026-11-04" });
   const codes = (r: Awaited<ReturnType<typeof planPrimogems>>) => r.rows.find((x) => x.key === "patch.codes")!.primogems;
   assert.equal(separuh.patchFraction, 0.5);
   assert.equal(codes(separuh), Math.round(codes(penuh) / 2));
 });
 
-test("planPrimogems: BP dihitung dari level sekarang; Stardust 5 fate/bulan; skipEvents", async () => {
+test("planPrimogems: BP dihitung dari level sekarang; Stardust 5 fate/bulan", async () => {
   const base = { from: "2026-09-23", to: "2026-11-04", battlePass: "paid" };
   const dariNol = await planPrimogems({ ...base, bpLevel: 0 });
   const separuhJalan = await planPrimogems({ ...base, bpLevel: 25 });
@@ -126,22 +122,12 @@ test("planPrimogems: BP dihitung dari level sekarang; Stardust 5 fate/bulan; ski
   const stardust = await planPrimogems({ ...base, stardust: true });
   // reset tgl 1: 1 Okt & 1 Nov = 2 × 5 fate
   assert.equal(stardust.rows.find((x) => x.key === "stardust")!.fates, 10);
-
-  const tanpaAnniv = await planPrimogems({ ...base, skipEvents: ["anniv-6"] });
-  assert.ok(!tanpaAnniv.rows.some((x) => x.key === "event.anniv-6"));
-  const dengan = await planPrimogems(base);
-  assert.equal(dengan.totalPrimogems - tanpaAnniv.totalPrimogems, 1600);
 });
 
-test("planPrimogems: patch tanpa daftar event pakai estimasi, di-prorate", async () => {
-  // 7.2 (mulai 4 Nov) belum ada event bernama → muncul baris estimasi
-  const r = await planPrimogems({ from: "2026-11-04", to: "2026-12-16", battlePass: "none" });
-  const est = r.rows.find((x) => x.key === "patch.eventsEstimate.7.2");
-  assert.ok(est, "patch 7.2 harusnya pakai estimasi");
-  assert.equal(est!.primogems, 2400);
-  // separuh patch → separuh estimasi
-  const separuh = await planPrimogems({ from: "2026-11-04", to: "2026-11-25" });
-  assert.equal(separuh.rows.find((x) => x.key === "patch.eventsEstimate.7.2")!.primogems, 1200);
+test("planPrimogems: income event nggak pernah dihitung; tambahan manual lewat extraPrimogems", async () => {
+  const r = await planPrimogems({ from: "2026-09-23", to: "2026-11-04", extraPrimogems: 1000 });
+  assert.ok(!r.rows.some((x) => x.key.startsWith("event.") || x.key.includes("eventsEstimate")));
+  assert.equal(r.rows.find((x) => x.key === "extra")!.primogems, 1000);
 });
 
 test("planPrimogems: tolak tanggal ngawur, target di masa lalu, rentang kepanjangan", async () => {

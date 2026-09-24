@@ -7,8 +7,13 @@ export const env = {
       process.env.ENKA_USER_AGENT ?? "GenshinBuildChecker/0.1 (personal project)",
     cacheTtlSeconds: Number(process.env.ENKA_CACHE_TTL_SECONDS ?? 90),
   },
-  /** LLM OpenAI-compatible (DeepSeek default). apiKey kosong = fitur LLM mati. */
+  /**
+   * LLM OpenAI-compatible (DeepSeek default). Mati kalau `LLM_ENABLED` bukan true/1/on
+   * ATAU `LLM_API_KEY` kosong. Default MATI — biar instance yang di-hosting nggak kebakaran
+   * kuota API-nya gara-gara dipakai orang lain.
+   */
   llm: {
+    enabled: ["1", "true", "on", "ya"].includes((process.env.LLM_ENABLED ?? "").trim().toLowerCase()),
     baseUrl: (process.env.LLM_BASE_URL ?? "https://api.deepseek.com").replace(/\/+$/, ""),
     apiKey: process.env.LLM_API_KEY ?? "",
     model: process.env.LLM_MODEL ?? "deepseek-chat",

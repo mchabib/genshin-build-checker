@@ -15,8 +15,7 @@ nulis ke folder ini. Ubah angkanya kalau HoYo ganti reward — kode nggak perlu 
 | `cycles.abyss` | skala dari bintang: `maxPrimogems × bintang / maxUnits` |
 | `cycles.theater`, `cycles.stygian` | pilih `tiers.<key>` |
 | `patch` | `cycleDays` 42 + `anchor` (versi & tanggal mulai) → dipakai buat nebak jadwal patch berikutnya |
-| `patch.perPatch` | income sekali per patch: event, kode livestream, kompensasi maintenance, quest |
-| `oneOff` | income satu kali di tanggal tertentu (anniversary, dsb) |
+| `patch.perPatch` | income sekali per patch: kode livestream, kompensasi maintenance |
 
 ## Cara hitung
 
@@ -25,7 +24,6 @@ nulis ke folder ini. Ubah angkanya kalau HoYo ganti reward — kode nggak perlu 
   Siklus yang **sedang berjalan** (belum reset lagi) nggak dihitung — anggap rewardnya udah kamu ambil.
 - **Per patch** (`patch.perPatch`, `battlePass`): di-*prorate* dari berapa hari rentangnya menutupi patch.
   Rentang 21 hari di tengah patch 42 hari = 0,5 patch. Jadi nggak ada lonjakan aneh di batas patch.
-- **One-off**: masuk kalau tanggalnya ada di rentang.
 
 Hasil akhir: `wish = floor(total primogem / 160) + total fate`.
 
@@ -41,5 +39,5 @@ Cukup update `patch.anchor` ke versi + tanggal patch terbaru. Versi berikutnya d
   sisa level dari `bpLevel` yang kamu isi; patch berikutnya dianggap dari 0.
 - Abyss & Theater & Stygian dihitung **per reset yang kelewat**, bukan yang sedang berjalan.
 - Toko Stardust: 5 Intertwined Fate tiap reset bulanan (cuma fate, Acquaint diabaikan).
-- Event: primo dianggap didapat di tanggal `date` (biasanya hari event mulai). Patch tanpa entry event
-  memakai `patch.eventsEstimate` yang di-prorate.
+- **Income dari EVENT sengaja tidak dihitung** — jumlahnya beda-beda tiap patch dan tidak bisa ditebak.
+  Pakai kolom "Quest/eksplorasi (manual)" di UI (atau `--extra` di CLI) kalau mau menambahkan sendiri.

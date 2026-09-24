@@ -12,7 +12,7 @@ import { defaultNaElement } from "../data/infusions";
 import { allEntriesFor, catalogById, type CatalogCtx, type CatalogEntry, type TeamCtx, type TeammateInfo } from "../data/buffCatalog";
 import { computeRotation, computeTalentTable, defaultEnemy, isTransformative, resolveStats, type DamageCharacter, type DamageInput } from "./damage.service";
 import type { Element } from "../lib/stats";
-import { isLlmConfigured, LlmError, type ChatUsage, type LlmOptions } from "./llm.client";
+import { isLlmConfigured, llmDisabledReason, LlmError, type ChatUsage, type LlmOptions } from "./llm.client";
 import { buildDamagePrompt, suggestDamageWithLlm, type DamagePromptCtx, type LlmDamageSuggestion } from "./damage.llm";
 import { inferReactions, pickRotation, pickTeam, teamElements } from "./damage.rules";
 import { comboDuration, parseKqmCombo } from "../lib/kqmCombo";
@@ -464,7 +464,7 @@ export async function runDamage(rawUid: string, characterQuery: string, opts: Da
   const module: CharacterModule | null = getCharacterModule(sc.key);
   const guide = getGuide(sc.key);
   const wantLlm = (opts.llm ?? false) && isLlmConfigured();
-  if (opts.llm && !isLlmConfigured()) warnings.push("LLM diminta tapi LLM_API_KEY kosong — pakai jalur offline");
+  if (opts.llm && !isLlmConfigured()) warnings.push(`LLM diminta tapi nggak aktif (${llmDisabledReason()}) — pakai jalur offline`);
   const mode: DamageReport["mode"] = wantLlm ? "llm" : "offline";
   const assume = mode === "offline" && !opts.noAssume;
 

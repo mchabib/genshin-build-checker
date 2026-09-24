@@ -3,7 +3,7 @@ import { buildAssessBrief } from "../services/assess.service";
 import { EnkaError } from "../services/enka.types";
 import { CheckError } from "../services/check.service";
 import { assessWithLlm } from "../services/assess.llm";
-import { isLlmConfigured, LlmError, parseLlmOptions } from "../services/llm.client";
+import { isLlmConfigured, llmDisabledReason, LlmError, parseLlmOptions } from "../services/llm.client";
 
 export const assessRouter = Router();
 
@@ -33,7 +33,7 @@ assessRouter.get("/:uid/:characterKey", async (req, res) => {
       return;
     }
     if (!isLlmConfigured()) {
-      res.json({ ...brief, llm: { error: "LLM_API_KEY belum diisi" } });
+      res.json({ ...brief, llm: { error: llmDisabledReason() } });
       return;
     }
     try {

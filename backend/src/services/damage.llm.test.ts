@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { z } from "zod";
 
 // env dibaca saat modul di-load → set dulu, baru import dinamis (static import di-hoist)
+process.env.LLM_ENABLED = "true";
 process.env.LLM_API_KEY = "test-key";
 process.env.LLM_BASE_URL = "http://llm.test";
 const { LlmDamageOutputSchema, postValidate } = await import("./damage.llm");

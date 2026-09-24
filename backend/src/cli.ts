@@ -24,7 +24,7 @@ import { runBenchmark } from "./services/benchmark.service";
 import { planPrimogems, PrimogemError } from "./services/primogem.service";
 import { runTeamRotation, RotationError } from "./services/rotation.run";
 import { assessWithLlm, formatAssessLlm } from "./services/assess.llm";
-import { describeLlmOptions, isLlmConfigured, LlmError, parseLlmOptions } from "./services/llm.client";
+import { describeLlmOptions, isLlmConfigured, llmDisabledReason, LlmError, parseLlmOptions } from "./services/llm.client";
 
 /** --model / --thinking on|off / --effort low|medium|high */
 function llmFlags(flags: Record<string, string>) {
@@ -259,7 +259,7 @@ async function cmdAssess(uid: string, q: string, flags: Record<string, string>) 
       buildIndex: flags.build ? Number(flags.build) : undefined,
     });
     if (flags.llm) {
-      if (!isLlmConfigured()) return console.error("LLM_API_KEY belum diisi di backend/.env");
+      if (!isLlmConfigured()) return console.error(llmDisabledReason());
       const lo = llmFlags(flags);
       console.error(`[llm] ${describeLlmOptions(lo)} …`);
       const r = await assessWithLlm(brief, lo);
@@ -534,12 +534,10 @@ async function cmdPrimogems(to: string, flags: Record<string, string>) {
       stardust: Boolean(flags.stardust),
       battlePass: flags.bp,
       bpLevel: flags["bp-level"] ? Number(flags["bp-level"]) : undefined,
-      skipEvents: flags["skip-events"]?.split(","),
       abyssStars: flags.abyss ? Number(flags.abyss) : undefined,
       theater: flags.theater,
       stygian: flags.stygian,
       events: !flags["no-events"],
-      oneOff: !flags["no-oneoff"],
       extraPrimogems: flags.extra ? Number(flags.extra) : undefined,
       currentPrimogems: flags.have ? Number(flags.have) : undefined,
       currentFates: flags.fates ? Number(flags.fates) : undefined,
@@ -621,8 +619,8 @@ async function main() {
           "  benchmark <uid> <key|nama> [--build n] [--er label | --er-target 160] [--team] [--rotation] [--json]",
           "         build kamu vs build acuan (artifact standar KQMS, sisanya sama) → % dari standar + stat yang ketinggalan",
           "  primo <YYYY-MM-DD> [--from tgl] [--welkin] [--bp free|paid] [--abyss 36] [--theater visionary] [--stygian hard] [--stardust] [--bp-level 0]",
-          "         [--no-events] [--no-oneoff] [--extra 0] [--have 0] [--fates 0] [--json]",
-          "         estimasi primogem sampai tanggal target (daily, welkin/BP, Abyss/Theater/Stygian, event patch) → berapa wish",
+          "         [--no-events] [--extra 0] [--have 0] [--fates 0] [--json]",
+          "         estimasi primogem sampai tanggal target (daily, welkin/BP, Stardust, Abyss/Theater/Stygian, kode+kompensasi patch) → berapa wish",
           "  Opsi LLM (assess --llm & damage): --model deepseek-v4-pro|deepseek-flash  --thinking on|off  --effort low|medium|high",
           `         default dari .env: ${describeLlmOptions()}`,
         ].join("\n"),
