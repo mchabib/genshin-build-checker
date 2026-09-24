@@ -21,3 +21,6 @@ backend/.tmp/
 
 # kredensial lokal (JANGAN di-commit)
 .secrets.env
+
+# riwayat UID runtime (data pengunjung, jangan di-commit)
+backend/.data/

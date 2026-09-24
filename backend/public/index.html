@@ -167,6 +167,7 @@
     <input id="uid" inputmode="numeric" placeholder="UID Genshin (9–10 digit)" autocomplete="off" />
     <button id="go" type="submit">Fetch</button>
   </form>
+  <div class="chips" id="recent"></div>
   <div class="hint">
     Pin karakter yang mau dicek di <b>Character Showcase</b> in-game, dan aktifkan
     <b>Show Character Details</b> di privasi. Data = snapshot terakhir profil di-refresh, cooldown ±60 detik per UID.
@@ -255,6 +256,30 @@ const STATUS = { pass:"OK", info:"Info", warn:"Perlu dilihat", fail:"Kurang", sk
 
 let uid = "", chars = [], selected = null;
 
+// ---------- riwayat UID: disimpan di BROWSER INI aja (localStorage), nggak dikirim ke mana-mana ----------
+const RECENT_KEY = "gbc.recentUids";
+const recentGet = () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]"); } catch { return []; } };
+function recentAdd(uid, nickname) {
+  const list = recentGet().filter(x => x.uid !== uid);
+  list.unshift({ uid, nickname: nickname || null, at: Date.now() });
+  try { localStorage.setItem(RECENT_KEY, JSON.stringify(list.slice(0, 8))); } catch {}
+  renderRecent();
+}
+function renderRecent() {
+  const list = recentGet();
+  $("recent").innerHTML = list.length
+    ? list.map(x => `<button class="chip" type="button" data-uid="${esc(x.uid)}" title="${esc(x.uid)}">${esc(x.nickname || x.uid)}</button>`).join("")
+      + `<button class="chip" type="button" id="recent-clear" title="hapus riwayat di browser ini">✕ hapus</button>`
+    : "";
+  $("recent").querySelectorAll(".chip[data-uid]").forEach(b =>
+    b.addEventListener("click", () => { $("uid").value = b.dataset.uid; $("f").requestSubmit(); }));
+  if ($("recent-clear")) $("recent-clear").addEventListener("click", () => {
+    try { localStorage.removeItem(RECENT_KEY); } catch {}
+    renderRecent();
+  });
+}
+renderRecent();
+
 function msg(text, kind) {
   $("msg").innerHTML = text ? `<div class="msg ${kind || "load"}">${esc(text)}</div>` : "";
 }
@@ -272,6 +297,7 @@ $("f").addEventListener("submit", async (e) => {
     const d = await r.json();
     if (!r.ok) throw new Error(d.message || d.error || `HTTP ${r.status}`);
     chars = d.characters || [];
+    recentAdd(uid, d.player?.nickname);
     $("tabs").hidden = false;
     renderChips();
     $("player").hidden = false;

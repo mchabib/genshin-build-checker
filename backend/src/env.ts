@@ -1,5 +1,7 @@
 export const env = {
   port: Number(process.env.PORT ?? 4000),
+  /** Token buat endpoint privat (/api/history). Kosong = endpoint-nya dikunci total. */
+  adminToken: (process.env.ADMIN_TOKEN ?? "").trim(),
   corsOrigin: process.env.CORS_ORIGIN ?? "http://localhost:5173",
   enka: {
     baseUrl: process.env.ENKA_BASE_URL ?? "https://enka.network",

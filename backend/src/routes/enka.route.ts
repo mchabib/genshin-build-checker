@@ -5,6 +5,7 @@ import { mapShowcase } from "../services/enka.mapper";
 import { loadCharacterStore } from "../services/characterStore";
 import { guideKeys, loadGuideStore } from "../services/guideStore";
 import { loadGameDataStore } from "../services/gameDataStore";
+import { recordUid } from "../services/history.service";
 
 export const enkaRouter = Router();
 
@@ -23,6 +24,9 @@ enkaRouter.get("/:uid", async (req, res) => {
       ...c,
       checkable: c.key ? withGuide.has(c.key) : false,
     }));
+
+    // catat ke riwayat privat (jangan sampai gagalnya ganggu response)
+    void recordUid(req.params.uid, data.playerInfo?.nickname ?? null, data.playerInfo?.level ?? null).catch(() => {});
 
     res.json({
       player: {

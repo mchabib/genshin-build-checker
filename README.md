@@ -144,6 +144,7 @@ Kalau dump genshin-db belum punya kit terbaru (rework), hit tambahan didefinisik
 | `GET /api/benchmark/:uid/:char?build=&er=&erTarget=&full=1` | benchmark vs build acuan |
 | `GET /api/primogems?to=&from=&welkin=&bp=&bpLevel=&stardust=&abyssStars=&theater=&stygian=` | estimasi income primogem → wish |
 | `GET /api/primogems/sources` | angka & pilihan tier yang tersedia (buat dropdown UI) |
+| `GET /api/history?token=…` | **privat** — riwayat UID yang pernah dicek + berapa kali. Butuh `ADMIN_TOKEN`; kosong = endpoint dikunci |
 
 ## Struktur
 
